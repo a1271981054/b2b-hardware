@@ -1,0 +1,6 @@
+.env
+state.json
+episodes/*/segments/
+episodes/*/episode.tmp.mp3
+episodes/*/filelist.txt
+episodes/*/silence.mp3

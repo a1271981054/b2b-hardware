@@ -1,0 +1,22 @@
+{
+  "source_md": "B端产品经理问题集.md",
+  "output_dir": "podcast",
+  "api": {
+    "base_url": "https://api.xiaomimimo.com/v1",
+    "model": "mimo-v2.5-tts"
+  },
+  "speakers": {
+    "host": {
+      "label": "主持人",
+      "voice": "冰糖",
+      "style": "自然、清晰、亲切的播客主持人，普通话标准，语速中等偏快，讲解有力但不夸张，像在给朋友讲清楚一个概念。"
+    },
+    "guest": {
+      "label": "嘉宾",
+      "voice": "苏打",
+      "style": "沉稳、耐心的专家嘉宾，普通话标准，语速中等，回答从容，偶尔用提问带动思考，语气认真但不枯燥。"
+    }
+  },
+  "max_chars_per_request": 320,
+  "silence_seconds": 0.45
+}
