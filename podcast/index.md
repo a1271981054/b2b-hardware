@@ -1,3 +1,4 @@
 # B 端产品经理双人播客
 
 - 001 Q1. B 端硬件产品经理的核心职责边界是什么？KPI 怎么定？ (286.4s) - [播放](podcast/episodes/001-Q1-B-端硬件产品经理的核心职责边界是什么-KPI-怎么定/episode.mp3)
+- 003 Q1 追问 2. JTBD 框架详细讲解 (334.1s) - [播放](podcast/episodes/003-Q1-追问-2-JTBD-框架详细讲解/episode.mp3)
