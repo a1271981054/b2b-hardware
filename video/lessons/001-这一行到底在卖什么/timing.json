@@ -1,0 +1,161 @@
+{
+  "total": 93.888,
+  "beats": [
+    {
+      "index": 0,
+      "text": "你好呀，我是你的PM老师。今天第一课，我们用最笨的办法，搞懂这一行到底在卖什么。",
+      "keywords": [
+        "开讲"
+      ],
+      "visual": "teacher",
+      "note": "欢迎来到第一课",
+      "start": 0.0,
+      "end": 8.544,
+      "duration": 8.544
+    },
+    {
+      "index": 1,
+      "text": "先看你兜里最熟悉的东西：饭卡、公交卡、银行卡，它们有个共同名字，叫智能卡。",
+      "keywords": [
+        "智能卡"
+      ],
+      "visual": "card",
+      "note": "饭卡公交卡银行卡",
+      "start": 8.894,
+      "end": 16.622,
+      "duration": 7.728
+    },
+    {
+      "index": 2,
+      "text": "智能卡就是一张塑料卡片，里面藏着一小块芯片，像一台微型小电脑。",
+      "keywords": [
+        "芯片"
+      ],
+      "visual": "card",
+      "note": "藏着一台小电脑",
+      "start": 16.972,
+      "end": 23.116,
+      "duration": 6.144
+    },
+    {
+      "index": 3,
+      "text": "它能存信息，能算数，还能核对身份。老式磁条卡像一张写了字的纸，只会存东西。",
+      "keywords": [
+        "磁条卡"
+      ],
+      "visual": "card",
+      "note": "新卡会算，老卡只会存",
+      "start": 23.466,
+      "end": 30.882,
+      "duration": 7.416
+    },
+    {
+      "index": 4,
+      "text": "芯片卡更像一个小保安，你说密码，它核对，对了才放行。",
+      "keywords": [
+        "安全"
+      ],
+      "visual": "card",
+      "note": "会核对身份",
+      "start": 31.232,
+      "end": 36.248,
+      "duration": 5.016
+    },
+    {
+      "index": 5,
+      "text": "那读卡器是干嘛的？就是专门跟卡片对话的设备。",
+      "keywords": [
+        "读卡器"
+      ],
+      "visual": "reader",
+      "note": "专门跟卡片说话",
+      "start": 36.598,
+      "end": 41.782,
+      "duration": 5.184
+    },
+    {
+      "index": 6,
+      "text": "打个比方：卡片是钥匙，读卡器是门卫，钥匙来了，门卫要验证一下。",
+      "keywords": [
+        "门卫"
+      ],
+      "visual": "reader",
+      "note": "卡片是钥匙，读卡器是门卫",
+      "start": 42.132,
+      "end": 49.548,
+      "duration": 7.416
+    },
+    {
+      "index": 7,
+      "text": "刷卡分两种。接触式，就是卡片插进去，芯片碰到机器，像插U盘。",
+      "keywords": [
+        "接触式"
+      ],
+      "visual": "reader",
+      "note": "插进去像U盘",
+      "start": 49.898,
+      "end": 56.666,
+      "duration": 6.768
+    },
+    {
+      "index": 8,
+      "text": "非接触式，就是卡片靠近一下就行，像地铁闸机滴一下。",
+      "keywords": [
+        "非接触式"
+      ],
+      "visual": "gate",
+      "note": "靠近滴一下",
+      "start": 57.016,
+      "end": 62.824,
+      "duration": 5.808
+    },
+    {
+      "index": 9,
+      "text": "手机付钱滴一下，用的也是一种叫NFC的技术，后面会细讲。",
+      "keywords": [
+        "NFC"
+      ],
+      "visual": "nfc",
+      "note": "手机滴一下也是它",
+      "start": 63.174,
+      "end": 69.15,
+      "duration": 5.976
+    },
+    {
+      "index": 10,
+      "text": "龙杰智能卡，英文叫ACS，就是造卡片和读卡器的公司。",
+      "keywords": [
+        "ACS"
+      ],
+      "visual": "module",
+      "note": "ACS就是做这个的",
+      "start": 69.5,
+      "end": 75.308,
+      "duration": 5.808
+    },
+    {
+      "index": 11,
+      "text": "记住一句话：ACS卖的不是手机，是刷卡基础件：卡片、读卡器，还有装进别人机器里的读卡器零件。",
+      "keywords": [
+        "刷卡基础件"
+      ],
+      "visual": "star",
+      "note": "卡片加读卡器加零件",
+      "start": 75.658,
+      "end": 87.562,
+      "duration": 11.904
+    },
+    {
+      "index": 12,
+      "text": "课后问题来了：用你自己的话说，读卡器是干嘛的？说一句就行。",
+      "keywords": [
+        "课后想一想"
+      ],
+      "visual": "q",
+      "note": "考考你",
+      "start": 87.912,
+      "end": 94.2,
+      "duration": 6.288
+    }
+  ]
+}

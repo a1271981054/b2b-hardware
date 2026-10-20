@@ -1,0 +1,175 @@
+{
+  "total": 92.16,
+  "beats": [
+    {
+      "index": 0,
+      "text": "今天讲产品经理天天要写的三份文档：BRD、MRD、PRD。",
+      "keywords": [
+        "BRD",
+        "MRD",
+        "PRD"
+      ],
+      "visual": "teacher",
+      "note": "三份文档",
+      "start": 0.0,
+      "end": 5.976,
+      "duration": 5.976
+    },
+    {
+      "index": 1,
+      "text": "产品经理的很多活，最后都落在写文档上。",
+      "keywords": [
+        "写文档"
+      ],
+      "visual": "doc",
+      "note": "活都在文档里",
+      "start": 6.326,
+      "end": 10.382,
+      "duration": 4.056
+    },
+    {
+      "index": 2,
+      "text": "BRD是商业需求文档，给老板看的，回答为什么做。",
+      "keywords": [
+        "BRD"
+      ],
+      "visual": "brd",
+      "note": "为什么做",
+      "start": 10.732,
+      "end": 15.748,
+      "duration": 5.016
+    },
+    {
+      "index": 3,
+      "text": "市场机会值不值得、投入多少、能赚多少，都是BRD回答的。",
+      "keywords": [
+        "商业价值"
+      ],
+      "visual": "brd",
+      "note": "值不值得",
+      "start": 16.098,
+      "end": 21.762,
+      "duration": 5.664
+    },
+    {
+      "index": 4,
+      "text": "MRD是市场需求文档，给市场和产品团队看的，回答做给谁。",
+      "keywords": [
+        "MRD"
+      ],
+      "visual": "mrd",
+      "note": "做给谁",
+      "start": 22.112,
+      "end": 28.88,
+      "duration": 6.768
+    },
+    {
+      "index": 5,
+      "text": "目标客户、市场多大、竞品怎样、客户痛点，都是MRD回答的。",
+      "keywords": [
+        "目标客户"
+      ],
+      "visual": "mrd",
+      "note": "客户痛点",
+      "start": 29.23,
+      "end": 35.206,
+      "duration": 5.976
+    },
+    {
+      "index": 6,
+      "text": "PRD是产品需求文档，给研发、设计、测试看的，回答做什么、做到什么标准。",
+      "keywords": [
+        "PRD"
+      ],
+      "visual": "prd",
+      "note": "做什么做到多好",
+      "start": 35.556,
+      "end": 43.452,
+      "duration": 7.896
+    },
+    {
+      "index": 7,
+      "text": "功能、规格、验收标准，都是PRD回答的。",
+      "keywords": [
+        "验收标准"
+      ],
+      "visual": "prd",
+      "note": "验收标准",
+      "start": 43.802,
+      "end": 48.986,
+      "duration": 5.184
+    },
+    {
+      "index": 8,
+      "text": "用盖房子打比方。BRD是跟投资人讲，这块地值不值得盖、能赚多少。",
+      "keywords": [
+        "盖房子"
+      ],
+      "visual": "brd",
+      "note": "先讲值不值",
+      "start": 49.336,
+      "end": 56.584,
+      "duration": 7.248
+    },
+    {
+      "index": 9,
+      "text": "MRD是讲这房子卖给谁、他们需要什么。",
+      "keywords": [
+        "卖房"
+      ],
+      "visual": "mrd",
+      "note": "卖给谁",
+      "start": 56.934,
+      "end": 60.99,
+      "duration": 4.056
+    },
+    {
+      "index": 10,
+      "text": "PRD是施工图纸：墙多厚、门多宽、用什么砖。",
+      "keywords": [
+        "施工图"
+      ],
+      "visual": "prd",
+      "note": "施工图纸",
+      "start": 61.34,
+      "end": 66.524,
+      "duration": 5.184
+    },
+    {
+      "index": 11,
+      "text": "顺序是BRD到MRD到PRD，从为什么，到做给谁，到做什么。",
+      "keywords": [
+        "顺序"
+      ],
+      "visual": "doc",
+      "note": "为什么到做什么",
+      "start": 66.874,
+      "end": 74.602,
+      "duration": 7.728
+    },
+    {
+      "index": 12,
+      "text": "记住一句话：BRD回答为什么做，MRD回答做给谁，PRD回答做什么、做多好。",
+      "keywords": [
+        "一句话记住"
+      ],
+      "visual": "star",
+      "note": "三个问题",
+      "start": 74.952,
+      "end": 84.936,
+      "duration": 9.984
+    },
+    {
+      "index": 13,
+      "text": "课后想一想：老板问你，这个产品值不值得做，这是哪个文档要回答的问题？",
+      "keywords": [
+        "课后想一想"
+      ],
+      "visual": "q",
+      "note": "答案是BRD",
+      "start": 85.286,
+      "end": 92.534,
+      "duration": 7.248
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>第3课 为什么硬件要做认证</title>
+<style>
+@font-face { font-family: "Kaiti SC"; src: local("Kaiti SC"); }
+@font-face { font-family: "Songti SC"; src: local("Songti SC"); }
+@font-face { font-family: "STSong"; src: local("STSong"); }
+@font-face { font-family: "SimSun"; src: local("SimSun"); }
+@font-face { font-family: "Menlo"; src: local("Menlo"); }
+html, body { margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden; background: #F6F1E7; }
+* { box-sizing: border-box; }
+body { font-family: "Songti SC", "STSong", "SimSun", serif; color: #22242A; }
+.scene { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; overflow: hidden; background: #F6F1E7; z-index: 1; }
+#scene-000 { z-index: 2; }
+.scene:not(#scene-000) { opacity: 0; }
+.ghost { position: absolute; top: 70px; right: 70px; font-family: "Kaiti SC", "Songti SC", serif; font-size: 280px; font-weight: 900; color: #22242A; opacity: 0.05; line-height: 1; pointer-events: none; max-width: 720px; overflow: hidden; }
+.bar-a { position: absolute; top: 0; left: 0; width: 1920px; height: 10px; background: #0E6E66; }
+.bar-b { position: absolute; top: 178px; left: 96px; width: 84px; height: 8px; background: #E8871E; border-radius: 4px; }
+.tag { position: absolute; top: 52px; left: 96px; font-family: "Menlo", "Songti SC", monospace; font-size: 28px; font-weight: 700; color: #0E6E66; }
+.counter { position: absolute; top: 52px; right: 96px; font-family: "Menlo", monospace; font-size: 28px; font-weight: 700; color: #8A8272; }
+.keyword { position: absolute; top: 214px; left: 96px; width: 920px; font-family: "Kaiti SC", "Songti SC", serif; font-size: 92px; font-weight: 900; line-height: 1.14; color: #22242A; }
+.kw-accent { color: #0E6E66; }
+.kw-plus { color: #E8871E; }
+.note { position: absolute; top: 486px; left: 96px; width: 900px; font-size: 40px; line-height: 1.42; color: #3E4A52; }
+.vpanel { position: absolute; top: 220px; right: 120px; width: 700px; height: 560px; background: #F7E4C8; border: 4px solid #E8871E; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; }
+.vpanel.q { background: #F6DDD7; border-color: #C75B45; }
+.vpanel.final { background: #DDEAE4; border-color: #0E6E66; }
+.v-emoji { font-size: 150px; line-height: 1; }
+.v-label { font-family: "Kaiti SC", "Songti SC", serif; font-size: 40px; font-weight: 900; color: #22242A; }
+.v-note { font-size: 30px; color: #7A5B28; }
+.caption { position: absolute; left: 96px; right: 96px; bottom: 84px; min-height: 118px; padding: 22px 38px; background: #22242A; color: #F6F1E7; border-radius: 8px; display: flex; align-items: center; font-size: 34px; line-height: 1.5; z-index: 20; opacity: 0; }
+#progress { position: absolute; left: 96px; right: 96px; bottom: 42px; height: 6px; background: #D9CDB8; border-radius: 3px; z-index: 21; }
+#progress-fill { height: 6px; background: #0E6E66; border-radius: 3px; transform-origin: left center; transform: scaleX(0); }
+#outro { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; background: #22242A; opacity: 0; z-index: 50; }
+#outro-text { position: absolute; left: 96px; bottom: 160px; font-family: "Kaiti SC", "Songti SC", serif; font-size: 64px; color: #F6F1E7; opacity: 0; z-index: 51; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="lesson-003" data-width="1920" data-height="1080" data-start="0" data-duration="77.954">
+<audio id="narration" data-start="0" data-duration="76.704" data-track-index="0" src="narration.mp3" data-volume="1"></audio>
+<div class="scene" id="scene-000">
+  <div class="ghost">认证</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 为什么硬件要做认证</div>
+  <div class="counter">01 / 11</div>
+  <div class="keyword"><span class="">认证</span></div>
+  <div class="note">认证等于考试</div>
+  <div class="vpanel">
+    <div class="v-emoji">✅</div>
+    <div class="v-label">合格证</div>
+    <div class="v-note">认证等于考试</div>
+  </div>
+</div>
+<div class="scene" id="scene-001">
+  <div class="ghost">合格证</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 为什么硬件要做认证</div>
+  <div class="counter">02 / 11</div>
+  <div class="keyword"><span class="">合格证</span></div>
+  <div class="note">考过才发证</div>
+  <div class="vpanel">
+    <div class="v-emoji">✅</div>
+    <div class="v-label">合格证</div>
+    <div class="v-note">考过才发证</div>
+  </div>
+</div>
+<div class="scene" id="scene-002">
+  <div class="ghost">驾照</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 为什么硬件要做认证</div>
+  <div class="counter">03 / 11</div>
+  <div class="keyword"><span class="">驾照</span></div>
+  <div class="note">没有证不能上岗</div>
+  <div class="vpanel">
+    <div class="v-emoji">✅</div>
+    <div class="v-label">合格证</div>
+    <div class="v-note">没有证不能上岗</div>
+  </div>
+</div>
+<div class="scene" id="scene-003">
+  <div class="ghost">安全</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 为什么硬件要做认证</div>
+  <div class="counter">04 / 11</div>
+  <div class="keyword"><span class="">安全</span></div>
+  <div class="note">3C、CE、FCC都是安全考试</div>
+  <div class="vpanel">
+    <div class="v-emoji">✅</div>
+    <div class="v-label">合格证</div>
+    <div class="v-note">3C、CE、FCC都是安全考试</div>
+  </div>
+</div>
+<div class="scene" id="scene-004">
+  <div class="ghost">互通</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 为什么硬件要做认证</div>
+  <div class="counter">05 / 11</div>
+  <div class="keyword"><span class="">互通</span></div>
+  <div class="note">能跟别人家合作</div>
+  <div class="vpanel">
+    <div class="v-emoji">📶</div>
+    <div class="v-label">近距离对话</div>
+    <div class="v-note">能跟别人家合作</div>
+  </div>
+</div>
+<div class="scene" id="scene-005">
+  <div class="ghost">市场准入</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 为什么硬件要做认证</div>
+  <div class="counter">06 / 11</div>
+  <div class="keyword"><span class="">市场准入</span></div>
+  <div class="note">没证进不了市场</div>
+  <div class="vpanel">
+    <div class="v-emoji">🛒</div>
+    <div class="v-label">收银台</div>
+    <div class="v-note">没证进不了市场</div>
+  </div>
+</div>
+<div class="scene" id="scene-006">
+  <div class="ghost">项目计划</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 为什么硬件要做认证</div>
+  <div class="counter">07 / 11</div>
+  <div class="keyword"><span class="">项目计划</span></div>
+  <div class="note">时间和钱都要算</div>
+  <div class="vpanel">
+    <div class="v-emoji">📄</div>
+    <div class="v-label">产品文档</div>
+    <div class="v-note">时间和钱都要算</div>
+  </div>
+</div>
+<div class="scene" id="scene-007">
+  <div class="ghost">踩坑</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 为什么硬件要做认证</div>
+  <div class="counter">08 / 11</div>
+  <div class="keyword"><span class="">踩坑</span></div>
+  <div class="note">做完也白做</div>
+  <div class="vpanel q">
+    <div class="v-emoji">❓</div>
+    <div class="v-label">课后想一想</div>
+    <div class="v-note">做完也白做</div>
+  </div>
+</div>
+<div class="scene" id="scene-008">
+  <div class="ghost">护城河</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 为什么硬件要做认证</div>
+  <div class="counter">09 / 11</div>
+  <div class="keyword"><span class="">护城河</span></div>
+  <div class="note">证多难被替代</div>
+  <div class="vpanel">
+    <div class="v-emoji">✅</div>
+    <div class="v-label">合格证</div>
+    <div class="v-note">证多难被替代</div>
+  </div>
+</div>
+<div class="scene" id="scene-009">
+  <div class="ghost">一句话记住</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 为什么硬件要做认证</div>
+  <div class="counter">10 / 11</div>
+  <div class="keyword"><span class="">一句话记住</span></div>
+  <div class="note">考过试才能卖</div>
+  <div class="vpanel final">
+    <div class="v-emoji">⭐</div>
+    <div class="v-label">一句话记住</div>
+    <div class="v-note">考过试才能卖</div>
+  </div>
+</div>
+<div class="scene" id="scene-010">
+  <div class="ghost">课后想一想</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 为什么硬件要做认证</div>
+  <div class="counter">11 / 11</div>
+  <div class="keyword"><span class="">课后想一想</span></div>
+  <div class="note">一句就行</div>
+  <div class="vpanel q">
+    <div class="v-emoji">❓</div>
+    <div class="v-label">课后想一想</div>
+    <div class="v-note">一句就行</div>
+  </div>
+</div>
+<div class="caption" id="cap-000">今天回答一个问题：为什么</div>
+<div class="caption" id="cap-001">硬件要做认证？先记住，认</div>
+<div class="caption" id="cap-002">证就是考试。</div>
+<div class="caption" id="cap-003">让一个独立、有公信力的机</div>
+<div class="caption" id="cap-004">构，来考你的产品。考过了</div>
+<div class="caption" id="cap-005">，发一张合格证。</div>
+<div class="caption" id="cap-006">就像人开车要考驾照，食品</div>
+<div class="caption" id="cap-007">要拿合格证，硬件产品也要</div>
+<div class="caption" id="cap-008">上岗证。</div>
+<div class="caption" id="cap-009">认证第一件事：安全。证明</div>
+<div class="caption" id="cap-010">产品不会起火、不会伤人、</div>
+<div class="caption" id="cap-011">不会辐射超标。</div>
+<div class="caption" id="cap-012">第二件事：互通。证明你的</div>
+<div class="caption" id="cap-013">产品能跟别家的卡、别家的</div>
+<div class="caption" id="cap-014">机器配合。</div>
+<div class="caption" id="cap-015">第三件事：市场准入。没有</div>
+<div class="caption" id="cap-016">认证，银行不收，国家不让</div>
+<div class="caption" id="cap-017">卖，客户不敢买。</div>
+<div class="caption" id="cap-018">为什么产品经理必须懂？因</div>
+<div class="caption" id="cap-019">为认证要花几个月时间和不</div>
+<div class="caption" id="cap-020">少钱，必须排进项目计划。</div>
+<div class="caption" id="cap-021">认证没排进去，产品做完了</div>
+<div class="caption" id="cap-022">也上不了市，项目就砸了。</div>
+<div class="caption" id="cap-023">认证还是硬件公司的护城河</div>
+<div class="caption" id="cap-024">。ACS带一堆认证，别人</div>
+<div class="caption" id="cap-025">想替代都难。</div>
+<div class="caption" id="cap-026">记住一句话：硬件产品不是</div>
+<div class="caption" id="cap-027">做出来就能卖，是考过试才</div>
+<div class="caption" id="cap-028">能卖。</div>
+<div class="caption" id="cap-029">课后想一想：为什么没有认</div>
+<div class="caption" id="cap-030">证的读卡器，银行不敢用？</div>
+<div id="progress"><div id="progress-fill"></div></div>
+<div id="outro"></div>
+<div id="outro-text">这节课讲完啦，下次见</div>
+</div>
+<script src="vendor/gsap.min.js"></script>
+<script>
+window.__timelines = window.__timelines || {};
+var tl = gsap.timeline({ paused: true });
+var TOTAL = 77.954;
+tl.fromTo("#progress-fill", {scaleX:0}, {scaleX:1, duration:TOTAL, ease:"none"}, 0);
+tl.fromTo("#scene-000 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 0.0+0.10);
+tl.fromTo("#scene-000 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 0.0+0.12);
+tl.fromTo("#scene-000 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 0.0+0.18);
+tl.fromTo("#scene-000 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 0.0+0.24);
+tl.fromTo("#scene-000 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 0.0+0.34);
+tl.fromTo("#scene-000 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(9.008000000000001/1.8)-1), ease:"sine.inOut"}, 0.0);
+tl.fromTo("#scene-001 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 8.558+0.10);
+tl.fromTo("#scene-001 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 8.558+0.12);
+tl.fromTo("#scene-001 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 8.558+0.18);
+tl.fromTo("#scene-001 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 8.558+0.24);
+tl.fromTo("#scene-001 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 8.558+0.34);
+tl.fromTo("#scene-001 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.944/1.8)-1), ease:"sine.inOut"}, 8.558);
+tl.fromTo("#scene-002 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 15.052+0.10);
+tl.fromTo("#scene-002 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 15.052+0.12);
+tl.fromTo("#scene-002 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 15.052+0.18);
+tl.fromTo("#scene-002 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 15.052+0.24);
+tl.fromTo("#scene-002 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 15.052+0.34);
+tl.fromTo("#scene-002 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(7.736/1.8)-1), ease:"sine.inOut"}, 15.052);
+tl.fromTo("#scene-003 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 22.338+0.10);
+tl.fromTo("#scene-003 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 22.338+0.12);
+tl.fromTo("#scene-003 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 22.338+0.18);
+tl.fromTo("#scene-003 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 22.338+0.24);
+tl.fromTo("#scene-003 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 22.338+0.34);
+tl.fromTo("#scene-003 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(8.384/1.8)-1), ease:"sine.inOut"}, 22.338);
+tl.fromTo("#scene-004 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 30.272+0.10);
+tl.fromTo("#scene-004 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 30.272+0.12);
+tl.fromTo("#scene-004 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 30.272+0.18);
+tl.fromTo("#scene-004 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 30.272+0.24);
+tl.fromTo("#scene-004 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 30.272+0.34);
+tl.fromTo("#scene-004 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.775999999999999/1.8)-1), ease:"sine.inOut"}, 30.272);
+tl.fromTo("#scene-005 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 36.598+0.10);
+tl.fromTo("#scene-005 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 36.598+0.12);
+tl.fromTo("#scene-005 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 36.598+0.18);
+tl.fromTo("#scene-005 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 36.598+0.24);
+tl.fromTo("#scene-005 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 36.598+0.34);
+tl.fromTo("#scene-005 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(8.528000000000002/1.8)-1), ease:"sine.inOut"}, 36.598);
+tl.fromTo("#scene-006 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 44.676+0.10);
+tl.fromTo("#scene-006 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 44.676+0.12);
+tl.fromTo("#scene-006 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 44.676+0.18);
+tl.fromTo("#scene-006 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 44.676+0.24);
+tl.fromTo("#scene-006 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 44.676+0.34);
+tl.fromTo("#scene-006 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(8.383999999999997/1.8)-1), ease:"sine.inOut"}, 44.676);
+tl.fromTo("#scene-007 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 52.61+0.10);
+tl.fromTo("#scene-007 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 52.61+0.12);
+tl.fromTo("#scene-007 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 52.61+0.18);
+tl.fromTo("#scene-007 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 52.61+0.24);
+tl.fromTo("#scene-007 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 52.61+0.34);
+tl.fromTo("#scene-007 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.464000000000001/1.8)-1), ease:"sine.inOut"}, 52.61);
+tl.fromTo("#scene-008 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 58.624+0.10);
+tl.fromTo("#scene-008 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 58.624+0.12);
+tl.fromTo("#scene-008 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 58.624+0.18);
+tl.fromTo("#scene-008 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 58.624+0.24);
+tl.fromTo("#scene-008 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 58.624+0.34);
+tl.fromTo("#scene-008 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(7.424000000000002/1.8)-1), ease:"sine.inOut"}, 58.624);
+tl.fromTo("#scene-009 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 65.598+0.10);
+tl.fromTo("#scene-009 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 65.598+0.12);
+tl.fromTo("#scene-009 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 65.598+0.18);
+tl.fromTo("#scene-009 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 65.598+0.24);
+tl.fromTo("#scene-009 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 65.598+0.34);
+tl.fromTo("#scene-009 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.944000000000005/1.8)-1), ease:"sine.inOut"}, 65.598);
+tl.fromTo("#scene-010 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 72.092+0.10);
+tl.fromTo("#scene-010 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 72.092+0.12);
+tl.fromTo("#scene-010 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 72.092+0.18);
+tl.fromTo("#scene-010 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 72.092+0.24);
+tl.fromTo("#scene-010 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 72.092+0.34);
+tl.fromTo("#scene-010 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(5.647999999999999/1.8)-1), ease:"sine.inOut"}, 72.092);
+tl.to("#scene-000", {opacity:0, duration:0.35, ease:"power2.inOut"}, 8.208);
+tl.fromTo("#scene-001", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 8.208+0.06);
+tl.to("#scene-001", {opacity:0, duration:0.35, ease:"power2.inOut"}, 14.702);
+tl.fromTo("#scene-002", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 14.702+0.06);
+tl.to("#scene-002", {opacity:0, duration:0.35, ease:"power2.inOut"}, 21.988);
+tl.fromTo("#scene-003", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 21.988+0.06);
+tl.to("#scene-003", {opacity:0, duration:0.35, ease:"power2.inOut"}, 29.921999999999997);
+tl.fromTo("#scene-004", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 29.921999999999997+0.06);
+tl.to("#scene-004", {opacity:0, duration:0.35, ease:"power2.inOut"}, 36.248);
+tl.fromTo("#scene-005", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 36.248+0.06);
+tl.to("#scene-005", {opacity:0, duration:0.35, ease:"power2.inOut"}, 44.326);
+tl.fromTo("#scene-006", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 44.326+0.06);
+tl.to("#scene-006", {opacity:0, duration:0.35, ease:"power2.inOut"}, 52.26);
+tl.fromTo("#scene-007", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 52.26+0.06);
+tl.to("#scene-007", {opacity:0, duration:0.35, ease:"power2.inOut"}, 58.274);
+tl.fromTo("#scene-008", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 58.274+0.06);
+tl.to("#scene-008", {opacity:0, duration:0.35, ease:"power2.inOut"}, 65.248);
+tl.fromTo("#scene-009", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 65.248+0.06);
+tl.to("#scene-009", {opacity:0, duration:0.35, ease:"power2.inOut"}, 71.742);
+tl.fromTo("#scene-010", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 71.742+0.06);
+tl.fromTo("#cap-000", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 0.12+0.05);
+tl.to("#cap-000", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 3.307-0.14);
+tl.set("#cap-000", {opacity:0, visibility:"hidden"}, 3.307);
+tl.fromTo("#cap-001", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 3.307+0.05);
+tl.to("#cap-001", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 6.494-0.14);
+tl.set("#cap-001", {opacity:0, visibility:"hidden"}, 6.494);
+tl.fromTo("#cap-002", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 6.494+0.05);
+tl.to("#cap-002", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 8.088-0.14);
+tl.set("#cap-002", {opacity:0, visibility:"hidden"}, 8.088);
+tl.fromTo("#cap-003", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 8.678+0.05);
+tl.to("#cap-003", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 10.892-0.14);
+tl.set("#cap-003", {opacity:0, visibility:"hidden"}, 10.892);
+tl.fromTo("#cap-004", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 10.892+0.05);
+tl.to("#cap-004", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 13.106-0.14);
+tl.set("#cap-004", {opacity:0, visibility:"hidden"}, 13.106);
+tl.fromTo("#cap-005", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 13.106+0.05);
+tl.to("#cap-005", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 14.582-0.14);
+tl.set("#cap-005", {opacity:0, visibility:"hidden"}, 14.582);
+tl.fromTo("#cap-006", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 15.172+0.05);
+tl.to("#cap-006", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 18.042-0.14);
+tl.set("#cap-006", {opacity:0, visibility:"hidden"}, 18.042);
+tl.fromTo("#cap-007", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 18.042+0.05);
+tl.to("#cap-007", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 20.911-0.14);
+tl.set("#cap-007", {opacity:0, visibility:"hidden"}, 20.911);
+tl.fromTo("#cap-008", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 20.911+0.05);
+tl.to("#cap-008", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 21.868-0.14);
+tl.set("#cap-008", {opacity:0, visibility:"hidden"}, 21.868);
+tl.fromTo("#cap-009", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 22.458+0.05);
+tl.to("#cap-009", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 25.301-0.14);
+tl.set("#cap-009", {opacity:0, visibility:"hidden"}, 25.301);
+tl.fromTo("#cap-010", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 25.301+0.05);
+tl.to("#cap-010", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 28.144-0.14);
+tl.set("#cap-010", {opacity:0, visibility:"hidden"}, 28.144);
+tl.fromTo("#cap-011", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 28.144+0.05);
+tl.to("#cap-011", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 29.802-0.14);
+tl.set("#cap-011", {opacity:0, visibility:"hidden"}, 29.802);
+tl.fromTo("#cap-012", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 30.392+0.05);
+tl.to("#cap-012", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 32.766-0.14);
+tl.set("#cap-012", {opacity:0, visibility:"hidden"}, 32.766);
+tl.fromTo("#cap-013", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 32.766+0.05);
+tl.to("#cap-013", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 35.139-0.14);
+tl.set("#cap-013", {opacity:0, visibility:"hidden"}, 35.139);
+tl.fromTo("#cap-014", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 35.139+0.05);
+tl.to("#cap-014", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 36.128-0.14);
+tl.set("#cap-014", {opacity:0, visibility:"hidden"}, 36.128);
+tl.fromTo("#cap-015", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 36.718+0.05);
+tl.to("#cap-015", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 39.526-0.14);
+tl.set("#cap-015", {opacity:0, visibility:"hidden"}, 39.526);
+tl.fromTo("#cap-016", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 39.526+0.05);
+tl.to("#cap-016", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 42.334-0.14);
+tl.set("#cap-016", {opacity:0, visibility:"hidden"}, 42.334);
+tl.fromTo("#cap-017", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 42.334+0.05);
+tl.to("#cap-017", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 44.206-0.14);
+tl.set("#cap-017", {opacity:0, visibility:"hidden"}, 44.206);
+tl.fromTo("#cap-018", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 44.796+0.05);
+tl.to("#cap-018", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 47.244-0.14);
+tl.set("#cap-018", {opacity:0, visibility:"hidden"}, 47.244);
+tl.fromTo("#cap-019", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 47.244+0.05);
+tl.to("#cap-019", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 49.692-0.14);
+tl.set("#cap-019", {opacity:0, visibility:"hidden"}, 49.692);
+tl.fromTo("#cap-020", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 49.692+0.05);
+tl.to("#cap-020", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 52.14-0.14);
+tl.set("#cap-020", {opacity:0, visibility:"hidden"}, 52.14);
+tl.fromTo("#cap-021", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 52.73+0.05);
+tl.to("#cap-021", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 55.442-0.14);
+tl.set("#cap-021", {opacity:0, visibility:"hidden"}, 55.442);
+tl.fromTo("#cap-022", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 55.442+0.05);
+tl.to("#cap-022", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 58.154-0.14);
+tl.set("#cap-022", {opacity:0, visibility:"hidden"}, 58.154);
+tl.fromTo("#cap-023", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 58.744+0.05);
+tl.to("#cap-023", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 61.298-0.14);
+tl.set("#cap-023", {opacity:0, visibility:"hidden"}, 61.298);
+tl.fromTo("#cap-024", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 61.298+0.05);
+tl.to("#cap-024", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 63.851-0.14);
+tl.set("#cap-024", {opacity:0, visibility:"hidden"}, 63.851);
+tl.fromTo("#cap-025", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 63.851+0.05);
+tl.to("#cap-025", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 65.128-0.14);
+tl.set("#cap-025", {opacity:0, visibility:"hidden"}, 65.128);
+tl.fromTo("#cap-026", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 65.718+0.05);
+tl.to("#cap-026", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 68.342-0.14);
+tl.set("#cap-026", {opacity:0, visibility:"hidden"}, 68.342);
+tl.fromTo("#cap-027", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 68.342+0.05);
+tl.to("#cap-027", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 70.966-0.14);
+tl.set("#cap-027", {opacity:0, visibility:"hidden"}, 70.966);
+tl.fromTo("#cap-028", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 70.966+0.05);
+tl.to("#cap-028", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 71.622-0.14);
+tl.set("#cap-028", {opacity:0, visibility:"hidden"}, 71.622);
+tl.fromTo("#cap-029", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 72.212+0.05);
+tl.to("#cap-029", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 74.516-0.14);
+tl.set("#cap-029", {opacity:0, visibility:"hidden"}, 74.516);
+tl.fromTo("#cap-030", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 74.516+0.05);
+tl.to("#cap-030", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 76.82-0.14);
+tl.set("#cap-030", {opacity:0, visibility:"hidden"}, 76.82);
+tl.to("#outro", {opacity:1, duration:0.7, ease:"power1.in"}, TOTAL-0.95);
+tl.fromTo("#outro-text", {opacity:0, y:24}, {opacity:1, y:0, duration:0.5, ease:"power2.out"}, TOTAL-0.7);
+tl.set("#scene-010", {opacity:0, visibility:"hidden"}, TOTAL-0.2);
+window.__timelines["lesson-003"] = tl;
+</script>
+</body>
+</html>

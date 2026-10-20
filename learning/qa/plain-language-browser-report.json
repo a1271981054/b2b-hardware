@@ -1,0 +1,516 @@
+{
+  "termEscape": {
+    "focusReturned": true,
+    "lessonOpen": true,
+    "utilityOpen": false
+  },
+  "calculator": {
+    "contribution": "850",
+    "newIntro": true,
+    "price": "1750",
+    "units": "330"
+  },
+  "quiz": {
+    "correct": "这个判断有依据。\n\n权限要对应角色、操作和设备生命周期，并有可验证机制。",
+    "persisted": true,
+    "finalFeedback": "这个判断有依据。\n\n查看状态和修改配置需要的权限不同。让每个人只使用工作所需且已获准的功能，才能减少误操作和越权。"
+  },
+  "mobile": {
+    "bodyWidth": 375,
+    "chapterWidth": 343,
+    "figures": 2,
+    "nestedButtons": 0,
+    "tableCount": 1,
+    "termButtons": 2,
+    "viewport": 390,
+    "termDialog": {
+      "open": true,
+      "overflow": false,
+      "text": "毛利率收入减去按约定方式计算的销售成本，再除以收入。通常还没有扣完所有经营费用，所以不是净利润率。明白了，继续读",
+      "width": 370
+    }
+  },
+  "topics": [
+    {
+      "id": "role",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "产品经理先弄清客户遇到了什么麻烦，再和团队商量做什么产品、做到什么程度，最后确认交给客户的东西确实能解决问题。",
+      "sections": 7
+    },
+    {
+      "id": "card",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "卡片保存或处理信息，读卡器负责和卡片交流，后台系统再决定这次刷卡能做什么。先分清这三件事，就不会把所有能力都算到读卡器头上。",
+      "sections": 6
+    },
+    {
+      "id": "nfc",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "NFC 帮两个靠得很近的设备交换信息；EMV 规定芯片支付相关的做法。能靠近读到信息，和能够完成银行卡付款，是两件需要分别确认的事。",
+      "sections": 6
+    },
+    {
+      "id": "scenes",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "同一台设备，放在不同地方、交给不同的人，要求可能完全不同。先讲清怎么用，才能知道应该做到多快、多稳、能承受什么环境。",
+      "sections": 6
+    },
+    {
+      "id": "architecture",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "一套硬件产品常常要靠探头、设备、网络、软件和人一起工作。先顺着一件具体的事走一遍，就容易看懂它们各自负责什么。",
+      "sections": 6
+    },
+    {
+      "id": "cert",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "认证和相关测试，是为了确认产品符合目标市场或行业的要求。先知道卖到哪里、拿来干什么，再判断要检查哪些项目。",
+      "sections": 6
+    },
+    {
+      "id": "docs",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "写产品文档，是为了让接手的人不用反复猜：为什么做、这次做什么、怎样算做好。文档名字可以不同，这几个问题不能漏。",
+      "sections": 6
+    },
+    {
+      "id": "market",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "市场研究先回答一个很实际的问题：哪些客户经常遇到这个麻烦，而且可能愿意花钱解决？先找到这些人，再去估算市场有多大。",
+      "sections": 6
+    },
+    {
+      "id": "jtbd",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "客户买设备，是想把一件事做得更好。先弄懂他要完成什么、现在卡在哪里，再讨论设备该加什么功能。",
+      "sections": 6
+    },
+    {
+      "id": "value",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "客户说产品有价值，通常是因为它帮自己少花了钱、少浪费了时间、少出了错，或者多做成了生意。要把这种帮助说清楚。",
+      "sections": 6
+    },
+    {
+      "id": "buyers",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "用设备的人、付钱的人和同意采购的人，可能不是同一个人。卖给公司时，要把这几个人分别找出来。",
+      "sections": 6
+    },
+    {
+      "id": "interview",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "访谈就是请客户把真实经历讲清楚。你先听他最近做过什么，再判断问题，不要急着介绍自己的产品。",
+      "sections": 6
+    },
+    {
+      "id": "competition",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "客户不买你的产品，也总有一个现在的办法：买别家的设备、继续用旧系统，甚至让人手工处理。这些都需要拿来比较。",
+      "sections": 6
+    },
+    {
+      "id": "pilot",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "试点就是先在小范围真的用一用，看看产品能不能解决问题，再决定要不要继续花钱扩大。开始前，就要约好怎样算有效。",
+      "sections": 7
+    },
+    {
+      "id": "opportunity",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "机会评估就是比较：眼前这几件生意，哪一件更值得先试？分数帮助大家讲清理由，不替你保证一定赚钱。",
+      "sections": 6
+    },
+    {
+      "id": "industry",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "选行业，就是决定先服务哪一类客户。市场大不大要看，我们现在找不找得到客户、做不做得出来，也要看。",
+      "sections": 6
+    },
+    {
+      "id": "model",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "商业模式说白了就是：谁为什么付钱、什么时候付、我们收了钱以后要一直做哪些事。能收钱，还得能长期把承诺做到。",
+      "sections": 6
+    },
+    {
+      "id": "pricing",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "定价不只是给产品贴一个数字。客户最后付多少、公司实际留下多少、卖出去后还要花多少，都要逐步算清楚。",
+      "sections": 6
+    },
+    {
+      "id": "tco",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "买设备花的钱只是开头。装起来、联网、维护、坏了停工，也可能要花钱。把准备使用的这几年一起算，才知道哪个方案更省。",
+      "sections": 7
+    },
+    {
+      "id": "economics",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "先算每多卖一台，扣掉随这台发生的费用后能剩多少，再看这些钱能不能填平前期投入。不要把销售额当成利润。",
+      "sections": 6
+    },
+    {
+      "id": "caseplan",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "商业论证就是把“这件事为什么值得花钱做”讲清楚。既写可能赚多少，也写哪些判断还没确认，以及不顺利时怎么停下来。",
+      "sections": 6
+    },
+    {
+      "id": "priority",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "想做的功能通常比时间和人手多。排优先级，就是先说清这次最重要的目标，再决定哪些先做、哪些可以等。",
+      "sections": 6
+    },
+    {
+      "id": "moscow",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "MoSCoW 是把这一次的需求分成四类：必须做、应该做、有空再做、本次不做。关键是解释为什么这样分。",
+      "sections": 6
+    },
+    {
+      "id": "rice",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "RICE 是一种比较功能先后顺序的办法：能帮到多少人、帮助有多大、我们有多确定，合起来再除以要花多少工夫。",
+      "sections": 6
+    },
+    {
+      "id": "kano",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "有些功能少了就会挨骂，有些做得越好越满意，还有些会让人惊喜。Kano 帮你区分这几种反应。",
+      "sections": 6
+    },
+    {
+      "id": "wsjf",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "有些事晚做一天损失很大，有些可以等。WSJF 把“等下去的代价”和“要花多少工夫”放在一起比较。",
+      "sections": 6
+    },
+    {
+      "id": "spec",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "规格就是把“想要好用”写成大家能一起检查的要求：在什么条件下，设备要做什么，做到什么程度才算合格。",
+      "sections": 6
+    },
+    {
+      "id": "roadmap",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "路线图就是告诉大家：我们先解决什么问题，接着做什么，再往后可能做什么。越远的计划，通常越需要保留调整空间。",
+      "sections": 6
+    },
+    {
+      "id": "bom",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "BOM 就是一台产品需要哪些零件、每种用几个的清单。看懂它，才能进一步讨论成本、采购和换料。",
+      "sections": 6
+    },
+    {
+      "id": "nre",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "做硬件常常要先花一笔开发、模具或测试工具的钱，产品还没卖就得付。估算每台成本时，也要考虑这笔前期投入。",
+      "sections": 6
+    },
+    {
+      "id": "oem",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "找工厂合作，不只是问“代工多少钱”。设计由谁掌握、出了问题谁改、以后能不能换供应商，都要提前谈清楚。",
+      "sections": 6
+    },
+    {
+      "id": "interfaces",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "接口可以先理解成两个东西交接的位置。除了插头能插上，还要说明电怎么接、消息怎么发、收到后是什么意思。",
+      "sections": 6
+    },
+    {
+      "id": "connectivity",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "看设备能不能互通，可以按四步问：接得上吗，消息传得到吗，内容读得懂吗，客户的事情最后做成了吗？",
+      "sections": 6
+    },
+    {
+      "id": "power",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "设备既要有足够的电，也要把热散出去。平均耗电不高，不代表启动或上传的一瞬间也只需要那么一点电。",
+      "sections": 6
+    },
+    {
+      "id": "security",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "设备交给客户后，要管好谁能进来、能做什么、信息怎样保护，出了问题怎样发现和处理。安全不是只加一个密码就结束了。",
+      "sections": 6
+    },
+    {
+      "id": "firmware",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "固件就是设备里控制它工作的程序。升级不只是把文件下载下来，还要装好、重新启动，并确认设备还能正常工作。",
+      "sections": 6
+    },
+    {
+      "id": "feasibility",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "可行性检查，就是先试最可能让整个方案做不下去的地方。不要把简单的部分都做好了，才发现关键一步根本行不通。",
+      "sections": 6
+    },
+    {
+      "id": "sourcing",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "买零件不仅要问多少钱，还要问什么时候到、能不能一直供、出了问题谁处理。便宜但经常断货，也可能让整个产品交不了货。",
+      "sections": 6
+    },
+    {
+      "id": "stages",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "一台手工样机能工作，到工厂能稳定做出很多台，中间还有几步要走。每一步都是在回答一个不同的问题。",
+      "sections": 6
+    },
+    {
+      "id": "dfm",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "样机能用，还要让工厂容易装对、容易检查，坏了也方便修。这些问题越早发现，后面返工越少。",
+      "sections": 6
+    },
+    {
+      "id": "gates",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "阶段评审，就是在继续花更多钱、进入下一步之前，大家一起确认：该检查的检查了吗，剩下的问题能不能接受？",
+      "sections": 6
+    },
+    {
+      "id": "ctq",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "CTQ 是关键质量特性：那些一旦做不好，就会明显影响客户使用、产品安全或重要要求的地方。先找出它们，再重点管。",
+      "sections": 6
+    },
+    {
+      "id": "fmea",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "FMEA 可以先理解成提前讨论“可能怎么坏、坏了会怎样、怎样尽量避免”。重点是安排改进，而不是把表格分数填满。",
+      "sections": 6
+    },
+    {
+      "id": "reliability",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "可靠性关心的是：设备在约定的环境里，用了一段时间之后，还能不能完成它该做的事。刚开机能用，只是开始。",
+      "sections": 6
+    },
+    {
+      "id": "control",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "质量控制就是让生产尽量少出错，并在出错时及时发现、及时处理。不能只等产品全部做好后再挑坏的。",
+      "sections": 6
+    },
+    {
+      "id": "yield",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "良率是在一组产品里有多少通过了检查。但第一次就通过，和修了几次才通过，反映的是不同情况。",
+      "sections": 6
+    },
+    {
+      "id": "spc",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "把生产中的测量结果按时间排起来，能看出变化。SPC 就是在帮助你分清：这只是平时的小波动，还是过程出现了值得调查的新变化。",
+      "sections": 6
+    },
+    {
+      "id": "isolate",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "发现一台有问题时，先把可能一起受影响的产品管住，别让它们继续出货。再查哪些真的有问题，哪些可以恢复使用。",
+      "sections": 6
+    },
+    {
+      "id": "rootcause",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "找根因，就是用检查和对照找到为什么会出问题，并确认改掉这个原因后问题确实减少。猜得像，还不够。",
+      "sections": 6
+    },
+    {
+      "id": "ecn",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "产品改了一个零件或程序，生产、库存、维修和客户资料都可能受影响。ECN 是把这次正式变更通知给相关人员，并安排好切换。",
+      "sections": 6
+    },
+    {
+      "id": "launch",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "上市不是把网页和海报发出去就结束。客户从询价、购买到安装、使用、报修，每一步都要有人能接住。",
+      "sections": 6
+    },
+    {
+      "id": "channel",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "渠道伙伴可能帮你找客户、卖货、安装或维修。先弄清他实际做哪些工作，再谈给他多少利润和怎样合作。",
+      "sections": 6
+    },
+    {
+      "id": "inventory",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "库存是已经花钱买来、暂时还没变成客户付款的东西。备得少可能交不了货，备得太多又会把钱压住。",
+      "sections": 6
+    },
+    {
+      "id": "rma",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "RMA 常用来指退货或返修的申请和处理流程。对客户来说，要尽快恢复使用；对团队来说，还要弄懂为什么坏。",
+      "sections": 6
+    },
+    {
+      "id": "metrics",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "指标就是帮助你看清产品表现的数字。先想知道哪件事有没有改善，再决定记录什么，不要为了报表好看而堆数字。",
+      "sections": 6
+    },
+    {
+      "id": "lifecycle",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "产品从开始销售到最终停用，会经历不同阶段。零件停供、软件停止维护或客户需要变化时，都要提前准备后面的安排。",
+      "sections": 6
+    },
+    {
+      "id": "acs",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "读卡器公司的产品，往往要成为客户整套设备的一部分。客户不仅需要一块能读卡的硬件，也需要把它顺利接起来的办法。",
+      "sections": 6
+    },
+    {
+      "id": "gateway",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "冷链网关可以先理解成冷库里的信息中转站：收探头的数据，交给平台，再帮助人发现和处理异常。整个项目要从客户的问题开始。",
+      "sections": 6
+    },
+    {
+      "id": "nfc-case",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "刷卡问题要分三步处理：先管住可能有问题的货，再用测试查原因，最后把有效的改动真正用到生产和售后。",
+      "sections": 6
+    },
+    {
+      "id": "answer",
+      "figures": 2,
+      "nestedButtons": 0,
+      "overflow": false,
+      "principle": "讲项目经历时，让别人听懂你遇到什么事、做了什么选择、为什么这么选、结果怎样。不要靠缩写和大词显得专业。",
+      "sections": 6
+    }
+  ],
+  "console": []
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "file": "batch-b-00.jpg",
+    "ids": [
+      "bom-case",
+      "caseplan-case",
+      "caseplan-concept",
+      "kano-case"
+    ]
+  },
+  {
+    "file": "batch-b-01.jpg",
+    "ids": [
+      "kano-concept",
+      "moscow-case",
+      "moscow-concept",
+      "priority-case"
+    ]
+  },
+  {
+    "file": "batch-b-02.jpg",
+    "ids": [
+      "priority-concept",
+      "rice-case",
+      "rice-concept",
+      "roadmap-case"
+    ]
+  },
+  {
+    "file": "batch-b-03.jpg",
+    "ids": [
+      "roadmap-concept",
+      "tco-concept",
+      "value-case",
+      "value-concept"
+    ]
+  },
+  {
+    "file": "batch-b-04.jpg",
+    "ids": [
+      "wsjf-case"
+    ]
+  }
+]

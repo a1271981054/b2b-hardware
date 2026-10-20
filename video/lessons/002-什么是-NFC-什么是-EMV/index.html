@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>第2课 什么是 NFC、什么是 EMV</title>
+<style>
+@font-face { font-family: "Kaiti SC"; src: local("Kaiti SC"); }
+@font-face { font-family: "Songti SC"; src: local("Songti SC"); }
+@font-face { font-family: "STSong"; src: local("STSong"); }
+@font-face { font-family: "SimSun"; src: local("SimSun"); }
+@font-face { font-family: "Menlo"; src: local("Menlo"); }
+html, body { margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden; background: #F6F1E7; }
+* { box-sizing: border-box; }
+body { font-family: "Songti SC", "STSong", "SimSun", serif; color: #22242A; }
+.scene { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; overflow: hidden; background: #F6F1E7; z-index: 1; }
+#scene-000 { z-index: 2; }
+.scene:not(#scene-000) { opacity: 0; }
+.ghost { position: absolute; top: 70px; right: 70px; font-family: "Kaiti SC", "Songti SC", serif; font-size: 280px; font-weight: 900; color: #22242A; opacity: 0.05; line-height: 1; pointer-events: none; max-width: 720px; overflow: hidden; }
+.bar-a { position: absolute; top: 0; left: 0; width: 1920px; height: 10px; background: #0E6E66; }
+.bar-b { position: absolute; top: 178px; left: 96px; width: 84px; height: 8px; background: #E8871E; border-radius: 4px; }
+.tag { position: absolute; top: 52px; left: 96px; font-family: "Menlo", "Songti SC", monospace; font-size: 28px; font-weight: 700; color: #0E6E66; }
+.counter { position: absolute; top: 52px; right: 96px; font-family: "Menlo", monospace; font-size: 28px; font-weight: 700; color: #8A8272; }
+.keyword { position: absolute; top: 214px; left: 96px; width: 920px; font-family: "Kaiti SC", "Songti SC", serif; font-size: 92px; font-weight: 900; line-height: 1.14; color: #22242A; }
+.kw-accent { color: #0E6E66; }
+.kw-plus { color: #E8871E; }
+.note { position: absolute; top: 486px; left: 96px; width: 900px; font-size: 40px; line-height: 1.42; color: #3E4A52; }
+.vpanel { position: absolute; top: 220px; right: 120px; width: 700px; height: 560px; background: #F7E4C8; border: 4px solid #E8871E; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; }
+.vpanel.q { background: #F6DDD7; border-color: #C75B45; }
+.vpanel.final { background: #DDEAE4; border-color: #0E6E66; }
+.v-emoji { font-size: 150px; line-height: 1; }
+.v-label { font-family: "Kaiti SC", "Songti SC", serif; font-size: 40px; font-weight: 900; color: #22242A; }
+.v-note { font-size: 30px; color: #7A5B28; }
+.caption { position: absolute; left: 96px; right: 96px; bottom: 84px; min-height: 118px; padding: 22px 38px; background: #22242A; color: #F6F1E7; border-radius: 8px; display: flex; align-items: center; font-size: 34px; line-height: 1.5; z-index: 20; opacity: 0; }
+#progress { position: absolute; left: 96px; right: 96px; bottom: 42px; height: 6px; background: #D9CDB8; border-radius: 3px; z-index: 21; }
+#progress-fill { height: 6px; background: #0E6E66; border-radius: 3px; transform-origin: left center; transform: scaleX(0); }
+#outro { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; background: #22242A; opacity: 0; z-index: 50; }
+#outro-text { position: absolute; left: 96px; bottom: 160px; font-family: "Kaiti SC", "Songti SC", serif; font-size: 64px; color: #F6F1E7; opacity: 0; z-index: 51; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="lesson-002" data-width="1920" data-height="1080" data-start="0" data-duration="92.858">
+<audio id="narration" data-start="0" data-duration="91.608" data-track-index="0" src="narration.mp3" data-volume="1"></audio>
+<div class="scene" id="scene-000">
+  <div class="ghost">NFC</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 什么是 NFC、什么是 EMV</div>
+  <div class="counter">01 / 12</div>
+  <div class="keyword"><span class="">NFC</span><span class="kw-plus"> ＋ </span><span class="kw-accent">EMV</span></div>
+  <div class="note">别怕，都是大白话</div>
+  <div class="vpanel">
+    <div class="v-emoji">👩‍🏫</div>
+    <div class="v-label">老师开讲</div>
+    <div class="v-note">别怕，都是大白话</div>
+  </div>
+</div>
+<div class="scene" id="scene-001">
+  <div class="ghost">近场通信</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 什么是 NFC、什么是 EMV</div>
+  <div class="counter">02 / 12</div>
+  <div class="keyword"><span class="">近场通信</span></div>
+  <div class="note">几厘米内对话</div>
+  <div class="vpanel">
+    <div class="v-emoji">📶</div>
+    <div class="v-label">近距离对话</div>
+    <div class="v-note">几厘米内对话</div>
+  </div>
+</div>
+<div class="scene" id="scene-002">
+  <div class="ghost">悄悄话</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 什么是 NFC、什么是 EMV</div>
+  <div class="counter">03 / 12</div>
+  <div class="keyword"><span class="">悄悄话</span></div>
+  <div class="note">贴着耳朵说话</div>
+  <div class="vpanel">
+    <div class="v-emoji">📶</div>
+    <div class="v-label">近距离对话</div>
+    <div class="v-note">贴着耳朵说话</div>
+  </div>
+</div>
+<div class="scene" id="scene-003">
+  <div class="ghost">滴一下</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 什么是 NFC、什么是 EMV</div>
+  <div class="counter">04 / 12</div>
+  <div class="keyword"><span class="">滴一下</span></div>
+  <div class="note">你天天在用</div>
+  <div class="vpanel">
+    <div class="v-emoji">🚇</div>
+    <div class="v-label">闸机</div>
+    <div class="v-note">你天天在用</div>
+  </div>
+</div>
+<div class="scene" id="scene-004">
+  <div class="ghost">安全距离</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 什么是 NFC、什么是 EMV</div>
+  <div class="counter">05 / 12</div>
+  <div class="keyword"><span class="">安全距离</span></div>
+  <div class="note">靠得近才安全</div>
+  <div class="vpanel">
+    <div class="v-emoji">📶</div>
+    <div class="v-label">近距离对话</div>
+    <div class="v-note">靠得近才安全</div>
+  </div>
+</div>
+<div class="scene" id="scene-005">
+  <div class="ghost">NFC</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 什么是 NFC、什么是 EMV</div>
+  <div class="counter">06 / 12</div>
+  <div class="keyword"><span class="">NFC</span></div>
+  <div class="note">靠近才能说话</div>
+  <div class="vpanel final">
+    <div class="v-emoji">⭐</div>
+    <div class="v-label">一句话记住</div>
+    <div class="v-note">靠近才能说话</div>
+  </div>
+</div>
+<div class="scene" id="scene-006">
+  <div class="ghost">EMV</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 什么是 NFC、什么是 EMV</div>
+  <div class="counter">07 / 12</div>
+  <div class="keyword"><span class="">EMV</span></div>
+  <div class="note">三个公司定的规矩</div>
+  <div class="vpanel">
+    <div class="v-emoji">🌐</div>
+    <div class="v-label">全球刷卡规矩</div>
+    <div class="v-note">三个公司定的规矩</div>
+  </div>
+</div>
+<div class="scene" id="scene-007">
+  <div class="ghost">共同规矩</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 什么是 NFC、什么是 EMV</div>
+  <div class="counter">08 / 12</div>
+  <div class="keyword"><span class="">共同规矩</span></div>
+  <div class="note">大家都说普通话</div>
+  <div class="vpanel">
+    <div class="v-emoji">🌐</div>
+    <div class="v-label">全球刷卡规矩</div>
+    <div class="v-note">大家都说普通话</div>
+  </div>
+</div>
+<div class="scene" id="scene-008">
+  <div class="ghost">防伪</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 什么是 NFC、什么是 EMV</div>
+  <div class="counter">09 / 12</div>
+  <div class="keyword"><span class="">防伪</span></div>
+  <div class="note">芯片卡难克隆</div>
+  <div class="vpanel">
+    <div class="v-emoji">💳</div>
+    <div class="v-label">智能卡</div>
+    <div class="v-note">芯片卡难克隆</div>
+  </div>
+</div>
+<div class="scene" id="scene-009">
+  <div class="ghost">认证</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 什么是 NFC、什么是 EMV</div>
+  <div class="counter">10 / 12</div>
+  <div class="keyword"><span class="">认证</span></div>
+  <div class="note">不过关就卖不掉</div>
+  <div class="vpanel">
+    <div class="v-emoji">✅</div>
+    <div class="v-label">合格证</div>
+    <div class="v-note">不过关就卖不掉</div>
+  </div>
+</div>
+<div class="scene" id="scene-010">
+  <div class="ghost">一句话记住</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 什么是 NFC、什么是 EMV</div>
+  <div class="counter">11 / 12</div>
+  <div class="keyword"><span class="">一句话记住</span></div>
+  <div class="note">NFC管说话，EMV管规矩</div>
+  <div class="vpanel final">
+    <div class="v-emoji">⭐</div>
+    <div class="v-label">一句话记住</div>
+    <div class="v-note">NFC管说话，EMV管规矩</div>
+  </div>
+</div>
+<div class="scene" id="scene-011">
+  <div class="ghost">课后想一想</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 什么是 NFC、什么是 EMV</div>
+  <div class="counter">12 / 12</div>
+  <div class="keyword"><span class="">课后想一想</span></div>
+  <div class="note">两句话讲清楚</div>
+  <div class="vpanel q">
+    <div class="v-emoji">❓</div>
+    <div class="v-label">课后想一想</div>
+    <div class="v-note">两句话讲清楚</div>
+  </div>
+</div>
+<div class="caption" id="cap-000">今天讲两个英文词，NFC</div>
+<div class="caption" id="cap-001">和EMV，听起来吓人，其</div>
+<div class="caption" id="cap-002">实特别简单。</div>
+<div class="caption" id="cap-003">NFC是近场通信的英文缩</div>
+<div class="caption" id="cap-004">写，意思是两个东西靠得很</div>
+<div class="caption" id="cap-005">近，就能互相说话。</div>
+<div class="caption" id="cap-006">有多近？几厘米。就像两个</div>
+<div class="caption" id="cap-007">人贴着耳朵说悄悄话，别人</div>
+<div class="caption" id="cap-008">听不见。</div>
+<div class="caption" id="cap-009">手机付钱滴一下，地铁滴一</div>
+<div class="caption" id="cap-010">下，都是NFC在对话。</div>
+<div class="caption" id="cap-011">为什么必须靠得近？因为离</div>
+<div class="caption" id="cap-012">太远，别人可能从远处偷走</div>
+<div class="caption" id="cap-013">你的支付信息。</div>
+<div class="caption" id="cap-014">所以记住：NFC就是两个</div>
+<div class="caption" id="cap-015">设备怎么说话，而且只允许</div>
+<div class="caption" id="cap-016">说悄悄话。</div>
+<div class="caption" id="cap-017">那EMV又是什么？它是三</div>
+<div class="caption" id="cap-018">个大公司一起定的全世界刷</div>
+<div class="caption" id="cap-019">卡规矩：Europay、</div>
+<div class="caption" id="cap-020">万事达和Visa。</div>
+<div class="caption" id="cap-021">EMV像银行卡行业的共同</div>
+<div class="caption" id="cap-022">普通话，加上一套安全考试</div>
+<div class="caption" id="cap-023">。</div>
+<div class="caption" id="cap-024">老式磁条卡容易造假，EM</div>
+<div class="caption" id="cap-025">V芯片卡会算密码、会加密</div>
+<div class="caption" id="cap-026">，很难克隆。</div>
+<div class="caption" id="cap-027">为什么产品经理要懂？因为</div>
+<div class="caption" id="cap-028">读卡器不通过EMV认证，</div>
+<div class="caption" id="cap-029">银行和支付机构就不收，产</div>
+<div class="caption" id="cap-030">品根本卖不出去。</div>
+<div class="caption" id="cap-031">记住一句话：NFC是两个</div>
+<div class="caption" id="cap-032">设备怎么说话，EMV是刷</div>
+<div class="caption" id="cap-033">卡必须遵守的共同规矩和安</div>
+<div class="caption" id="cap-034">全考试。</div>
+<div class="caption" id="cap-035">课后想一想：用你的话说，</div>
+<div class="caption" id="cap-036">NFC是干嘛的，EMV是</div>
+<div class="caption" id="cap-037">干嘛的？</div>
+<div id="progress"><div id="progress-fill"></div></div>
+<div id="outro"></div>
+<div id="outro-text">这节课讲完啦，下次见</div>
+</div>
+<script src="vendor/gsap.min.js"></script>
+<script>
+window.__timelines = window.__timelines || {};
+var tl = gsap.timeline({ paused: true });
+var TOTAL = 92.858;
+tl.fromTo("#progress-fill", {scaleX:0}, {scaleX:1, duration:TOTAL, ease:"none"}, 0);
+tl.fromTo("#scene-000 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 0.0+0.10);
+tl.fromTo("#scene-000 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 0.0+0.12);
+tl.fromTo("#scene-000 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 0.0+0.18);
+tl.fromTo("#scene-000 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 0.0+0.24);
+tl.fromTo("#scene-000 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 0.0+0.34);
+tl.fromTo("#scene-000 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(7.4239999999999995/1.8)-1), ease:"sine.inOut"}, 0.0);
+tl.fromTo("#scene-001 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 6.974+0.10);
+tl.fromTo("#scene-001 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 6.974+0.12);
+tl.fromTo("#scene-001 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 6.974+0.18);
+tl.fromTo("#scene-001 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 6.974+0.24);
+tl.fromTo("#scene-001 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 6.974+0.34);
+tl.fromTo("#scene-001 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(9.488000000000001/1.8)-1), ease:"sine.inOut"}, 6.974);
+tl.fromTo("#scene-002 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 16.012+0.10);
+tl.fromTo("#scene-002 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 16.012+0.12);
+tl.fromTo("#scene-002 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 16.012+0.18);
+tl.fromTo("#scene-002 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 16.012+0.24);
+tl.fromTo("#scene-002 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 16.012+0.34);
+tl.fromTo("#scene-002 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(7.423999999999999/1.8)-1), ease:"sine.inOut"}, 16.012);
+tl.fromTo("#scene-003 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 22.986+0.10);
+tl.fromTo("#scene-003 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 22.986+0.12);
+tl.fromTo("#scene-003 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 22.986+0.18);
+tl.fromTo("#scene-003 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 22.986+0.24);
+tl.fromTo("#scene-003 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 22.986+0.34);
+tl.fromTo("#scene-003 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(5.5040000000000004/1.8)-1), ease:"sine.inOut"}, 22.986);
+tl.fromTo("#scene-004 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 28.04+0.10);
+tl.fromTo("#scene-004 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 28.04+0.12);
+tl.fromTo("#scene-004 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 28.04+0.18);
+tl.fromTo("#scene-004 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 28.04+0.24);
+tl.fromTo("#scene-004 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 28.04+0.34);
+tl.fromTo("#scene-004 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(7.5680000000000005/1.8)-1), ease:"sine.inOut"}, 28.04);
+tl.fromTo("#scene-005 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 35.158+0.10);
+tl.fromTo("#scene-005 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 35.158+0.12);
+tl.fromTo("#scene-005 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 35.158+0.18);
+tl.fromTo("#scene-005 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 35.158+0.24);
+tl.fromTo("#scene-005 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 35.158+0.34);
+tl.fromTo("#scene-005 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(7.736/1.8)-1), ease:"sine.inOut"}, 35.158);
+tl.fromTo("#scene-006 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 42.444+0.10);
+tl.fromTo("#scene-006 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 42.444+0.12);
+tl.fromTo("#scene-006 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 42.444+0.18);
+tl.fromTo("#scene-006 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 42.444+0.24);
+tl.fromTo("#scene-006 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 42.444+0.34);
+tl.fromTo("#scene-006 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(9.655999999999995/1.8)-1), ease:"sine.inOut"}, 42.444);
+tl.fromTo("#scene-007 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 51.65+0.10);
+tl.fromTo("#scene-007 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 51.65+0.12);
+tl.fromTo("#scene-007 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 51.65+0.18);
+tl.fromTo("#scene-007 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 51.65+0.24);
+tl.fromTo("#scene-007 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 51.65+0.34);
+tl.fromTo("#scene-007 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.608/1.8)-1), ease:"sine.inOut"}, 51.65);
+tl.fromTo("#scene-008 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 57.808+0.10);
+tl.fromTo("#scene-008 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 57.808+0.12);
+tl.fromTo("#scene-008 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 57.808+0.18);
+tl.fromTo("#scene-008 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 57.808+0.24);
+tl.fromTo("#scene-008 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 57.808+0.34);
+tl.fromTo("#scene-008 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(7.255999999999996/1.8)-1), ease:"sine.inOut"}, 57.808);
+tl.fromTo("#scene-009 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 64.614+0.10);
+tl.fromTo("#scene-009 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 64.614+0.12);
+tl.fromTo("#scene-009 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 64.614+0.18);
+tl.fromTo("#scene-009 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 64.614+0.24);
+tl.fromTo("#scene-009 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 64.614+0.34);
+tl.fromTo("#scene-009 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(10.616000000000003/1.8)-1), ease:"sine.inOut"}, 64.614);
+tl.fromTo("#scene-010 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 74.78+0.10);
+tl.fromTo("#scene-010 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 74.78+0.12);
+tl.fromTo("#scene-010 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 74.78+0.18);
+tl.fromTo("#scene-010 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 74.78+0.24);
+tl.fromTo("#scene-010 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 74.78+0.34);
+tl.fromTo("#scene-010 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(9.967999999999993/1.8)-1), ease:"sine.inOut"}, 74.78);
+tl.fromTo("#scene-011 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 84.298+0.10);
+tl.fromTo("#scene-011 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 84.298+0.12);
+tl.fromTo("#scene-011 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 84.298+0.18);
+tl.fromTo("#scene-011 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 84.298+0.24);
+tl.fromTo("#scene-011 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 84.298+0.34);
+tl.fromTo("#scene-011 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(8.384000000000004/1.8)-1), ease:"sine.inOut"}, 84.298);
+tl.to("#scene-000", {opacity:0, duration:0.35, ease:"power2.inOut"}, 6.6240000000000006);
+tl.fromTo("#scene-001", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 6.6240000000000006+0.06);
+tl.to("#scene-001", {opacity:0, duration:0.35, ease:"power2.inOut"}, 15.662);
+tl.fromTo("#scene-002", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 15.662+0.06);
+tl.to("#scene-002", {opacity:0, duration:0.35, ease:"power2.inOut"}, 22.636);
+tl.fromTo("#scene-003", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 22.636+0.06);
+tl.to("#scene-003", {opacity:0, duration:0.35, ease:"power2.inOut"}, 27.689999999999998);
+tl.fromTo("#scene-004", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 27.689999999999998+0.06);
+tl.to("#scene-004", {opacity:0, duration:0.35, ease:"power2.inOut"}, 34.808);
+tl.fromTo("#scene-005", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 34.808+0.06);
+tl.to("#scene-005", {opacity:0, duration:0.35, ease:"power2.inOut"}, 42.094);
+tl.fromTo("#scene-006", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 42.094+0.06);
+tl.to("#scene-006", {opacity:0, duration:0.35, ease:"power2.inOut"}, 51.3);
+tl.fromTo("#scene-007", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 51.3+0.06);
+tl.to("#scene-007", {opacity:0, duration:0.35, ease:"power2.inOut"}, 57.458);
+tl.fromTo("#scene-008", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 57.458+0.06);
+tl.to("#scene-008", {opacity:0, duration:0.35, ease:"power2.inOut"}, 64.26400000000001);
+tl.fromTo("#scene-009", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 64.26400000000001+0.06);
+tl.to("#scene-009", {opacity:0, duration:0.35, ease:"power2.inOut"}, 74.43);
+tl.fromTo("#scene-010", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 74.43+0.06);
+tl.to("#scene-010", {opacity:0, duration:0.35, ease:"power2.inOut"}, 83.94800000000001);
+tl.fromTo("#scene-011", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 83.94800000000001+0.06);
+tl.fromTo("#cap-000", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 0.12+0.05);
+tl.to("#cap-000", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 2.674-0.14);
+tl.set("#cap-000", {opacity:0, visibility:"hidden"}, 2.674);
+tl.fromTo("#cap-001", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 2.674+0.05);
+tl.to("#cap-001", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 5.227-0.14);
+tl.set("#cap-001", {opacity:0, visibility:"hidden"}, 5.227);
+tl.fromTo("#cap-002", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 5.227+0.05);
+tl.to("#cap-002", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 6.504-0.14);
+tl.set("#cap-002", {opacity:0, visibility:"hidden"}, 6.504);
+tl.fromTo("#cap-003", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 7.094+0.05);
+tl.to("#cap-003", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 10.166-0.14);
+tl.set("#cap-003", {opacity:0, visibility:"hidden"}, 10.166);
+tl.fromTo("#cap-004", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 10.166+0.05);
+tl.to("#cap-004", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 13.238-0.14);
+tl.set("#cap-004", {opacity:0, visibility:"hidden"}, 13.238);
+tl.fromTo("#cap-005", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 13.238+0.05);
+tl.to("#cap-005", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 15.542-0.14);
+tl.set("#cap-005", {opacity:0, visibility:"hidden"}, 15.542);
+tl.fromTo("#cap-006", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 16.132+0.05);
+tl.to("#cap-006", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 18.868-0.14);
+tl.set("#cap-006", {opacity:0, visibility:"hidden"}, 18.868);
+tl.fromTo("#cap-007", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 18.868+0.05);
+tl.to("#cap-007", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 21.604-0.14);
+tl.set("#cap-007", {opacity:0, visibility:"hidden"}, 21.604);
+tl.fromTo("#cap-008", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 21.604+0.05);
+tl.to("#cap-008", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 22.516-0.14);
+tl.set("#cap-008", {opacity:0, visibility:"hidden"}, 22.516);
+tl.fromTo("#cap-009", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 23.106+0.05);
+tl.to("#cap-009", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 25.435-0.14);
+tl.set("#cap-009", {opacity:0, visibility:"hidden"}, 25.435);
+tl.fromTo("#cap-010", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 25.435+0.05);
+tl.to("#cap-010", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 27.57-0.14);
+tl.set("#cap-010", {opacity:0, visibility:"hidden"}, 27.57);
+tl.fromTo("#cap-011", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 28.16+0.05);
+tl.to("#cap-011", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 30.687-0.14);
+tl.set("#cap-011", {opacity:0, visibility:"hidden"}, 30.687);
+tl.fromTo("#cap-012", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 30.687+0.05);
+tl.to("#cap-012", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 33.214-0.14);
+tl.set("#cap-012", {opacity:0, visibility:"hidden"}, 33.214);
+tl.fromTo("#cap-013", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 33.214+0.05);
+tl.to("#cap-013", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 34.688-0.14);
+tl.set("#cap-013", {opacity:0, visibility:"hidden"}, 34.688);
+tl.fromTo("#cap-014", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 35.278+0.05);
+tl.to("#cap-014", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 38.049-0.14);
+tl.set("#cap-014", {opacity:0, visibility:"hidden"}, 38.049);
+tl.fromTo("#cap-015", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 38.049+0.05);
+tl.to("#cap-015", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 40.82-0.14);
+tl.set("#cap-015", {opacity:0, visibility:"hidden"}, 40.82);
+tl.fromTo("#cap-016", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 40.82+0.05);
+tl.to("#cap-016", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 41.974-0.14);
+tl.set("#cap-016", {opacity:0, visibility:"hidden"}, 41.974);
+tl.fromTo("#cap-017", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 42.564+0.05);
+tl.to("#cap-017", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 44.862-0.14);
+tl.set("#cap-017", {opacity:0, visibility:"hidden"}, 44.862);
+tl.fromTo("#cap-018", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 44.862+0.05);
+tl.to("#cap-018", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 47.159-0.14);
+tl.set("#cap-018", {opacity:0, visibility:"hidden"}, 47.159);
+tl.fromTo("#cap-019", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 47.159+0.05);
+tl.to("#cap-019", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 49.457-0.14);
+tl.set("#cap-019", {opacity:0, visibility:"hidden"}, 49.457);
+tl.fromTo("#cap-020", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 49.457+0.05);
+tl.to("#cap-020", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 51.18-0.14);
+tl.set("#cap-020", {opacity:0, visibility:"hidden"}, 51.18);
+tl.fromTo("#cap-021", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 51.77+0.05);
+tl.to("#cap-021", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 54.443-0.14);
+tl.set("#cap-021", {opacity:0, visibility:"hidden"}, 54.443);
+tl.fromTo("#cap-022", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 54.443+0.05);
+tl.to("#cap-022", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 57.115-0.14);
+tl.set("#cap-022", {opacity:0, visibility:"hidden"}, 57.115);
+tl.fromTo("#cap-023", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 57.115+0.05);
+tl.to("#cap-023", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 57.515-0.14);
+tl.set("#cap-023", {opacity:0, visibility:"hidden"}, 57.515);
+tl.fromTo("#cap-024", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 57.928+0.05);
+tl.to("#cap-024", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 60.414-0.14);
+tl.set("#cap-024", {opacity:0, visibility:"hidden"}, 60.414);
+tl.fromTo("#cap-025", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 60.414+0.05);
+tl.to("#cap-025", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 62.901-0.14);
+tl.set("#cap-025", {opacity:0, visibility:"hidden"}, 62.901);
+tl.fromTo("#cap-026", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 62.901+0.05);
+tl.to("#cap-026", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 64.144-0.14);
+tl.set("#cap-026", {opacity:0, visibility:"hidden"}, 64.144);
+tl.fromTo("#cap-027", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 64.734+0.05);
+tl.to("#cap-027", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 67.346-0.14);
+tl.set("#cap-027", {opacity:0, visibility:"hidden"}, 67.346);
+tl.fromTo("#cap-028", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 67.346+0.05);
+tl.to("#cap-028", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 69.957-0.14);
+tl.set("#cap-028", {opacity:0, visibility:"hidden"}, 69.957);
+tl.fromTo("#cap-029", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 69.957+0.05);
+tl.to("#cap-029", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 72.569-0.14);
+tl.set("#cap-029", {opacity:0, visibility:"hidden"}, 72.569);
+tl.fromTo("#cap-030", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 72.569+0.05);
+tl.to("#cap-030", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 74.31-0.14);
+tl.set("#cap-030", {opacity:0, visibility:"hidden"}, 74.31);
+tl.fromTo("#cap-031", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 74.9+0.05);
+tl.to("#cap-031", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 77.578-0.14);
+tl.set("#cap-031", {opacity:0, visibility:"hidden"}, 77.578);
+tl.fromTo("#cap-032", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 77.578+0.05);
+tl.to("#cap-032", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 80.257-0.14);
+tl.set("#cap-032", {opacity:0, visibility:"hidden"}, 80.257);
+tl.fromTo("#cap-033", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 80.257+0.05);
+tl.to("#cap-033", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 82.935-0.14);
+tl.set("#cap-033", {opacity:0, visibility:"hidden"}, 82.935);
+tl.fromTo("#cap-034", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 82.935+0.05);
+tl.to("#cap-034", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 83.828-0.14);
+tl.set("#cap-034", {opacity:0, visibility:"hidden"}, 83.828);
+tl.fromTo("#cap-035", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 84.418+0.05);
+tl.to("#cap-035", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 87.565-0.14);
+tl.set("#cap-035", {opacity:0, visibility:"hidden"}, 87.565);
+tl.fromTo("#cap-036", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 87.565+0.05);
+tl.to("#cap-036", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 90.713-0.14);
+tl.set("#cap-036", {opacity:0, visibility:"hidden"}, 90.713);
+tl.fromTo("#cap-037", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 90.713+0.05);
+tl.to("#cap-037", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 91.762-0.14);
+tl.set("#cap-037", {opacity:0, visibility:"hidden"}, 91.762);
+tl.to("#outro", {opacity:1, duration:0.7, ease:"power1.in"}, TOTAL-0.95);
+tl.fromTo("#outro-text", {opacity:0, y:24}, {opacity:1, y:0, duration:0.5, ease:"power2.out"}, TOTAL-0.7);
+tl.set("#scene-011", {opacity:0, visibility:"hidden"}, TOTAL-0.2);
+window.__timelines["lesson-002"] = tl;
+</script>
+</body>
+</html>

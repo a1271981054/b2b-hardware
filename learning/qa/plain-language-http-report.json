@@ -1,0 +1,42 @@
+[
+  {
+    "file": "index.html",
+    "sha256": "344271ea15a1a5c27c2a74e34834ac32ea02e3f66fe4c24e5f309abeb9cec9f6",
+    "matches": true
+  },
+  {
+    "file": "data.js",
+    "sha256": "97413956cee44f45033dbb51d3466a70d6225f7ad600bce522aeda9df08d7d7b",
+    "matches": true
+  },
+  {
+    "file": "app.js",
+    "sha256": "cce5a552408b0c0dac6dca33b9a735c60db5af09155c705c026a7ed8492d71c2",
+    "matches": true
+  },
+  {
+    "file": "widgets.js",
+    "sha256": "e2b9c709b0604ec47cb0c4f7a1235289db6111ac02aa03971c2d2fd1481fbadd",
+    "matches": true
+  },
+  {
+    "file": "diagrams.js",
+    "sha256": "9702cf06fc5059ff5f511fd700a71f2258b18ee806f5e925a8296fa8994e01fc",
+    "matches": true
+  },
+  {
+    "file": "journey.js",
+    "sha256": "b9ce93800c65521e8317fa73f4e968215288d22784ed1981f3143436962f9a9e",
+    "matches": true
+  },
+  {
+    "file": "style.css",
+    "sha256": "535f4bcaa086d1d542f01f17796bbc1d97f65cedfca296676eaf332c6df2dcb6",
+    "matches": true
+  },
+  {
+    "file": "reading.css",
+    "sha256": "f30e14c5391b7442a0075cb9017540d12182377922ba34da7a79212d6e12b600",
+    "matches": true
+  }
+]

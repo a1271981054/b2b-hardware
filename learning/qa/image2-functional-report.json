@@ -1,0 +1,30 @@
+{
+  "origin": "http://127.0.0.1:18877",
+  "checks": {
+    "quiz_correct_feedback": true,
+    "scenario_completes_topic": true,
+    "quiz_and_scenario_survive_reload": true,
+    "chapter_note_survives_reload": true,
+    "new_deep_lesson_search": true,
+    "search_result_opens_correct_chapter": true,
+    "image_zoom": true,
+    "escape_closes_image_only": true,
+    "zoom_close_restores_focus": true,
+    "image_cue_keyboard": true,
+    "source_provenance_navigation": true,
+    "mobile_390_no_page_overflow": true,
+    "mobile_contents_initially_collapsed": true,
+    "apple_system_font_stack": true,
+    "mobile_source_tables_contained": true,
+    "mobile_zoom_horizontally_scrollable": true,
+    "zoom_scroll_region_keyboard_focusable": true,
+    "final_origin_new_styles_loaded": true,
+    "final_origin_image2_assets_loaded": true,
+    "final_origin_old_relationship_block_removed": true
+  },
+  "console_errors_observed": [],
+  "boundary": "Browser checks used staging origin so user progress on 18876 was not altered; mobile viewport emulation, not a physical device.",
+  "final_origin": "http://127.0.0.1:18876",
+  "final_console_errors_observed": [],
+  "zip_megabytes": 29.7
+}

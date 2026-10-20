@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-19",
+  "browser": "Codex in-app Chromium",
+  "desktop_viewport": [
+    1280,
+    720
+  ],
+  "mobile_viewport": [
+    390,
+    844
+  ],
+  "checked_topics": 44,
+  "missing_source_sections": 0,
+  "console_errors": [],
+  "passed": [
+    "44 topic dialogs and source reading",
+    "All 15 simulation types",
+    "Wrong answer, retry, correct answer, completion",
+    "Bookmark and note reload persistence",
+    "Search topic and full original text",
+    "Original source title and tables",
+    "Audio playback and 1.25x speed",
+    "Video decoded 1920x1080 and played",
+    "390px map and calculator have no horizontal overflow",
+    "Learning-record JSON export downloaded",
+    "Reduced-motion switch applied",
+    "Original document TOC navigates to target heading at y=110"
+  ],
+  "numeric_checks": {
+    "rice_initial": 60,
+    "rice_confidence_10_percent": 7.5,
+    "unit_contribution": 800,
+    "break_even_units": 350,
+    "negative_contribution": "无法回本",
+    "net_price": 1685.2,
+    "fpy_initial": "90%",
+    "fpy_200_reworked": "78%",
+    "opportunity": 300
+  },
+  "limits": [
+    "file:// blocked by browser URL security policy; no workaround attempted",
+    "Responsive emulation, not physical mobile-device testing",
+    "Media metadata checked on all 29 files; playback sampled, not every second reviewed"
+  ]
+}

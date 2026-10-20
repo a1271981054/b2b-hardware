@@ -1,0 +1,173 @@
+{
+  "total": 97.272,
+  "beats": [
+    {
+      "index": 0,
+      "text": "今天看看龙杰这家公司怎么赚钱，像看一个小老板，靠四条路子赚钱。",
+      "keywords": [
+        "赚钱"
+      ],
+      "visual": "money",
+      "note": "四条赚钱路子",
+      "start": 0.0,
+      "end": 7.248,
+      "duration": 7.248
+    },
+    {
+      "index": 1,
+      "text": "第一条，卖标准产品：读卡器、卡片，卖给全球一百多个国家的分销商。",
+      "keywords": [
+        "标准产品"
+      ],
+      "visual": "pos",
+      "note": "走量卖全球",
+      "start": 7.598,
+      "end": 14.366,
+      "duration": 6.768
+    },
+    {
+      "index": 2,
+      "text": "第二条，卖定制产品：客户印自己的牌子，改外观、改功能，ACS收定制费。",
+      "keywords": [
+        "定制产品"
+      ],
+      "visual": "doc",
+      "note": "贴牌收钱",
+      "start": 14.716,
+      "end": 22.924,
+      "duration": 8.208
+    },
+    {
+      "index": 3,
+      "text": "第三条，卖零件：读卡器模块，卖给别的公司，装进他们的机器。",
+      "keywords": [
+        "模块"
+      ],
+      "visual": "module",
+      "note": "卖零件",
+      "start": 23.274,
+      "end": 29.082,
+      "duration": 5.808
+    },
+    {
+      "index": 4,
+      "text": "第四条，卖服务和方案：SDK、技术支持、公交收费整套方案、卡打印、咨询。",
+      "keywords": [
+        "服务方案"
+      ],
+      "visual": "gate",
+      "note": "卖方案和服务",
+      "start": 29.432,
+      "end": 38.288,
+      "duration": 8.856
+    },
+    {
+      "index": 5,
+      "text": "看几个真实数字。2025财年，收入九千一百五十万港元，同比降了百分之九。",
+      "keywords": [
+        "收入"
+      ],
+      "visual": "chart",
+      "note": "收入降9%",
+      "start": 38.638,
+      "end": 47.182,
+      "duration": 8.544
+    },
+    {
+      "index": 6,
+      "text": "毛利率百分之五十九，很高，说明产品本身很赚钱。",
+      "keywords": [
+        "毛利率"
+      ],
+      "visual": "chart",
+      "note": "毛利59%",
+      "start": 47.532,
+      "end": 52.86,
+      "duration": 5.328
+    },
+    {
+      "index": 7,
+      "text": "净亏损五百一十万港元，就是花钱比赚钱多了一点点。",
+      "keywords": [
+        "净亏损"
+      ],
+      "visual": "chart",
+      "note": "亏一点点",
+      "start": 53.21,
+      "end": 58.394,
+      "duration": 5.184
+    },
+    {
+      "index": 8,
+      "text": "亚太区收入增长百分之四十八点七，欧洲下滑百分之三十五。",
+      "keywords": [
+        "增长"
+      ],
+      "visual": "chart",
+      "note": "亚太是引擎",
+      "start": 58.744,
+      "end": 64.552,
+      "duration": 5.808
+    },
+    {
+      "index": 9,
+      "text": "这些数字告诉我们：卖一台赚一台，毛利很高，但公司规模不大。",
+      "keywords": [
+        "毛利高"
+      ],
+      "visual": "chart",
+      "note": "单台赚得多",
+      "start": 64.902,
+      "end": 70.566,
+      "duration": 5.664
+    },
+    {
+      "index": 10,
+      "text": "亚太是增长引擎，中国市场很关键。",
+      "keywords": [
+        "亚太"
+      ],
+      "visual": "chart",
+      "note": "增长看亚太",
+      "start": 70.916,
+      "end": 74.492,
+      "duration": 3.576
+    },
+    {
+      "index": 11,
+      "text": "产品经理要帮公司想：怎么在亚太多卖，怎么让定制项目更赚钱。",
+      "keywords": [
+        "产品经理"
+      ],
+      "visual": "light",
+      "note": "帮公司想增长",
+      "start": 74.842,
+      "end": 80.65,
+      "duration": 5.808
+    },
+    {
+      "index": 12,
+      "text": "记住一句话：ACS靠标准品走量、定制项目拿单、认证护城河赚钱，不是靠月租订阅。",
+      "keywords": [
+        "一句话记住"
+      ],
+      "visual": "star",
+      "note": "走量加单加护城河",
+      "start": 81.0,
+      "end": 91.464,
+      "duration": 10.464
+    },
+    {
+      "index": 13,
+      "text": "课后想一想：ACS除了卖读卡器，还能从哪些地方赚钱？",
+      "keywords": [
+        "课后想一想"
+      ],
+      "visual": "q",
+      "note": "说一个就行",
+      "start": 91.814,
+      "end": 97.622,
+      "duration": 5.808
+    }
+  ]
+}

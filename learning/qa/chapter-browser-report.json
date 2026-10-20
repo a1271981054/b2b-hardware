@@ -1,0 +1,1015 @@
+{
+  "chapters": [
+    {
+      "topic": "role",
+      "index": 0,
+      "chars": 905,
+      "tables": 2,
+      "title": "B 端硬件产品经理的核心职责边界是什么？KPI 怎么定？"
+    },
+    {
+      "topic": "role",
+      "index": 1,
+      "chars": 691,
+      "tables": 0,
+      "title": "附录：术语小词典"
+    },
+    {
+      "topic": "role",
+      "index": 2,
+      "chars": 758,
+      "tables": 0,
+      "title": "B 端产品经理问题集"
+    },
+    {
+      "topic": "role",
+      "index": 3,
+      "chars": 428,
+      "tables": 0,
+      "title": "成本、供应链与开发"
+    },
+    {
+      "topic": "role",
+      "index": 4,
+      "chars": 2373,
+      "tables": 1,
+      "title": "对话问题记录"
+    },
+    {
+      "topic": "card",
+      "index": 0,
+      "chars": 302,
+      "tables": 0,
+      "title": "这一行到底在卖什么"
+    },
+    {
+      "topic": "nfc",
+      "index": 0,
+      "chars": 299,
+      "tables": 0,
+      "title": "什么是 NFC、什么是 EMV"
+    },
+    {
+      "topic": "cert",
+      "index": 0,
+      "chars": 355,
+      "tables": 0,
+      "title": "为什么硬件要做认证"
+    },
+    {
+      "topic": "cert",
+      "index": 1,
+      "chars": 223,
+      "tables": 0,
+      "title": "认证到底怎么考"
+    },
+    {
+      "topic": "cert",
+      "index": 2,
+      "chars": 193,
+      "tables": 0,
+      "title": "认证与合规"
+    },
+    {
+      "topic": "scenes",
+      "index": 0,
+      "chars": 329,
+      "tables": 0,
+      "title": "读卡器用在哪些地方"
+    },
+    {
+      "topic": "docs",
+      "index": 0,
+      "chars": 346,
+      "tables": 0,
+      "title": "BRD / MRD / PRD"
+    },
+    {
+      "topic": "market",
+      "index": 0,
+      "chars": 181,
+      "tables": 0,
+      "title": "当前课程位置：市场调研"
+    },
+    {
+      "topic": "market",
+      "index": 1,
+      "chars": 511,
+      "tables": 1,
+      "title": "调研方法与数据口径"
+    },
+    {
+      "topic": "jtbd",
+      "index": 0,
+      "chars": 1045,
+      "tables": 0,
+      "title": "JTBD 框架详细讲解"
+    },
+    {
+      "topic": "jtbd",
+      "index": 1,
+      "chars": 365,
+      "tables": 1,
+      "title": "JTBD：客户雇佣网关完成什么任务"
+    },
+    {
+      "topic": "value",
+      "index": 0,
+      "chars": 883,
+      "tables": 1,
+      "title": "客户价值地图是什么意思？"
+    },
+    {
+      "topic": "value",
+      "index": 1,
+      "chars": 1152,
+      "tables": 1,
+      "title": "客户价值地图详细示例"
+    },
+    {
+      "topic": "value",
+      "index": 2,
+      "chars": 434,
+      "tables": 0,
+      "title": "客户价值地图练习模板"
+    },
+    {
+      "topic": "value",
+      "index": 3,
+      "chars": 1725,
+      "tables": 0,
+      "title": "用户练习填写与点评"
+    },
+    {
+      "topic": "value",
+      "index": 4,
+      "chars": 707,
+      "tables": 2,
+      "title": "客户价值地图"
+    },
+    {
+      "topic": "buyers",
+      "index": 0,
+      "chars": 1189,
+      "tables": 1,
+      "title": "决策链分析详细解答"
+    },
+    {
+      "topic": "buyers",
+      "index": 1,
+      "chars": 894,
+      "tables": 0,
+      "title": "决策链分析详细例子"
+    },
+    {
+      "topic": "buyers",
+      "index": 2,
+      "chars": 805,
+      "tables": 1,
+      "title": "决策链分析能力加强计划"
+    },
+    {
+      "topic": "buyers",
+      "index": 3,
+      "chars": 384,
+      "tables": 0,
+      "title": "如何完全掌握决策链分析（直接答案）"
+    },
+    {
+      "topic": "buyers",
+      "index": 4,
+      "chars": 1213,
+      "tables": 0,
+      "title": "决策链练习题用户作答与点评"
+    },
+    {
+      "topic": "buyers",
+      "index": 5,
+      "chars": 248,
+      "tables": 1,
+      "title": "决策链分析"
+    },
+    {
+      "topic": "buyers",
+      "index": 6,
+      "chars": 276,
+      "tables": 0,
+      "title": "目标客户与痛点"
+    },
+    {
+      "topic": "interview",
+      "index": 0,
+      "chars": 1045,
+      "tables": 0,
+      "title": "JTBD 框架详细讲解"
+    },
+    {
+      "topic": "interview",
+      "index": 1,
+      "chars": 286,
+      "tables": 0,
+      "title": "新场景练习（用户待填写）"
+    },
+    {
+      "topic": "interview",
+      "index": 2,
+      "chars": 650,
+      "tables": 0,
+      "title": "决策链分析练习题（用户待作答）"
+    },
+    {
+      "topic": "competition",
+      "index": 0,
+      "chars": 1045,
+      "tables": 0,
+      "title": "JTBD 框架详细讲解"
+    },
+    {
+      "topic": "competition",
+      "index": 1,
+      "chars": 266,
+      "tables": 1,
+      "title": "竞品对比"
+    },
+    {
+      "topic": "opportunity",
+      "index": 0,
+      "chars": 811,
+      "tables": 2,
+      "title": "机会评分详解"
+    },
+    {
+      "topic": "opportunity",
+      "index": 1,
+      "chars": 686,
+      "tables": 1,
+      "title": "怎么打分、分数由谁决定"
+    },
+    {
+      "topic": "opportunity",
+      "index": 2,
+      "chars": 663,
+      "tables": 1,
+      "title": "小公司具体怎么打分和选行业"
+    },
+    {
+      "topic": "opportunity",
+      "index": 3,
+      "chars": 213,
+      "tables": 1,
+      "title": "机会评分"
+    },
+    {
+      "topic": "industry",
+      "index": 0,
+      "chars": 713,
+      "tables": 2,
+      "title": "行业吸引力 × 可进入性矩阵详解"
+    },
+    {
+      "topic": "industry",
+      "index": 1,
+      "chars": 663,
+      "tables": 1,
+      "title": "小公司具体怎么打分和选行业"
+    },
+    {
+      "topic": "industry",
+      "index": 2,
+      "chars": 636,
+      "tables": 1,
+      "title": "第二问：目标行业选择"
+    },
+    {
+      "topic": "model",
+      "index": 0,
+      "chars": 945,
+      "tables": 2,
+      "title": "商业模式与收入结构详解"
+    },
+    {
+      "topic": "model",
+      "index": 1,
+      "chars": 772,
+      "tables": 0,
+      "title": "商业模式与收入结构（深入浅出版）"
+    },
+    {
+      "topic": "model",
+      "index": 2,
+      "chars": 802,
+      "tables": 3,
+      "title": "第三问：商业模式"
+    },
+    {
+      "topic": "pricing",
+      "index": 0,
+      "chars": 1051,
+      "tables": 1,
+      "title": "定价怎么做（深入浅出版）"
+    },
+    {
+      "topic": "pricing",
+      "index": 1,
+      "chars": 781,
+      "tables": 3,
+      "title": "第四问：定价"
+    },
+    {
+      "topic": "pricing",
+      "index": 2,
+      "chars": 247,
+      "tables": 0,
+      "title": "价格瀑布"
+    },
+    {
+      "topic": "economics",
+      "index": 0,
+      "chars": 205,
+      "tables": 1,
+      "title": "单位经济"
+    },
+    {
+      "topic": "economics",
+      "index": 1,
+      "chars": 1051,
+      "tables": 1,
+      "title": "定价怎么做（深入浅出版）"
+    },
+    {
+      "topic": "caseplan",
+      "index": 0,
+      "chars": 894,
+      "tables": 3,
+      "title": "第五问：商业论证"
+    },
+    {
+      "topic": "caseplan",
+      "index": 1,
+      "chars": 813,
+      "tables": 3,
+      "title": "三档情景"
+    },
+    {
+      "topic": "caseplan",
+      "index": 2,
+      "chars": 343,
+      "tables": 1,
+      "title": "一页纸商业论证"
+    },
+    {
+      "topic": "caseplan",
+      "index": 3,
+      "chars": 1178,
+      "tables": 1,
+      "title": "如何负责市场和客户洞察、目标行业选择、商业模式、定价和商业论证？"
+    },
+    {
+      "topic": "priority",
+      "index": 0,
+      "chars": 2053,
+      "tables": 6,
+      "title": "需求优先级六大框架详细讲解（老师版）"
+    },
+    {
+      "topic": "moscow",
+      "index": 0,
+      "chars": 2053,
+      "tables": 6,
+      "title": "需求优先级六大框架详细讲解（老师版）"
+    },
+    {
+      "topic": "moscow",
+      "index": 1,
+      "chars": 1033,
+      "tables": 3,
+      "title": "工业网关需求优先级实战练习（MoSCoW + RICE）"
+    },
+    {
+      "topic": "rice",
+      "index": 0,
+      "chars": 2053,
+      "tables": 6,
+      "title": "需求优先级六大框架详细讲解（老师版）"
+    },
+    {
+      "topic": "rice",
+      "index": 1,
+      "chars": 1033,
+      "tables": 3,
+      "title": "工业网关需求优先级实战练习（MoSCoW + RICE）"
+    },
+    {
+      "topic": "kano",
+      "index": 0,
+      "chars": 2053,
+      "tables": 6,
+      "title": "需求优先级六大框架详细讲解（老师版）"
+    },
+    {
+      "topic": "kano",
+      "index": 1,
+      "chars": 1203,
+      "tables": 3,
+      "title": "工业网关需求优先级实战练习（Kano + WSJF）"
+    },
+    {
+      "topic": "wsjf",
+      "index": 0,
+      "chars": 2053,
+      "tables": 6,
+      "title": "需求优先级六大框架详细讲解（老师版）"
+    },
+    {
+      "topic": "wsjf",
+      "index": 1,
+      "chars": 1203,
+      "tables": 3,
+      "title": "工业网关需求优先级实战练习（Kano + WSJF）"
+    },
+    {
+      "topic": "spec",
+      "index": 0,
+      "chars": 1937,
+      "tables": 5,
+      "title": "产品层（What）怎么做？需求优先级、产品定义、规格书"
+    },
+    {
+      "topic": "spec",
+      "index": 1,
+      "chars": 194,
+      "tables": 0,
+      "title": "一条可验收标准的七个要素"
+    },
+    {
+      "topic": "spec",
+      "index": 2,
+      "chars": 415,
+      "tables": 1,
+      "title": "例子二：NFC“要快”必须先拆成两条指标"
+    },
+    {
+      "topic": "spec",
+      "index": 3,
+      "chars": 532,
+      "tables": 2,
+      "title": "产品定义"
+    },
+    {
+      "topic": "bom",
+      "index": 0,
+      "chars": 193,
+      "tables": 0,
+      "title": "BOM 是什么"
+    },
+    {
+      "topic": "bom",
+      "index": 1,
+      "chars": 256,
+      "tables": 1,
+      "title": "BOM、NRE、MOQ 与供应链"
+    },
+    {
+      "topic": "nre",
+      "index": 0,
+      "chars": 403,
+      "tables": 0,
+      "title": "开模、NRE、MOQ"
+    },
+    {
+      "topic": "oem",
+      "index": 0,
+      "chars": 339,
+      "tables": 0,
+      "title": "OEM 和 ODM"
+    },
+    {
+      "topic": "oem",
+      "index": 1,
+      "chars": 180,
+      "tables": 1,
+      "title": "自研、ODM、贴牌怎么选"
+    },
+    {
+      "topic": "feasibility",
+      "index": 0,
+      "chars": 173,
+      "tables": 0,
+      "title": "技术可行性"
+    },
+    {
+      "topic": "feasibility",
+      "index": 1,
+      "chars": 256,
+      "tables": 1,
+      "title": "BOM、NRE、MOQ 与供应链"
+    },
+    {
+      "topic": "feasibility",
+      "index": 2,
+      "chars": 3349,
+      "tables": 12,
+      "title": "交付层（How）怎么管？阶段评审、变更决策、风险管理"
+    },
+    {
+      "topic": "stages",
+      "index": 0,
+      "chars": 1072,
+      "tables": 1,
+      "title": "EVT / DVT / PVT：阶段门与放行依据"
+    },
+    {
+      "topic": "stages",
+      "index": 1,
+      "chars": 880,
+      "tables": 1,
+      "title": "PVT 放行：看“一次做对”和过程可复制"
+    },
+    {
+      "topic": "stages",
+      "index": 2,
+      "chars": 70,
+      "tables": 0,
+      "title": "小练习"
+    },
+    {
+      "topic": "stages",
+      "index": 3,
+      "chars": 485,
+      "tables": 0,
+      "title": "EVT / DVT / PVT"
+    },
+    {
+      "topic": "stages",
+      "index": 4,
+      "chars": 218,
+      "tables": 1,
+      "title": "开发阶段 EVT/DVT/PVT/MP"
+    },
+    {
+      "topic": "gates",
+      "index": 0,
+      "chars": 1746,
+      "tables": 0,
+      "title": "阶段门 G0-G6 每一个门是什么意思"
+    },
+    {
+      "topic": "gates",
+      "index": 1,
+      "chars": 251,
+      "tables": 1,
+      "title": "四种阶段门结论"
+    },
+    {
+      "topic": "yield",
+      "index": 0,
+      "chars": 852,
+      "tables": 1,
+      "title": "良率、首次良率与返修"
+    },
+    {
+      "topic": "yield",
+      "index": 1,
+      "chars": 450,
+      "tables": 0,
+      "title": "产品经理看不良数据的顺序"
+    },
+    {
+      "topic": "ctq",
+      "index": 0,
+      "chars": 1171,
+      "tables": 1,
+      "title": "CTQ、可验收标准与计时边界"
+    },
+    {
+      "topic": "ctq",
+      "index": 1,
+      "chars": 416,
+      "tables": 0,
+      "title": "CTQ 如何落到产品经理决策"
+    },
+    {
+      "topic": "control",
+      "index": 0,
+      "chars": 891,
+      "tables": 2,
+      "title": "控制计划、治具防错与测试的区别"
+    },
+    {
+      "topic": "control",
+      "index": 1,
+      "chars": 433,
+      "tables": 0,
+      "title": "如果工厂说“全检失败就返修，不用改治具”"
+    },
+    {
+      "topic": "control",
+      "index": 2,
+      "chars": 489,
+      "tables": 0,
+      "title": "使用说明与口径"
+    },
+    {
+      "topic": "control",
+      "index": 3,
+      "chars": 586,
+      "tables": 1,
+      "title": "一页总览：从 CTQ 到可追溯放行"
+    },
+    {
+      "topic": "isolate",
+      "index": 0,
+      "chars": 997,
+      "tables": 1,
+      "title": "异常停线、隔离与批次追溯"
+    },
+    {
+      "topic": "isolate",
+      "index": 1,
+      "chars": 717,
+      "tables": 1,
+      "title": "怀疑原因与已验证根因"
+    },
+    {
+      "topic": "ecn",
+      "index": 0,
+      "chars": 878,
+      "tables": 0,
+      "title": "ECN 变更控制、影响批次与可追溯"
+    },
+    {
+      "topic": "ecn",
+      "index": 1,
+      "chars": 470,
+      "tables": 0,
+      "title": "产品经理审 ECN 时要问什么"
+    },
+    {
+      "topic": "rootcause",
+      "index": 0,
+      "chars": 305,
+      "tables": 1,
+      "title": "怀疑原因与已验证根因"
+    },
+    {
+      "topic": "rootcause",
+      "index": 1,
+      "chars": 230,
+      "tables": 0,
+      "title": "第一步：先止血，不急着争论责任"
+    },
+    {
+      "topic": "rootcause",
+      "index": 2,
+      "chars": 264,
+      "tables": 0,
+      "title": "第二步：从“发现螺丝松”走到“根因已验证”"
+    },
+    {
+      "topic": "rootcause",
+      "index": 3,
+      "chars": 200,
+      "tables": 1,
+      "title": "第三步：区分纠正、围堵和永久措施"
+    },
+    {
+      "topic": "launch",
+      "index": 0,
+      "chars": 182,
+      "tables": 1,
+      "title": "上市计划"
+    },
+    {
+      "topic": "launch",
+      "index": 1,
+      "chars": 1746,
+      "tables": 0,
+      "title": "阶段门 G0-G6 每一个门是什么意思"
+    },
+    {
+      "topic": "channel",
+      "index": 0,
+      "chars": 182,
+      "tables": 1,
+      "title": "上市计划"
+    },
+    {
+      "topic": "channel",
+      "index": 1,
+      "chars": 57,
+      "tables": 0,
+      "title": "看渠道"
+    },
+    {
+      "topic": "channel",
+      "index": 2,
+      "chars": 263,
+      "tables": 0,
+      "title": "能力建设与组织"
+    },
+    {
+      "topic": "rma",
+      "index": 0,
+      "chars": 136,
+      "tables": 1,
+      "title": "质量、RMA 与售后"
+    },
+    {
+      "topic": "rma",
+      "index": 1,
+      "chars": 422,
+      "tables": 0,
+      "title": "第五步：两周后第 1 批客户反馈 NFC 失败"
+    },
+    {
+      "topic": "lifecycle",
+      "index": 0,
+      "chars": 109,
+      "tables": 0,
+      "title": "生命周期管理"
+    },
+    {
+      "topic": "lifecycle",
+      "index": 1,
+      "chars": 1746,
+      "tables": 0,
+      "title": "阶段门 G0-G6 每一个门是什么意思"
+    },
+    {
+      "topic": "acs",
+      "index": 0,
+      "chars": 239,
+      "tables": 0,
+      "title": "机会点（选一个主打）"
+    },
+    {
+      "topic": "acs",
+      "index": 1,
+      "chars": 299,
+      "tables": 0,
+      "title": "商业论证"
+    },
+    {
+      "topic": "acs",
+      "index": 2,
+      "chars": 365,
+      "tables": 0,
+      "title": "龙杰（ACS）怎么赚钱"
+    },
+    {
+      "topic": "acs",
+      "index": 3,
+      "chars": 152,
+      "tables": 0,
+      "title": "公司一句话"
+    },
+    {
+      "topic": "acs",
+      "index": 4,
+      "chars": 153,
+      "tables": 0,
+      "title": "一句话结论"
+    },
+    {
+      "topic": "acs",
+      "index": 5,
+      "chars": 540,
+      "tables": 0,
+      "title": "产品拆解（五看）"
+    },
+    {
+      "topic": "acs",
+      "index": 6,
+      "chars": 188,
+      "tables": 0,
+      "title": "可引用的公开事实"
+    },
+    {
+      "topic": "acs",
+      "index": 7,
+      "chars": 140,
+      "tables": 0,
+      "title": "龙杰智能卡（ACS）面试分析 PPT 素材"
+    },
+    {
+      "topic": "gateway",
+      "index": 0,
+      "chars": 444,
+      "tables": 1,
+      "title": "五问法使用地图"
+    },
+    {
+      "topic": "gateway",
+      "index": 1,
+      "chars": 343,
+      "tables": 1,
+      "title": "一页纸商业论证"
+    },
+    {
+      "topic": "gateway",
+      "index": 2,
+      "chars": 219,
+      "tables": 1,
+      "title": "风险与对策"
+    },
+    {
+      "topic": "gateway",
+      "index": 3,
+      "chars": 429,
+      "tables": 0,
+      "title": "一页纸结论"
+    },
+    {
+      "topic": "gateway",
+      "index": 4,
+      "chars": 741,
+      "tables": 0,
+      "title": "数据来源"
+    },
+    {
+      "topic": "gateway",
+      "index": 5,
+      "chars": 109,
+      "tables": 0,
+      "title": "工业网关（制造 + 物流）深度商业论证"
+    },
+    {
+      "topic": "gateway",
+      "index": 6,
+      "chars": 11,
+      "tables": 0,
+      "title": "第一问：市场与客户洞察"
+    },
+    {
+      "topic": "gateway",
+      "index": 7,
+      "chars": 9,
+      "tables": 0,
+      "title": "产品定义与硬件交付"
+    },
+    {
+      "topic": "nfc-case",
+      "index": 0,
+      "chars": 960,
+      "tables": 1,
+      "title": "支付终端 NFC 天线偏移：端到端案例"
+    },
+    {
+      "topic": "nfc-case",
+      "index": 1,
+      "chars": 986,
+      "tables": 0,
+      "title": "第四步：怎样决定 PVT 是否放行"
+    },
+    {
+      "topic": "nfc-case",
+      "index": 2,
+      "chars": 653,
+      "tables": 0,
+      "title": "面试可直接表达的 90 秒案例"
+    },
+    {
+      "topic": "nfc-case",
+      "index": 3,
+      "chars": 856,
+      "tables": 0,
+      "title": "小练习与参考答案"
+    },
+    {
+      "topic": "answer",
+      "index": 0,
+      "chars": 792,
+      "tables": 0,
+      "title": "第三段：面试问答练习"
+    },
+    {
+      "topic": "answer",
+      "index": 1,
+      "chars": 653,
+      "tables": 0,
+      "title": "金句"
+    },
+    {
+      "topic": "answer",
+      "index": 2,
+      "chars": 887,
+      "tables": 0,
+      "title": "高频面试题与回答骨架"
+    },
+    {
+      "topic": "answer",
+      "index": 3,
+      "chars": 349,
+      "tables": 0,
+      "title": "综合模拟面试"
+    },
+    {
+      "topic": "answer",
+      "index": 4,
+      "chars": 396,
+      "tables": 0,
+      "title": "面试前速记卡"
+    },
+    {
+      "topic": "answer",
+      "index": 5,
+      "chars": 627,
+      "tables": 0,
+      "title": "后续学习路线建议"
+    },
+    {
+      "topic": "answer",
+      "index": 6,
+      "chars": 500,
+      "tables": 0,
+      "title": "附录二：面试前夜速记卡"
+    },
+    {
+      "topic": "answer",
+      "index": 7,
+      "chars": 343,
+      "tables": 0,
+      "title": "串成面试答案"
+    },
+    {
+      "topic": "answer",
+      "index": 8,
+      "chars": 152,
+      "tables": 0,
+      "title": "面试表达提示"
+    },
+    {
+      "topic": "answer",
+      "index": 9,
+      "chars": 887,
+      "tables": 0,
+      "title": "课堂笔记：从零学 B 端硬件产品经理"
+    },
+    {
+      "topic": "answer",
+      "index": 10,
+      "chars": 9,
+      "tables": 0,
+      "title": "已经学过的基础知识"
+    },
+    {
+      "topic": "answer",
+      "index": 11,
+      "chars": 341,
+      "tables": 0,
+      "title": "待你回答的小题"
+    },
+    {
+      "topic": "answer",
+      "index": 12,
+      "chars": 28,
+      "tables": 0,
+      "title": "一句话记住"
+    },
+    {
+      "topic": "answer",
+      "index": 13,
+      "chars": 180,
+      "tables": 0,
+      "title": "第二段待你回答（汇总）"
+    },
+    {
+      "topic": "answer",
+      "index": 14,
+      "chars": 35,
+      "tables": 0,
+      "title": "第三段待你回答"
+    },
+    {
+      "topic": "answer",
+      "index": 15,
+      "chars": 128,
+      "tables": 0,
+      "title": "第四段：进阶专业知识"
+    },
+    {
+      "topic": "answer",
+      "index": 16,
+      "chars": 30,
+      "tables": 0,
+      "title": "一句话记住"
+    },
+    {
+      "topic": "answer",
+      "index": 17,
+      "chars": 209,
+      "tables": 0,
+      "title": "B 端硬件 PM：量产质量与变更闭环面试复习"
+    }
+  ],
+  "search": "cold-chain query opens value chapter 2",
+  "readingRestore": "chapter 3 restored after reload",
+  "notes": "preserved across chapter navigation and reload",
+  "mobile": {
+    "width": 390,
+    "pageWidth": 390,
+    "tableViewport": 358,
+    "tableScrollableWidth": 571
+  },
+  "errors": []
+}

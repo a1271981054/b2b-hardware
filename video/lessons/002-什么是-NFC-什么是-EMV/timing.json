@@ -1,0 +1,150 @@
+{
+  "total": 91.608,
+  "beats": [
+    {
+      "index": 0,
+      "text": "今天讲两个英文词，NFC和EMV，听起来吓人，其实特别简单。",
+      "keywords": [
+        "NFC",
+        "EMV"
+      ],
+      "visual": "teacher",
+      "note": "别怕，都是大白话",
+      "start": 0.0,
+      "end": 6.624,
+      "duration": 6.624
+    },
+    {
+      "index": 1,
+      "text": "NFC是近场通信的英文缩写，意思是两个东西靠得很近，就能互相说话。",
+      "keywords": [
+        "近场通信"
+      ],
+      "visual": "nfc",
+      "note": "几厘米内对话",
+      "start": 6.974,
+      "end": 15.662,
+      "duration": 8.688
+    },
+    {
+      "index": 2,
+      "text": "有多近？几厘米。就像两个人贴着耳朵说悄悄话，别人听不见。",
+      "keywords": [
+        "悄悄话"
+      ],
+      "visual": "nfc",
+      "note": "贴着耳朵说话",
+      "start": 16.012,
+      "end": 22.636,
+      "duration": 6.624
+    },
+    {
+      "index": 3,
+      "text": "手机付钱滴一下，地铁滴一下，都是NFC在对话。",
+      "keywords": [
+        "滴一下"
+      ],
+      "visual": "gate",
+      "note": "你天天在用",
+      "start": 22.986,
+      "end": 27.69,
+      "duration": 4.704
+    },
+    {
+      "index": 4,
+      "text": "为什么必须靠得近？因为离太远，别人可能从远处偷走你的支付信息。",
+      "keywords": [
+        "安全距离"
+      ],
+      "visual": "nfc",
+      "note": "靠得近才安全",
+      "start": 28.04,
+      "end": 34.808,
+      "duration": 6.768
+    },
+    {
+      "index": 5,
+      "text": "所以记住：NFC就是两个设备怎么说话，而且只允许说悄悄话。",
+      "keywords": [
+        "NFC"
+      ],
+      "visual": "star",
+      "note": "靠近才能说话",
+      "start": 35.158,
+      "end": 42.094,
+      "duration": 6.936
+    },
+    {
+      "index": 6,
+      "text": "那EMV又是什么？它是三个大公司一起定的全世界刷卡规矩：Europay、万事达和Visa。",
+      "keywords": [
+        "EMV"
+      ],
+      "visual": "emv",
+      "note": "三个公司定的规矩",
+      "start": 42.444,
+      "end": 51.3,
+      "duration": 8.856
+    },
+    {
+      "index": 7,
+      "text": "EMV像银行卡行业的共同普通话，加上一套安全考试。",
+      "keywords": [
+        "共同规矩"
+      ],
+      "visual": "emv",
+      "note": "大家都说普通话",
+      "start": 51.65,
+      "end": 57.458,
+      "duration": 5.808
+    },
+    {
+      "index": 8,
+      "text": "老式磁条卡容易造假，EMV芯片卡会算密码、会加密，很难克隆。",
+      "keywords": [
+        "防伪"
+      ],
+      "visual": "card",
+      "note": "芯片卡难克隆",
+      "start": 57.808,
+      "end": 64.264,
+      "duration": 6.456
+    },
+    {
+      "index": 9,
+      "text": "为什么产品经理要懂？因为读卡器不通过EMV认证，银行和支付机构就不收，产品根本卖不出去。",
+      "keywords": [
+        "认证"
+      ],
+      "visual": "cert",
+      "note": "不过关就卖不掉",
+      "start": 64.614,
+      "end": 74.43,
+      "duration": 9.816
+    },
+    {
+      "index": 10,
+      "text": "记住一句话：NFC是两个设备怎么说话，EMV是刷卡必须遵守的共同规矩和安全考试。",
+      "keywords": [
+        "一句话记住"
+      ],
+      "visual": "star",
+      "note": "NFC管说话，EMV管规矩",
+      "start": 74.78,
+      "end": 83.948,
+      "duration": 9.168
+    },
+    {
+      "index": 11,
+      "text": "课后想一想：用你的话说，NFC是干嘛的，EMV是干嘛的？",
+      "keywords": [
+        "课后想一想"
+      ],
+      "visual": "q",
+      "note": "两句话讲清楚",
+      "start": 84.298,
+      "end": 91.882,
+      "duration": 7.584
+    }
+  ]
+}

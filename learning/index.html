@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#73bc35"><title>硬件小岛</title><link rel="icon" href="assets/chip.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=plain-20261020-final"><link rel="stylesheet" href="reading.css?v=plain-20261020-final"><script defer src="data.js?v=plain-20261020-final"></script><script defer src="widgets.js?v=plain-20261020-final"></script><script defer src="diagrams.js?v=plain-20261020-final"></script><script defer src="journey.js?v=plain-20261020-final"></script><script defer src="app.js?v=plain-20261020-final"></script></head>
+<body>
+<a class="skip-link" href="#main">跳到内容</a>
+<svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5v16M12 5C8 2 4 3 2 4v15c4-2 7-1 10 2 3-3 6-4 10-2V4c-2-1-6-2-10 1z"/></symbol>
+<symbol id="i-headphones" viewBox="0 0 24 24"><path d="M4 14V11a8 8 0 0 1 16 0v3M4 13H3v7h4v-7zM20 13h1v7h-4v-7z"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3C3 2 1 11 7 17c6 6 15-1 13-14ZM5 21l10-11"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></symbol>
+<symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v19l-6-4-6 4z"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 13 8-13 8z"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-13h-8z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="i-volume" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5zM15 8q6 4 0 8m3-11q10 7 0 14"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="16" cy="17" r="3"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+</defs></svg>
+<aside class="sidebar"><a class="brand" href="#/map"><img src="assets/mascot.svg" alt=""><span>硬件小岛</span></a><nav aria-label="主要导航">
+<a href="#/map" data-nav="map"><svg class="icon"><use href="#i-map"/></svg><span>课程地图</span></a>
+<a href="#/path" data-nav="path"><svg class="icon"><use href="#i-book"/></svg><span>学习路线</span></a>
+<a href="#/project" data-nav="project"><svg class="icon"><use href="#i-grid"/></svg><span>项目练习</span></a>
+<a href="#/notebook" data-nav="notebook"><svg class="icon"><use href="#i-leaf"/></svg><span>我的足迹</span><span id="nav-count" class="nav-count">0</span></a>
+</nav><div class="side-bottom"><div class="side-character"><img src="assets/mascot.svg" alt="小岛向导芽芽"><span>按自己的节奏来。</span></div><button class="plain settings-button" data-action="settings"><svg class="icon"><use href="#i-settings"/></svg>学习设置</button></div></aside>
+<div class="shell"><header class="topbar"><div id="breadcrumb">课程地图</div><button class="search-trigger" data-action="search" aria-label="搜索知识"><svg class="icon"><use href="#i-search"/></svg><span>找个知识点</span><kbd>⌘ K</kbd></button><button class="top-progress" data-action="footprints" aria-label="查看学习足迹"><svg class="icon"><use href="#i-leaf"/></svg><span id="top-count">0</span></button></header>
+<main id="main" tabindex="-1"></main><footer class="site-footer"><span>硬件小岛</span><button class="plain mobile-settings" data-action="settings">学习设置</button><button class="plain" data-action="about">资料与使用说明</button></footer></div>
+<dialog id="lesson" class="lesson-dialog" aria-labelledby="lesson-title"></dialog>
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="search-top"><svg class="icon"><use href="#i-search"/></svg><label class="sr-only" id="search-title" for="global-search">搜索课程与术语</label><input id="global-search" type="search" autocomplete="off" placeholder="搜索课程、案例或术语…"><button class="icon-button" data-action="close-search" aria-label="关闭搜索"><svg class="icon"><use href="#i-close"/></svg></button></div><div id="search-results"></div></dialog>
+<dialog id="utility" class="utility-dialog" aria-labelledby="utility-title"></dialog>
+<div id="toast" role="status" aria-live="polite"></div><div id="confetti" aria-hidden="true"></div>
+<input type="file" id="import-file" accept="application/json,.json" hidden>
+<noscript><div class="noscript">请启用浏览器 JavaScript，以使用课程地图与互动练习。完整资料保存在 sources 文件夹。</div></noscript>
+</body></html>

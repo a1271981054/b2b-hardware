@@ -1,0 +1,241 @@
+{
+  "built": "2026-10-20",
+  "topics": 60,
+  "questions": 120,
+  "chapters": 203,
+  "coreCoverage": [
+    {
+      "document": "基础课 · 从零学 B 端硬件 PM",
+      "nonemptyLines": 372,
+      "coveredLines": 372,
+      "missingLines": []
+    },
+    {
+      "document": "问题集 · B 端产品经理高频问答",
+      "nonemptyLines": 1421,
+      "coveredLines": 1421,
+      "missingLines": []
+    },
+    {
+      "document": "案例 · 工业网关商业论证",
+      "nonemptyLines": 405,
+      "coveredLines": 405,
+      "missingLines": []
+    },
+    {
+      "document": "交付 · 量产质量与变更闭环",
+      "nonemptyLines": 542,
+      "coveredLines": 542,
+      "missingLines": []
+    },
+    {
+      "document": "案例 · 龙杰智能卡（ACS）面试素材",
+      "nonemptyLines": 91,
+      "coveredLines": 91,
+      "missingLines": []
+    }
+  ],
+  "learningFigures": 406,
+  "uniqueIllustrations": 120,
+  "courseChars": 177388,
+  "documents": 39,
+  "terms": 62,
+  "media": [],
+  "sources": [
+    {
+      "id": "doc-01",
+      "path": "课堂笔记-从零学B端硬件PM.md",
+      "hash": "e7d75c3ea187a6dfda27191e1d6e9f0f50eccae6cf832f510cea673bbb118cd6"
+    },
+    {
+      "id": "doc-02",
+      "path": "B端产品经理问题集.md",
+      "hash": "6c394d70aff62e2d0a6289a9c89d031491d628f30a3d481413be3acafbc97cbb"
+    },
+    {
+      "id": "doc-03",
+      "path": "工业网关商业论证.md",
+      "hash": "95eeb144ffba2eaacbbe8b09e1720a3f1378f2d67ef2a1566772f2e88ed16f1f"
+    },
+    {
+      "id": "doc-04",
+      "path": "B端硬件PM-量产质量与变更闭环面试复习.md",
+      "hash": "ac91f381356b12f6c7b25048914a735351d681ed42f7ea7384722b54638816f1"
+    },
+    {
+      "id": "doc-05",
+      "path": "龙杰智能卡-面试PPT素材.md",
+      "hash": "c44a5ece2dd0391269cb4ae3f6247162faa49009e1c4d44ef7566482a0759196"
+    },
+    {
+      "id": "doc-06",
+      "path": "video/index.md",
+      "hash": "cb152be384f59ec8416c1375916b938bc9d7b8e44735c7be73d7f2fc1a93a214"
+    },
+    {
+      "id": "doc-07",
+      "path": "video/README.md",
+      "hash": "53cdfe034c4da140019af7713363d671373ec9f49668cb65b2bd84c2e79608c9"
+    },
+    {
+      "id": "doc-08",
+      "path": "video/DESIGN.md",
+      "hash": "dbd94e30dd256cd8a7ffb8b1ed17d0fae1e69ee0ba1e2756652d7046ec6b3947"
+    },
+    {
+      "id": "doc-09",
+      "path": "podcast/index.md",
+      "hash": "dc0715d12f633cc80a92e1fc2d1fa60aca8ce9f08ce75fc88dd636329386c73b"
+    },
+    {
+      "id": "doc-10",
+      "path": "podcast/README.md",
+      "hash": "03803e32996db0db76ed539b8ad762bbfed27bcafaf25d0b4826c2ad4608719c"
+    },
+    {
+      "id": "doc-11",
+      "path": "video/lessons/001-这一行到底在卖什么/script.md",
+      "hash": "d534badc24ab6e83709c2c4baa693fdfd2b95bc4ff810c7b651cc6677812db07"
+    },
+    {
+      "id": "doc-12",
+      "path": "video/lessons/002-什么是-NFC-什么是-EMV/script.md",
+      "hash": "fffd4da563928c6b8c72382172bec8e5c7b09856a16860a031e96b019137ea8d"
+    },
+    {
+      "id": "doc-13",
+      "path": "video/lessons/003-为什么硬件要做认证/script.md",
+      "hash": "6c20aa2d3421b30798330c65b2faeca989af6f35e9533c292f6cbb866bf30f46"
+    },
+    {
+      "id": "doc-14",
+      "path": "video/lessons/004-读卡器用在哪些地方/script.md",
+      "hash": "0c1120fbb13f6321391895f0fc21a96e8acfe4cbfcb246f286efa53df1f28ca5"
+    },
+    {
+      "id": "doc-15",
+      "path": "video/lessons/005-龙杰-ACS-怎么赚钱/script.md",
+      "hash": "81aea1c50a046d318a6157fad42d0955796e7b6863eb39d30cc51b6e61030fef"
+    },
+    {
+      "id": "doc-16",
+      "path": "video/lessons/006-串成面试答案/script.md",
+      "hash": "4cd4844ff5a1c655339e6170b41e43038b3111e592abf35e321cb110e56fc3e5"
+    },
+    {
+      "id": "doc-17",
+      "path": "video/lessons/007-BOM-是什么/script.md",
+      "hash": "28cb40cad9c7894a84954780d9536ba29c5088a16005a3904f117808854f25cd"
+    },
+    {
+      "id": "doc-18",
+      "path": "video/lessons/008-开模-NRE-MOQ/script.md",
+      "hash": "15e74c7d3dc6045160ec1bd6c07a3b53ee5f72046a7b131b24135c3bf060520d"
+    },
+    {
+      "id": "doc-19",
+      "path": "video/lessons/009-EVT-DVT-PVT/script.md",
+      "hash": "e6db1f06f351b76054df6908165a1d14fb3b8d449d5763773df9887521ccba33"
+    },
+    {
+      "id": "doc-20",
+      "path": "video/lessons/010-OEM-和-ODM/script.md",
+      "hash": "97d9a563a217315031ea7953821b3f603372a8691cae4f7d5aff9b19258db9d9"
+    },
+    {
+      "id": "doc-21",
+      "path": "video/lessons/011-BRD-MRD-PRD/script.md",
+      "hash": "c9d03c2afe11e85133af09330e9f5aa7afe3acc0174f968ac1e6529028953fe0"
+    },
+    {
+      "id": "doc-22",
+      "path": "video/lessons/012-综合模拟面试/script.md",
+      "hash": "163eb8691d4d03b508ced88e68c870117da1bb5b24b422392e4d97e05ec09fe3"
+    },
+    {
+      "id": "doc-23",
+      "path": "video/lessons/001-这一行到底在卖什么/source.md",
+      "hash": "ff4cd30a7073bbc44f430d06c1d9ae6bfd48ea2e6003049aa2b520e7ba3abe11"
+    },
+    {
+      "id": "doc-24",
+      "path": "video/lessons/002-什么是-NFC-什么是-EMV/source.md",
+      "hash": "5a91f86813ed6e3e71716aa8b7e7943aefa7639806ed242c816fcfbafad109f5"
+    },
+    {
+      "id": "doc-25",
+      "path": "video/lessons/003-为什么硬件要做认证/source.md",
+      "hash": "affaa5702456e7ed5b867236cc5e292f6f37d04203278575ad41a8bbeb945776"
+    },
+    {
+      "id": "doc-26",
+      "path": "video/lessons/004-读卡器用在哪些地方/source.md",
+      "hash": "580617e7d55ce7c5f228c7c3a0463e545160f725fa2f100d945805ce0efa9a34"
+    },
+    {
+      "id": "doc-27",
+      "path": "video/lessons/005-龙杰-ACS-怎么赚钱/source.md",
+      "hash": "7e52de0afa23510e762c778d4aec38055b00a2b147b99be0909620ce14a2d150"
+    },
+    {
+      "id": "doc-28",
+      "path": "video/lessons/006-串成面试答案/source.md",
+      "hash": "152aab8af531b498483eedd75127757a26f87a9f725e7a0e6779639bbad51bb7"
+    },
+    {
+      "id": "doc-29",
+      "path": "video/lessons/007-BOM-是什么/source.md",
+      "hash": "0e3d2704f25c192c0571d873c54c3fbd022f5007bdb074c6008615fd30071655"
+    },
+    {
+      "id": "doc-30",
+      "path": "video/lessons/008-开模-NRE-MOQ/source.md",
+      "hash": "c26cc6ed9537e186205f9f99600337740634ade0be9534ffdf3a80623ef34b78"
+    },
+    {
+      "id": "doc-31",
+      "path": "video/lessons/009-EVT-DVT-PVT/source.md",
+      "hash": "ea967f1243b352f8f15105e74aafcd2dbd68b6053f0db9f3970b8692d5faf986"
+    },
+    {
+      "id": "doc-32",
+      "path": "video/lessons/010-OEM-和-ODM/source.md",
+      "hash": "f3a67b1a2229c82d22805ad20fe34d35d7e2fcdbaaea0714cc16003ae32254cf"
+    },
+    {
+      "id": "doc-33",
+      "path": "video/lessons/011-BRD-MRD-PRD/source.md",
+      "hash": "7a6246cf9052d071d115523c145d2f8c511a7b6ebf3f8239def13adb84bbbe51"
+    },
+    {
+      "id": "doc-34",
+      "path": "video/lessons/012-综合模拟面试/source.md",
+      "hash": "2a663ea7fdaa3b87d1cb87206cda1499a0d010cc03b0a02b7d953f0b9b76a09c"
+    },
+    {
+      "id": "doc-35",
+      "path": "podcast/episodes/000-音色示例/script.md",
+      "hash": "43b344094495c0bf8b2d6be336e303129c83a8c0df49314dbd85b0f12d26c7f6"
+    },
+    {
+      "id": "doc-36",
+      "path": "podcast/episodes/101-B端硬件产品经理-职责KPI和商业嗅觉/script.md",
+      "hash": "b64499b09bbe3ba3e3389c4938ea8b686d34432db4a6cbcf4814d0d52c0cf28c"
+    },
+    {
+      "id": "doc-37",
+      "path": "podcast/episodes/102-客户价值地图与采购决策链/script.md",
+      "hash": "9b34a0f1149f80db557ba76ef4607e243f088db0ca9e1c563b37ddd31d24b25a"
+    },
+    {
+      "id": "doc-38",
+      "path": "podcast/episodes/103-机会行业商业模式与定价/script.md",
+      "hash": "50bfac0b46d0f946c37b3806aa828191f15ca46846ae7509165830e68e7599e2"
+    },
+    {
+      "id": "doc-39",
+      "path": "podcast/episodes/104-需求优先级与交付阶段门/script.md",
+      "hash": "d301bc5ca3ac66185319fb01d0aa84fd50342a143f9a3db337330d67368dc428"
+    }
+  ]
+}

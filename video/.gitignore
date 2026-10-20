@@ -1,0 +1,12 @@
+.env
+state.json
+lessons/*/segments/
+lessons/*/silence.mp3
+lessons/*/filelist.txt
+lessons/*/narration.mp3
+lessons/*/transcript.raw.json
+lessons/*/render/
+lessons/*/snapshots/
+lessons/*/.hyperframes/
+lessons/*/vendor/
+.DS_Store

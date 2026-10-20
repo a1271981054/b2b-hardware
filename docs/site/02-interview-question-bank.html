@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="把职责、市场、需求、商业、交付和阶段门拆成可练习的回答骨架。">
+  <title>问题集 · B 端产品经理高频问答 · B 端硬件知识库</title>
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <div class="mobile-backdrop" data-sidebar-close></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand-block">
+      <a class="brand" href="index.html"><span class="brand-mark">B<span>×</span>H</span><span><strong>B 端硬件</strong><small>PRODUCT FIELD NOTES</small></span></a>
+      <button class="sidebar-close" type="button" data-sidebar-close aria-label="关闭导航">×</button>
+    </div>
+    <div class="sidebar-intro">把市场判断、硬件交付和面试表达，放进同一条可回看的路径。</div>
+    <nav class="sidebar-nav" aria-label="文档导航">
+      <a class="nav-home" href="index.html"><span class="home-dot">↗</span><span>知识库首页</span></a>
+      <div class="nav-group"><div class="nav-heading">学习路线</div><a class="nav-link" data-nav-link href="01-learning-path.html" title="基础课 · 从零学 B 端硬件 PM"><span class="nav-index">01</span><span>基础课 · 从零学 B 端硬件 PM</span></a></div><div class="nav-group"><div class="nav-heading">面试与框架</div><a class="nav-link active" data-nav-link href="02-interview-question-bank.html" title="问题集 · B 端产品经理高频问答"><span class="nav-index">02</span><span>问题集 · B 端产品经理高频问答</span></a></div><div class="nav-group"><div class="nav-heading">商业论证</div><a class="nav-link" data-nav-link href="03-industrial-gateway-case.html" title="案例 · 工业网关商业论证"><span class="nav-index">03</span><span>案例 · 工业网关商业论证</span></a></div><div class="nav-group"><div class="nav-heading">硬件交付</div><a class="nav-link" data-nav-link href="04-quality-and-change-gate.html" title="交付 · 量产质量与变更闭环"><span class="nav-index">04</span><span>交付 · 量产质量与变更闭环</span></a></div><div class="nav-group"><div class="nav-heading">案例与面试</div><a class="nav-link" data-nav-link href="05-acs-interview-case.html" title="案例 · 龙杰智能卡（ACS）面试素材"><span class="nav-index">05</span><span>案例 · 龙杰智能卡（ACS）面试素材</span></a></div><div class="nav-group"><div class="nav-heading">视频课程</div><a class="nav-link" data-nav-link href="06-video-index.html" title="视频课 · B 端硬件 PM 教学视频"><span class="nav-index">06</span><span>视频课 · B 端硬件 PM 教学视频</span></a><a class="nav-link" data-nav-link href="07-video-pipeline.html" title="视频课 · 生成与维护说明"><span class="nav-index">07</span><span>视频课 · 生成与维护说明</span></a><a class="nav-link" data-nav-link href="08-video-design.html" title="视频课 · 视觉与动效规范"><span class="nav-index">08</span><span>视频课 · 视觉与动效规范</span></a></div><div class="nav-group"><div class="nav-heading">播客文稿</div><a class="nav-link" data-nav-link href="09-podcast-index.html" title="播客 · 双人节目索引"><span class="nav-index">09</span><span>播客 · 双人节目索引</span></a><a class="nav-link" data-nav-link href="10-podcast-pipeline.html" title="播客 · 写稿、合成与更新说明"><span class="nav-index">10</span><span>播客 · 写稿、合成与更新说明</span></a><a class="nav-link" data-nav-link href="35-podcast-000-script.html" title="000-音色示例"><span class="nav-index">35</span><span>000-音色示例</span></a><a class="nav-link" data-nav-link href="36-podcast-101-script.html" title="101-B端硬件产品经理-职责KPI和商业嗅觉"><span class="nav-index">36</span><span>101-B端硬件产品经理-职责KPI和商业嗅觉</span></a><a class="nav-link" data-nav-link href="37-podcast-102-script.html" title="102-客户价值地图与采购决策链"><span class="nav-index">37</span><span>102-客户价值地图与采购决策链</span></a><a class="nav-link" data-nav-link href="38-podcast-103-script.html" title="103-机会行业商业模式与定价"><span class="nav-index">38</span><span>103-机会行业商业模式与定价</span></a><a class="nav-link" data-nav-link href="39-podcast-104-script.html" title="104-需求优先级与交付阶段门"><span class="nav-index">39</span><span>104-需求优先级与交付阶段门</span></a></div><div class="nav-group"><div class="nav-heading">视频讲稿</div><a class="nav-link" data-nav-link href="11-video-lesson-001-script.html" title="第一段 · 这一行到底在卖什么 老师讲稿"><span class="nav-index">11</span><span>第一段 · 这一行到底在卖什么 老师讲稿</span></a><a class="nav-link" data-nav-link href="12-video-lesson-002-script.html" title="第一段 · 什么是 NFC、什么是 EMV 老师讲稿"><span class="nav-index">12</span><span>第一段 · 什么是 NFC、什么是 EMV 老师讲稿</span></a><a class="nav-link" data-nav-link href="13-video-lesson-003-script.html" title="第一段 · 为什么硬件要做认证 老师讲稿"><span class="nav-index">13</span><span>第一段 · 为什么硬件要做认证 老师讲稿</span></a><a class="nav-link" data-nav-link href="14-video-lesson-004-script.html" title="第一段 · 读卡器用在哪些地方 老师讲稿"><span class="nav-index">14</span><span>第一段 · 读卡器用在哪些地方 老师讲稿</span></a><a class="nav-link" data-nav-link href="15-video-lesson-005-script.html" title="第一段 · 龙杰（ACS）怎么赚钱 老师讲稿"><span class="nav-index">15</span><span>第一段 · 龙杰（ACS）怎么赚钱 老师讲稿</span></a><a class="nav-link" data-nav-link href="16-video-lesson-006-script.html" title="第一段 · 串成面试答案 老师讲稿"><span class="nav-index">16</span><span>第一段 · 串成面试答案 老师讲稿</span></a><a class="nav-link" data-nav-link href="17-video-lesson-007-script.html" title="第二段 · BOM 是什么 老师讲稿"><span class="nav-index">17</span><span>第二段 · BOM 是什么 老师讲稿</span></a><a class="nav-link" data-nav-link href="18-video-lesson-008-script.html" title="第二段 · 开模、NRE、MOQ 老师讲稿"><span class="nav-index">18</span><span>第二段 · 开模、NRE、MOQ 老师讲稿</span></a><a class="nav-link" data-nav-link href="19-video-lesson-009-script.html" title="第二段 · EVT / DVT / PVT 老师讲稿"><span class="nav-index">19</span><span>第二段 · EVT / DVT / PVT 老师讲稿</span></a><a class="nav-link" data-nav-link href="20-video-lesson-010-script.html" title="第二段 · OEM 和 ODM 老师讲稿"><span class="nav-index">20</span><span>第二段 · OEM 和 ODM 老师讲稿</span></a><a class="nav-link" data-nav-link href="21-video-lesson-011-script.html" title="第二段 · BRD / MRD / PRD 老师讲稿"><span class="nav-index">21</span><span>第二段 · BRD / MRD / PRD 老师讲稿</span></a><a class="nav-link" data-nav-link href="22-video-lesson-012-script.html" title="第二段 · 综合模拟面试 老师讲稿"><span class="nav-index">22</span><span>第二段 · 综合模拟面试 老师讲稿</span></a></div><div class="nav-group"><div class="nav-heading">课程素材</div><a class="nav-link" data-nav-link href="23-video-lesson-001-source.html" title="001-这一行到底在卖什么 · 来源笔记"><span class="nav-index">23</span><span>001-这一行到底在卖什么 · 来源笔记</span></a><a class="nav-link" data-nav-link href="24-video-lesson-002-source.html" title="002-什么是-NFC-什么是-EMV · 来源笔记"><span class="nav-index">24</span><span>002-什么是-NFC-什么是-EMV · 来源笔记</span></a><a class="nav-link" data-nav-link href="25-video-lesson-003-source.html" title="003-为什么硬件要做认证 · 来源笔记"><span class="nav-index">25</span><span>003-为什么硬件要做认证 · 来源笔记</span></a><a class="nav-link" data-nav-link href="26-video-lesson-004-source.html" title="004-读卡器用在哪些地方 · 来源笔记"><span class="nav-index">26</span><span>004-读卡器用在哪些地方 · 来源笔记</span></a><a class="nav-link" data-nav-link href="27-video-lesson-005-source.html" title="005-龙杰-ACS-怎么赚钱 · 来源笔记"><span class="nav-index">27</span><span>005-龙杰-ACS-怎么赚钱 · 来源笔记</span></a><a class="nav-link" data-nav-link href="28-video-lesson-006-source.html" title="006-串成面试答案 · 来源笔记"><span class="nav-index">28</span><span>006-串成面试答案 · 来源笔记</span></a><a class="nav-link" data-nav-link href="29-video-lesson-007-source.html" title="007-BOM-是什么 · 来源笔记"><span class="nav-index">29</span><span>007-BOM-是什么 · 来源笔记</span></a><a class="nav-link" data-nav-link href="30-video-lesson-008-source.html" title="008-开模-NRE-MOQ · 来源笔记"><span class="nav-index">30</span><span>008-开模-NRE-MOQ · 来源笔记</span></a><a class="nav-link" data-nav-link href="31-video-lesson-009-source.html" title="009-EVT-DVT-PVT · 来源笔记"><span class="nav-index">31</span><span>009-EVT-DVT-PVT · 来源笔记</span></a><a class="nav-link" data-nav-link href="32-video-lesson-010-source.html" title="010-OEM-和-ODM · 来源笔记"><span class="nav-index">32</span><span>010-OEM-和-ODM · 来源笔记</span></a><a class="nav-link" data-nav-link href="33-video-lesson-011-source.html" title="011-BRD-MRD-PRD · 来源笔记"><span class="nav-index">33</span><span>011-BRD-MRD-PRD · 来源笔记</span></a><a class="nav-link" data-nav-link href="34-video-lesson-012-source.html" title="012-综合模拟面试 · 来源笔记"><span class="nav-index">34</span><span>012-综合模拟面试 · 来源笔记</span></a></div>
+    </nav>
+    <div class="sidebar-footer"><span class="status-dot"></span>本地离线文档站 <span class="footer-version">v1.0</span></div>
+  </aside>
+  <div class="page-frame">
+    <header class="topbar">
+      <button class="menu-trigger" type="button" data-sidebar-open aria-label="打开导航"><span></span><span></span><span></span></button>
+      <div class="breadcrumb"><a href="index.html">知识库</a><span>/</span><span>面试与框架</span></div>
+      <label class="search-box"><span class="search-icon">⌕</span><input type="search" data-doc-search placeholder="搜索文档标题…" aria-label="搜索文档标题"><kbd>⌘ K</kbd></label>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换主题"><span class="sun">☼</span><span class="moon">◐</span></button>
+    </header>
+    <main class="content-layout">
+      <article class="article-wrap"><div class="article-meta"><span class="eyebrow">面试与框架</span><span class="meta-separator">·</span><span>核心资料</span></div><h1>问题集 · B 端产品经理高频问答</h1><p class="lede">把职责、市场、需求、商业、交付和阶段门拆成可练习的回答骨架。</p><div class="article-rule"></div><div class="prose"><blockquote>用途：沉淀本对话中关于 B 端产品经理岗位的系统性问题、讨论结论和待深入主题。 创建日期：2026-08-09</blockquote>
+<h2 id="使用约定">使用约定</h2>
+<ul><li>每个问题记录状态：待回答 / 已回答 / 待深入。</li><li>每轮展开问题后，把关键结论补到「对话问题记录」中，并附上日期。</li><li>后续对话中新增的问题，一律追加到「对话问题记录」，保持文档可追溯。</li></ul>
+<h2 id="15-个核心问题-通用方向">15 个核心问题（通用方向）</h2>
+<h3 id="岗位与定位">岗位与定位</h3>
+<ol><li>B 端产品经理的核心职责和考核指标是什么？</li><li>B 端产品经理和 C 端产品经理的核心区别是什么？</li><li>B 端产品经理有哪些细分方向？</li></ol>
+<h3 id="需求与市场">需求与市场</h3>
+<ol><li>B 端需求通常从哪里来？如何判断优先级？</li><li>如何做客户调研和需求访谈？</li><li>如何判断一个 B 端产品值不值得做？</li></ol>
+<h3 id="产品设计与交付">产品设计与交付</h3>
+<ol><li>从 0 到 1 做一个 B 端产品，完整流程和关键里程碑是什么？</li><li>B 端产品经理需要写哪些文档？</li><li>硬件型 B 端产品比纯软件多哪些环节？</li><li>项目延期、客户催货、销售乱承诺时怎么处理？</li></ol>
+<h3 id="商业与度量">商业与度量</h3>
+<ol><li>B 端产品如何定价和打包？</li><li>B 端产品上线后用什么指标衡量？</li><li>如何从「做项目」升级为「做产品」？</li></ol>
+<h3 id="能力与职业发展">能力与职业发展</h3>
+<ol><li>B 端产品经理需要哪些核心能力？短板应该先补哪里？</li><li>从入门到资深、专家、管理的成长路径是什么？</li></ol>
+<h2 id="15-个核心问题-b-端硬件方向">15 个核心问题（B 端硬件方向）</h2>
+<h3 id="岗位与边界">岗位与边界</h3>
+<ol><li>B 端硬件产品经理的核心职责边界是什么？KPI 怎么定？</li><li>B 端硬件 PM 和 C 端硬件 PM、软件 PM、嵌入式 PM、项目 PM 有什么区别？</li><li>一个 B 端硬件产品从 0 到 1 要经历哪些阶段？每个阶段的负责人、交付物和决策门是什么？</li></ol>
+<h3 id="需求与产品定义">需求与产品定义</h3>
+<ol><li>如何把客户需求转化成硬件规格？包括功能、性能、接口、环境、寿命和成本目标。</li><li>技术可行性评估怎么做？哪些问题必须在方案阶段回答，哪些可以留到开发阶段？</li><li>自研硬件、ODM、贴牌、买白牌怎么选？判断标准是什么？</li></ol>
+<h3 id="成本-供应链与开发">成本、供应链与开发</h3>
+<ol><li>BOM 成本、模具费、NRE、MOQ、交期和供应链风险如何估算和管理？</li><li>硬件产品经理需要懂多少电子、结构、固件和认证知识？优先级怎么排？</li><li>认证与合规如何管理：CE、FCC、CCC、UL、RoHS、REACH，以及行业专属认证？</li><li>EVT、DVT、PVT、MP 每个阶段的核心目标、测试项和放行标准是什么？</li><li>量产后的质量管理怎么做：良率、可靠性、现场故障率、售后 RMA 和备品备件？</li></ol>
+<h3 id="商业-上市与生命周期">商业、上市与生命周期</h3>
+<ol><li>B 端硬件的商业模式怎么设计：硬件、软件订阅、服务费、解决方案打包怎么组合？</li><li>B 端硬件如何做上市：目标行业、种子客户、试用、经销商或集成商、渠道政策？</li><li>硬件产品的生命周期怎么管理：固件升级、停产、EOL、替代方案和老客户迁移？</li></ol>
+<h3 id="能力与职业发展-2">能力与职业发展</h3>
+<ol><li>从其他岗位转做 B 端硬件 PM，第一年最该补哪些能力？最常见的职业坑是什么？</li></ol>
+<h2 id="回答模板">回答模板</h2>
+<p>每轮展开一个问题时，按以下结构沉淀：</p>
+<ul><li>问题：</li><li>关键结论：</li><li>可迁移到 B 端硬件方向的内容：</li><li>我的下一步：</li></ul>
+<h2 id="回答沉淀">回答沉淀</h2>
+<h3 id="q1-b-端硬件产品经理的核心职责边界是什么-kpi-怎么定">Q1. B 端硬件产品经理的核心职责边界是什么？KPI 怎么定？</h3>
+<p><strong>一句话定位</strong></p>
+<p>B 端硬件产品经理的职责 = 在正确的市场机会里定义对的产品，推动它在成本、质量、时间和商业回报上成立，并持续经营到生命周期结束。</p>
+<p><strong>职责三层模型</strong></p>
+<ol><li>商业层（Why）：市场和客户洞察、目标行业、商业模式、定价、商业论证（business case），对收入和毛利负责。</li><li>产品层（What）：需求优先级、产品定义、产品规格书，明确功能、性能、接口、环境、可靠性和成本目标。</li><li>交付层（How）：牵头硬件、结构、固件、测试、认证、供应链、生产和售后协同，做阶段评审、变更决策和风险管理。</li></ol>
+<p>成熟公司会把交付层进一步拆出 NPI PM 或项目 PM，但硬件产品经理仍然对产品最终结果负责。</p>
+<p><strong>职责 vs 协作</strong></p>
+<div class="table-wrap"><table><thead><tr><th>产品经理该负责</th><th>产品经理该协调、不亲自做</th></tr></thead><tbody><tr><td>需求定义</td><td>电路、结构、固件设计</td></tr><tr><td>商业论证和定价</td><td>采购与供应商谈判</td></tr><tr><td>阶段评审与放行建议</td><td>认证测试执行</td></tr><tr><td>变更决策</td><td>生产制造和工艺</td></tr><tr><td>上市准备输入</td><td>销售签单和渠道管理</td></tr></tbody></table></div>
+<p><strong>KPI 方法论：商业结果 + 阶段门双轨</strong></p>
+<p>北极星指标优先选「健康毛利下的持续收入或客户数」，例如目标毛利率达成后持续付费的活跃客户数。阶段门 KPI 按生命周期切换，不要一套指标打到底。</p>
+<div class="table-wrap"><table><thead><tr><th>阶段</th><th>核心 KPI</th></tr></thead><tbody><tr><td>立项</td><td>目标价格、目标毛利、市场规模、NPV 或 ROI、预测销量</td></tr><tr><td>开发</td><td>计划交期、BOM 成本偏差、需求变更次数、工程问题关闭率</td></tr><tr><td>试产与量产</td><td>直通率、良率、认证通过、单位成本、供应链交期</td></tr><tr><td>上市</td><td>订单与收入、毛利率、首批客户数、渠道覆盖率</td></tr><tr><td>售后</td><td>现场故障率、年返修率、RMA、NPS 或 CSAT、续购率</td></tr></tbody></table></div>
+<p>落地建议：KPI 控制在 3 到 6 个，每个阶段只突出 1 到 2 个北极星指标和 2 到 3 个护栏指标；职责边界模糊时，先判断问题属于定义问题、执行问题还是资源问题。</p>
+<p><strong>示例：一款工业网关</strong></p>
+<ul><li>北极星：目标毛利下，年活跃客户数。</li><li>立项 KPI：目标售价 1200 元、目标毛利 45%、首年预测 500 台。</li><li>开发 KPI：BOM 成本不高于 660 元、立项后 10 个月内完成量产。</li><li>量产 KPI：直通率不低于 95%、现场年故障率不高于 2%。</li><li>售后 KPI：续购率不低于 60%。</li></ul>
+<h3 id="q1-追问-如何负责市场和客户洞察-目标行业选择-商业模式-定价和商业论证">Q1 追问. 如何负责市场和客户洞察、目标行业选择、商业模式、定价和商业论证？</h3>
+<p><strong>总方法：五个商业问题</strong></p>
+<ol><li>为谁解决什么真问题？（市场与客户洞察）</li><li>先进入哪些行业？（目标行业选择）</li><li>用什么方式赚钱？（商业模式）</li><li>收多少钱、怎么收？（定价）</li><li>值不值得投入？（商业论证）</li></ol>
+<p><strong>1. 市场与客户洞察</strong></p>
+<p>框架：JTBD + 客户价值地图 + 决策链分析。</p>
+<ul><li>JTBD：客户雇佣这个产品完成什么任务？成功的标准是什么？</li><li>客户价值地图：客户现在怎么做、痛在哪里、期望达到什么结果。</li><li>决策链分析：谁是使用者、影响者、预算者、决策者、采购者。</li></ul>
+<p>筛选公式：机会分 = 痛点强度 × 发生频率 × 支付意愿 × 可触达性。每个维度按 1 到 5 分打分，低于阈值的细分市场先不做。</p>
+<p><strong>2. 目标行业选择</strong></p>
+<p>框架：行业吸引力 × 可进入性矩阵。</p>
+<ul><li>行业吸引力：市场规模、增速、付费意愿、监管利好、竞争强度。</li><li>可进入性：技术能力、行业 Know-how、认证资质、渠道、服务网络、标杆客户。</li><li>每个行业打分后进入四象限：优先打「高吸引力 + 高可进入性」，其次补「高吸引力 + 中可进入性」的能力缺口。</li></ul>
+<p><strong>3. 商业模式</strong></p>
+<p>框架：商业模式画布 + 收入结构设计。</p>
+<ul><li>价值主张：帮客户省钱、赚钱、避险还是省人。</li><li>收入模式：硬件一次性、硬件 + 订阅、服务费、项目制、HaaS。</li><li>渠道结构：直销、经销商、集成商、OEM。</li><li>判断标准：客户预算形态（CAPEX 还是 OPEX）、回款周期、竞争壁垒、公司现金流。</li></ul>
+<p><strong>4. 定价</strong></p>
+<p>框架：3C 定价 + EVC/TCO + 价格阶梯 + 价格瀑布。</p>
+<ul><li>成本：决定价格下限。</li><li>客户：EVC = 客户当前方案 TCO - 新方案 TCO，决定价值定价上限。</li><li>竞争：决定参考价格区间。</li><li>最终定价区间 = 成本下限到 EVC 上限，再根据竞争位置落在区间内。</li><li>价格瀑布：目录价 → 渠道折扣 → 项目折扣 → 返利 → 实际净收入。</li></ul>
+<p><strong>5. 商业论证</strong></p>
+<p>框架：5 年 P&amp;L + 单位经济 + NPV/IRR/回收期 + 情景分析 + Stage-Gate。</p>
+<ul><li>单位经济：毛利 =（售价 - 变动成本 - 售后预留）× 销量 - 固定投入。</li><li>投入盘点：NRE、模具、认证、首批库存、市场费用。</li><li>情景分析：保守、基准、乐观三套预测。</li><li>阶段门：每个阶段重新验证商业目标是否仍然成立，再决定 Go / No-Go。</li></ul>
+<p><strong>一页纸商业论证模板</strong></p>
+<div class="table-wrap"><table><thead><tr><th>模块</th><th>要回答的问题</th></tr></thead><tbody><tr><td>客户与痛点</td><td>目标客户是谁？JTBD 和痛点强度？</td></tr><tr><td>市场规模</td><td>TAM / SAM / SOM 分别多大？</td></tr><tr><td>行业选择</td><td>吸引力分和可进入性分是多少？</td></tr><tr><td>竞争定位</td><td>客户现在用什么？我们的差异化是什么？</td></tr><tr><td>商业模式</td><td>收入结构、渠道、客户预算形态？</td></tr><tr><td>定价</td><td>目录价、价格区间、价格底线？</td></tr><tr><td>销量预测</td><td>保守、基准、乐观各多少台？</td></tr><tr><td>财务</td><td>5 年收入、毛利、投入、NPV、回收期？</td></tr><tr><td>风险</td><td>前三风险是什么？怎么对冲？</td></tr><tr><td>决策</td><td>Go / No-Go / 再调研？</td></tr></tbody></table></div>
+<h3 id="q1-追问-2-jtbd-框架详细讲解">Q1 追问 2. JTBD 框架详细讲解</h3>
+<p><strong>一句话定义</strong></p>
+<p>客户不是购买产品，而是在某个情境下「雇用」产品来完成一件他们自己的事。</p>
+<p><strong>核心思想</strong></p>
+<ul><li>传统思维：客户是谁？想要什么功能？</li><li>JTBD 思维：客户在什么情境下、遇到什么阻碍、想达成什么结果？为什么选你而不是其他方案？</li><li>竞争对手不是同类产品，而是客户当前使用的所有替代方案：人工、Excel、旧设备、外包、干脆不做。</li></ul>
+<p><strong>Job 的三层结构</strong></p>
+<ol><li>功能性任务：客观要完成的事。</li><li>情感性任务：使用后的感受，例如省心、可靠。</li><li>社会性任务：在别人眼中的形象，例如专业、不担责。</li></ol>
+<p>B 端尤其容易忽略后两层；采购经理「怕选错担责」经常比功能参数更决定成交。</p>
+<p><strong>标准表述公式</strong></p>
+<p>当[情境]时，我想要[动机/任务]，以便[期望结果]，避免[当前障碍或风险]。</p>
+<p>示例：当工厂巡检员需要人工抄录设备状态、经常漏报时，我想要一个自动采集数据的工业网关，以便实时掌握设备异常并减少人工巡检，避免因漏检导致停产和追责。</p>
+<p><strong>常用框架</strong></p>
+<ul><li>Job Map：把任务流程拆成定义、定位、准备、确认、执行、监控、修改、结束 8 步，逐点找痛点。</li><li>Outcome-Driven Innovation：列出期望结果，按「重要性 × 满意度」量化，优先做重要但当前不满意的项。</li><li>Progress / Struggle：重点挖客户切换时的挣扎：切换成本、风险、学习成本、团队阻力。</li></ul>
+<p><strong>JTBD 访谈方法</strong></p>
+<ol><li>不直接问想要什么功能，请对方回忆最近一次真实经历。</li><li>从触发点开始：当时发生了什么，为什么决定改变？</li><li>走时间线：找资料、比较、试用、购买、部署、使用、出问题。</li><li>重点问替代方案：之前用什么？为什么不够？换的过程中最怕什么？</li><li>问期望结果：成功后希望变成什么状态？怎么算成功？</li><li>最后验证支付意愿，但不用它直接定义需求。</li></ol>
+<p><strong>B 端硬件示例</strong></p>
+<ul><li>客户不是「想要网关」，而是「想在不增加巡检人员的情况下及时发现设备异常」。</li><li>竞争不是另一家网关，而是人工巡检、PLC、Excel、值班。</li><li>决策者 Job 是「降低运营成本」和「采购不担责」，决定认证、案例、售后设计。</li><li>使用者 Job 是「别增加额外工作」，决定安装、配置、维护易用性。</li></ul>
+<p><strong>常见误区</strong></p>
+<ul><li>把用户画像当 JTBD。</li><li>把功能需求当 Job：「支持 Modbus」是方案，不是 Job。</li><li>只问用户想要什么。</li><li>忽略情感与社会 Job。</li><li>一个产品绑死一个 Job；要选出主 Job 定义第一版边界。</li></ul>
+<p><strong>落点</strong></p>
+<p>JTBD 描述客户任务，期望结果定义成功标准，障碍定义优先级，替代方案定义竞争格局，再向下转化为 PRD、硬件规格和需求优先级。</p>
+<h3 id="q1-追问-3-客户价值地图是什么意思">Q1 追问 3. 客户价值地图是什么意思？</h3>
+<p><strong>一句话定义</strong></p>
+<p>客户价值地图 = 把客户完成某件事的完整过程画出来，标出他们每一步在做什么、哪里痛、想要什么结果，以及你的产品或方案能在哪些环节创造价值。</p>
+<p>它回答三个问题：</p>
+<ol><li>客户现在是怎么做的？</li><li>哪里让他不爽或付出成本？</li><li>我们能在哪里替他消除、简化或提升？</li></ol>
+<p><strong>两种常见理解</strong></p>
+<ul><li>广义：梳理客户行为链的工具，从触发需求到最终完成，逐段记录动作、痛点、期望结果和价值切入点。</li><li>狭义：价值主张画布（Value Proposition Canvas）的左半部分 Value Map，包含产品与服务、Pain Relievers（痛点消除）、Gain Creators（收益创造），并与右侧客户画像匹配。</li></ul>
+<p><strong>地图四层结构</strong></p>
+<div class="table-wrap"><table><thead><tr><th>层</th><th>内容</th></tr></thead><tbody><tr><td>当前行为</td><td>客户从发现问题到解决，具体做了哪些步骤，用了什么工具</td></tr><tr><td>痛点</td><td>浪费时间、额外成本、出错风险、体力劳动、协调麻烦</td></tr><tr><td>期望结果</td><td>客户希望达到的效率、成本、稳定性，以及情感和社会层面收益</td></tr><tr><td>价值机会</td><td>产品能替代、简化、加速、降低风险或带来新能力的环节</td></tr></tbody></table></div>
+<p><strong>怎么画一张客户价值地图</strong></p>
+<ol><li>选一个具体场景，不要泛泛画整个客户。</li><li>从触发点开始：什么事件让客户发现问题？</li><li>按时间线列步骤：调研、比较、试用、购买、部署、使用、维护、汇报。</li><li>每一步记录：客户做了什么、花了多少时间和成本、痛在哪里、期望变成什么。</li><li>最后标出机会点：哪几步可以被自动化、替代或简化，哪里的痛最强烈且最愿意付费。</li></ol>
+<p><strong>工业网关示例</strong></p>
+<ul><li>当前行为：巡检员每天到现场抄表，回办公室录 Excel，主管每周汇总，发现异常再派人处理。</li><li>痛点：漏抄、数据滞后、人工成本高、故障发现晚导致停产、Excel 易错。</li><li>期望结果：实时看到设备状态，异常自动报警，减少巡检人力，数据进系统。</li><li>价值机会：用网关自动采集替代人工抄录，用平台告警替代事后发现。</li></ul>
+<p><strong>和 JTBD 的关系</strong></p>
+<ul><li>JTBD 回答：客户雇佣产品完成什么任务。</li><li>客户价值地图回答：任务发生在哪些环节、痛点在哪里、收益在哪里。</li><li>用户旅程图回答：客户体验在时间上的路径。</li><li>PRD 回答：用哪些具体功能实现价值点。</li></ul>
+<p>顺序通常是：先有 JTBD，再用客户价值地图找到价值和痛点，最后落到产品规格。</p>
+<h3 id="q1-追问-4-客户价值地图详细示例">Q1 追问 4. 客户价值地图详细示例</h3>
+<p><strong>示例 1：工业网关 / 工厂设备巡检</strong></p>
+<p>场景：某工厂有 3 条产线、80 台设备，2 名巡检员负责日常抄表。</p>
+<div class="table-wrap"><table><thead><tr><th>环节</th><th>客户动作</th><th>时间/成本</th><th>痛点</th><th>期望结果</th><th>价值机会</th></tr></thead><tbody><tr><td>巡检</td><td>巡检员按路线到设备前抄表</td><td>每人每天约 4 小时</td><td>漏抄、错抄、现场环境危险</td><td>减少巡检时间</td><td>网关自动采集数据</td></tr><tr><td>录入</td><td>回办公室手工录入 Excel</td><td>每人每天约 1 小时</td><td>数据滞后、易错</td><td>数据自动进系统</td><td>数据云端自动上报</td></tr><tr><td>汇总</td><td>主管每周手工汇总</td><td>每周约半天</td><td>无法实时掌握全局</td><td>实时看板</td><td>设备监控大屏</td></tr><tr><td>告警</td><td>设备异常后才发现</td><td>每次停产约损失 2 万元</td><td>发现晚、响应慢</td><td>提前预警</td><td>阈值告警与通知</td></tr><tr><td>维修</td><td>人工到场排查原因</td><td>每次 2 到 4 小时</td><td>定位慢、依赖经验</td><td>快速定位问题</td><td>历史数据辅助诊断</td></tr><tr><td>汇报</td><td>月底写运营报告</td><td>每月 1 到 2 天</td><td>数据不完整、不直观</td><td>自动生成报告</td><td>自动报表与导出</td></tr></tbody></table></div>
+<p>量化价值：巡检人力可减少约 50%；按每年 4 次停产事故、每次损失 2 万元估算，可减少约 8 万元损失。这个数字可以直接支撑客户访谈和定价。</p>
+<p><strong>示例 2：冷链运输温湿度监控</strong></p>
+<p>场景：冷链物流公司有 20 辆冷藏车，每车货物价值约 10 万元，运输全程需要保持在 2 到 8 摄氏度。</p>
+<p>当前行为：</p>
+<ul><li>司机运输途中手动记录温度。</li><li>到站后提交纸质或 Excel 记录。</li><li>总部事后检查，发现超标再处理。</li><li>客户投诉或货物变质后，再协商赔偿。</li></ul>
+<p>痛点：</p>
+<ul><li>数据可信度低，客户不认账。</li><li>温度超标只能事后发现，货损已经发生。</li><li>责任难界定，司机、调度、仓库互相推诿。</li><li>可能触发合同罚款或合规检查。</li></ul>
+<p>期望结果：</p>
+<ul><li>全程实时温度可见。</li><li>超标立即告警，司机和总部同时收到通知。</li><li>自动生成合规报告，作为交付凭证。</li><li>事故责任清晰，减少扯皮。</li></ul>
+<p>价值机会：</p>
+<ul><li>温湿度传感器 + 定位模块 + 云平台。</li><li>实时曲线、超标告警、电子报告。</li><li>用「避免一次货损事故」计算价值，例如每月 1 次事故损失 2 万元，新方案把事故率降低一半，年价值约 12 万元。</li></ul>
+<p><strong>示例 3：设备服务商的远程运维平台</strong></p>
+<p>场景：某设备服务商维护 500 台分散在客户现场的工业设备，靠工程师上门处理故障。</p>
+<p>当前行为：</p>
+<ul><li>客户设备故障后打电话报修。</li><li>工程师排期后上门，现场排查原因。</li><li>不确定备件型号，返程取件或二次上门。</li><li>维修后回访，手工记录服务报告。</li></ul>
+<p>痛点：</p>
+<ul><li>被动响应，故障发生前没有预警。</li><li>每次上门成本约 800 元，每月约 30 次上门。</li><li>备件库存不准，影响一次修复率。</li><li>SLA 响应不达标，可能被客户扣款。</li></ul>
+<p>期望结果：</p>
+<ul><li>远程看到设备运行状态和故障代码。</li><li>故障前预警，提前安排备件。</li><li>部分故障远程处理，减少上门。</li><li>工单和服务报告自动沉淀。</li></ul>
+<p>价值机会：</p>
+<ul><li>IoT 采集终端 + 远程运维平台 + 告警规则 + 工单系统。</li><li>量化示例：30% 的故障远程解决，每月 30 次上门降为 21 次，每月节省约 7200 元；备件库存也可下降 20%。</li></ul>
+<h3 id="q1-追问-5-客户价值地图练习模板">Q1 追问 5. 客户价值地图练习模板</h3>
+<p><strong>标准填空模板</strong></p>
+<ol><li>目标客户与场景：</li><li>当前做法（分步骤）：</li><li>时间/成本：</li><li>三个最大痛点：</li><li>期望结果：</li><li>价值机会：</li><li>可量化收益：</li><li>主要替代方案：</li><li>一句话价值主张：</li></ol>
+<p><strong>练习 1：工厂设备巡检</strong></p>
+<p>场景：某工厂 3 条产线、80 台设备，2 名巡检员每天靠人工抄表，主管每周汇总。</p>
+<p><strong>练习 2：冷链运输</strong></p>
+<p>场景：某冷链物流公司 20 辆冷藏车，每车货值约 10 万元，全程要求 2 到 8 摄氏度，靠司机手工记录温度。</p>
+<p><strong>练习 3：设备服务商远程运维</strong></p>
+<p>场景：某设备服务商维护 500 台分散在客户现场的工业设备，故障后由工程师上门处理，每月约 30 次上门。</p>
+<p><strong>练习 4：自选场景</strong></p>
+<p>选一个你实际负责或感兴趣的 B 端硬件产品填写。</p>
+<p><strong>检查标准</strong></p>
+<p>填写完成后，我会重点检查：</p>
+<ul><li>痛点是否具体到某个环节，而不是泛泛而谈。</li><li>时间和成本数字是否有依据。</li><li>价值机会是否直接对应痛点。</li><li>替代方案是否包含客户现在真正在用的方式。</li><li>一句话价值主张是否能解释客户为什么换掉现有方案。</li><li>可量化收益是否足以支撑定价和商业论证。</li></ul>
+<h3 id="q1-追问-6-新场景练习-用户待填写">Q1 追问 6. 新场景练习（用户待填写）</h3>
+<p>继续使用「Q1 追问 5」的标准填空模板。</p>
+<p><strong>新练习 1：智慧大棚环境监测</strong></p>
+<p>场景：某农业种植企业管理 50 个大棚，种植番茄等经济作物，目前靠工人定时进棚查看温湿度并手动开窗、开关卷帘和灌溉，病虫害和冻害时有发生。</p>
+<p><strong>新练习 2：充电站远程运营</strong></p>
+<p>场景：某充电桩运营商管理 30 个充电站、共 600 根充电桩，分布在不同城区，桩离线、启动失败、故障时靠巡检和客户投诉发现，客服电话多。</p>
+<p><strong>新练习 3：实验室设备共享管理</strong></p>
+<p>场景：某高校实验中心有 200 台大型仪器，师生通过纸质登记或微信群预约，使用时长靠手动记录，设备维护和收费统计依赖管理员手工整理。</p>
+<h3 id="q1-追问-7-用户练习填写与点评">Q1 追问 7. 用户练习填写与点评</h3>
+<p><strong>练习 1：智慧大棚环境监测（用户填写）</strong></p>
+<ol><li>目标客户与场景：某农业种植企业管理 50 个大棚，种植番茄等经济作物，目前靠工人定时进棚查看温湿度并手动开窗、开关卷帘和灌溉，病虫害和冻害时有发生。</li><li>当前做法（分步骤）：工人定时进棚查看温湿度并手动开窗、开关卷帘和灌溉。</li><li>时间/成本：每次操作成本两小时，每天要操作两次。</li><li>三个最大痛点：人工查看温湿度；手动开窗；人工灌溉；耗时非常长，无法避免病虫害和冻害。</li><li>期望结果：可以自动根据温湿度进行开窗和关窗以及人工灌溉。</li><li>价值机会：温湿度和光照传感器 + 可联网的自动开窗结构 + 自动灌溉系统，及时上报温湿度数据，及时预警未来天气和光照，自动判断开窗和灌溉的时间。</li><li>可量化收益：人工操作成本从 2 小时改为 1 分钟，以前一个员工管理一个棚，现在一个员工可以管理 5 到 10 个。</li><li>主要替代方案：（未填写）</li><li>一句话价值主张：（未填写）</li></ol>
+<p><strong>点评</strong></p>
+<ul><li>优点：痛点、价值机会和人力收益方向是对的，已经形成「传感器 + 执行机构 + 平台」的完整硬件方案。</li><li>待修正：</li></ul>
+<ol><li>当前做法要拆成步骤：进棚 → 看温湿度计 → 判断 → 开窗/关窗 → 灌溉 → 记录，便于定位价值点。</li><li>时间成本要写明口径：2 小时是每人次、每棚还是每次巡查？按 50 个棚换算总工时，避免数字不可验证。</li><li>期望结果里「人工灌溉」应为「自动灌溉」。</li><li>量化收益要换算成金额：员工月薪 × 节省工时 × 棚数；再单独估算病虫害和冻害减少的损失。</li><li>补充替代方案：人工、普通温控设备、半自动卷帘机、第三方农业物联网方案。</li><li>一句话价值主张示例：让种植企业不用进棚也能自动调控环境，减少人工并降低灾害损失。</li></ol>
+<p><strong>练习 2：充电站远程运营（用户填写）</strong></p>
+<ol><li>目标客户与场景：某充电桩运营商管理 30 个充电站、共 600 根充电桩，分布在不同城区，桩离线、启动失败、故障时靠巡检和客户投诉发现，客服电话多。</li><li>当前做法（分步骤）：每 10 个充电站或每个区域由一个工作人员负责，工作人员收到故障或需要日常检修时处理。</li><li>时间/成本：每个工作人员维护 10 个充电站，每天耗费 4 小时；每台设备要定期巡检，每个月需要花 2 天检查设备。</li><li>三个最大痛点：工作人员维修时间成本很高；新员工培训成本高；设备故障时工作人员需要在路上花时间，且同一时间多台设备出现问题无法及时维修，损失用户订单。</li><li>期望结果：每日自动检查设备健康状态，出现故障第一时间上报，客户投诉后增加一键上报故障功能。</li><li>价值机会：自动检查设备健康状态 + C 端用户小程序一键上报 + 自动调度最近维修员 + 工程师沉淀维修文档，方便一线人员维修。</li><li>可量化收益：取代手动检查设备的时间成本和人力成本，减少巡检通勤成本和工程师上门维修成本；故障从原来 2 小时滞后变成 30 分钟内可到达现场，从发现问题到解决问题缩短 1.5 小时，减少 18 个用户的损失，每个充电站每小时收益 20 元，减少 900 元损失。</li><li>主要替代方案：（未填写）</li><li>一句话价值主张：（未填写）</li></ol>
+<p><strong>点评</strong></p>
+<ul><li>优点：已经区分了「省人力、省通勤、挽回收入」三类收益，价值机会也包含平台、用户端、派单和知识沉淀。</li><li>待修正：</li></ul>
+<ol><li>当前做法要拆步骤：设备离线或故障 → 用户投诉 → 客服登记 → 派单 → 工程师到场 → 排查 → 修复 → 回访。</li><li>成本要写明口径：4 小时是每人每天巡检时间还是处理故障时间？每月 2 天是按设备、按站点还是按人？</li><li>量化口径错位：「18 个用户」「每个充电站每小时收益 20 元」「减少 900 元」三个单位不一致。按站算：1 站 1.5 小时 × 20 元/小时 = 30 元；按用户算：18 人 × 1.5 小时 × 20 元/小时 = 540 元；按订单算：18 单 × 50 元/单 = 900 元。要选一个统一口径。</li><li>时间收益要区分「到达现场缩短 1.5 小时」和「故障恢复缩短 1.5 小时」，完整收益应算到修复完成。</li><li>补充替代方案：人工巡检、第三方运维、充电桩原厂远程监控、故障时用户自助退款。</li><li>一句话价值主张示例：让充电站运营商少跑现场、早发现故障、快速恢复运营，从而降低运维成本并减少充电收入损失。</li></ol>
+<p><strong>练习 3：实验室设备共享管理</strong></p>
+<p>用户暂未填写，可后续补充。</p>
+<h3 id="q1-追问-8-决策链分析详细解答">Q1 追问 8. 决策链分析详细解答</h3>
+<p><strong>一句话定义</strong></p>
+<p>决策链分析 = 找出一次 B 端采购中所有参与决策的人，明确他们的角色、诉求、影响力、否决权和决策标准，再针对每个角色制定不同的影响策略。</p>
+<p><strong>为什么 B 端硬件特别需要</strong></p>
+<ul><li>使用者、购买者、决策者经常不是同一个人。</li><li>硬件采购通常金额大、周期长、风险高，常有多人共同决策。</li><li>一个角色可能一票否决：IT 觉得不安全、财务觉得超预算、法务觉得合同风险大。</li><li>只搞定使用者，可能没有预算；只搞定老板，可能被技术评估卡住。</li></ul>
+<p><strong>七类决策角色</strong></p>
+<ol><li>发起者：提出需求和问题的人，例如设备主管。</li><li>使用者：实际每天使用产品的人，例如巡检员、工程师。</li><li>影响者：提供专业意见的人，例如 IT、技术专家、顾问。</li><li>决策者：最终拍板的人，例如总经理、事业部负责人。</li><li>审批者：控制预算、合规和流程的人，例如财务、法务。</li><li>采购者：负责商务谈判和采购流程的人，例如采购经理。</li><li>把关者：控制信息和流程入口的人，例如采购流程负责人、信息安全负责人。</li></ol>
+<p>注意：一个人可以同时承担多个角色；小公司里老板可能既是决策者又是采购者。</p>
+<p><strong>三层分析</strong></p>
+<ol><li>角色层：谁参与？谁有否决权？</li><li>利益层：每个人在意什么？他的 KPI、风险和顾虑是什么？</li><li>流程层：需求怎么提出、技术怎么评估、预算怎么审批、合同怎么签订？</li></ol>
+<p><strong>四步分析方法</strong></p>
+<ol><li>找出触发者和问题所有者。</li><li>画出完整决策链，不要只看联系人。</li><li>对每个角色填写：诉求、关注点、影响力、否决权、所需证据。</li><li>为每个角色设计一套沟通策略和证据包。</li></ol>
+<p><strong>决策链分析模板</strong></p>
+<div class="table-wrap"><table><thead><tr><th>角色</th><th>关键人</th><th>核心诉求</th><th>关注点</th><th>影响力</th><th>否决权</th><th>所需证据</th><th>对应策略</th></tr></thead><tbody><tr><td>发起者</td><td>设备主管</td><td>降低故障率</td><td>稳定性</td><td>高</td><td>否</td><td>案例、数据</td><td>讲 ROI</td></tr><tr><td>使用者</td><td>巡检员</td><td>少跑现场</td><td>易用性</td><td>低</td><td>否</td><td>试用、演示</td><td>给试用</td></tr><tr><td>影响者</td><td>IT 负责人</td><td>数据安全</td><td>协议、安全</td><td>中</td><td>是</td><td>安全认证、架构图</td><td>给技术方案</td></tr><tr><td>决策者</td><td>总经理</td><td>投资回报</td><td>风险</td><td>高</td><td>是</td><td>商业论证</td><td>讲商业价值</td></tr><tr><td>审批者</td><td>财务</td><td>预算可控</td><td>付款条件</td><td>中</td><td>是</td><td>报价、合同条款</td><td>提前对预算</td></tr><tr><td>采购者</td><td>采购经理</td><td>合规、性价比</td><td>资质、流程</td><td>中</td><td>否</td><td>资质文件</td><td>配合采购流程</td></tr></tbody></table></div>
+<p><strong>示例：工业网关</strong></p>
+<ul><li>巡检员：关心别增加工作量，要试用体验。</li><li>设备主管：关心故障率下降，要客户案例和数据。</li><li>IT：关心数据安全和接口协议，要架构图和认证。</li><li>采购：关心供应商资质和价格，要报价和商务条款。</li><li>总经理：关心投资回报和风险，要商业论证。</li><li>财务：关心预算和付款方式，要提前对齐。</li></ul>
+<p><strong>每个角色要问的问题</strong></p>
+<ol><li>这个需求是谁提出的？</li><li>谁负责技术评估？</li><li>谁能一票否决？</li><li>谁批预算？</li><li>采购流程是什么？</li><li>成交后谁使用、谁维护？</li><li>谁支持我们，谁支持竞品？</li></ol>
+<p><strong>常见错误</strong></p>
+<ul><li>只搞定使用者，忽略决策者和否决者。</li><li>把「联系人」当成「决策者」。</li><li>给所有角色讲同一套价值。</li><li>忽略 IT、法务、财务的否决权。</li><li>不了解采购流程就急着谈价格。</li><li>人员变动后不重新更新决策链。</li></ul>
+<p><strong>和前面框架的关系</strong></p>
+<ul><li>JTBD：每个角色都有自己的 Job。</li><li>客户价值地图：每个角色有自己的痛点、期望和价值点。</li><li>决策链分析：把这些价值分别送给对的人，并在对的时间提供对的决定证据。</li></ul>
+<h3 id="q1-追问-9-决策链分析详细例子">Q1 追问 9. 决策链分析详细例子</h3>
+<p><strong>比喻：决策链像通关</strong></p>
+<p>B 端采购不是一个人决定，而是像过关：发起者提出需求，技术把关，财务管钱，老板拍板，采购走流程，使用的人最后验收。每一关都要给对应的人不同的证据。</p>
+<p><strong>详细例子 1：食品工厂买工业网关</strong></p>
+<p>人物设定：</p>
+<ul><li>张师傅：一线巡检员，使用者。</li><li>李主管：设备主管，发起者。</li><li>王工：IT 负责人，影响者，有一票否决权。</li><li>赵总：总经理，决策者。</li><li>陈会计：财务，审批者。</li><li>刘经理：采购，采购者。</li></ul>
+<p>故事：</p>
+<ol><li>去年设备故障没及时发现，停产 2 次，李主管被批评，所以提出上设备监控。</li><li>李主管先找技术方案，张师傅一听要换工作方式就抵触，怕以后还要多记一份数据。</li><li>王工最担心数据安全，要求不能随便把设备数据传到外部平台。</li><li>赵总只关心投入多少、多久回本。</li><li>陈会计关心预算科目和付款周期。</li><li>刘经理需要资质、报价和招标流程。</li></ol>
+<p>每关要做什么：</p>
+<ul><li>张师傅：给试用，证明以后不用抄表，反而更省事。</li><li>李主管：给同行案例和故障率下降数据，方便他向赵总汇报。</li><li>王工：给架构图、安全认证、本地部署和加密方案。</li><li>赵总：给商业论证：投入 12 万，每年省人工和停产损失 8 万，回收期约 1.5 年。</li><li>陈会计：提前确认预算科目、付款方式、发票。</li><li>刘经理：提前准备好资质文件、报价单和商务条款。</li></ul>
+<p>结果：每个角色都拿到自己最关心的证据，采购才能顺利推进。</p>
+<p><strong>详细例子 2：医院买设备</strong></p>
+<ul><li>科室主任：使用者兼发起者，关心临床好用。</li><li>设备科：影响者，关心维护、备件、品牌可维修性。</li><li>信息科：影响者，关心设备能否接入 HIS 或数据安全。</li><li>院长：决策者，关心预算、合规、学科建设。</li><li>采购中心：采购者，要走招标和三家比价。</li><li>财务：审批者，关心付款节奏。</li></ul>
+<p>即使科室主任强烈推荐，设备科说「备件不好买」或信息科说「不能接入系统」，项目也会被否决。所以产品经理不能只搞定最热情的人。</p>
+<p><strong>小公司 vs 大公司</strong></p>
+<ul><li>小公司：老板可能一个人就是使用者、决策者、采购者，决策快，但更依赖个人信任。</li><li>大公司：角色分散、流程长、证据要求高，技术文档、安全认证、商务条款都可能是关卡。</li></ul>
+<p><strong>一句话总结</strong></p>
+<p>决策链分析就是提前搞清楚：谁会支持、谁会反对、谁能否决、每个人要什么证据，然后分别给他们想要的答案。</p>
+<h3 id="q1-追问-10-决策链分析练习题-用户待作答">Q1 追问 10. 决策链分析练习题（用户待作答）</h3>
+<p><strong>案例 1：连锁餐饮智能冰柜监控</strong></p>
+<p>某连锁餐饮集团准备给 50 家门店采购冰柜温控监控系统，避免食材变质和食安事故。门店店长每天要手工记录温度；运营总监担心食安事故；IT 部门担心门店数据不能随便上传；财务要控制预算；老板要求半年内回本；采购经理要完成招标。</p>
+<p>题目：</p>
+<ol><li>列出这条决策链上至少 5 个角色，并写出每个人最关心什么。</li><li>谁最可能一票否决？为什么？</li><li>如果店长强烈反对新系统，你会怎么办？</li><li>给老板的商业论证至少要包含哪三个数字？</li></ol>
+<p><strong>案例 2：只搞定车间主任的工业网关</strong></p>
+<p>某工业网关厂商向一家大型制造企业推进项目，销售只搞定了车间主任。车间主任很认可，但采购最后没有通过。后来才知道 IT 觉得数据不安全，财务认为预算不够，总经理觉得 ROI 不清晰。</p>
+<p>题目：</p>
+<ol><li>销售漏掉了哪些角色？</li><li>每个角色可能的否决理由是什么？</li><li>重新推进时第一步应该做什么？</li><li>如果 IT 担心数据安全，产品经理应该准备什么证据？</li></ol>
+<p><strong>案例 3：医院设备采购</strong></p>
+<p>某医疗设备厂商进入一家三甲医院，科室主任非常认可设备，但项目迟迟没有进展。设备科担心备件不好买，信息科担心设备接不进医院系统，院长关心预算和合规，采购中心要求三家比价，财务要求付款周期拉长。</p>
+<p>题目：</p>
+<ol><li>科室主任认可为什么不足以成交？</li><li>列出这条决策链上每个角色的核心诉求。</li><li>对每个角色分别准备什么材料？</li><li>如果采购中心要求三家比价，作为产品经理应该怎么做？</li></ol>
+<p>答题建议：每个角色写清楚「角色 + 他怕什么 + 他要什么证据 + 是否能否决」；没有唯一标准答案，能自圆其说即可。</p>
+<h3 id="q1-追问-11-决策链练习题用户作答与点评">Q1 追问 11. 决策链练习题用户作答与点评</h3>
+<p><strong>案例 1：连锁餐饮智能冰柜监控（用户作答摘要）</strong></p>
+<ul><li>角色：运营总监、IT 负责人、财务、老板、采购经理。</li><li>一票否决：老板最可能，因为关心成本和回本。</li><li>店长反对：现场演示系统和 SOP，说明自动上报温度，不用手工记录。</li><li>商业论证：给案例和规避的温控异常数量；按冰柜价值估算避免变质损失的金额；回本周期和竞品价格优势。</li></ul>
+<p><strong>点评</strong></p>
+<ul><li>做得好的地方：店长反对的应对方式正确；意识到老板关心成本和回本。</li><li>需要补强：</li></ul>
+<ol><li>漏掉店长：店长是最直接的反对者和使用者，应列为角色。</li><li>IT 和财务也有否决能力，不能只盯老板。</li><li>商业论证的三个数字应统一为：投入成本、每年节省或挽回金额、回收周期；案例数是佐证，不是财务数字；竞品价格优势应单独讲。</li><li>给店长的不只是演示，还要让他参与试点、简化 SOP、把他变成内部支持者。</li></ol>
+<p><strong>案例 2：只搞定车间主任的工业网关（用户作答摘要）</strong></p>
+<ul><li>漏掉角色：IT 负责人、财务、总经理。</li><li>IT：担心数据安全和是否上公网，要求本地部署。</li><li>财务：担心铺开量大、预算上升、维护成本高。</li><li>总经理：觉得 ROI 不清晰。</li><li>重新推进：先解决总经理 ROI，再对齐财务预算，同时解决 IT 本地部署和接口问题。</li><li>IT 证据：向研发拿对接文档，确认本地部署流程。</li><li>ROI 举例：每月停 2 次、每次 2 小时，损失 4 小时产值；5 万部署成本可避免 10 到 20 万损失。</li></ul>
+<p><strong>点评</strong></p>
+<ul><li>做得好的地方：三个漏掉角色找得准；IT 否决理由和财务顾虑正确；ROI 举例方向很好。</li><li>需要补强：</li></ul>
+<ol><li>还漏掉一线使用者和采购经理。</li><li>重新推进的第一步应是重新盘点完整决策链和采购流程，而不是直接谈 ROI。</li><li>财务不是「增加预算」，而是提前确认预算科目、采购批次和付款周期。</li><li>ROI 要基于工厂真实数据，例如过去一年停产次数和损失金额，不能用假设数字直接当结论。</li><li>IT 材料还应包含安全架构图、加密方案、权限说明和部署测试报告。</li></ol>
+<p><strong>案例 3：医院设备采购（用户作答摘要）</strong></p>
+<ul><li>科室主任认可不足以成交，因为还有设备科、信息科、院长、采购中心、财务。</li><li>科室主任：关注诊断效率和清晰度。</li><li>设备科：关注备件好不好买、售后安装。</li><li>信息科：关注能否接入医院系统，需要接口文档。</li><li>院长：关注回本周期、价格、合规。</li><li>采购中心：关注三家比价和性价比。</li><li>财务：关注付款周期和资金周转。</li><li>材料：科室主任给使用说明；设备科给备件数量和安装；信息科给接口文档；院长给成本合规预算；采购中心给价格和性能表；财务付款周期不知道怎么做。</li></ul>
+<p><strong>点评</strong></p>
+<ul><li>做得好的地方：角色基本齐全，核心诉求基本准确。</li><li>需要补强：</li></ul>
+<ol><li>科室主任要的是临床价值证据、试用和培训，不只是使用说明。</li><li>设备科要的是备件供应方案、维修响应 SLA、耗材价格和售后网络。</li><li>信息科要的是系统架构、接口文档、数据安全和兼容性说明。</li><li>院长要的是完整商业论证：投入、年收益、回收周期、合规文件、风险和案例。</li><li>财务要的是灵活付款方案，例如分期付款、租赁、延保打包、不同付款周期选项，而不是没有办法。</li></ol>
+<h3 id="q1-追问-12-决策链分析能力加强计划">Q1 追问 12. 决策链分析能力加强计划</h3>
+<p><strong>当前判断</strong></p>
+<p>问题不是「不懂」，而是颗粒度和完整性不够。重点练「补全」，而不是重新学理论。</p>
+<p><strong>四个训练阶段</strong></p>
+<p>阶段 1：补角色与否决权</p>
+<ul><li>能力目标：列出全部角色，标出否决权，分清支持者、反对者、沉默者。</li><li>练习：给定场景，填写决策链表格：角色、关键人、核心诉求、关注点、影响力、否决权、所需证据、对应策略。</li><li>过关标准：不漏使用者，不把联系人当决策者，每个否决角色都写出来。</li></ul>
+<p>阶段 2：补动机与冲突</p>
+<ul><li>能力目标：写出每个角色的 Job、KPI、风险和真实顾虑，处理角色之间的利益冲突。</li><li>练习：给两个冲突角色设计双赢方案，例如 IT 要安全 vs 运维要便捷，财务要省钱 vs 临床要性能。</li><li>过关标准：每个角色至少有一个专属价值主张，不把所有角色混成一套话术。</li></ul>
+<p>阶段 3：补证据与节奏</p>
+<ul><li>能力目标：知道每个角色在哪个决策环节介入，需要什么材料，由谁在什么时候给。</li><li>练习：把一条采购流程按时间线画出来，标注每个关卡、负责人、所需材料和动作。</li><li>过关标准：材料与角色诉求一一对应，时间顺序正确，不出现「方案都定了才找财务」。</li></ul>
+<p>阶段 4：实战推演</p>
+<ul><li>能力目标：面对突发事件能调整策略，例如 IT 否决、预算砍半、关键人离职、竞品低价。</li><li>练习：给定一个推进中的案例，模拟每一步应该做什么，以及如果失败如何补救。</li><li>过关标准：能同时守住 ROI、安全、预算、流程和客户关系。</li></ul>
+<p><strong>立即要做的三件事</strong></p>
+<ol><li>补全三个案例的修正版：每个案例都填完整的 8 列表格。</li><li>用自己真实负责或感兴趣的 B 端硬件产品，做一份完整决策链档案。</li><li>每次练习按 10 分制自我检查：角色完整 3 分、诉求与否决权 3 分、证据匹配 2 分、策略落地 2 分。</li></ol>
+<p><strong>评分标准</strong></p>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>分值</th><th>检查问题</th></tr></thead><tbody><tr><td>角色完整</td><td>3</td><td>是否漏掉使用者、影响者、审批者、采购者？</td></tr><tr><td>诉求与否决权</td><td>3</td><td>每个角色是否写出了真实顾虑？谁能否决？</td></tr><tr><td>证据匹配</td><td>2</td><td>每份材料是否对应一个角色的决策标准？</td></tr><tr><td>策略落地</td><td>2</td><td>策略是否能在真实采购流程中执行？</td></tr></tbody></table></div>
+<h3 id="q1-追问-13-如何完全掌握决策链分析-直接答案">Q1 追问 13. 如何完全掌握决策链分析（直接答案）</h3>
+<p><strong>掌握的定义</strong></p>
+<ol><li>不查资料，能一口气写出 7 类角色、每类角色的诉求、否决权、所需证据和介入时机。</li><li>拿到任意 B 端采购场景，30 秒内说出关键决策链。</li><li>在真实项目里能提前预判谁会反对，并在被否决前把材料给对。</li></ol>
+<p><strong>最短且可验证的路径</strong></p>
+<ol><li>背熟一条公式：角色 × 诉求 × 否决权 × 证据 × 时机 × 策略。</li><li>用固定模板连续做 10 个不同行业的案例，每个案例填完整表格，不跳步。</li><li>每个案例按 10 分制评分，低于 8 分重新做；连续 5 个案例拿 10 分，理论关才算过。</li><li>每个案例再加一个突发事件推演，直到不查模板也能应对。</li><li>用真实负责的产品做一份完整决策链档案，并让真实销售或客户验证。</li></ol>
+<p><strong>你现在缺的不是理论</strong></p>
+<p>缺的是重复练习、即时反馈和真实校准。最快路径就是：把案例 1、2、3 的修正版用完整表格重做一遍，然后继续做第 4 到第 10 个行业案例。</p>
+<h3 id="q1-追问-14-机会评分详解">Q1 追问 14. 机会评分详解</h3>
+<p><strong>一句话定义</strong></p>
+<p>机会评分 = 用一个统一公式给「细分市场或客户问题」打分，用来排序哪些值得先做。</p>
+<p><strong>公式</strong></p>
+<p>机会分 = 痛点强度 × 发生频率 × 支付意愿 × 可触达性</p>
+<p>每项 1 到 5 分，最高 625 分。分数是相对排名工具，不是绝对结论。</p>
+<p><strong>为什么用乘法</strong></p>
+<p>四个条件都重要。乘法的意思是：某一个维度很弱，会把总分显著拉低；如果有一个维度根本不存在，机会就是 0。加法做不到这种效果。</p>
+<p><strong>每个维度怎么理解</strong></p>
+<ul><li>痛点强度：问题不解决会造成多大损失？1 是轻微不便，5 是严重损失、安全或合规风险。</li><li>发生频率：这个任务或痛点多久发生一次？1 是每年，5 是每天或持续发生。</li><li>支付意愿：客户愿不愿意花钱？1 是不愿付，5 是已经列入采购计划或正在为替代方案付费。</li><li>可触达性：你能不能找到客户、卖进去、交付服务？1 是找不到或无法交付，5 是现有客户和渠道直接可触达。</li></ul>
+<p><strong>评分锚点表</strong></p>
+<div class="table-wrap"><table><thead><tr><th>分数</th><th>痛点强度</th><th>发生频率</th><th>支付意愿</th><th>可触达性</th></tr></thead><tbody><tr><td>1</td><td>轻微不便</td><td>每年一次</td><td>不愿付费</td><td>找不到客户或无法交付</td></tr><tr><td>2</td><td>有影响但可忍受</td><td>每季度一次</td><td>有兴趣但没预算</td><td>需要建立全新渠道</td></tr><tr><td>3</td><td>明显浪费时间或钱</td><td>每月一次</td><td>有预算但犹豫</td><td>有部分渠道</td></tr><tr><td>4</td><td>造成可观损失或风险</td><td>每周一次</td><td>已为替代方案付钱</td><td>有现成渠道</td></tr><tr><td>5</td><td>严重损失或合规风险</td><td>每天或持续</td><td>已列入采购计划</td><td>现有客户直接可触达</td></tr></tbody></table></div>
+<p><strong>运作步骤</strong></p>
+<ol><li>列出候选细分市场或客户问题。</li><li>对每个候选，按四维分别打 1 到 5 分。</li><li>相乘并排序。</li><li>设定一个最低分阈值，低于阈值的先不做。</li><li>对排名靠前的 2 到 3 个，用客户访谈验证分数是否成立。</li></ol>
+<p><strong>示例：工业网关三个细分市场</strong></p>
+<div class="table-wrap"><table><thead><tr><th>细分市场</th><th>痛点</th><th>频率</th><th>支付</th><th>可触达</th><th>总分</th></tr></thead><tbody><tr><td>食品工厂设备巡检</td><td>4</td><td>4</td><td>4</td><td>3</td><td>192</td></tr><tr><td>冷链物流温控</td><td>5</td><td>5</td><td>4</td><td>2</td><td>200</td></tr><tr><td>小作坊</td><td>2</td><td>3</td><td>1</td><td>5</td><td>30</td></tr></tbody></table></div>
+<p>结论：优先做冷链和食品工厂，小作坊先放弃。</p>
+<p><strong>使用原则</strong></p>
+<ul><li>分数要基于证据，不能拍脑袋；同一团队最好多人打分。</li><li>分数只用于排序，不代表一定赚钱。</li><li>分数变化时，要检查是哪个维度变了，以及排名是否改变。</li><li>先访谈排名靠前的客户，验证后再立项。</li></ul>
+<h3 id="q1-追问-15-行业吸引力-可进入性矩阵详解">Q1 追问 15. 行业吸引力 × 可进入性矩阵详解</h3>
+<p><strong>一句话理解</strong></p>
+<p>行业吸引力 = 这块蛋糕值不值得吃；可进入性 = 我们能不能吃到。两个都高才优先，两个都低就放弃。</p>
+<p><strong>比喻</strong></p>
+<p>把行业当成一个商圈。吸引力是商圈的人流量、顾客消费力、政策扶持和同行竞争；可进入性是你能不能在这里开得成店：有没有手艺、牌照、门店和供应链。</p>
+<p><strong>行业吸引力（蛋糕值不值得吃）</strong></p>
+<ul><li>市场规模：客户多不多，订单金额大不大。</li><li>增速：蛋糕是在变大还是变小。</li><li>付费意愿：客户舍不舍得花钱。</li><li>监管利好：政策或法规是不是在推着客户买。</li><li>竞争强度：越低越好；对手太多、价格战太狠会拉低吸引力。</li></ul>
+<p><strong>可进入性（我们能不能吃到）</strong></p>
+<ul><li>技术能力：做不做得出符合要求的产品。</li><li>行业 Know-how：懂不懂客户的业务流程。</li><li>认证资质：有没有入场券。</li><li>渠道：能不能触达目标客户。</li><li>服务网络：能不能安装、维护、售后。</li><li>标杆客户：有没有已经成交的案例背书。</li><li>资金和团队：够不够支撑投入。</li></ul>
+<p><strong>四象限决策</strong></p>
+<div class="table-wrap"><table><thead><tr><th>吸引力</th><th>可进入性</th><th>动作</th></tr></thead><tbody><tr><td>高</td><td>高</td><td>优先进入</td></tr><tr><td>高</td><td>低</td><td>补齐能力或找伙伴，小范围试点</td></tr><tr><td>低</td><td>高</td><td>暂缓，只做现金流或等机会</td></tr><tr><td>低</td><td>低</td><td>放弃</td></tr></tbody></table></div>
+<p><strong>打分方法</strong></p>
+<ol><li>列出候选行业。</li><li>每个行业给吸引力打 1 到 5 分，5 分最好。</li><li>每个行业给可进入性打 1 到 5 分，5 分最容易。</li><li>画到矩阵上。</li><li>优先做右上角，其次做左上角补齐能力，右下角谨慎，左下角放弃。</li><li>进入前找一个种子客户做试点验证。</li></ol>
+<p><strong>示例：工业网关厂商选行业</strong></p>
+<div class="table-wrap"><table><thead><tr><th>行业</th><th>吸引力</th><th>可进入性</th><th>建议</th></tr></thead><tbody><tr><td>食品工厂</td><td>4</td><td>4</td><td>优先进入</td></tr><tr><td>新能源充电站</td><td>5</td><td>2</td><td>补齐能力或找伙伴</td></tr><tr><td>小作坊</td><td>2</td><td>5</td><td>暂缓</td></tr><tr><td>传统纺织</td><td>1</td><td>1</td><td>放弃</td></tr></tbody></table></div>
+<p><strong>常见误区</strong></p>
+<ul><li>只看市场规模，忽略自己能不能进去。</li><li>只看自己好进入，忽略行业没有吸引力。</li><li>用感觉打分，没有访谈和数据支撑。</li><li>频繁换行业，每个都没做透。</li><li>认为矩阵永远不变；能力和渠道是可以补的。</li></ul>
+<h3 id="q1-追问-16-怎么打分-分数由谁决定">Q1 追问 16. 怎么打分、分数由谁决定</h3>
+<p><strong>打分原则</strong></p>
+<p>不要先给总分，先给每个子项打分并写依据，最后取平均。</p>
+<p><strong>1-5 分刻度</strong></p>
+<p>1 很差或几乎没有；2 较弱；3 中等；4 较好；5 很强或非常好。</p>
+<p><strong>打分步骤</strong></p>
+<ol><li>产品经理先列出候选行业和已有证据，不让人空手打分。</li><li>每个子项打 1 到 5 分，并写一句依据。</li><li>吸引力取 5 个子项平均，可进入性取 7 个子项平均。</li><li>判断等级：4 到 5 为高，3 到 3.9 为中，1 到 2.9 为低。</li><li>把结果画到矩阵上。</li></ol>
+<p><strong>分数由谁决定</strong></p>
+<p>分数不是产品经理一个人拍脑袋，也不是老板一个人拍板，而是「跨职能小组各自提供依据，产品经理汇总，老板最终拍板」。</p>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>主要信息来源</th><th>谁最了解</th></tr></thead><tbody><tr><td>市场规模、增速</td><td>行业报告、销售数据、行业专家</td><td>市场、销售、老板</td></tr><tr><td>付费意愿</td><td>客户访谈、历史订单、报价记录</td><td>销售、产品经理</td></tr><tr><td>监管利好</td><td>政策研究、合规和法务</td><td>行业专家、法务</td></tr><tr><td>竞争强度</td><td>竞品调研、投标记录</td><td>销售、售前</td></tr><tr><td>技术能力</td><td>研发评估</td><td>技术负责人</td></tr><tr><td>认证资质</td><td>认证进度</td><td>认证、研发</td></tr><tr><td>渠道和服务</td><td>销售网络、售后数据</td><td>销售、服务负责人</td></tr><tr><td>资金和团队</td><td>预算、人力盘点</td><td>财务、老板</td></tr></tbody></table></div>
+<p><strong>流程</strong></p>
+<ol><li>产品经理准备候选行业和初步证据。</li><li>每个人独立打分，避免会议上从众。</li><li>汇总分数，找出分差超过 1 分的维度。</li><li>对分差大的维度讨论证据，不讨论感觉。</li><li>证据不足就先调研，不急着定。</li><li>产品经理输出建议，最终由老板或决策层拍板。</li></ol>
+<p><strong>小公司怎么办</strong></p>
+<p>如果没有跨职能团队，至少让「懂客户的销售、懂技术的研发、管钱的财务或老板」三个人各填一列，再找 2 到 3 个目标客户验证。</p>
+<p><strong>核心原则</strong></p>
+<p>谁打分不重要，重要的是每个分数后面有证据；没有证据的分数不算数。产品经理负责组织打分和输出建议，老板负责最终决定。</p>
+<h3 id="q1-追问-17-小公司具体怎么打分和选行业">Q1 追问 17. 小公司具体怎么打分和选行业</h3>
+<p><strong>核心原则</strong></p>
+<p>小公司不要搞复杂体系。一张表、三个视角、一个下午出初版，再用 3 个客户验证。</p>
+<p><strong>参与的人</strong></p>
+<ul><li>老板：定战略、资金上限、风险偏好。</li><li>销售或市场：客户反馈、支付意愿、渠道。</li><li>技术或研发：能不能做、成本、周期、认证。</li><li>如果只有老板一个人，就强制自己写证据，不能直接打总分。</li></ul>
+<p><strong>七步流程</strong></p>
+<ol><li>列出 3 到 5 个候选行业，不超过 5 个。</li><li>每个行业先写证据，不写分数：客户原话、已有订单、渠道、技术难度。</li><li>老板、销售、技术各自独立打分。</li><li>汇总，找出分差超过 1 分的维度。</li><li>争议大的维度去问 3 到 5 个真实客户。</li><li>老板拍板选 1 个主行业和 1 个备选。</li><li>用最小试点验证：3 个种子客户，6 到 12 个月。</li></ol>
+<p><strong>一张表就够</strong></p>
+<div class="table-wrap"><table><thead><tr><th>行业</th><th>客户证据</th><th>技术可行性</th><th>认证门槛</th><th>渠道</th><th>资金需求</th><th>老板倾向</th><th>吸引力分</th><th>可进入性分</th><th>决定</th></tr></thead><tbody></tbody></table></div>
+<p><strong>示例：5 人 IoT 硬件团队</strong></p>
+<ul><li>食品工厂：客户访谈 4 家，3 家愿意试点；技术需要改接口；无认证障碍；有 1 个集成商；吸引力 4，可进入性 3，主攻。</li><li>充电桩：客户反馈强，但需要充电行业协议和现场施工能力，公司没有；吸引力 5，可进入性 2，暂缓或找伙伴。</li><li>智慧大棚：客户分散、单笔金额小；吸引力 2，可进入性 4，不做。</li></ul>
+<p><strong>没有数据怎么办</strong></p>
+<ul><li>没有行业报告：用客户访谈、渠道反馈、竞品官网和投标信息。</li><li>没有精确财务：用保守、基准、乐观三档估算。</li><li>没有渠道：先找 1 到 2 个集成商或老客户转介绍。</li></ul>
+<p><strong>最容易踩的坑</strong></p>
+<ul><li>老板一个人拍脑袋。</li><li>只听一个销售的乐观反馈。</li><li>没有客户证据就直接打总分。</li><li>同时铺 2 个以上行业。</li><li>打分之后不验证，直接投入。</li></ul>
+<h3 id="q1-追问-18-商业模式与收入结构详解">Q1 追问 18. 商业模式与收入结构详解</h3>
+<p><strong>一句话理解</strong></p>
+<p>商业模式 = 客户为什么买 + 我们怎么赚钱 + 我们凭什么一直赚。</p>
+<p><strong>商业模式画布九格（简化）</strong></p>
+<div class="table-wrap"><table><thead><tr><th>模块</th><th>要回答的问题</th></tr></thead><tbody><tr><td>客户细分</td><td>卖给谁</td></tr><tr><td>价值主张</td><td>凭什么买</td></tr><tr><td>渠道</td><td>怎么触达</td></tr><tr><td>客户关系</td><td>怎么长期保持</td></tr><tr><td>收入来源</td><td>从哪收钱</td></tr><tr><td>关键资源</td><td>靠什么做出来</td></tr><tr><td>关键活动</td><td>每天做什么</td></tr><tr><td>关键伙伴</td><td>靠谁一起做</td></tr><tr><td>成本结构</td><td>钱花在哪</td></tr></tbody></table></div>
+<p><strong>价值主张四类</strong></p>
+<ul><li>省钱：帮客户降低采购、人工、运维、能耗成本。</li><li>赚钱：帮客户增加收入，例如提升产能、提高利用率。</li><li>避险：帮客户减少安全、合规、质量、停产风险。</li><li>省人：帮客户减少人力投入或降低对人的依赖。</li></ul>
+<p>判断标准：客户是否愿意付钱，取决于价值是否可量化、可感知、紧迫。</p>
+<p><strong>四种收入模式对比</strong></p>
+<div class="table-wrap"><table><thead><tr><th>模式</th><th>专业解释</th><th>通俗解释</th><th>优点</th><th>风险</th></tr></thead><tbody><tr><td>硬件一次性销售</td><td>销售设备所有权，收一次钱</td><td>卖硬件</td><td>现金流快、简单</td><td>毛利压力、无续购、比价</td></tr><tr><td>硬件 + 软件订阅</td><td>硬件引流，软件按周期收费</td><td>低价卖盒子，按月收平台费</td><td>持续收入、锁定客户</td><td>软件要持续有价值</td></tr><tr><td>服务费或项目制</td><td>按项目交付和定制收费</td><td>按项目收钱</td><td>毛利高、贴合需求</td><td>难规模化、交付重</td></tr><tr><td>HaaS</td><td>客户按月付费使用设备</td><td>设备不收钱，按月租</td><td>门槛低、持续收入</td><td>占用公司资金、回本慢</td></tr></tbody></table></div>
+<p><strong>四个判断标准</strong></p>
+<ol><li>CAPEX vs OPEX：客户是一次性采购预算，还是按月运营支出？</li><li>回款周期：多久能收到钱？一次性最快，项目制最慢。</li><li>竞争壁垒：硬件本身壁垒低，软件、数据、服务壁垒高。</li><li>公司现金流：钱紧就做一次性加预付款，钱多才做订阅或 HaaS。</li></ol>
+<p><strong>为什么健康结构是「硬件打基础 + 软件/服务做利润」</strong></p>
+<p>硬件解决获客和触达，软件或服务解决持续收入和锁定。硬件可以微利甚至平价，利润放在订阅、平台、服务里。</p>
+<p><strong>工业网关示例</strong></p>
+<ul><li>一次性：卖 1200 元/台，毛利 45%，收入一次结清。</li><li>硬件 + 订阅：卖 800 元/台 + 50 元/月/台，首年 1400 元，第二年起每年 600 元。</li><li>项目制：100 台设备 + 部署 + 一年运维，收 30 万。</li><li>HaaS：99 元/月/台，签 5 年，客户门槛低，但公司垫资重。</li></ul>
+<p><strong>选择口诀</strong></p>
+<p>客户怎么买 + 自己有没有钱 + 能不能持续创造价值，三个条件决定模式。</p>
+<p><strong>常见错误</strong></p>
+<ul><li>所有模式都做，没有重点。</li><li>硬件免费，却没有软件或服务赚钱。</li><li>客户只有一次性预算，硬推订阅。</li><li>把项目制当产品做，交付完就散。</li><li>没有服务能力硬上 HaaS。</li></ul>
+<h3 id="q1-追问-19-商业模式与收入结构-深入浅出版">Q1 追问 19. 商业模式与收入结构（深入浅出版）</h3>
+<p><strong>一句话本质</strong></p>
+<p>商业模式不是「怎么收费」，而是「客户为什么掏钱、我们怎么持续赚钱、对手为什么抄不走」。</p>
+<p><strong>四个生活化比喻</strong></p>
+<ul><li>一次性卖硬件：像卖一箱矿泉水，一手交钱一手交货，但下一单还要重新找客户。</li><li>硬件 + 软件订阅：像低价卖打印机，客户长期买你的墨盒；机器是入口，耗材或平台是利润。</li><li>项目制：像开装修公司，每家客户需求不同，收费高但很难标准化，做完一个项目又要重新做。</li><li>HaaS：像办公室租咖啡机，客户不买机器，按月付使用费；公司先垫钱买机器，靠长期合同回本。</li></ul>
+<p><strong>价值主张的四笔账</strong></p>
+<p>客户不会因为「产品先进」买单，只会因为「结果划算」买单：</p>
+<ul><li>省钱：每年少花多少？</li><li>赚钱：每年多赚多少？</li><li>避险：避免一次事故、罚款或停产值多少？</li><li>省人：少请多少人，或省多少工时？</li></ul>
+<p>判断标准：可量化、可感知、紧迫。算不出账的价值，客户很难付费。</p>
+<p><strong>四个判断标准用大白话讲</strong></p>
+<ol><li>客户的钱从哪笔预算出？一次性买设备的钱（CAPEX），还是每月运营的钱（OPEX）。</li><li>你多久能收到钱？卖设备最快，项目制最慢，HaaS 最考验耐心。</li><li>对手最容易抄你什么？抄硬件最容易，抄软件和数据难，抄服务最难。</li><li>公司现在有没有钱垫？钱紧就收快钱，钱多才敢做订阅和 HaaS。</li></ol>
+<p><strong>选择决策流</strong></p>
+<div class="code-block"><div class="code-label"><span>TEXT</span><button class="copy-code" type="button" data-copy-code="客户是 CAPEX 预算？──&gt; 硬件一次性 / 项目制
+客户是 OPEX 预算？──&gt; 订阅 / HaaS
+
+硬件壁垒强？──&gt; 可以靠卖硬件赚钱
+软件或服务壁垒强？──&gt; 低价硬件 + 订阅或服务做利润
+
+公司现金流紧？──&gt; 收预付款、缩短回款周期
+公司现金流充裕？──&gt; 可以承受订阅或 HaaS 的延迟回报">复制</button></div><pre><code>客户是 CAPEX 预算？──&gt; 硬件一次性 / 项目制
+客户是 OPEX 预算？──&gt; 订阅 / HaaS
+
+硬件壁垒强？──&gt; 可以靠卖硬件赚钱
+软件或服务壁垒强？──&gt; 低价硬件 + 订阅或服务做利润
+
+公司现金流紧？──&gt; 收预付款、缩短回款周期
+公司现金流充裕？──&gt; 可以承受订阅或 HaaS 的延迟回报</code></pre></div>
+<p><strong>五个检查问题</strong></p>
+<ol><li>客户用完后，省、赚、避、省的结果能算成多少钱？</li><li>这笔钱从哪个预算科目出？</li><li>从签约到回款要多久？</li><li>硬件、软件、服务里，对手最难抄的是哪个？</li><li>公司现金流能不能撑到回本？</li></ol>
+<h3 id="q1-追问-20-定价怎么做-深入浅出版">Q1 追问 20. 定价怎么做（深入浅出版）</h3>
+<p><strong>一句话本质</strong></p>
+<p>定价不是拍脑袋，而是找到客户愿意付的上限、你能接受的底线，再结合竞争位置确定实际价格。</p>
+<p><strong>价格不是点，是一条带</strong></p>
+<div class="table-wrap"><table><thead><tr><th>边界</th><th>含义</th></tr></thead><tbody><tr><td>成本下限</td><td>低于它不赚钱</td></tr><tr><td>客户价值上限</td><td>高于它客户觉得不值</td></tr><tr><td>竞争参考区间</td><td>同功能产品的价格带</td></tr><tr><td>实际定价</td><td>根据竞争位置和商业目标落在这条带里</td></tr></tbody></table></div>
+<p><strong>3C 定价</strong></p>
+<ul><li>Cost（成本）：定下限。</li><li>Customer（客户价值）：定上限。</li><li>Competition（竞争）：定位置。</li></ul>
+<p><strong>EVC / TCO 怎么算</strong></p>
+<p>EVC = 客户当前方案全周期成本 - 新方案全周期成本。</p>
+<p>TCO 要包含采购、安装、运维、能耗、人员、故障损失和停产损失。新方案的全周期成本更低，客户才愿意付钱。</p>
+<p>示例：工业网关</p>
+<ul><li>当前方案：人工巡检，每年成本 10 万元。</li><li>新方案：网关 + 平台，每年成本 4 万元。</li><li>每年节省 6 万元，3 年节省 18 万元。</li><li>如果定价 12 万元，客户 3 年净赚 6 万元，就愿意买。</li><li>如果定价 18 万元，客户没有获得感，就会讨价还价。</li></ul>
+<p><strong>定价五步法</strong></p>
+<ol><li>算成本底线：BOM + 制造 + 售后预留 + 按目标销量分摊研发成本。</li><li>算客户价值：用 EVC / TCO 得到价格上限。</li><li>看竞争位置：对手价格带和替代方案价格。</li><li>设价格阶梯：基础版、专业版、旗舰版，让不同预算客户都有选择。</li><li>做价格瀑布：目录价 → 渠道折扣 → 项目折扣 → 返利 → 净收入，检查最低可接受价。</li></ol>
+<p><strong>价格阶梯</strong></p>
+<ul><li>基础版：满足核心需求，降低购买门槛。</li><li>专业版：主打销量和毛利。</li><li>旗舰版：更高配置、性能或服务，拉高价值锚点。</li></ul>
+<p>作用不是把产品变复杂，而是让不同预算的客户都找到可买的版本，而不是只用一个价格挤掉一部分客户。</p>
+<p><strong>价格瀑布示例</strong></p>
+<div class="code-block"><div class="code-label"><span>TEXT</span><button class="copy-code" type="button" data-copy-code="目录价           1200 元
+渠道折扣 20%     → 960 元
+大项目折扣 10%   → 864 元
+年度返利 2%      → 847 元
+成本（含售后预留） → 700 元
+净毛利           147 元，约 17.4%">复制</button></div><pre><code>目录价           1200 元
+渠道折扣 20%     → 960 元
+大项目折扣 10%   → 864 元
+年度返利 2%      → 847 元
+成本（含售后预留） → 700 元
+净毛利           147 元，约 17.4%</code></pre></div>
+<p>只看目录价 45% 毛利会觉得不错，算完价格瀑布后可能只剩 17%。所以定价必须落到净收入口径。</p>
+<p><strong>常见错误</strong></p>
+<ul><li>用成本加成定价，浪费客户价值空间。</li><li>只看目录毛利，不看净收入。</li><li>只有一个价格，没有价格阶梯。</li><li>被大客户无限压价，没有底线。</li><li>渠道折扣失控，越卖越亏。</li><li>订阅价格太低，覆盖不了服务成本。</li></ul>
+<p><strong>五个检查问题</strong></p>
+<ol><li>成本底线是多少？</li><li>客户用一年或三年能省多少钱？</li><li>对手同配置卖多少钱？</li><li>目录价、渠道价、项目价、最低价分别是多少？</li><li>每个价格下的毛利是否仍然成立？</li></ol>
+<h3 id="q1-追问-21-产品层-what-怎么做-需求优先级-产品定义-规格书">Q1 追问 21. 产品层（What）怎么做？需求优先级、产品定义、规格书</h3>
+<p><strong>一句话定义</strong></p>
+<p>产品层 = 把商业层「为什么做」翻译成研发、供应链、测试、销售都能执行的「做什么、做到什么程度、花多少钱」的工程化过程。</p>
+<p><strong>四步流水线</strong></p>
+<ol><li>需求优先级：决定先做什么。</li><li>产品定义：决定产品是什么、给谁、解决什么主任务。</li><li>产品规格书：决定如何验收，把需求变成可测量规格。</li><li>基线评审：决定何时冻结规格、之后如何变更。</li></ol>
+<p><strong>1. 需求优先级：成熟框架</strong></p>
+<div class="table-wrap"><table><thead><tr><th>框架</th><th>公式/用法</th><th>适合场景</th></tr></thead><tbody><tr><td>RICE</td><td>Reach × Impact × Confidence / Effort</td><td>功能价值排序</td></tr><tr><td>MoSCoW</td><td>Must / Should / Could / Won't</td><td>划清版本边界</td></tr><tr><td>Kano</td><td>基本型 / 期望型 / 兴奋型</td><td>判断哪些功能不做会被骂</td></tr><tr><td>WSJF</td><td>（业务价值 + 时间紧迫性 + 风险降低）÷ 工作量</td><td>多项目排优先级</td></tr><tr><td>机会评分</td><td>痛点强度 × 频率 × 支付意愿 × 可触达性</td><td>场景和客户排序</td></tr><tr><td>价值-成本矩阵</td><td>高价值低成本先做</td><td>快速对齐资源</td></tr></tbody></table></div>
+<p>硬件特别提醒：需求工作量要算上研发、模具、认证、供应链和测试，不只算功能开发时间；硬件变更成本远高于软件，所以「冻结时点」也是优先级的一部分。</p>
+<p><strong>2. 产品定义：成熟框架</strong></p>
+<div class="table-wrap"><table><thead><tr><th>框架</th><th>回答什么</th></tr></thead><tbody><tr><td>Product Vision Board</td><td>目标客户是谁、要解决什么、产品是什么、商业目标是什么</td></tr><tr><td>JTBD</td><td>客户雇佣产品完成什么任务、成功标准是什么</td></tr><tr><td>Value Proposition Canvas</td><td>客户痛点、期望收益、产品如何消除痛点</td></tr><tr><td>MVP 定义</td><td>只做一个主 Job、一个核心场景、最小可靠硬件</td></tr><tr><td>Scope 清单</td><td>明确 In Scope 和 Out of Scope</td></tr></tbody></table></div>
+<p>输出物：产品定义一页纸，包含目标客户、主 Job、价值主张、版本边界、非目标、商业约束。</p>
+<p><strong>3. 产品规格书：成熟框架</strong></p>
+<div class="table-wrap"><table><thead><tr><th>文档/框架</th><th>用途</th></tr></thead><tbody><tr><td>PRD</td><td>软件功能、交互、业务规则</td></tr><tr><td>HRS</td><td>硬件需求：性能、接口、环境、可靠性、成本</td></tr><tr><td>System Requirements</td><td>系统级需求和验收标准</td></tr><tr><td>ICD</td><td>接口控制文档：物理、电气、协议、软件 API</td></tr><tr><td>User Stories + Acceptance Criteria</td><td>每个功能可验证</td></tr><tr><td>V-Model</td><td>从客户需求拆到系统、子系统、组件，再逐层验证</td></tr><tr><td>QFD / House of Quality</td><td>把客户语言翻译成工程规格，并和竞品对比</td></tr></tbody></table></div>
+<p>核心原则：规格不能写定性词，要写可测量值。「响应快」不行，要写「数据上报间隔 ≤ 1 秒」；「耐用」不行，要写「MTBF ≥ 100,000 小时」。</p>
+<p><strong>4. 六个规格维度</strong></p>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>要回答的问题</th><th>示例</th></tr></thead><tbody><tr><td>功能</td><td>产品做什么、不做什么</td><td>支持 Modbus、MQTT、告警、OTA</td></tr><tr><td>性能</td><td>做到多快、多准、多大容量</td><td>数据间隔 ≤ 1s、并发 100 台、丢包率 ≤ 0.1%</td></tr><tr><td>接口</td><td>物理和软件怎么对接</td><td>RS485、CAN、以太网、OPC UA、API</td></tr><tr><td>环境</td><td>什么条件下能正常工作</td><td>-30 到 70℃、IP30、9 到 36V、EMC Level 3</td></tr><tr><td>可靠性</td><td>能用多久、坏了怎么办</td><td>MTBF ≥ 10 万小时、年返修率 ≤ 2%、支持断点续传</td></tr><tr><td>成本</td><td>允许花多少钱</td><td>BOM ≤ 600 元、含售后成本 ≤ 900 元</td></tr></tbody></table></div>
+<p><strong>一页纸产品规格书模板</strong></p>
+<div class="table-wrap"><table><thead><tr><th>模块</th><th>内容</th></tr></thead><tbody><tr><td>产品名称/版本</td><td>名称、SKU、版本</td></tr><tr><td>目标客户与场景</td><td>客户、主 Job、使用环境</td></tr><tr><td>核心用户故事</td><td>作为谁，想做什么，以便得到什么</td></tr><tr><td>功能范围</td><td>P0 必做、P1 应做、P2 可做</td></tr><tr><td>性能指标</td><td>可测量数值</td></tr><tr><td>接口清单</td><td>物理接口、协议、兼容矩阵</td></tr><tr><td>环境要求</td><td>温湿度、防护、供电、EMC</td></tr><tr><td>可靠性目标</td><td>MTBF、返修率、寿命、保修</td></tr><tr><td>成本目标</td><td>目标 BOM、loaded cost、NRE 摊销</td></tr><tr><td>非目标</td><td>明确不做什么</td></tr><tr><td>验收标准</td><td>每条规格如何测试</td></tr><tr><td>开放问题/风险</td><td>待验证项和负责人</td></tr></tbody></table></div>
+<p><strong>工业网关示例</strong></p>
+<ul><li>需求优先级：P0 为 80+ PLC 协议、4G 上传、实时告警、断点续传；P1 为 OPC UA、Docker、5G RedCap；P2 为视频接入。</li><li>产品定义：制造版面向多品牌 PLC 工厂，物流版面向冷链车辆；MVP 只做「设备数据自动采集 + 告警 + 报表」。</li><li>规格书：数据采集间隔 ≤ 1s，工作温度 -30 到 70℃，IP30，MTBF ≥ 10 万小时，目标 BOM ≤ 600 元。</li></ul>
+<p><strong>常见错误</strong></p>
+<ul><li>跳过产品定义直接写 PRD。</li><li>规格写定性描述，无法验收。</li><li>功能铺太开，P0 变全功能。</li><li>忽略接口兼容矩阵，现场接不上设备。</li><li>可靠性和成本没有目标，量产才发现失控。</li><li>规格冻结后随意变更，没有变更评审。</li><li>没有验收标准，研发和测试各说各话。</li></ul>
+<p><strong>产品层检查清单</strong></p>
+<ol><li>每个需求是否有优先级和理由？</li><li>每个规格是否可测量？</li><li>是否做了接口兼容矩阵？</li><li>环境、可靠性、成本目标是否都有数字？</li><li>成本目标是否倒推出 BOM 上限？</li><li>是否有规格冻结时点和变更流程？</li><li>是否有验收标准和测试负责人？</li></ol>
+<h3 id="q1-追问-22-需求优先级六大框架详细讲解-老师版">Q1 追问 22. 需求优先级六大框架详细讲解（老师版）</h3>
+<p><strong>先讲一个前提：为什么需要这么多框架？</strong></p>
+<p>需求永远比资源多。框架不是帮你算出「唯一正确答案」，而是逼你把「为什么先做这个」讲清楚，并给团队一个共同语言。</p>
+<p>不同决策场景用不同工具：</p>
+<div class="table-wrap"><table><thead><tr><th>场景</th><th>推荐框架</th></tr></thead><tbody><tr><td>单个功能排序</td><td>RICE</td></tr><tr><td>划版本边界</td><td>MoSCoW</td></tr><tr><td>判断满意度影响</td><td>Kano</td></tr><tr><td>多项目并行排期</td><td>WSJF</td></tr><tr><td>细分市场和客户排序</td><td>机会评分</td></tr><tr><td>快速对齐资源</td><td>价值-成本矩阵</td></tr></tbody></table></div>
+<p>口诀：先选框架，再打分，最后开会校准；分数必须有证据，不能只靠感觉。</p>
+<p><strong>1. RICE：功能价值排序</strong></p>
+<p>公式：RICE = Reach × Impact × Confidence ÷ Effort。</p>
+<p>四个字母分别代表：</p>
+<ul><li>Reach：这个功能影响多少人、多少台设备、多少客户。</li><li>Impact：对单个用户或客户的影响程度。</li><li>Confidence：你对 Reach 和 Impact 判断的信心，通常用 100%、80%、50% 表示。</li><li>Effort：需要的总工作量，可以用人周或人月。</li></ul>
+<p>示例：</p>
+<div class="table-wrap"><table><thead><tr><th>需求</th><th>Reach</th><th>Impact</th><th>Confidence</th><th>Effort</th><th>得分</th></tr></thead><tbody><tr><td>80+ PLC 协议</td><td>100 台</td><td>3</td><td>80%</td><td>4 人周</td><td>60</td></tr><tr><td>5G 版本</td><td>50 台</td><td>3</td><td>80%</td><td>8 人周</td><td>15</td></tr><tr><td>视频接入</td><td>30 台</td><td>1</td><td>50%</td><td>6 人周</td><td>2.5</td></tr></tbody></table></div>
+<p>结果：先做 PLC 协议，因为影响面大、信心高、工作量相对小。</p>
+<p>硬件特别提醒：Effort 必须包含研发、测试、认证、模具、供应链和量产准备，不是只算软件开发时间。5G 版看起来价值高，但认证和成本会让 Effort 大幅上升。</p>
+<p><strong>2. MoSCoW：划清版本边界</strong></p>
+<p>四个等级：</p>
+<ul><li>Must：不做产品就不成立，是底线。</li><li>Should：重要，但可以晚一点。</li><li>Could：有资源就做，没有也不影响版本成立。</li><li>Won't：明确不做，防止范围蔓延。</li></ul>
+<p>工业网关示例：</p>
+<div class="table-wrap"><table><thead><tr><th>等级</th><th>功能</th></tr></thead><tbody><tr><td>Must</td><td>4G 上传、Modbus、实时告警、断点续传</td></tr><tr><td>Should</td><td>OPC UA、OTA、VPN</td></tr><tr><td>Could</td><td>5G、视频接入、Docker</td></tr><tr><td>Won't</td><td>消费级语音助手、娱乐功能</td></tr></tbody></table></div>
+<p>注意：Must 不能太多。如果所有需求都标 Must，MoSCoW 就失效了。Won't 不是可耻的，反而是产品经理保护范围最重要的一步。</p>
+<p><strong>3. Kano：判断客户满意度影响</strong></p>
+<p>三种需求：</p>
+<ul><li>基本型：不做会被骂，做了也不会让人惊喜。例如网关必须有稳定供电、不能经常掉线。</li><li>期望型：做得越好，客户越满意。例如协议覆盖越多、响应越快、告警越准。</li><li>兴奋型：不做客户不会怪你，做了会让客户惊喜。例如 AI 预测故障、数字孪生。</li></ul>
+<p>关键认知：</p>
+<ol><li>先保证基本型，否则期望型和兴奋型做得再好也没用。</li><li>期望型决定竞争力，要持续投入。</li><li>兴奋型能带来短期口碑，但会随时间变成期望型，不能只靠它。</li></ol>
+<p><strong>4. WSJF：多项目并行排期</strong></p>
+<p>公式：WSJF =（业务价值 + 时间紧迫性 + 风险降低）÷ 工作量。</p>
+<p>这是 SAFe 中常用的方法，适合多个项目或特性抢同一批研发资源。分数通常用相对值，比如 1 到 20 分，而不是绝对金额。</p>
+<p>示例：</p>
+<div class="table-wrap"><table><thead><tr><th>项目</th><th>业务价值</th><th>时间紧迫性</th><th>风险降低</th><th>工作量</th><th>WSJF</th></tr></thead><tbody><tr><td>平台订阅计费</td><td>8</td><td>5</td><td>3</td><td>5</td><td>3.2</td></tr><tr><td>设备远程运维</td><td>5</td><td>2</td><td>2</td><td>2</td><td>4.5</td></tr></tbody></table></div>
+<p>虽然项目 A 价值更高，但项目 B 工作量小、综合得分高，所以先做 B。</p>
+<p>常见错误：把业务价值用绝对金额，把工作量用不同单位，最后分数没有可比性。所有项目要用同一套 1 到 20 分的相对尺度。</p>
+<p><strong>5. 机会评分：细分市场和客户排序</strong></p>
+<p>公式：机会分 = 痛点强度 × 发生频率 × 支付意愿 × 可触达性。</p>
+<p>每项打 1 到 5 分，最高 625 分。</p>
+<p>工业网关示例：</p>
+<div class="table-wrap"><table><thead><tr><th>细分市场</th><th>痛点</th><th>频率</th><th>支付</th><th>可触达</th><th>总分</th></tr></thead><tbody><tr><td>冷链物流温控</td><td>5</td><td>5</td><td>4</td><td>3</td><td>300</td></tr><tr><td>食品工厂设备监控</td><td>4</td><td>4</td><td>4</td><td>3</td><td>192</td></tr><tr><td>小作坊</td><td>2</td><td>3</td><td>1</td><td>5</td><td>30</td></tr></tbody></table></div>
+<p>为什么用乘法：四项缺一不可。支付意愿是 0，其他分数再高，机会也是 0。</p>
+<p><strong>6. 价值-成本矩阵：快速对齐</strong></p>
+<p>画一个 2×2 矩阵：</p>
+<div class="table-wrap"><table><thead><tr><th></th><th>低成本</th><th>高成本</th></tr></thead><tbody><tr><td>高价值</td><td>快赢，先做</td><td>重点项目，谨慎投入</td></tr><tr><td>低价值</td><td>顺手做</td><td>不做或淘汰</td></tr></tbody></table></div>
+<p>示例：协议库是高价值、中等成本，属于重点投入；外壳颜色是高成本、低价值，不做；报表模板是高价值、低成本，先做。</p>
+<p>价值-成本矩阵适合快速对齐，但它是粗略判断，正式决策前最好再用 RICE 或机会评分验证。</p>
+<p><strong>怎么选框架</strong></p>
+<ol><li>单个功能排序：RICE。</li><li>划版本边界：MoSCoW。</li><li>判断满意度：Kano。</li><li>多项目抢资源：WSJF。</li><li>选市场和客户：机会评分。</li><li>快速对齐：价值-成本矩阵。</li><li>硬件场景永远再加一项：变更成本和规格冻结时点。</li></ol>
+<p><strong>老师总结的一句话</strong></p>
+<p>框架不是替你决定做什么，而是让「为什么先做这个」可以被讨论、被记录、被挑战。</p>
+<p><strong>常见错误</strong></p>
+<ul><li>只用一个框架应对所有问题。</li><li>分数没有证据，拍脑袋打分。</li><li>Must 太多，版本失去边界。</li><li>把 Kano 当成重要性排序。</li><li>WSJF 使用绝对金额，项目之间不可比。</li><li>机会评分四项不独立，重复计算。</li><li>价值-成本矩阵只看象限，不做验证。</li></ul>
+<p><strong>练习建议</strong></p>
+<p>拿工业网关的 10 个需求，分别用 RICE、MoSCoW、Kano 做一遍，再比较三种结果为什么不同。能解释差异，才算真正理解这些框架。</p>
+<h3 id="q1-追问-23-工业网关需求优先级实战练习-moscow-rice">Q1 追问 23. 工业网关需求优先级实战练习（MoSCoW + RICE）</h3>
+<p><strong>10 个工业网关需求</strong></p>
+<div class="table-wrap"><table><thead><tr><th>编号</th><th>需求</th></tr></thead><tbody><tr><td>A</td><td>4G Cat4 无线联网</td></tr><tr><td>B</td><td>80+ 工业协议库（PLC/Modbus）</td></tr><tr><td>C</td><td>实时告警（App/短信/Webhook）</td></tr><tr><td>D</td><td>断点续传与 7 天本地缓存</td></tr><tr><td>E</td><td>OTA 固件远程升级</td></tr><tr><td>F</td><td>OPC UA</td></tr><tr><td>G</td><td>自动报表与导出</td></tr><tr><td>H</td><td>5G RedCap 版本</td></tr><tr><td>I</td><td>Docker 二次开发</td></tr><tr><td>J</td><td>AI 预测性维护</td></tr></tbody></table></div>
+<p><strong>第一步：MoSCoW 分四堆</strong></p>
+<div class="table-wrap"><table><thead><tr><th>等级</th><th>需求</th><th>理由</th></tr></thead><tbody><tr><td>Must</td><td>A、B、C、D</td><td>没有这些，产品不成立或客户不会买</td></tr><tr><td>Should</td><td>E、F、G</td><td>重要，但第一批可以晚一点</td></tr><tr><td>Could</td><td>H、I</td><td>有资源就做，不影响版本成立</td></tr><tr><td>Won't</td><td>J</td><td>第一版明确不做，防止范围蔓延</td></tr></tbody></table></div>
+<p>AI 预测被放到 Won't 是刻意设计：它听起来高级，但第一版做 AI，大概率导致认证、算力、成本全部失控。Won't 是在保护产品。</p>
+<p><strong>第二步：RICE 打分</strong></p>
+<p>假设：Reach 是影响设备数，Impact 1 到 5，Confidence 用百分比，Effort 用人周。</p>
+<div class="table-wrap"><table><thead><tr><th>需求</th><th>Reach</th><th>Impact</th><th>Confidence</th><th>Effort</th><th>得分</th></tr></thead><tbody><tr><td>D 断点续传</td><td>200</td><td>4</td><td>85%</td><td>3</td><td>227</td></tr><tr><td>C 实时告警</td><td>200</td><td>4</td><td>90%</td><td>4</td><td>180</td></tr><tr><td>A 4G 联网</td><td>200</td><td>5</td><td>90%</td><td>6</td><td>150</td></tr><tr><td>G 自动报表</td><td>150</td><td>3</td><td>80%</td><td>3</td><td>120</td></tr><tr><td>E OTA 升级</td><td>180</td><td>3</td><td>80%</td><td>4</td><td>108</td></tr><tr><td>B 80+ 协议库</td><td>300</td><td>5</td><td>85%</td><td>12</td><td>106</td></tr><tr><td>F OPC UA</td><td>120</td><td>4</td><td>70%</td><td>8</td><td>42</td></tr><tr><td>I Docker</td><td>80</td><td>3</td><td>60%</td><td>8</td><td>18</td></tr><tr><td>H 5G RedCap</td><td>60</td><td>4</td><td>50%</td><td>20</td><td>6</td></tr><tr><td>J AI 预测</td><td>100</td><td>5</td><td>30%</td><td>30</td><td>5</td></tr></tbody></table></div>
+<p><strong>第三步：两个工具对比</strong></p>
+<p>MoSCoW 的 Must：A、B、C、D。</p>
+<p>RICE 的前四名：D、C、A、G。</p>
+<p>结论：</p>
+<ul><li>D、C、A 同时是 Must 和 RICE 高分，属于第一版毫无疑问要做。</li><li>B 协议库是 Must，但 RICE 只有 106，因为工作量太大。这个结果不是「不做协议库」，而是说明协议库是底线，不能因为分数低就砍，但也不用一次做满 80+，可以先覆盖目标行业最常见的 20 个协议。</li><li>G 报表 RICE 很高，但它不是 Must。资源允许就进第一版，资源紧就放到下一版。</li><li>H 5G 和 J AI 分数最低，和 MoSCoW 的判断一致：延后。</li></ul>
+<p><strong>第四步：心法</strong></p>
+<ol><li>MoSCoW 先定底线：哪些不做会死。</li><li>RICE 再定顺序：底线之上，先做性价比高的。</li><li>两个工具结论冲突时，先满足 Must，再用 RICE 排 Must 内部的顺序。</li><li>分数是假设，不是真理；客户访谈、研发评估出来后，重新打分。</li></ol>
+<h3 id="q1-追问-24-工业网关需求优先级实战练习-kano-wsjf">Q1 追问 24. 工业网关需求优先级实战练习（Kano + WSJF）</h3>
+<p>继续使用 Q1 追问 23 的 10 个需求。</p>
+<p><strong>第一步：Kano 分类</strong></p>
+<div class="table-wrap"><table><thead><tr><th>需求</th><th>类型</th><th>理由</th></tr></thead><tbody><tr><td>A 4G 联网</td><td>基本型</td><td>连不上网，客户直接退货</td></tr><tr><td>D 断点续传</td><td>基本型</td><td>数据丢一次，客户就失去信任</td></tr><tr><td>B 80+ 协议库</td><td>期望型</td><td>基础协议覆盖是底线，80+ 是越多越满意</td></tr><tr><td>C 实时告警</td><td>期望型</td><td>越快、越准，客户越满意</td></tr><tr><td>E OTA 升级</td><td>期望型</td><td>升级越方便，客户越省心</td></tr><tr><td>F OPC UA</td><td>期望型</td><td>集成越顺，客户越满意</td></tr><tr><td>G 自动报表</td><td>期望型</td><td>越自动，客户越省事</td></tr><tr><td>H 5G RedCap</td><td>兴奋型</td><td>多数客户没要求，但会感到惊喜</td></tr><tr><td>I Docker</td><td>兴奋型</td><td>少数技术型客户会惊喜</td></tr><tr><td>J AI 预测</td><td>兴奋型</td><td>能形成口碑，但别在第一版做</td></tr></tbody></table></div>
+<p>结论：</p>
+<ol><li>A、D 是基本型，不做会翻车。</li><li>B、C、E、F、G 是期望型，决定产品竞争力。</li><li>H、I、J 是兴奋型，可以延后，等核心体验稳定后再做。</li></ol>
+<p><strong>第二步：WSJF 打分</strong></p>
+<p>公式：WSJF =（业务价值 + 时间紧迫性 + 风险降低）÷ 工作量。</p>
+<p>用相对分 1 到 20 打分，工作量沿用 RICE 的人周数。</p>
+<div class="table-wrap"><table><thead><tr><th>需求</th><th>业务价值</th><th>时间紧迫性</th><th>风险降低</th><th>工作量</th><th>WSJF</th></tr></thead><tbody><tr><td>D 断点续传</td><td>9</td><td>8</td><td>9</td><td>3</td><td>8.67</td></tr><tr><td>C 实时告警</td><td>8</td><td>9</td><td>7</td><td>4</td><td>6.0</td></tr><tr><td>G 自动报表</td><td>7</td><td>6</td><td>4</td><td>3</td><td>5.67</td></tr><tr><td>E OTA 升级</td><td>7</td><td>6</td><td>8</td><td>4</td><td>5.25</td></tr><tr><td>A 4G 联网</td><td>9</td><td>8</td><td>6</td><td>6</td><td>3.83</td></tr><tr><td>B 80+ 协议库</td><td>10</td><td>7</td><td>8</td><td>12</td><td>2.08</td></tr><tr><td>F OPC UA</td><td>6</td><td>5</td><td>5</td><td>8</td><td>2.0</td></tr><tr><td>I Docker</td><td>5</td><td>4</td><td>5</td><td>8</td><td>1.75</td></tr><tr><td>H 5G RedCap</td><td>5</td><td>3</td><td>3</td><td>20</td><td>0.55</td></tr><tr><td>J AI 预测</td><td>8</td><td>2</td><td>4</td><td>30</td><td>0.47</td></tr></tbody></table></div>
+<p>排序：D &gt; C &gt; G &gt; E &gt; A &gt; B &gt; F &gt; I &gt; H &gt; J。</p>
+<p>注意「风险降低」的含义：它指的是这个功能能降低多少项目或业务风险。D 能降低数据丢失风险，E 能降低固件升级风险，所以分数高；J 虽然业务价值高，但工作量极大、紧迫性低，所以排在最后。</p>
+<p><strong>第三步：三个工具合练结论</strong></p>
+<div class="table-wrap"><table><thead><tr><th>工具</th><th>前四名</th></tr></thead><tbody><tr><td>MoSCoW Must</td><td>A、B、C、D</td></tr><tr><td>RICE</td><td>D、C、A、G</td></tr><tr><td>WSJF</td><td>D、C、G、E</td></tr></tbody></table></div>
+<p>合练结论：</p>
+<ol><li>D、C 被三个工具同时选中，是第一版绝对核心。</li><li>A 是 MoSCoW Must，RICE 排第三，WSJF 排第五，仍然必须做。</li><li>B 是 Must，但三个工具分数都不高，因为工作量太大；正确做法是先做目标行业最常见的 20 个协议，再逐步扩展。</li><li>G、E 不是 Must，但 RICE 和 WSJF 分数都很高，资源允许就放进第一版或第二迭代。</li><li>H、J 在三个工具里都是低优先级，第一版明确不做。</li></ol>
+<p><strong>第四步：四工具心法</strong></p>
+<ol><li>MoSCoW 定底线：哪些不做会死。</li><li>RICE 算性价比：同一批需求里先做哪个更划算。</li><li>Kano 看客户感受：基本型必须保证，期望型决定竞争力，兴奋型延后。</li><li>WSJF 排多项目：多个项目抢资源时，优先做综合价值高、风险降低大、工作量小的。</li></ol>
+<p><strong>作业</strong></p>
+<p>给每个分数写一句依据，不要只填数字；再用你自己负责的产品重做一遍，比较结论哪里不同，并解释为什么。</p>
+<h3 id="q1-追问-25-交付层-how-怎么管-阶段评审-变更决策-风险管理">Q1 追问 25. 交付层（How）怎么管？阶段评审、变更决策、风险管理</h3>
+<p><strong>学生版一句话</strong></p>
+<p>交付层就是「把产品定义变成真机、再变成批量交付、最后管到生命周期结束」的过程。产品经理不是所有工种，而是总协调人，要对「是否按时、按质量、按成本交付」负责。</p>
+<p><strong>一个比喻</strong></p>
+<p>交付层像拍电影。硬件、结构、固件、测试、认证、供应链、生产和售后是不同工种，产品经理是导演：定拍摄计划、开评审会、控制剧本变更、管理超支风险。导演不亲自演所有角色，但电影砸了，导演要负责。</p>
+<p><strong>交付层的四项核心职责</strong></p>
+<ol><li>建立跨职能协作机制，让八条线的人用同一套节奏工作。</li><li>用阶段门控制质量和风险，不到标准不进入下一阶段。</li><li>用变更控制保护已冻结的规格、成本和计划。</li><li>用风险登记册持续管理技术、供应、质量和进度风险。</li></ol>
+<p><strong>1. 跨职能协同与职责边界</strong></p>
+<div class="table-wrap"><table><thead><tr><th>职能</th><th>他们负责什么</th><th>产品经理要盯什么</th><th>常见冲突</th></tr></thead><tbody><tr><td>硬件</td><td>原理图、PCB、选型、硬件测试</td><td>硬件需求是否落地、成本是否超 BOM</td><td>硬件想加功能，成本和进度超</td></tr><tr><td>结构</td><td>外壳、散热、防护、安装方式</td><td>IP 等级、模具周期、可制造性</td><td>结构改动慢，影响量产</td></tr><tr><td>固件</td><td>协议栈、边缘计算、OTA、驱动</td><td>功能验收、性能指标、稳定性</td><td>固件测试不足，现场才暴露</td></tr><tr><td>测试</td><td>功能、性能、环境、可靠性、EMC</td><td>测试计划覆盖规格书，问题闭环</td><td>测试发现太晚，进度被动</td></tr><tr><td>认证</td><td>CE、FCC、CCC、UL、RoHS、行业合规</td><td>认证预算、周期、风险预判</td><td>认证失败，返工周期长</td></tr><tr><td>供应链</td><td>选型、采购、MOQ、交期、备料</td><td>关键物料交期、替代料、成本</td><td>缺料导致停产</td></tr><tr><td>生产</td><td>试产、量产、良率、工艺</td><td>PVT 通过、良率目标、产能</td><td>工艺问题影响交付质量</td></tr><tr><td>售后</td><td>安装、维修、RMA、备件、客户反馈</td><td>返修率、问题回流、服务成本</td><td>售后问题研发不认</td></tr></tbody></table></div>
+<p><strong>RACI 工具</strong></p>
+<p>RACI = Responsible（执行）、Accountable（最终负责）、Consulted（咨询）、Informed（告知）。</p>
+<div class="table-wrap"><table><thead><tr><th>活动</th><th>产品经理</th><th>硬件</th><th>固件</th><th>测试</th><th>供应链</th><th>生产</th><th>售后</th></tr></thead><tbody><tr><td>需求冻结</td><td>A</td><td>C</td><td>C</td><td>C</td><td>C</td><td>I</td><td>C</td></tr><tr><td>原理图评审</td><td>C</td><td>R/A</td><td>C</td><td>C</td><td>C</td><td>I</td><td>I</td></tr><tr><td>固件验收</td><td>A</td><td>I</td><td>R</td><td>C</td><td>I</td><td>I</td><td>I</td></tr><tr><td>认证送测</td><td>A</td><td>C</td><td>C</td><td>R</td><td>C</td><td>I</td><td>I</td></tr><tr><td>试产放行</td><td>A</td><td>C</td><td>C</td><td>C</td><td>C</td><td>R</td><td>I</td></tr><tr><td>售后问题闭环</td><td>A</td><td>C</td><td>C</td><td>C</td><td>I</td><td>I</td><td>R</td></tr></tbody></table></div>
+<p>注意：Accountable 只能有一个，不能两个部门都说「最后我负责」。</p>
+<p><strong>2. 阶段门（Stage-Gate / Phase-Gate）</strong></p>
+<p>阶段门是硬件交付最成熟的框架之一。每个阶段结束设一道门，只有满足通过标准才能进入下一阶段。</p>
+<p>工业网关项目的阶段门：</p>
+<div class="table-wrap"><table><thead><tr><th>门</th><th>名称</th><th>主要交付物</th><th>通过标准示例</th></tr></thead><tbody><tr><td>G0</td><td>立项评审</td><td>商业论证、需求、资源计划</td><td>商业模型成立，目标毛利 ≥ 45%，有种子客户</td></tr><tr><td>G1</td><td>方案冻结</td><td>产品定义、系统架构、规格书、BOM 预估</td><td>规格可测量，技术方案可行，认证和供应链风险明确</td></tr><tr><td>G2</td><td>EVT 评审</td><td>工程样机、功能测试、性能测试</td><td>核心功能通过，问题清单有闭环计划</td></tr><tr><td>G3</td><td>DVT 评审</td><td>环境测试、EMC 测试、认证预测试、试点</td><td>环境/EMC 通过，认证风险可控，试点反馈纳入计划</td></tr><tr><td>G4</td><td>PVT 评审</td><td>试产数据、良率、工艺文件</td><td>直通率 ≥ 95%，单位成本达标，可量产</td></tr><tr><td>G5</td><td>上市评审</td><td>定价、渠道、客户、售后、培训</td><td>首批客户可交付，售后能力和备件到位</td></tr><tr><td>G6</td><td>生命周期评审</td><td>销量、返修、成本、EOL 计划</td><td>决定继续、迭代还是退市</td></tr></tbody></table></div>
+<p><strong>阶段评审怎么开</strong></p>
+<ol><li>会前：产品经理准备 Gate Deck，每个负责人提交 Check List，禁止空手开会。</li><li>会中：按「质量、成本、进度、风险」四个维度打分，只讨论证据，不讨论感觉。</li><li>会后：输出正式决策，包括 Go、No-Go、条件通过、打回重做。</li><li>遗留问题必须有 owner、截止日期、验证方式。</li></ol>
+<p><strong>Gate Scorecard 评分表</strong></p>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>1 分</th><th>3 分</th><th>5 分</th></tr></thead><tbody><tr><td>质量</td><td>大量未闭环问题</td><td>主要问题已闭环</td><td>所有标准通过</td></tr><tr><td>成本</td><td>超目标 10% 以上</td><td>接近目标</td><td>达到或优于目标</td></tr><tr><td>进度</td><td>延误超过 4 周</td><td>延误 1 到 2 周</td><td>按计划</td></tr><tr><td>风险</td><td>有高风险无对策</td><td>有对策但未验证</td><td>风险受控</td></tr></tbody></table></div>
+<p>平均分低于 3 分不建议放行。</p>
+<p><strong>3. 变更决策</strong></p>
+<p><strong>为什么必须控制变更</strong></p>
+<p>硬件变更成本随时间指数上升：</p>
+<div class="code-block"><div class="code-label"><span>TEXT</span><button class="copy-code" type="button" data-copy-code="方案阶段改需求：改文档
+EVT 阶段改：改原理图、PCB、固件
+DVT 阶段改：改测试、认证、模具
+PVT 阶段改：改工装、改产线、改售后
+量产后改：召回、返工、客户赔偿">复制</button></div><pre><code>方案阶段改需求：改文档
+EVT 阶段改：改原理图、PCB、固件
+DVT 阶段改：改测试、认证、模具
+PVT 阶段改：改工装、改产线、改售后
+量产后改：召回、返工、客户赔偿</code></pre></div>
+<p>所以硬件项目必须有「冻结点」和「变更控制委员会」。</p>
+<p><strong>变更流程</strong></p>
+<div class="code-block"><div class="code-label"><span>TEXT</span><button class="copy-code" type="button" data-copy-code="提出变更请求
+→ 影响评估（技术、成本、进度、质量、风险）
+→ CCB 评审
+→ 批准 / 拒绝 / 条件批准
+→ 实施并更新基线
+→ 记录变更日志">复制</button></div><pre><code>提出变更请求
+→ 影响评估（技术、成本、进度、质量、风险）
+→ CCB 评审
+→ 批准 / 拒绝 / 条件批准
+→ 实施并更新基线
+→ 记录变更日志</code></pre></div>
+<p><strong>影响评估至少回答七个问题</strong></p>
+<ol><li>改了什么？为什么改？</li><li>影响哪些硬件、结构、固件、测试？</li><li>成本增加多少？</li><li>进度推迟多久？</li><li>质量和可靠性风险是什么？</li><li>已生产库存怎么办？</li><li>客户合同和认证有没有影响？</li></ol>
+<p><strong>变更严重级别</strong></p>
+<div class="table-wrap"><table><thead><tr><th>级别</th><th>含义</th><th>处理</th></tr></thead><tbody><tr><td>A 级</td><td>影响安全、合规、核心功能</td><td>必须修复，进入 CCB 紧急评审</td></tr><tr><td>B 级</td><td>影响体验、性能、交付</td><td>尽量在冻结点前完成</td></tr><tr><td>C 级</td><td>优化项、非核心</td><td>放入下一版本</td></tr></tbody></table></div>
+<p><strong>常见冻结点</strong></p>
+<div class="table-wrap"><table><thead><tr><th>冻结点</th><th>内容</th></tr></thead><tbody><tr><td>G1 方案冻结</td><td>功能、性能、接口规格</td></tr><tr><td>EVT 结束</td><td>原理图、PCB 设计冻结</td></tr><tr><td>DVT 结束</td><td>结构、外壳、固件主版本冻结</td></tr><tr><td>PVT 开始</td><td>BOM、供应商、工艺冻结</td></tr><tr><td>量产后</td><td>只允许安全和必须变更</td></tr></tbody></table></div>
+<p><strong>CCB 成员</strong></p>
+<p>产品经理（主持人）、研发负责人、测试负责人、供应链负责人、生产负责人、质量负责人、必要时加入财务、法务和认证。</p>
+<p><strong>4. 风险管理</strong></p>
+<p><strong>风险登记册字段</strong></p>
+<div class="table-wrap"><table><thead><tr><th>字段</th><th>内容</th></tr></thead><tbody><tr><td>编号</td><td>R-001</td></tr><tr><td>风险描述</td><td>4G 模组交期延长</td></tr><tr><td>类别</td><td>供应链</td></tr><tr><td>概率</td><td>高 / 中 / 低</td></tr><tr><td>影响</td><td>交付延迟 4 周</td></tr><tr><td>风险等级</td><td>高</td></tr><tr><td>责任人</td><td>供应链负责人</td></tr><tr><td>应对策略</td><td>备选模组、提前锁料</td></tr><tr><td>触发条件</td><td>交期超过 12 周</td></tr><tr><td>应急计划</td><td>启用备选方案</td></tr><tr><td>状态</td><td>跟踪中</td></tr></tbody></table></div>
+<p><strong>风险矩阵</strong></p>
+<p>风险等级 = 概率 × 影响。</p>
+<div class="table-wrap"><table><thead><tr><th>概率\影响</th><th>低</th><th>中</th><th>高</th></tr></thead><tbody><tr><td>高</td><td>中</td><td>高</td><td>高</td></tr><tr><td>中</td><td>低</td><td>中</td><td>高</td></tr><tr><td>低</td><td>低</td><td>低</td><td>中</td></tr></tbody></table></div>
+<p>红色高风险必须每周跟踪，黄色中风险指定 owner，绿色低风险记录即可。</p>
+<p><strong>FMEA</strong></p>
+<p>FMEA = Failure Mode and Effects Analysis，失效模式与影响分析。</p>
+<p>风险优先数 RPN = 严重度 × 发生频度 × 可检测度。</p>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>分析对象</th></tr></thead><tbody><tr><td>DFMEA</td><td>硬件设计失效：电源过压、接口损坏、过热</td></tr><tr><td>PFMEA</td><td>生产过程失效：贴片虚焊、装配不良、测试漏检</td></tr><tr><td>SFMEA</td><td>软件/固件失效：死机、数据丢失、OTA 失败</td></tr></tbody></table></div>
+<p><strong>工业网关常见风险</strong></p>
+<div class="table-wrap"><table><thead><tr><th>风险</th><th>典型影响</th><th>应对</th></tr></thead><tbody><tr><td>芯片或模组缺货</td><td>停产、延期</td><td>双供应商、安全库存</td></tr><tr><td>认证不通过</td><td>无法销售</td><td>预测试、预留返工时间</td></tr><tr><td>环境测试失败</td><td>客户现场故障</td><td>宽温、防护等级冗余设计</td></tr><tr><td>固件问题晚发现</td><td>返修率高</td><td>试点、老化测试、日志上报</td></tr><tr><td>良率低</td><td>成本超支</td><td>PVT 数据门控</td></tr><tr><td>客户频繁改需求</td><td>进度失控</td><td>冻结点 + 变更收费机制</td></tr><tr><td>售后问题不回流</td><td>重复犯错误</td><td>故障闭环流程</td></tr></tbody></table></div>
+<p><strong>应对策略四选一</strong></p>
+<ul><li>规避：换掉高风险方案。</li><li>降低：加测试、加冗余、双供应商。</li><li>转移：买保险、让供应商承担。</li><li>接受：低概率低影响，记录并观察。</li></ul>
+<p><strong>5. 项目节奏与会议</strong></p>
+<p><strong>计划工具</strong></p>
+<div class="table-wrap"><table><thead><tr><th>工具</th><th>用途</th></tr></thead><tbody><tr><td>WBS</td><td>把项目拆成可执行任务</td></tr><tr><td>里程碑计划</td><td>对齐 EVT、DVT、PVT、MP</td></tr><tr><td>关键路径</td><td>找出最长的依赖链</td></tr><tr><td>资源负载表</td><td>避免多人任务冲突</td></tr><tr><td>缓冲管理</td><td>在关键路径末端留缓冲</td></tr></tbody></table></div>
+<p><strong>会议节奏</strong></p>
+<div class="table-wrap"><table><thead><tr><th>会议</th><th>频率</th><th>内容</th></tr></thead><tbody><tr><td>每日站会</td><td>开发阶段每天</td><td>昨天、今天、阻塞</td></tr><tr><td>跨职能周会</td><td>每周</td><td>进度、风险、变更、问题</td></tr><tr><td>阶段门评审</td><td>每阶段一次</td><td>正式放行决策</td></tr><tr><td>供应链例会</td><td>每周或双周</td><td>交期、缺料、替代料</td></tr><tr><td>售后复盘</td><td>每月</td><td>返修、客户投诉、改进项</td></tr></tbody></table></div>
+<p><strong>6. 常用文档</strong></p>
+<ul><li>Gate Deck：阶段门汇报材料。</li><li>DCR：变更请求单。</li><li>Risk Register：风险登记册。</li><li>Open Issues List：未决问题清单。</li><li>Action Tracker：行动项跟踪表。</li><li>Decision Log：决策记录。</li><li>Change Log：变更日志。</li></ul>
+<p><strong>7. 常见失败原因</strong></p>
+<ul><li>产品经理变成传声筒，不推动决策。</li><li>阶段门流于形式，领导一句话放行。</li><li>没有冻结点，需求一直漂移。</li><li>变更只评估成本，不评估认证和售后。</li><li>风险只看进度，不看供应、质量、合规。</li><li>供应链问题太晚暴露。</li><li>售后问题没有回流到研发。</li></ul>
+<p><strong>8. 学生练习题</strong></p>
+<p>用「工业网关」项目练习：</p>
+<ol><li>写出 G1 到 G5 每个阶段的三条通过标准。</li><li>列出 8 个常见风险，填入风险登记册。</li><li>假设客户要求把 4G 改成 5G，写一份变更影响评估。</li><li>为硬件、固件、测试、供应链各写一条 RACI 规则。</li></ol>
+<p>练习目标：拿到一个硬件项目，30 分钟内能说清楚阶段门、变更流程、风险清单和每个角色该给什么。</p>
+<h3 id="q1-追问-26-阶段门-g0-g6-每一个门是什么意思">Q1 追问 26. 阶段门 G0-G6 每一个门是什么意思</h3>
+<p><strong>整体逻辑</strong></p>
+<p>Stage-Gate 不是「一个项目一口气做完」，而是把项目切成阶段，每个阶段结束设一道门。门不是汇报会，而是投资决策点：要不要继续投入时间、钱和人力。</p>
+<p><strong>G0：立项评审</strong></p>
+<p>阶段在做什么：还没正式立项，主要做市场调研、客户访谈、商业论证、技术可行性评估。</p>
+<p>这道门问的是：这个产品值不值得做？</p>
+<p>要拿出证据：</p>
+<ul><li>目标客户和市场足够大。</li><li>商业模型成立，毛利和回本路径清晰。</li><li>至少有目标客户愿意谈，而不是「我觉得有需求」。</li></ul>
+<p>工业网关示例：市场规模几十亿、目标毛利率 45%、已经找到 3 家工厂愿意试点。如果只有想法没有客户和毛利模型，就不该进入开发。</p>
+<p><strong>G1：方案冻结</strong></p>
+<p>阶段在做什么：立项通过后，做产品定义、系统架构、产品规格书、BOM 成本预估、认证和供应链风险分析。</p>
+<p>这道门问的是：我们到底做什么、怎么做、能不能做？</p>
+<p>要拿出证据：</p>
+<ul><li>功能、性能、接口、环境、可靠性、成本全部写成可测量规格。</li><li>技术方案经过研发评估，确认可行。</li><li>认证、供应链、交付风险已经列出来，而不是「后面再说」。</li></ul>
+<p>工业网关示例：确定支持 80+ PLC 协议、-30 到 70℃、目标 BOM 不超过 600 元。规格不冻结，后面就会一直改需求。</p>
+<p><strong>G2：EVT 评审</strong></p>
+<p>EVT = Engineering Verification Test，工程验证测试。</p>
+<p>阶段在做什么：做出第一批工程样机，验证最核心的功能和性能能不能跑通。</p>
+<p>这道门问的是：这个东西到底能不能工作？</p>
+<p>要拿出证据：</p>
+<ul><li>样机把核心功能跑通了。</li><li>性能初步达到规格，例如数据采集间隔 ≤ 1 秒。</li><li>发现的问题有清单，有负责人和闭环计划。</li></ul>
+<p>工业网关示例：样机能采集 PLC 数据、通过 4G 上传、触发告警。如果样机连基本采集都做不好，就不要急着做环境测试。</p>
+<p><strong>G3：DVT 评审</strong></p>
+<p>DVT = Design Verification Test，设计验证测试。</p>
+<p>阶段在做什么：验证产品在真实环境中的表现，包括高低温、湿度、振动、EMC、认证预测试，还会做少量客户现场试点。</p>
+<p>这道门问的是：设计在恶劣环境里能不能活下来？</p>
+<p>要拿出证据：</p>
+<ul><li>环境测试和 EMC 测试通过。</li><li>认证风险可控，比如 CE/FCC/CCC 预测试没发现硬伤。</li><li>试点客户反馈被收集，并转化为修改计划。</li></ul>
+<p>工业网关示例：网关在工厂现场 35℃、粉尘环境连续运行两周，数据不丢、不死机。如果现场发热或断连，说明 DVT 还没过。</p>
+<p><strong>G4：PVT 评审</strong></p>
+<p>PVT = Production Verification Test，生产验证测试。</p>
+<p>阶段在做什么：用正式生产工艺小批量试产，验证工厂能不能稳定、可重复地生产。</p>
+<p>这道门问的是：工厂能不能把产品稳定造出来？</p>
+<p>要拿出证据：</p>
+<ul><li>直通率达到目标，例如 ≥ 95%。</li><li>单位成本达标，不超 BOM 和制造预算。</li><li>生产工艺、测试工装、作业指导书齐全。</li></ul>
+<p>工业网关示例：试产 1000 台，直通率 97%，成本控制在目标以内。如果良率只有 80%，说明工艺还没成熟，不能贸然量产。</p>
+<p><strong>G5：上市评审</strong></p>
+<p>阶段在做什么：量产前准备销售和交付能力，包括定价、渠道、客户名单、产品资料、培训、库存、备件、售后网络。</p>
+<p>这道门问的是：能不能卖得出去，并且交付好？</p>
+<p>要拿出证据：</p>
+<ul><li>有首批可交付客户。</li><li>销售、售前、部署、售后能力到位。</li><li>备件、RMA、技术支持流程已经跑通。</li></ul>
+<p>工业网关示例：已经签了 3 家试点客户，部署包、安装文档、备件库存和售后 SLA 都准备好。如果只有产品没有售后，上市后返修会失控。</p>
+<p><strong>G6：生命周期评审</strong></p>
+<p>阶段在做什么：产品上市后，周期性评估销量、成本、返修率、客户满意度、竞争变化和退出计划。</p>
+<p>这道门问的是：继续卖、升级迭代，还是退市？</p>
+<p>要拿出证据：</p>
+<ul><li>销量和毛利是否达到预期。</li><li>返修率是否可控。</li><li>是否有替代产品或新一代产品。</li><li>停产、备件、老客户迁移计划是否清晰。</li></ul>
+<p>工业网关示例：销量连续下滑，返修率偏高，下一代产品已经立项，这时候就要规划 EOL：提前通知客户、继续供 5 年备件、提供迁移方案。</p>
+<p><strong>一句话记忆</strong></p>
+<ul><li>G0：值不值得做？</li><li>G1：做什么、怎么做？</li><li>G2：能不能跑通？</li><li>G3：能不能在真实环境活？</li><li>G4：工厂能不能稳定生产？</li><li>G5：能不能卖好、交付好？</li><li>G6：继续、迭代还是退市？</li></ul>
+<h2 id="对话问题记录">对话问题记录</h2>
+<div class="table-wrap"><table><thead><tr><th>日期</th><th>问题</th><th>状态</th><th>关键结论</th></tr></thead><tbody><tr><td>2026-08-09</td><td>系统了解 B 端产品经理岗位，应该问哪些问题？</td><td>已回答</td><td>已列出 15 个核心问题，覆盖岗位定位、需求市场、产品交付、商业度量、能力发展。</td></tr><tr><td>2026-08-09</td><td>将岗位具象化为 B 端硬件产品经理，应该问哪些问题？</td><td>已回答</td><td>已列出 15 个 B 端硬件方向核心问题，覆盖职责边界、需求定义、供应链开发、认证质量、商业上市与职业发展。</td></tr><tr><td>2026-08-09</td><td>Q1. B 端硬件产品经理的核心职责边界是什么？KPI 怎么定？</td><td>已回答</td><td>使用「职责三层模型 + 阶段门双轨 KPI」方法论，见回答沉淀。</td></tr><tr><td>2026-08-09</td><td>Q1 追问. 市场和客户洞察、目标行业、商业模式、定价、商业论证如何做？</td><td>已回答</td><td>使用「五问法 + 机会评分 + 吸引力矩阵 + 3C/EVC 定价 + 一页纸商业论证」，见回答沉淀。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 2. JTBD 框架怎么用？</td><td>已回答</td><td>已沉淀 JTBD 核心思想、Job 三层结构、表述公式、Job Map/ODI、访谈方法和 B 端硬件示例。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 3. 客户价值地图是什么意思？</td><td>已回答</td><td>已沉淀客户价值地图定义、两种理解、四层结构、画法和与 JTBD/PRD 的关系。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 4. 客户价值地图详细示例</td><td>已回答</td><td>新增工业网关、冷链温湿度监控、设备远程运维三个带量化价值的示例。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 5. 客户价值地图练习模板</td><td>待填写</td><td>提供标准填空模板、3 个 B 端硬件场景练习和 1 个自选场景练习，等待用户填写后点评。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 6. 新场景练习</td><td>待填写</td><td>新增智慧大棚、充电站、实验室设备管理三个新场景，等待用户填写。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 7. 用户练习填写与点评</td><td>已回答</td><td>用户完成智慧大棚和充电站两个场景，已逐项点评并给出修正建议；实验室场景暂未填写。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 8. 决策链分析怎么用？</td><td>已回答</td><td>已沉淀 DMU 角色、三层分析法、四步流程、B 端硬件模板与常见错误。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 9. 决策链分析详细例子</td><td>已回答</td><td>用食品工厂和医院两个采购案例讲解决策链如何过关，见回答沉淀。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 10. 决策链分析练习题</td><td>待作答</td><td>出 3 个案例：连锁餐饮、工业网关、医院设备，等待用户作答后点评。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 11. 决策链练习题用户作答与点评</td><td>已回答</td><td>三个案例已逐题点评，用户整体框架正确，需补店长、一线使用者、采购角色和商业论证数字口径。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 12. 决策链分析能力加强计划</td><td>已回答</td><td>提供四阶段训练、三件立即要做的事和 10 分制评分标准。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 13. 如何完全掌握决策链分析</td><td>已回答</td><td>给出直接答案：10 个行业案例 + 10 分制过关 + 突发事件推演 + 真实项目验证。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 14. 机会评分怎么运作？</td><td>已回答</td><td>已沉淀机会评分公式、四维锚点表、运作步骤和工业网关排序示例。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 15. 行业吸引力 × 可进入性矩阵怎么理解？</td><td>已回答</td><td>已用商圈比喻、四象限、打分方法和工业网关选行业示例讲解。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 16. 怎么打分、分数由谁决定？</td><td>已回答</td><td>已沉淀 1-5 分刻度、跨职能评分小组、独立打分流程和老板最终拍板原则。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 17. 小公司具体怎么打分和选行业？</td><td>已回答</td><td>已沉淀一张表、三个视角、七步流程、5 人硬件团队示例和常见坑。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 18. 商业模式与收入结构怎么理解？</td><td>已回答</td><td>已沉淀商业模式画布、四类价值主张、四种收入模式对比、判断标准和工业网关示例。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 19. 商业模式与收入结构深入浅出版</td><td>已回答</td><td>已用生活化比喻、四笔账、四个判断标准、决策流和五个检查问题补充理解。</td></tr><tr><td>2026-08-09</td><td>Q1 追问 20. 定价怎么做（深入浅出版）</td><td>已回答</td><td>已沉淀 3C/EVC/TCO、定价五步法、价格阶梯、价格瀑布和常见错误。</td></tr><tr><td>2026-08-10</td><td>用五问法完整调研工业网关制造+物流并做成深度商业论证</td><td>已完成</td><td>已产出 <a href="../../工业网关商业论证.md">工业网关商业论证.md</a>，覆盖市场洞察、行业选择、商业模式、定价、财务模型、产品交付与风险。</td></tr><tr><td>2026-08-10</td><td>Q1 追问 21. 产品层（What）怎么做？需求优先级、产品定义、规格书</td><td>已回答</td><td>已沉淀四步流水线、RICE/MoSCoW/Kano/WSJF、V-Model/QFD、六维规格、一页纸规格书模板和检查清单。</td></tr><tr><td>2026-08-10</td><td>Q1 追问 22. 需求优先级六大框架详细讲解（老师版）</td><td>已回答</td><td>已沉淀 RICE、MoSCoW、Kano、WSJF、机会评分、价值-成本矩阵的公式、示例、适用场景、常见错误和练习建议。</td></tr><tr><td>2026-08-10</td><td>Q1 追问 23. 工业网关需求优先级实战练习（MoSCoW + RICE）</td><td>已回答</td><td>已沉淀 10 个工业网关需求、MoSCoW 分堆、RICE 打分、工具对比结论和四步心法。</td></tr><tr><td>2026-08-10</td><td>Q1 追问 24. 工业网关需求优先级实战练习（Kano + WSJF）</td><td>已回答</td><td>已沉淀 Kano 分类、WSJF 打分、三工具合练结论和四工具心法。</td></tr><tr><td>2026-08-10</td><td>Q1 追问 25. 交付层（How）怎么管？阶段评审、变更决策、风险管理</td><td>已回答</td><td>已沉淀跨职能 RACI、Stage-Gate、Gate Scorecard、变更控制 CCB、风险登记册/FMEA、项目节奏与练习。</td></tr><tr><td>2026-08-10</td><td>Q1 追问 26. 阶段门 G0-G6 每一个门是什么意思</td><td>已回答</td><td>已沉淀 G0 到 G6 每道门的阶段工作、核心问题、通过证据、工业网关示例和一句话记忆。</td></tr></tbody></table></div></div><footer class="source-footer"><span>源文件</span><a href="../../B端产品经理问题集.md">B端产品经理问题集.md</a><span class="source-note">原始 Markdown 保留在项目根目录</span></footer><nav class="page-nav" aria-label="上一篇和下一篇"><a class="page-nav-item prev" href="01-learning-path.html"><small>上一份</small><strong>← 基础课 · 从零学 B 端硬件 PM</strong></a><a class="page-nav-item next" href="03-industrial-gateway-case.html"><small>下一份</small><strong>案例 · 工业网关商业论证 →</strong></a></nav></article>
+      <aside class="toc"><div class="toc-title">本页内容</div><a class="toc-link level-2" href="#使用约定">使用约定</a><a class="toc-link level-2" href="#15-个核心问题-通用方向">15 个核心问题（通用方向）</a><a class="toc-link level-3" href="#岗位与定位">岗位与定位</a><a class="toc-link level-3" href="#需求与市场">需求与市场</a><a class="toc-link level-3" href="#产品设计与交付">产品设计与交付</a><a class="toc-link level-3" href="#商业与度量">商业与度量</a><a class="toc-link level-3" href="#能力与职业发展">能力与职业发展</a><a class="toc-link level-2" href="#15-个核心问题-b-端硬件方向">15 个核心问题（B 端硬件方向）</a><a class="toc-link level-3" href="#岗位与边界">岗位与边界</a><a class="toc-link level-3" href="#需求与产品定义">需求与产品定义</a><a class="toc-link level-3" href="#成本-供应链与开发">成本、供应链与开发</a><a class="toc-link level-3" href="#商业-上市与生命周期">商业、上市与生命周期</a><a class="toc-link level-3" href="#能力与职业发展-2">能力与职业发展</a><a class="toc-link level-2" href="#回答模板">回答模板</a><a class="toc-link level-2" href="#回答沉淀">回答沉淀</a><a class="toc-link level-3" href="#q1-b-端硬件产品经理的核心职责边界是什么-kpi-怎么定">Q1. B 端硬件产品经理的核心职责边界是什么？KPI 怎么定？</a><a class="toc-link level-3" href="#q1-追问-如何负责市场和客户洞察-目标行业选择-商业模式-定价和商业论证">Q1 追问. 如何负责市场和客户洞察、目标行业选择、商业模式、定价和商业论证？</a><a class="toc-link level-3" href="#q1-追问-2-jtbd-框架详细讲解">Q1 追问 2. JTBD 框架详细讲解</a><a class="toc-link level-3" href="#q1-追问-3-客户价值地图是什么意思">Q1 追问 3. 客户价值地图是什么意思？</a><a class="toc-link level-3" href="#q1-追问-4-客户价值地图详细示例">Q1 追问 4. 客户价值地图详细示例</a><a class="toc-link level-3" href="#q1-追问-5-客户价值地图练习模板">Q1 追问 5. 客户价值地图练习模板</a><a class="toc-link level-3" href="#q1-追问-6-新场景练习-用户待填写">Q1 追问 6. 新场景练习（用户待填写）</a><a class="toc-link level-3" href="#q1-追问-7-用户练习填写与点评">Q1 追问 7. 用户练习填写与点评</a><a class="toc-link level-3" href="#q1-追问-8-决策链分析详细解答">Q1 追问 8. 决策链分析详细解答</a><a class="toc-link level-3" href="#q1-追问-9-决策链分析详细例子">Q1 追问 9. 决策链分析详细例子</a><a class="toc-link level-3" href="#q1-追问-10-决策链分析练习题-用户待作答">Q1 追问 10. 决策链分析练习题（用户待作答）</a><a class="toc-link level-3" href="#q1-追问-11-决策链练习题用户作答与点评">Q1 追问 11. 决策链练习题用户作答与点评</a><a class="toc-link level-3" href="#q1-追问-12-决策链分析能力加强计划">Q1 追问 12. 决策链分析能力加强计划</a><a class="toc-link level-3" href="#q1-追问-13-如何完全掌握决策链分析-直接答案">Q1 追问 13. 如何完全掌握决策链分析（直接答案）</a><a class="toc-link level-3" href="#q1-追问-14-机会评分详解">Q1 追问 14. 机会评分详解</a><a class="toc-link level-3" href="#q1-追问-15-行业吸引力-可进入性矩阵详解">Q1 追问 15. 行业吸引力 × 可进入性矩阵详解</a><a class="toc-link level-3" href="#q1-追问-16-怎么打分-分数由谁决定">Q1 追问 16. 怎么打分、分数由谁决定</a><a class="toc-link level-3" href="#q1-追问-17-小公司具体怎么打分和选行业">Q1 追问 17. 小公司具体怎么打分和选行业</a><a class="toc-link level-3" href="#q1-追问-18-商业模式与收入结构详解">Q1 追问 18. 商业模式与收入结构详解</a><a class="toc-link level-3" href="#q1-追问-19-商业模式与收入结构-深入浅出版">Q1 追问 19. 商业模式与收入结构（深入浅出版）</a><a class="toc-link level-3" href="#q1-追问-20-定价怎么做-深入浅出版">Q1 追问 20. 定价怎么做（深入浅出版）</a><a class="toc-link level-3" href="#q1-追问-21-产品层-what-怎么做-需求优先级-产品定义-规格书">Q1 追问 21. 产品层（What）怎么做？需求优先级、产品定义、规格书</a><a class="toc-link level-3" href="#q1-追问-22-需求优先级六大框架详细讲解-老师版">Q1 追问 22. 需求优先级六大框架详细讲解（老师版）</a><a class="toc-link level-3" href="#q1-追问-23-工业网关需求优先级实战练习-moscow-rice">Q1 追问 23. 工业网关需求优先级实战练习（MoSCoW + RICE）</a><a class="toc-link level-3" href="#q1-追问-24-工业网关需求优先级实战练习-kano-wsjf">Q1 追问 24. 工业网关需求优先级实战练习（Kano + WSJF）</a><a class="toc-link level-3" href="#q1-追问-25-交付层-how-怎么管-阶段评审-变更决策-风险管理">Q1 追问 25. 交付层（How）怎么管？阶段评审、变更决策、风险管理</a><a class="toc-link level-3" href="#q1-追问-26-阶段门-g0-g6-每一个门是什么意思">Q1 追问 26. 阶段门 G0-G6 每一个门是什么意思</a><a class="toc-link level-2" href="#对话问题记录">对话问题记录</a></aside>
+    </main>
+  </div>
+  <script src="app.js" defer></script>
+</body>
+</html>

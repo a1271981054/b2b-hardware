@@ -1,0 +1,125 @@
+{
+  "total": 61.488,
+  "beats": [
+    {
+      "index": 0,
+      "text": "进入第二段，讲B端硬件PM的专业知识。第一课，BOM。",
+      "keywords": [
+        "BOM"
+      ],
+      "visual": "teacher",
+      "note": "第二段开讲",
+      "start": 0.0,
+      "end": 5.808,
+      "duration": 5.808
+    },
+    {
+      "index": 1,
+      "text": "BOM全称Bill of Materials，中文叫物料清单。",
+      "keywords": [
+        "物料清单"
+      ],
+      "visual": "bom",
+      "note": "物料清单",
+      "start": 6.158,
+      "end": 10.862,
+      "duration": 4.704
+    },
+    {
+      "index": 2,
+      "text": "就是一台机器里所有零件的清单：芯片、屏幕、电池、外壳、按键、螺丝、包装。",
+      "keywords": [
+        "零件清单"
+      ],
+      "visual": "bom",
+      "note": "所有零件都在上面",
+      "start": 11.212,
+      "end": 20.548,
+      "duration": 9.336
+    },
+    {
+      "index": 3,
+      "text": "像做饭的菜谱加购物清单：用什么材料，各用多少，各花多少钱。",
+      "keywords": [
+        "菜谱"
+      ],
+      "visual": "bom",
+      "note": "材料数量价格",
+      "start": 20.898,
+      "end": 27.354,
+      "duration": 6.456
+    },
+    {
+      "index": 4,
+      "text": "把清单上所有价格加起来，就是这台机器的材料成本。",
+      "keywords": [
+        "材料成本"
+      ],
+      "visual": "money",
+      "note": "加起来就是成本",
+      "start": 27.704,
+      "end": 32.408,
+      "duration": 4.704
+    },
+    {
+      "index": 5,
+      "text": "材料成本决定毛利：卖价减材料成本，再减其他费用，等于赚多少。",
+      "keywords": [
+        "毛利"
+      ],
+      "visual": "money",
+      "note": "成本越低赚越多",
+      "start": 32.758,
+      "end": 38.902,
+      "duration": 6.144
+    },
+    {
+      "index": 6,
+      "text": "产品经理的活：定成本目标、参与选型、管住变更。",
+      "keywords": [
+        "PM的活"
+      ],
+      "visual": "doc",
+      "note": "定目标管变更",
+      "start": 39.252,
+      "end": 44.436,
+      "duration": 5.184
+    },
+    {
+      "index": 7,
+      "text": "换个零件可能影响认证，所以不能随便换。",
+      "keywords": [
+        "变更管理"
+      ],
+      "visual": "cert",
+      "note": "换零件要谨慎",
+      "start": 44.786,
+      "end": 49.634,
+      "duration": 4.848
+    },
+    {
+      "index": 8,
+      "text": "记住一句话：BOM就是这台机器值多少钱的材料账本。",
+      "keywords": [
+        "一句话记住"
+      ],
+      "visual": "star",
+      "note": "材料账本",
+      "start": 49.984,
+      "end": 55.312,
+      "duration": 5.328
+    },
+    {
+      "index": 9,
+      "text": "课后想一想：一台POS机里，你猜有哪些零件？随便说三个。",
+      "keywords": [
+        "课后想一想"
+      ],
+      "visual": "q",
+      "note": "猜三个零件",
+      "start": 55.662,
+      "end": 61.638,
+      "duration": 5.976
+    }
+  ]
+}

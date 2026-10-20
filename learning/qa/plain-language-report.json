@@ -1,0 +1,13 @@
+{
+  "authored_topics": 60,
+  "authored_sections": 183,
+  "rewritten_methods": 60,
+  "rewritten_checks": 180,
+  "original_chapters_preserved": 143,
+  "source_code_and_table_numbers": "unchanged",
+  "image_hashes_preserved": 120,
+  "inline_definitions": 103,
+  "rendered_term_buttons": 1634,
+  "topic_chapter_ids_and_answer_indices": "unchanged",
+  "note": "These checks verify coverage and integrity. Readability is reviewed through the authored wording and browser samples, not inferred from a numerical score."
+}

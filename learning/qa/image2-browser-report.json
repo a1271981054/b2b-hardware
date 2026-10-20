@@ -1,0 +1,2038 @@
+{
+  "status": "complete",
+  "chapters": [
+    {
+      "topic": "role",
+      "chapter": 0,
+      "chars": 2179,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "产品经理在做什么"
+    },
+    {
+      "topic": "role",
+      "chapter": 1,
+      "chars": 1372,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "B 端硬件产品经理的核心职责边界是什么？KPI 怎么定？"
+    },
+    {
+      "topic": "card",
+      "chapter": 0,
+      "chars": 1445,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "卡片与读卡器"
+    },
+    {
+      "topic": "card",
+      "chapter": 1,
+      "chars": 660,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "这一行到底在卖什么"
+    },
+    {
+      "topic": "nfc",
+      "chapter": 0,
+      "chars": 1391,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "NFC 与 EMV"
+    },
+    {
+      "topic": "nfc",
+      "chapter": 1,
+      "chars": 669,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "什么是 NFC、什么是 EMV"
+    },
+    {
+      "topic": "scenes",
+      "chapter": 0,
+      "chars": 1286,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "同一设备，不同场景"
+    },
+    {
+      "topic": "scenes",
+      "chapter": 1,
+      "chars": 667,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "读卡器用在哪些地方"
+    },
+    {
+      "topic": "architecture",
+      "chapter": 0,
+      "chars": 1691,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "一台设备背后的整个系统"
+    },
+    {
+      "topic": "cert",
+      "chapter": 0,
+      "chars": 1333,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "为什么需要认证"
+    },
+    {
+      "topic": "cert",
+      "chapter": 1,
+      "chars": 713,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "为什么硬件要做认证"
+    },
+    {
+      "topic": "cert",
+      "chapter": 2,
+      "chars": 580,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "认证到底怎么考"
+    },
+    {
+      "topic": "cert",
+      "chapter": 3,
+      "chars": 546,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "认证与合规"
+    },
+    {
+      "topic": "docs",
+      "chapter": 0,
+      "chars": 1369,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "三份文档各管什么"
+    },
+    {
+      "topic": "docs",
+      "chapter": 1,
+      "chars": 723,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "BRD / MRD / PRD"
+    },
+    {
+      "topic": "docs",
+      "chapter": 2,
+      "chars": 1083,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "附录：术语小词典"
+    },
+    {
+      "topic": "market",
+      "chapter": 0,
+      "chars": 1346,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "先决定要调研什么"
+    },
+    {
+      "topic": "market",
+      "chapter": 1,
+      "chars": 526,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "当前课程位置：市场调研"
+    },
+    {
+      "topic": "market",
+      "chapter": 2,
+      "chars": 881,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "调研方法与数据口径"
+    },
+    {
+      "topic": "jtbd",
+      "chapter": 0,
+      "chars": 1314,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "客户真正想完成什么"
+    },
+    {
+      "topic": "jtbd",
+      "chapter": 1,
+      "chars": 1434,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "JTBD 框架详细讲解"
+    },
+    {
+      "topic": "jtbd",
+      "chapter": 2,
+      "chars": 736,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "JTBD：客户雇佣网关完成什么任务"
+    },
+    {
+      "topic": "value",
+      "chapter": 0,
+      "chars": 1304,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "画出客户价值地图"
+    },
+    {
+      "topic": "value",
+      "chapter": 1,
+      "chars": 1267,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "客户价值地图是什么意思？"
+    },
+    {
+      "topic": "value",
+      "chapter": 2,
+      "chars": 1584,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "客户价值地图详细示例"
+    },
+    {
+      "topic": "value",
+      "chapter": 3,
+      "chars": 806,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "客户价值地图练习模板"
+    },
+    {
+      "topic": "value",
+      "chapter": 4,
+      "chars": 2110,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "用户练习填写与点评"
+    },
+    {
+      "topic": "value",
+      "chapter": 5,
+      "chars": 2110,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "用户练习填写与点评"
+    },
+    {
+      "topic": "buyers",
+      "chapter": 0,
+      "chars": 1301,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "谁用，谁买，谁拍板"
+    },
+    {
+      "topic": "buyers",
+      "chapter": 1,
+      "chars": 1650,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "决策链分析详细解答"
+    },
+    {
+      "topic": "buyers",
+      "chapter": 2,
+      "chars": 1286,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "决策链分析详细例子"
+    },
+    {
+      "topic": "buyers",
+      "chapter": 3,
+      "chars": 1197,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "决策链分析能力加强计划"
+    },
+    {
+      "topic": "buyers",
+      "chapter": 4,
+      "chars": 750,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "如何完全掌握决策链分析（直接答案）"
+    },
+    {
+      "topic": "buyers",
+      "chapter": 5,
+      "chars": 1608,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "决策链练习题用户作答与点评"
+    },
+    {
+      "topic": "buyers",
+      "chapter": 6,
+      "chars": 639,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "决策链分析"
+    },
+    {
+      "topic": "buyers",
+      "chapter": 7,
+      "chars": 639,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "决策链分析"
+    },
+    {
+      "topic": "interview",
+      "chapter": 0,
+      "chars": 1230,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "怎样问出真实需求"
+    },
+    {
+      "topic": "interview",
+      "chapter": 1,
+      "chars": 1413,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "JTBD 框架详细讲解"
+    },
+    {
+      "topic": "interview",
+      "chapter": 2,
+      "chars": 623,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "新场景练习（用户待填写）"
+    },
+    {
+      "topic": "interview",
+      "chapter": 3,
+      "chars": 1002,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "决策链分析练习题（用户待作答）"
+    },
+    {
+      "topic": "competition",
+      "chapter": 0,
+      "chars": 1212,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "竞争对手不只同行"
+    },
+    {
+      "topic": "competition",
+      "chapter": 1,
+      "chars": 1413,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "JTBD 框架详细讲解"
+    },
+    {
+      "topic": "competition",
+      "chapter": 2,
+      "chars": 616,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "竞品对比"
+    },
+    {
+      "topic": "pilot",
+      "chapter": 0,
+      "chars": 1674,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "试点怎样验证真实价值"
+    },
+    {
+      "topic": "opportunity",
+      "chapter": 0,
+      "chars": 1335,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "给机会打分"
+    },
+    {
+      "topic": "opportunity",
+      "chapter": 1,
+      "chars": 1249,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "机会评分详解"
+    },
+    {
+      "topic": "opportunity",
+      "chapter": 2,
+      "chars": 1095,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "怎么打分、分数由谁决定"
+    },
+    {
+      "topic": "opportunity",
+      "chapter": 3,
+      "chars": 1061,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "小公司具体怎么打分和选行业"
+    },
+    {
+      "topic": "opportunity",
+      "chapter": 4,
+      "chars": 623,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "机会评分"
+    },
+    {
+      "topic": "industry",
+      "chapter": 0,
+      "chars": 1256,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "选一个进得去的行业"
+    },
+    {
+      "topic": "industry",
+      "chapter": 1,
+      "chars": 1120,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "行业吸引力 × 可进入性矩阵详解"
+    },
+    {
+      "topic": "industry",
+      "chapter": 2,
+      "chars": 1042,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "小公司具体怎么打分和选行业"
+    },
+    {
+      "topic": "industry",
+      "chapter": 3,
+      "chars": 1025,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第二问：目标行业选择"
+    },
+    {
+      "topic": "model",
+      "chapter": 0,
+      "chars": 1273,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "产品怎样持续赚钱"
+    },
+    {
+      "topic": "model",
+      "chapter": 1,
+      "chars": 1358,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "商业模式与收入结构详解"
+    },
+    {
+      "topic": "model",
+      "chapter": 2,
+      "chars": 1139,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "商业模式与收入结构（深入浅出版）"
+    },
+    {
+      "topic": "model",
+      "chapter": 3,
+      "chars": 1196,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第三问：商业模式"
+    },
+    {
+      "topic": "pricing",
+      "chapter": 0,
+      "chars": 1283,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "从标价到真正收入"
+    },
+    {
+      "topic": "pricing",
+      "chapter": 1,
+      "chars": 1440,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "定价怎么做（深入浅出版）"
+    },
+    {
+      "topic": "pricing",
+      "chapter": 2,
+      "chars": 1156,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第四问：定价"
+    },
+    {
+      "topic": "pricing",
+      "chapter": 3,
+      "chars": 587,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "价格瀑布"
+    },
+    {
+      "topic": "tco",
+      "chapter": 0,
+      "chars": 1692,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "便宜的设备为何更贵"
+    },
+    {
+      "topic": "economics",
+      "chapter": 0,
+      "chars": 1379,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "一台赚多少，多久回本"
+    },
+    {
+      "topic": "economics",
+      "chapter": 1,
+      "chars": 599,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "单位经济"
+    },
+    {
+      "topic": "economics",
+      "chapter": 2,
+      "chars": 1479,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "定价怎么做（深入浅出版）"
+    },
+    {
+      "topic": "caseplan",
+      "chapter": 0,
+      "chars": 1286,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "写一份可验证的商业论证"
+    },
+    {
+      "topic": "caseplan",
+      "chapter": 1,
+      "chars": 1391,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第五问：商业论证"
+    },
+    {
+      "topic": "caseplan",
+      "chapter": 2,
+      "chars": 1246,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "三档情景"
+    },
+    {
+      "topic": "caseplan",
+      "chapter": 3,
+      "chars": 711,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "一页纸商业论证"
+    },
+    {
+      "topic": "caseplan",
+      "chapter": 4,
+      "chars": 1583,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "如何负责市场和客户洞察、目标行业选择、商业模式、定价和商业论证？"
+    },
+    {
+      "topic": "priority",
+      "chapter": 0,
+      "chars": 1234,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "先选对排序工具"
+    },
+    {
+      "topic": "priority",
+      "chapter": 1,
+      "chars": 2553,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "需求优先级六大框架详细讲解（老师版）"
+    },
+    {
+      "topic": "rice",
+      "chapter": 0,
+      "chars": 1380,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "让功能排序有依据"
+    },
+    {
+      "topic": "rice",
+      "chapter": 1,
+      "chars": 2570,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "需求优先级六大框架详细讲解（老师版）"
+    },
+    {
+      "topic": "rice",
+      "chapter": 2,
+      "chars": 1505,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "工业网关需求优先级实战练习（MoSCoW + RICE）"
+    },
+    {
+      "topic": "kano",
+      "chapter": 0,
+      "chars": 1259,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "做好基础，才谈惊喜"
+    },
+    {
+      "topic": "kano",
+      "chapter": 1,
+      "chars": 2560,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "需求优先级六大框架详细讲解（老师版）"
+    },
+    {
+      "topic": "kano",
+      "chapter": 2,
+      "chars": 1677,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "工业网关需求优先级实战练习（Kano + WSJF）"
+    },
+    {
+      "topic": "roadmap",
+      "chapter": 0,
+      "chars": 1531,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "把版本安排成学习顺序"
+    },
+    {
+      "topic": "moscow",
+      "chapter": 0,
+      "chars": 1284,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "给第一版划边界"
+    },
+    {
+      "topic": "moscow",
+      "chapter": 1,
+      "chars": 2545,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "需求优先级六大框架详细讲解（老师版）"
+    },
+    {
+      "topic": "moscow",
+      "chapter": 2,
+      "chars": 1480,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "工业网关需求优先级实战练习（MoSCoW + RICE）"
+    },
+    {
+      "topic": "bom",
+      "chapter": 0,
+      "chars": 1252,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "拆开一台设备的成本"
+    },
+    {
+      "topic": "bom",
+      "chapter": 1,
+      "chars": 536,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "BOM 是什么"
+    },
+    {
+      "topic": "bom",
+      "chapter": 2,
+      "chars": 613,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "BOM、NRE、MOQ 与供应链"
+    },
+    {
+      "topic": "nre",
+      "chapter": 0,
+      "chars": 1333,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "开模、研发费与起订量"
+    },
+    {
+      "topic": "nre",
+      "chapter": 1,
+      "chars": 771,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "开模、NRE、MOQ"
+    },
+    {
+      "topic": "oem",
+      "chapter": 0,
+      "chars": 1284,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "自己做，还是找伙伴"
+    },
+    {
+      "topic": "oem",
+      "chapter": 1,
+      "chars": 696,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "OEM 和 ODM"
+    },
+    {
+      "topic": "oem",
+      "chapter": 2,
+      "chars": 538,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "自研、ODM、贴牌怎么选"
+    },
+    {
+      "topic": "interfaces",
+      "chapter": 0,
+      "chars": 1458,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "接口不仅是一根线"
+    },
+    {
+      "topic": "connectivity",
+      "chapter": 0,
+      "chars": 1456,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "通信链路怎样分层看"
+    },
+    {
+      "topic": "power",
+      "chapter": 0,
+      "chars": 1504,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "供电与热为什么影响体验"
+    },
+    {
+      "topic": "security",
+      "chapter": 0,
+      "chars": 1538,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "设备安全从需求开始"
+    },
+    {
+      "topic": "firmware",
+      "chapter": 0,
+      "chars": 1463,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "升级失败后设备怎么办"
+    },
+    {
+      "topic": "feasibility",
+      "chapter": 0,
+      "chars": 1251,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "先找最可能卡住的地方"
+    },
+    {
+      "topic": "feasibility",
+      "chapter": 1,
+      "chars": 515,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "技术可行性"
+    },
+    {
+      "topic": "feasibility",
+      "chapter": 2,
+      "chars": 614,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "BOM、NRE、MOQ 与供应链"
+    },
+    {
+      "topic": "feasibility",
+      "chapter": 3,
+      "chars": 4044,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "交付层（How）怎么管？阶段评审、变更决策、风险管理"
+    },
+    {
+      "topic": "sourcing",
+      "chapter": 0,
+      "chars": 1557,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "供应商选择不只看报价"
+    },
+    {
+      "topic": "stages",
+      "chapter": 0,
+      "chars": 1325,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "样机怎样走到量产"
+    },
+    {
+      "topic": "stages",
+      "chapter": 1,
+      "chars": 1464,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "EVT / DVT / PVT：阶段门与放行依据"
+    },
+    {
+      "topic": "stages",
+      "chapter": 2,
+      "chars": 1266,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "PVT 放行：看“一次做对”和过程可复制"
+    },
+    {
+      "topic": "stages",
+      "chapter": 3,
+      "chars": 426,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "小练习"
+    },
+    {
+      "topic": "stages",
+      "chapter": 4,
+      "chars": 853,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "EVT / DVT / PVT"
+    },
+    {
+      "topic": "stages",
+      "chapter": 5,
+      "chars": 589,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "开发阶段 EVT/DVT/PVT/MP"
+    },
+    {
+      "topic": "dfm",
+      "chapter": 0,
+      "chars": 1452,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "好设计还要好制造好维修"
+    },
+    {
+      "topic": "gates",
+      "chapter": 0,
+      "chars": 1200,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "阶段门不是汇报会"
+    },
+    {
+      "topic": "gates",
+      "chapter": 1,
+      "chars": 2145,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "阶段门 G0-G6 每一个门是什么意思"
+    },
+    {
+      "topic": "gates",
+      "chapter": 2,
+      "chars": 597,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "四种阶段门结论"
+    },
+    {
+      "topic": "ctq",
+      "chapter": 0,
+      "chars": 1258,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "找到不可错的底线"
+    },
+    {
+      "topic": "ctq",
+      "chapter": 1,
+      "chars": 1557,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "CTQ、可验收标准与计时边界"
+    },
+    {
+      "topic": "ctq",
+      "chapter": 2,
+      "chars": 769,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "CTQ 如何落到产品经理决策"
+    },
+    {
+      "topic": "fmea",
+      "chapter": 0,
+      "chars": 1512,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "在故障发生前找风险"
+    },
+    {
+      "topic": "wsjf",
+      "chapter": 0,
+      "chars": 1197,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "比较等待的代价"
+    },
+    {
+      "topic": "wsjf",
+      "chapter": 1,
+      "chars": 2511,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "需求优先级六大框架详细讲解（老师版）"
+    },
+    {
+      "topic": "wsjf",
+      "chapter": 2,
+      "chars": 1628,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "工业网关需求优先级实战练习（Kano + WSJF）"
+    },
+    {
+      "topic": "spec",
+      "chapter": 0,
+      "chars": 1181,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "把“好用”写成验收标准"
+    },
+    {
+      "topic": "spec",
+      "chapter": 1,
+      "chars": 2342,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "产品层（What）怎么做？需求优先级、产品定义、规格书"
+    },
+    {
+      "topic": "spec",
+      "chapter": 2,
+      "chars": 479,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "一条可验收标准的七个要素"
+    },
+    {
+      "topic": "spec",
+      "chapter": 3,
+      "chars": 704,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "例子二：NFC“要快”必须先拆成两条指标"
+    },
+    {
+      "topic": "spec",
+      "chapter": 4,
+      "chars": 704,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "例子二：NFC“要快”必须先拆成两条指标"
+    },
+    {
+      "topic": "control",
+      "chapter": 0,
+      "chars": 1150,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "防错、测试和控制计划"
+    },
+    {
+      "topic": "control",
+      "chapter": 1,
+      "chars": 1229,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "控制计划、治具防错与测试的区别"
+    },
+    {
+      "topic": "control",
+      "chapter": 2,
+      "chars": 715,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "如果工厂说“全检失败就返修，不用改治具”"
+    },
+    {
+      "topic": "control",
+      "chapter": 3,
+      "chars": 772,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "使用说明与口径"
+    },
+    {
+      "topic": "control",
+      "chapter": 4,
+      "chars": 885,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "一页总览：从 CTQ 到可追溯放行"
+    },
+    {
+      "topic": "yield",
+      "chapter": 0,
+      "chars": 1247,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "98% 良率隐藏了什么"
+    },
+    {
+      "topic": "yield",
+      "chapter": 1,
+      "chars": 1198,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "良率、首次良率与返修"
+    },
+    {
+      "topic": "yield",
+      "chapter": 2,
+      "chars": 769,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "产品经理看不良数据的顺序"
+    },
+    {
+      "topic": "ecn",
+      "chapter": 0,
+      "chars": 1236,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "改了什么，从哪台生效"
+    },
+    {
+      "topic": "ecn",
+      "chapter": 1,
+      "chars": 1211,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "ECN 变更控制、影响批次与可追溯"
+    },
+    {
+      "topic": "ecn",
+      "chapter": 2,
+      "chars": 781,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "产品经理审 ECN 时要问什么"
+    },
+    {
+      "topic": "spc",
+      "chapter": 0,
+      "chars": 1407,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "合格不代表过程稳定"
+    },
+    {
+      "topic": "launch",
+      "chapter": 0,
+      "chars": 1175,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "上市前还缺什么"
+    },
+    {
+      "topic": "launch",
+      "chapter": 1,
+      "chars": 473,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "上市计划"
+    },
+    {
+      "topic": "launch",
+      "chapter": 2,
+      "chars": 2092,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "阶段门 G0-G6 每一个门是什么意思"
+    },
+    {
+      "topic": "rootcause",
+      "chapter": 0,
+      "chars": 1198,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "从怀疑走到验证"
+    },
+    {
+      "topic": "rootcause",
+      "chapter": 1,
+      "chars": 613,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "怀疑原因与已验证根因"
+    },
+    {
+      "topic": "rootcause",
+      "chapter": 2,
+      "chars": 533,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第一步：先止血，不急着争论责任"
+    },
+    {
+      "topic": "rootcause",
+      "chapter": 3,
+      "chars": 564,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第二步：从“发现螺丝松”走到“根因已验证”"
+    },
+    {
+      "topic": "rootcause",
+      "chapter": 4,
+      "chars": 508,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第三步：区分纠正、围堵和永久措施"
+    },
+    {
+      "topic": "inventory",
+      "chapter": 0,
+      "chars": 1497,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "库存为什么会吃掉现金"
+    },
+    {
+      "topic": "reliability",
+      "chapter": 0,
+      "chars": 1399,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "能用一次与长期可靠"
+    },
+    {
+      "topic": "isolate",
+      "chapter": 0,
+      "chars": 1201,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "发现异常，先圈住风险"
+    },
+    {
+      "topic": "isolate",
+      "chapter": 1,
+      "chars": 1322,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "异常停线、隔离与批次追溯"
+    },
+    {
+      "topic": "isolate",
+      "chapter": 2,
+      "chars": 1027,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "怀疑原因与已验证根因"
+    },
+    {
+      "topic": "channel",
+      "chapter": 0,
+      "chars": 1172,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "直销、经销与集成商"
+    },
+    {
+      "topic": "channel",
+      "chapter": 1,
+      "chars": 475,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "上市计划"
+    },
+    {
+      "topic": "channel",
+      "chapter": 2,
+      "chars": 339,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "看渠道"
+    },
+    {
+      "topic": "channel",
+      "chapter": 3,
+      "chars": 549,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "能力建设与组织"
+    },
+    {
+      "topic": "lifecycle",
+      "chapter": 0,
+      "chars": 1170,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "产品也需要退场计划"
+    },
+    {
+      "topic": "lifecycle",
+      "chapter": 1,
+      "chars": 383,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "生命周期管理"
+    },
+    {
+      "topic": "lifecycle",
+      "chapter": 2,
+      "chars": 2086,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "阶段门 G0-G6 每一个门是什么意思"
+    },
+    {
+      "topic": "metrics",
+      "chapter": 0,
+      "chars": 1473,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "把销量接到客户价值上"
+    },
+    {
+      "topic": "gateway",
+      "chapter": 0,
+      "chars": 1229,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "给冷链做一款网关"
+    },
+    {
+      "topic": "gateway",
+      "chapter": 1,
+      "chars": 764,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "五问法使用地图"
+    },
+    {
+      "topic": "gateway",
+      "chapter": 2,
+      "chars": 653,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "一页纸商业论证"
+    },
+    {
+      "topic": "gateway",
+      "chapter": 3,
+      "chars": 531,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "风险与对策"
+    },
+    {
+      "topic": "gateway",
+      "chapter": 4,
+      "chars": 721,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "一页纸结论"
+    },
+    {
+      "topic": "gateway",
+      "chapter": 5,
+      "chars": 1058,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "数据来源"
+    },
+    {
+      "topic": "gateway",
+      "chapter": 6,
+      "chars": 399,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "工业网关（制造 + 物流）深度商业论证"
+    },
+    {
+      "topic": "gateway",
+      "chapter": 7,
+      "chars": 300,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第一问：市场与客户洞察"
+    },
+    {
+      "topic": "gateway",
+      "chapter": 8,
+      "chars": 300,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第一问：市场与客户洞察"
+    },
+    {
+      "topic": "rma",
+      "chapter": 0,
+      "chars": 1186,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "售后数据怎样回到产品"
+    },
+    {
+      "topic": "rma",
+      "chapter": 1,
+      "chars": 441,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "质量、RMA 与售后"
+    },
+    {
+      "topic": "rma",
+      "chapter": 2,
+      "chars": 734,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第五步：两周后第 1 批客户反馈 NFC 失败"
+    },
+    {
+      "topic": "acs",
+      "chapter": 0,
+      "chars": 1257,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "让读卡器更容易集成"
+    },
+    {
+      "topic": "acs",
+      "chapter": 1,
+      "chars": 528,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "机会点（选一个主打）"
+    },
+    {
+      "topic": "acs",
+      "chapter": 2,
+      "chars": 592,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "商业论证"
+    },
+    {
+      "topic": "acs",
+      "chapter": 3,
+      "chars": 660,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "龙杰（ACS）怎么赚钱"
+    },
+    {
+      "topic": "acs",
+      "chapter": 4,
+      "chars": 438,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "公司一句话"
+    },
+    {
+      "topic": "acs",
+      "chapter": 5,
+      "chars": 438,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "一句话结论"
+    },
+    {
+      "topic": "acs",
+      "chapter": 6,
+      "chars": 836,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "产品拆解（五看）"
+    },
+    {
+      "topic": "acs",
+      "chapter": 7,
+      "chars": 477,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "可引用的公开事实"
+    },
+    {
+      "topic": "acs",
+      "chapter": 8,
+      "chars": 426,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "龙杰智能卡（ACS）面试分析 PPT 素材"
+    },
+    {
+      "topic": "nfc-case",
+      "chapter": 0,
+      "chars": 1225,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "五台 NFC 失败之后"
+    },
+    {
+      "topic": "nfc-case",
+      "chapter": 1,
+      "chars": 1300,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "支付终端 NFC 天线偏移：端到端案例"
+    },
+    {
+      "topic": "nfc-case",
+      "chapter": 2,
+      "chars": 1320,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第四步：怎样决定 PVT 是否放行"
+    },
+    {
+      "topic": "nfc-case",
+      "chapter": 3,
+      "chars": 952,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "面试可直接表达的 90 秒案例"
+    },
+    {
+      "topic": "nfc-case",
+      "chapter": 4,
+      "chars": 952,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "面试可直接表达的 90 秒案例"
+    },
+    {
+      "topic": "answer",
+      "chapter": 0,
+      "chars": 1195,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "把做法讲清楚"
+    },
+    {
+      "topic": "answer",
+      "chapter": 1,
+      "chars": 1081,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第三段：面试问答练习"
+    },
+    {
+      "topic": "answer",
+      "chapter": 2,
+      "chars": 947,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "金句"
+    },
+    {
+      "topic": "answer",
+      "chapter": 3,
+      "chars": 1190,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "高频面试题与回答骨架"
+    },
+    {
+      "topic": "answer",
+      "chapter": 4,
+      "chars": 637,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "综合模拟面试"
+    },
+    {
+      "topic": "answer",
+      "chapter": 5,
+      "chars": 689,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "面试前速记卡"
+    },
+    {
+      "topic": "answer",
+      "chapter": 6,
+      "chars": 917,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "后续学习路线建议"
+    },
+    {
+      "topic": "answer",
+      "chapter": 7,
+      "chars": 794,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "附录二：面试前夜速记卡"
+    },
+    {
+      "topic": "answer",
+      "chapter": 8,
+      "chars": 629,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "串成面试答案"
+    },
+    {
+      "topic": "answer",
+      "chapter": 9,
+      "chars": 436,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "面试表达提示"
+    },
+    {
+      "topic": "answer",
+      "chapter": 10,
+      "chars": 1182,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "课堂笔记：从零学 B 端硬件产品经理"
+    },
+    {
+      "topic": "answer",
+      "chapter": 11,
+      "chars": 289,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "已经学过的基础知识"
+    },
+    {
+      "topic": "answer",
+      "chapter": 12,
+      "chars": 632,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "待你回答的小题"
+    },
+    {
+      "topic": "answer",
+      "chapter": 13,
+      "chars": 309,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "一句话记住"
+    },
+    {
+      "topic": "answer",
+      "chapter": 14,
+      "chars": 465,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第二段待你回答（汇总）"
+    },
+    {
+      "topic": "answer",
+      "chapter": 15,
+      "chars": 316,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第三段待你回答"
+    },
+    {
+      "topic": "answer",
+      "chapter": 16,
+      "chars": 414,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "第四段：进阶专业知识"
+    },
+    {
+      "topic": "answer",
+      "chapter": 17,
+      "chars": 311,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "一句话记住"
+    },
+    {
+      "topic": "answer",
+      "chapter": 18,
+      "chars": 490,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "B 端硬件 PM：量产质量与变更闭环面试复习"
+    },
+    {
+      "topic": "answer",
+      "chapter": 19,
+      "chars": 1056,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "B 端产品经理问题集"
+    },
+    {
+      "topic": "answer",
+      "chapter": 20,
+      "chars": 720,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "成本、供应链与开发"
+    },
+    {
+      "topic": "answer",
+      "chapter": 21,
+      "chars": 720,
+      "figures": 2,
+      "legacy": false,
+      "overflow": false,
+      "svg": 0,
+      "title": "成本、供应链与开发"
+    }
+  ],
+  "chapterCount": 203,
+  "topicCount": 60,
+  "issues": []
+}

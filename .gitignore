@@ -1,0 +1,15 @@
+# Local settings and secrets
+.DS_Store
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+
+# Superseded runtime media and local comparison backups
+/learning/media/
+/learning/qa/*.zip
+/learning/qa/before-*/
+/learning/artwork/superseded/

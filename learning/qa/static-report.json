@@ -1,0 +1,67 @@
+{
+  "source_integrity": "39 / 39 exact matches",
+  "topics": 60,
+  "unique_generated_images": 120,
+  "learning_figures": 406,
+  "core_lesson_chars": {
+    "min": 914,
+    "max": 1435
+  },
+  "total_course_chars": 177388,
+  "knowledge_cards": 180,
+  "course_chapters": 203,
+  "core_document_coverage": [
+    {
+      "document": "基础课 · 从零学 B 端硬件 PM",
+      "nonemptyLines": 372,
+      "coveredLines": 372,
+      "missingLines": []
+    },
+    {
+      "document": "问题集 · B 端产品经理高频问答",
+      "nonemptyLines": 1421,
+      "coveredLines": 1421,
+      "missingLines": []
+    },
+    {
+      "document": "案例 · 工业网关商业论证",
+      "nonemptyLines": 405,
+      "coveredLines": 405,
+      "missingLines": []
+    },
+    {
+      "document": "交付 · 量产质量与变更闭环",
+      "nonemptyLines": 542,
+      "coveredLines": 542,
+      "missingLines": []
+    },
+    {
+      "document": "案例 · 龙杰智能卡（ACS）面试素材",
+      "nonemptyLines": 91,
+      "coveredLines": 91,
+      "missingLines": []
+    }
+  ],
+  "questions": 120,
+  "glossary_terms": 62,
+  "widget_types": [
+    "bom",
+    "buyers",
+    "docs",
+    "economics",
+    "gate",
+    "journey",
+    "matrix",
+    "moscow",
+    "nfc",
+    "opportunity",
+    "pricing",
+    "rice",
+    "stages",
+    "trace",
+    "yield"
+  ],
+  "linked_assets": "All local source/HTML/media links exist",
+  "media_probes": [],
+  "bundle_megabytes": 573.87
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "batch-c-00.jpg",
+    "ids": [
+      "bom-concept",
+      "connectivity-case",
+      "connectivity-concept",
+      "interfaces-case"
+    ]
+  },
+  {
+    "file": "batch-c-01.jpg",
+    "ids": [
+      "nre-case",
+      "nre-concept",
+      "oem-case",
+      "oem-concept"
+    ]
+  },
+  {
+    "file": "batch-c-02.jpg",
+    "ids": [
+      "power-concept"
+    ]
+  }
+]

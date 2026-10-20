@@ -1,0 +1,21 @@
+{
+  "source_md": "课堂笔记-从零学B端硬件PM.md",
+  "output_dir": "video",
+  "api": {
+    "base_url": "https://api.xiaomimimo.com/v1",
+    "model": "mimo-v2.5-tts-voicedesign"
+  },
+  "voice": {
+    "label": "老师",
+    "voice_design": "一位30岁左右的女性，声音积极、热情、有感染力，语速偏快，吐字清晰，语气亲切耐心，像一位给完全零基础的学生讲生活常识的老师，每句话都讲得简单明白，不让听众觉得难。"
+  },
+  "max_chars_per_request": 180,
+  "silence_seconds": 0.35,
+  "resolution": {
+    "width": 1920,
+    "height": 1080
+  },
+  "fps": 30,
+  "render_quality": "high",
+  "transcribe_model": "small"
+}

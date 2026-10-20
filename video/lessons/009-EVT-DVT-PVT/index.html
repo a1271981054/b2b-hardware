@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>第3课 EVT / DVT / PVT</title>
+<style>
+@font-face { font-family: "Kaiti SC"; src: local("Kaiti SC"); }
+@font-face { font-family: "Songti SC"; src: local("Songti SC"); }
+@font-face { font-family: "STSong"; src: local("STSong"); }
+@font-face { font-family: "SimSun"; src: local("SimSun"); }
+@font-face { font-family: "Menlo"; src: local("Menlo"); }
+html, body { margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden; background: #F6F1E7; }
+* { box-sizing: border-box; }
+body { font-family: "Songti SC", "STSong", "SimSun", serif; color: #22242A; }
+.scene { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; overflow: hidden; background: #F6F1E7; z-index: 1; }
+#scene-000 { z-index: 2; }
+.scene:not(#scene-000) { opacity: 0; }
+.ghost { position: absolute; top: 70px; right: 70px; font-family: "Kaiti SC", "Songti SC", serif; font-size: 280px; font-weight: 900; color: #22242A; opacity: 0.05; line-height: 1; pointer-events: none; max-width: 720px; overflow: hidden; }
+.bar-a { position: absolute; top: 0; left: 0; width: 1920px; height: 10px; background: #0E6E66; }
+.bar-b { position: absolute; top: 178px; left: 96px; width: 84px; height: 8px; background: #E8871E; border-radius: 4px; }
+.tag { position: absolute; top: 52px; left: 96px; font-family: "Menlo", "Songti SC", monospace; font-size: 28px; font-weight: 700; color: #0E6E66; }
+.counter { position: absolute; top: 52px; right: 96px; font-family: "Menlo", monospace; font-size: 28px; font-weight: 700; color: #8A8272; }
+.keyword { position: absolute; top: 214px; left: 96px; width: 920px; font-family: "Kaiti SC", "Songti SC", serif; font-size: 92px; font-weight: 900; line-height: 1.14; color: #22242A; }
+.kw-accent { color: #0E6E66; }
+.kw-plus { color: #E8871E; }
+.note { position: absolute; top: 486px; left: 96px; width: 900px; font-size: 40px; line-height: 1.42; color: #3E4A52; }
+.vpanel { position: absolute; top: 220px; right: 120px; width: 700px; height: 560px; background: #F7E4C8; border: 4px solid #E8871E; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; }
+.vpanel.q { background: #F6DDD7; border-color: #C75B45; }
+.vpanel.final { background: #DDEAE4; border-color: #0E6E66; }
+.v-emoji { font-size: 150px; line-height: 1; }
+.v-label { font-family: "Kaiti SC", "Songti SC", serif; font-size: 40px; font-weight: 900; color: #22242A; }
+.v-note { font-size: 30px; color: #7A5B28; }
+.caption { position: absolute; left: 96px; right: 96px; bottom: 84px; min-height: 118px; padding: 22px 38px; background: #22242A; color: #F6F1E7; border-radius: 8px; display: flex; align-items: center; font-size: 34px; line-height: 1.5; z-index: 20; opacity: 0; }
+#progress { position: absolute; left: 96px; right: 96px; bottom: 42px; height: 6px; background: #D9CDB8; border-radius: 3px; z-index: 21; }
+#progress-fill { height: 6px; background: #0E6E66; border-radius: 3px; transform-origin: left center; transform: scaleX(0); }
+#outro { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; background: #22242A; opacity: 0; z-index: 50; }
+#outro-text { position: absolute; left: 96px; bottom: 160px; font-family: "Kaiti SC", "Songti SC", serif; font-size: 64px; color: #F6F1E7; opacity: 0; z-index: 51; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="lesson-009" data-width="1920" data-height="1080" data-start="0" data-duration="93.626">
+<audio id="narration" data-start="0" data-duration="92.376" data-track-index="0" src="narration.mp3" data-volume="1"></audio>
+<div class="scene" id="scene-000">
+  <div class="ghost">EVT</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">01 / 16</div>
+  <div class="keyword"><span class="">EVT</span><span class="kw-plus"> ＋ </span><span class="kw-accent">DVT</span></div>
+  <div class="note">三关</div>
+  <div class="vpanel">
+    <div class="v-emoji">👩‍🏫</div>
+    <div class="v-label">老师开讲</div>
+    <div class="v-note">三关</div>
+  </div>
+</div>
+<div class="scene" id="scene-001">
+  <div class="ghost">三关</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">02 / 16</div>
+  <div class="keyword"><span class="">三关</span></div>
+  <div class="note">一关一关过</div>
+  <div class="vpanel">
+    <div class="v-emoji">📄</div>
+    <div class="v-label">产品文档</div>
+    <div class="v-note">一关一关过</div>
+  </div>
+</div>
+<div class="scene" id="scene-002">
+  <div class="ghost">EVT</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">03 / 16</div>
+  <div class="keyword"><span class="">EVT</span></div>
+  <div class="note">第一版样机</div>
+  <div class="vpanel">
+    <div class="v-emoji">🍳</div>
+    <div class="v-label">先试做一锅</div>
+    <div class="v-note">第一版样机</div>
+  </div>
+</div>
+<div class="scene" id="scene-003">
+  <div class="ghost">能用就行</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">04 / 16</div>
+  <div class="keyword"><span class="">能用就行</span></div>
+  <div class="note">先跑通</div>
+  <div class="vpanel">
+    <div class="v-emoji">🍳</div>
+    <div class="v-label">先试做一锅</div>
+    <div class="v-note">先跑通</div>
+  </div>
+</div>
+<div class="scene" id="scene-004">
+  <div class="ghost">DVT</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">05 / 16</div>
+  <div class="keyword"><span class="">DVT</span></div>
+  <div class="note">验证设计</div>
+  <div class="vpanel">
+    <div class="v-emoji">🧪</div>
+    <div class="v-label">反复试吃</div>
+    <div class="v-note">验证设计</div>
+  </div>
+</div>
+<div class="scene" id="scene-005">
+  <div class="ghost">测试</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">06 / 16</div>
+  <div class="keyword"><span class="">测试</span></div>
+  <div class="note">摔淋测</div>
+  <div class="vpanel">
+    <div class="v-emoji">🧪</div>
+    <div class="v-label">反复试吃</div>
+    <div class="v-note">摔淋测</div>
+  </div>
+</div>
+<div class="scene" id="scene-006">
+  <div class="ghost">PVT</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">07 / 16</div>
+  <div class="keyword"><span class="">PVT</span></div>
+  <div class="note">正式产线小批量</div>
+  <div class="vpanel">
+    <div class="v-emoji">📦</div>
+    <div class="v-label">稳定量产</div>
+    <div class="v-note">正式产线小批量</div>
+  </div>
+</div>
+<div class="scene" id="scene-007">
+  <div class="ghost">良率</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">08 / 16</div>
+  <div class="keyword"><span class="">良率</span></div>
+  <div class="note">良率是关键</div>
+  <div class="vpanel">
+    <div class="v-emoji">📦</div>
+    <div class="v-label">稳定量产</div>
+    <div class="v-note">良率是关键</div>
+  </div>
+</div>
+<div class="scene" id="scene-008">
+  <div class="ghost">试做</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">09 / 16</div>
+  <div class="keyword"><span class="">试做</span></div>
+  <div class="note">第一锅</div>
+  <div class="vpanel">
+    <div class="v-emoji">🍳</div>
+    <div class="v-label">先试做一锅</div>
+    <div class="v-note">第一锅</div>
+  </div>
+</div>
+<div class="scene" id="scene-009">
+  <div class="ghost">试吃</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">10 / 16</div>
+  <div class="keyword"><span class="">试吃</span></div>
+  <div class="note">调配方</div>
+  <div class="vpanel">
+    <div class="v-emoji">🧪</div>
+    <div class="v-label">反复试吃</div>
+    <div class="v-note">调配方</div>
+  </div>
+</div>
+<div class="scene" id="scene-010">
+  <div class="ghost">一百份</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">11 / 16</div>
+  <div class="keyword"><span class="">一百份</span></div>
+  <div class="note">每份一样</div>
+  <div class="vpanel">
+    <div class="v-emoji">📦</div>
+    <div class="v-label">稳定量产</div>
+    <div class="v-note">每份一样</div>
+  </div>
+</div>
+<div class="scene" id="scene-011">
+  <div class="ghost">评审门</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">12 / 16</div>
+  <div class="keyword"><span class="">评审门</span></div>
+  <div class="note">过门才能走</div>
+  <div class="vpanel">
+    <div class="v-emoji">📄</div>
+    <div class="v-label">产品文档</div>
+    <div class="v-note">过门才能走</div>
+  </div>
+</div>
+<div class="scene" id="scene-012">
+  <div class="ghost">风险</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">13 / 16</div>
+  <div class="keyword"><span class="">风险</span></div>
+  <div class="note">节点看风险</div>
+  <div class="vpanel q">
+    <div class="v-emoji">❓</div>
+    <div class="v-label">课后想一想</div>
+    <div class="v-note">节点看风险</div>
+  </div>
+</div>
+<div class="scene" id="scene-013">
+  <div class="ghost">面试</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">14 / 16</div>
+  <div class="keyword"><span class="">面试</span></div>
+  <div class="note">三个词</div>
+  <div class="vpanel">
+    <div class="v-emoji">🎤</div>
+    <div class="v-label">面试串讲</div>
+    <div class="v-note">三个词</div>
+  </div>
+</div>
+<div class="scene" id="scene-014">
+  <div class="ghost">一句话记住</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">15 / 16</div>
+  <div class="keyword"><span class="">一句话记住</span></div>
+  <div class="note">能用靠谱稳定</div>
+  <div class="vpanel final">
+    <div class="v-emoji">⭐</div>
+    <div class="v-label">一句话记住</div>
+    <div class="v-note">能用靠谱稳定</div>
+  </div>
+</div>
+<div class="scene" id="scene-015">
+  <div class="ghost">课后想一想</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第二段 · EVT / DVT / PVT</div>
+  <div class="counter">16 / 16</div>
+  <div class="keyword"><span class="">课后想一想</span></div>
+  <div class="note">想想三关</div>
+  <div class="vpanel q">
+    <div class="v-emoji">❓</div>
+    <div class="v-label">课后想一想</div>
+    <div class="v-note">想想三关</div>
+  </div>
+</div>
+<div class="caption" id="cap-000">今天讲硬件从0到1要过的</div>
+<div class="caption" id="cap-001">三关：EVT、DVT、P</div>
+<div class="caption" id="cap-002">VT。</div>
+<div class="caption" id="cap-003">硬件不是画完图就直接量产</div>
+<div class="caption" id="cap-004">，中间要过三关，每一关都</div>
+<div class="caption" id="cap-005">是一次验证。</div>
+<div class="caption" id="cap-006">EVT是工程验证，做第一</div>
+<div class="caption" id="cap-007">版样机，验证能不能用。</div>
+<div class="caption" id="cap-008">样子丑没关系，功能先跑通</div>
+<div class="caption" id="cap-009">。</div>
+<div class="caption" id="cap-010">DVT是设计验证，用改进</div>
+<div class="caption" id="cap-011">后的样机，验证设计靠不靠</div>
+<div class="caption" id="cap-012">谱。</div>
+<div class="caption" id="cap-013">要摔、要淋、要测温度、电</div>
+<div class="caption" id="cap-014">池、兼容性。</div>
+<div class="caption" id="cap-015">PVT是量产验证，用正式</div>
+<div class="caption" id="cap-016">产线做一小批，验证工厂能</div>
+<div class="caption" id="cap-017">不能稳定造出来。</div>
+<div class="caption" id="cap-018">看重良率：一百台里多少台</div>
+<div class="caption" id="cap-019">合格。</div>
+<div class="caption" id="cap-020">用做饭打比方。EVT是先</div>
+<div class="caption" id="cap-021">试做一锅，看味道对不对。</div>
+<div class="caption" id="cap-022">DVT是反复试做、请人试</div>
+<div class="caption" id="cap-023">吃、调整配方。</div>
+<div class="caption" id="cap-024">PVT是按最终菜谱，让后</div>
+<div class="caption" id="cap-025">厨一次做一百份，确认每份</div>
+<div class="caption" id="cap-026">都一样。</div>
+<div class="caption" id="cap-027">每个阶段都有里程碑和评审</div>
+<div class="caption" id="cap-028">门，不通过，不能进下一关</div>
+<div class="caption" id="cap-029">。</div>
+<div class="caption" id="cap-030">风险都在这些节点暴露：延</div>
+<div class="caption" id="cap-031">期、成本超、质量问题。</div>
+<div class="caption" id="cap-032">面试被问硬件从0到1怎么</div>
+<div class="caption" id="cap-033">走，答这三个词就赢了。</div>
+<div class="caption" id="cap-034">记住一句话：EVT验证能</div>
+<div class="caption" id="cap-035">不能用，DVT验证靠不靠</div>
+<div class="caption" id="cap-036">谱，PVT验证能不能稳定</div>
+<div class="caption" id="cap-037">造出来。</div>
+<div class="caption" id="cap-038">课后想一想：为什么不能画</div>
+<div class="caption" id="cap-039">完图纸就直接生产一万台？</div>
+<div id="progress"><div id="progress-fill"></div></div>
+<div id="outro"></div>
+<div id="outro-text">这节课讲完啦，下次见</div>
+</div>
+<script src="vendor/gsap.min.js"></script>
+<script>
+window.__timelines = window.__timelines || {};
+var tl = gsap.timeline({ paused: true });
+var TOTAL = 93.626;
+tl.fromTo("#progress-fill", {scaleX:0}, {scaleX:1, duration:TOTAL, ease:"none"}, 0);
+tl.fromTo("#scene-000 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 0.0+0.10);
+tl.fromTo("#scene-000 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 0.0+0.12);
+tl.fromTo("#scene-000 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 0.0+0.18);
+tl.fromTo("#scene-000 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 0.0+0.24);
+tl.fromTo("#scene-000 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 0.0+0.34);
+tl.fromTo("#scene-000 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.944/1.8)-1), ease:"sine.inOut"}, 0.0);
+tl.fromTo("#scene-001 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 6.494+0.10);
+tl.fromTo("#scene-001 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 6.494+0.12);
+tl.fromTo("#scene-001 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 6.494+0.18);
+tl.fromTo("#scene-001 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 6.494+0.24);
+tl.fromTo("#scene-001 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 6.494+0.34);
+tl.fromTo("#scene-001 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(7.424/1.8)-1), ease:"sine.inOut"}, 6.494);
+tl.fromTo("#scene-002 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 13.468+0.10);
+tl.fromTo("#scene-002 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 13.468+0.12);
+tl.fromTo("#scene-002 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 13.468+0.18);
+tl.fromTo("#scene-002 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 13.468+0.24);
+tl.fromTo("#scene-002 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 13.468+0.34);
+tl.fromTo("#scene-002 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(5.5040000000000004/1.8)-1), ease:"sine.inOut"}, 13.468);
+tl.fromTo("#scene-003 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 18.522+0.10);
+tl.fromTo("#scene-003 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 18.522+0.12);
+tl.fromTo("#scene-003 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 18.522+0.18);
+tl.fromTo("#scene-003 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 18.522+0.24);
+tl.fromTo("#scene-003 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 18.522+0.34);
+tl.fromTo("#scene-003 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(4.064000000000003/1.8)-1), ease:"sine.inOut"}, 18.522);
+tl.fromTo("#scene-004 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 22.136+0.10);
+tl.fromTo("#scene-004 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 22.136+0.12);
+tl.fromTo("#scene-004 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 22.136+0.18);
+tl.fromTo("#scene-004 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 22.136+0.24);
+tl.fromTo("#scene-004 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 22.136+0.34);
+tl.fromTo("#scene-004 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.296000000000002/1.8)-1), ease:"sine.inOut"}, 22.136);
+tl.fromTo("#scene-005 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 27.982+0.10);
+tl.fromTo("#scene-005 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 27.982+0.12);
+tl.fromTo("#scene-005 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 27.982+0.18);
+tl.fromTo("#scene-005 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 27.982+0.24);
+tl.fromTo("#scene-005 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 27.982+0.34);
+tl.fromTo("#scene-005 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(5.168000000000002/1.8)-1), ease:"sine.inOut"}, 27.982);
+tl.fromTo("#scene-006 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 32.7+0.10);
+tl.fromTo("#scene-006 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 32.7+0.12);
+tl.fromTo("#scene-006 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 32.7+0.18);
+tl.fromTo("#scene-006 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 32.7+0.24);
+tl.fromTo("#scene-006 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 32.7+0.34);
+tl.fromTo("#scene-006 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(7.736/1.8)-1), ease:"sine.inOut"}, 32.7);
+tl.fromTo("#scene-007 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 39.986+0.10);
+tl.fromTo("#scene-007 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 39.986+0.12);
+tl.fromTo("#scene-007 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 39.986+0.18);
+tl.fromTo("#scene-007 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 39.986+0.24);
+tl.fromTo("#scene-007 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 39.986+0.34);
+tl.fromTo("#scene-007 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(4.544/1.8)-1), ease:"sine.inOut"}, 39.986);
+tl.fromTo("#scene-008 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 44.08+0.10);
+tl.fromTo("#scene-008 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 44.08+0.12);
+tl.fromTo("#scene-008 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 44.08+0.18);
+tl.fromTo("#scene-008 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 44.08+0.24);
+tl.fromTo("#scene-008 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 44.08+0.34);
+tl.fromTo("#scene-008 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.608/1.8)-1), ease:"sine.inOut"}, 44.08);
+tl.fromTo("#scene-009 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 50.238+0.10);
+tl.fromTo("#scene-009 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 50.238+0.12);
+tl.fromTo("#scene-009 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 50.238+0.18);
+tl.fromTo("#scene-009 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 50.238+0.24);
+tl.fromTo("#scene-009 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 50.238+0.34);
+tl.fromTo("#scene-009 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(4.855999999999997/1.8)-1), ease:"sine.inOut"}, 50.238);
+tl.fromTo("#scene-010 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 54.644+0.10);
+tl.fromTo("#scene-010 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 54.644+0.12);
+tl.fromTo("#scene-010 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 54.644+0.18);
+tl.fromTo("#scene-010 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 54.644+0.24);
+tl.fromTo("#scene-010 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 54.644+0.34);
+tl.fromTo("#scene-010 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(7.088000000000004/1.8)-1), ease:"sine.inOut"}, 54.644);
+tl.fromTo("#scene-011 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 61.282+0.10);
+tl.fromTo("#scene-011 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 61.282+0.12);
+tl.fromTo("#scene-011 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 61.282+0.18);
+tl.fromTo("#scene-011 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 61.282+0.24);
+tl.fromTo("#scene-011 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 61.282+0.34);
+tl.fromTo("#scene-011 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.464000000000001/1.8)-1), ease:"sine.inOut"}, 61.282);
+tl.fromTo("#scene-012 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 67.296+0.10);
+tl.fromTo("#scene-012 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 67.296+0.12);
+tl.fromTo("#scene-012 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 67.296+0.18);
+tl.fromTo("#scene-012 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 67.296+0.24);
+tl.fromTo("#scene-012 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 67.296+0.34);
+tl.fromTo("#scene-012 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(5.815999999999991/1.8)-1), ease:"sine.inOut"}, 67.296);
+tl.fromTo("#scene-013 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 72.662+0.10);
+tl.fromTo("#scene-013 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 72.662+0.12);
+tl.fromTo("#scene-013 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 72.662+0.18);
+tl.fromTo("#scene-013 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 72.662+0.24);
+tl.fromTo("#scene-013 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 72.662+0.34);
+tl.fromTo("#scene-013 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.127999999999989/1.8)-1), ease:"sine.inOut"}, 72.662);
+tl.fromTo("#scene-014 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 78.34+0.10);
+tl.fromTo("#scene-014 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 78.34+0.12);
+tl.fromTo("#scene-014 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 78.34+0.18);
+tl.fromTo("#scene-014 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 78.34+0.24);
+tl.fromTo("#scene-014 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 78.34+0.34);
+tl.fromTo("#scene-014 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(9.824000000000002/1.8)-1), ease:"sine.inOut"}, 78.34);
+tl.fromTo("#scene-015 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 87.714+0.10);
+tl.fromTo("#scene-015 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 87.714+0.12);
+tl.fromTo("#scene-015 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 87.714+0.18);
+tl.fromTo("#scene-015 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 87.714+0.24);
+tl.fromTo("#scene-015 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 87.714+0.34);
+tl.fromTo("#scene-015 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(5.983999999999997/1.8)-1), ease:"sine.inOut"}, 87.714);
+tl.to("#scene-000", {opacity:0, duration:0.35, ease:"power2.inOut"}, 6.144);
+tl.fromTo("#scene-001", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 6.144+0.06);
+tl.to("#scene-001", {opacity:0, duration:0.35, ease:"power2.inOut"}, 13.118);
+tl.fromTo("#scene-002", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 13.118+0.06);
+tl.to("#scene-002", {opacity:0, duration:0.35, ease:"power2.inOut"}, 18.171999999999997);
+tl.fromTo("#scene-003", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 18.171999999999997+0.06);
+tl.to("#scene-003", {opacity:0, duration:0.35, ease:"power2.inOut"}, 21.785999999999998);
+tl.fromTo("#scene-004", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 21.785999999999998+0.06);
+tl.to("#scene-004", {opacity:0, duration:0.35, ease:"power2.inOut"}, 27.631999999999998);
+tl.fromTo("#scene-005", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 27.631999999999998+0.06);
+tl.to("#scene-005", {opacity:0, duration:0.35, ease:"power2.inOut"}, 32.35);
+tl.fromTo("#scene-006", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 32.35+0.06);
+tl.to("#scene-006", {opacity:0, duration:0.35, ease:"power2.inOut"}, 39.635999999999996);
+tl.fromTo("#scene-007", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 39.635999999999996+0.06);
+tl.to("#scene-007", {opacity:0, duration:0.35, ease:"power2.inOut"}, 43.73);
+tl.fromTo("#scene-008", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 43.73+0.06);
+tl.to("#scene-008", {opacity:0, duration:0.35, ease:"power2.inOut"}, 49.888);
+tl.fromTo("#scene-009", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 49.888+0.06);
+tl.to("#scene-009", {opacity:0, duration:0.35, ease:"power2.inOut"}, 54.294);
+tl.fromTo("#scene-010", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 54.294+0.06);
+tl.to("#scene-010", {opacity:0, duration:0.35, ease:"power2.inOut"}, 60.931999999999995);
+tl.fromTo("#scene-011", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 60.931999999999995+0.06);
+tl.to("#scene-011", {opacity:0, duration:0.35, ease:"power2.inOut"}, 66.94600000000001);
+tl.fromTo("#scene-012", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 66.94600000000001+0.06);
+tl.to("#scene-012", {opacity:0, duration:0.35, ease:"power2.inOut"}, 72.31200000000001);
+tl.fromTo("#scene-013", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 72.31200000000001+0.06);
+tl.to("#scene-013", {opacity:0, duration:0.35, ease:"power2.inOut"}, 77.99000000000001);
+tl.fromTo("#scene-014", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 77.99000000000001+0.06);
+tl.to("#scene-014", {opacity:0, duration:0.35, ease:"power2.inOut"}, 87.364);
+tl.fromTo("#scene-015", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 87.364+0.06);
+tl.fromTo("#cap-000", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 0.12+0.05);
+tl.to("#cap-000", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 2.744-0.14);
+tl.set("#cap-000", {opacity:0, visibility:"hidden"}, 2.744);
+tl.fromTo("#cap-001", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 2.744+0.05);
+tl.to("#cap-001", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 5.368-0.14);
+tl.set("#cap-001", {opacity:0, visibility:"hidden"}, 5.368);
+tl.fromTo("#cap-002", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 5.368+0.05);
+tl.to("#cap-002", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 6.024-0.14);
+tl.set("#cap-002", {opacity:0, visibility:"hidden"}, 6.024);
+tl.fromTo("#cap-003", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 6.614+0.05);
+tl.to("#cap-003", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 9.168-0.14);
+tl.set("#cap-003", {opacity:0, visibility:"hidden"}, 9.168);
+tl.fromTo("#cap-004", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 9.168+0.05);
+tl.to("#cap-004", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 11.721-0.14);
+tl.set("#cap-004", {opacity:0, visibility:"hidden"}, 11.721);
+tl.fromTo("#cap-005", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 11.721+0.05);
+tl.to("#cap-005", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 12.998-0.14);
+tl.set("#cap-005", {opacity:0, visibility:"hidden"}, 12.998);
+tl.fromTo("#cap-006", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 13.588+0.05);
+tl.to("#cap-006", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 15.917-0.14);
+tl.set("#cap-006", {opacity:0, visibility:"hidden"}, 15.917);
+tl.fromTo("#cap-007", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 15.917+0.05);
+tl.to("#cap-007", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 18.052-0.14);
+tl.set("#cap-007", {opacity:0, visibility:"hidden"}, 18.052);
+tl.fromTo("#cap-008", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 18.642+0.05);
+tl.to("#cap-008", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 21.433-0.14);
+tl.set("#cap-008", {opacity:0, visibility:"hidden"}, 21.433);
+tl.fromTo("#cap-009", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 21.433+0.05);
+tl.to("#cap-009", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 21.833-0.14);
+tl.set("#cap-009", {opacity:0, visibility:"hidden"}, 21.833);
+tl.fromTo("#cap-010", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 22.256+0.05);
+tl.to("#cap-010", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 24.682-0.14);
+tl.set("#cap-010", {opacity:0, visibility:"hidden"}, 24.682);
+tl.fromTo("#cap-011", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 24.682+0.05);
+tl.to("#cap-011", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 27.108-0.14);
+tl.set("#cap-011", {opacity:0, visibility:"hidden"}, 27.108);
+tl.fromTo("#cap-012", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 27.108+0.05);
+tl.to("#cap-012", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 27.512-0.14);
+tl.set("#cap-012", {opacity:0, visibility:"hidden"}, 27.512);
+tl.fromTo("#cap-013", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 28.102+0.05);
+tl.to("#cap-013", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 30.854-0.14);
+tl.set("#cap-013", {opacity:0, visibility:"hidden"}, 30.854);
+tl.fromTo("#cap-014", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 30.854+0.05);
+tl.to("#cap-014", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 32.23-0.14);
+tl.set("#cap-014", {opacity:0, visibility:"hidden"}, 32.23);
+tl.fromTo("#cap-015", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 32.82+0.05);
+tl.to("#cap-015", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 35.331-0.14);
+tl.set("#cap-015", {opacity:0, visibility:"hidden"}, 35.331);
+tl.fromTo("#cap-016", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 35.331+0.05);
+tl.to("#cap-016", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 37.842-0.14);
+tl.set("#cap-016", {opacity:0, visibility:"hidden"}, 37.842);
+tl.fromTo("#cap-017", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 37.842+0.05);
+tl.to("#cap-017", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 39.516-0.14);
+tl.set("#cap-017", {opacity:0, visibility:"hidden"}, 39.516);
+tl.fromTo("#cap-018", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 40.106+0.05);
+tl.to("#cap-018", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 42.909-0.14);
+tl.set("#cap-018", {opacity:0, visibility:"hidden"}, 42.909);
+tl.fromTo("#cap-019", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 42.909+0.05);
+tl.to("#cap-019", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 43.61-0.14);
+tl.set("#cap-019", {opacity:0, visibility:"hidden"}, 43.61);
+tl.fromTo("#cap-020", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 44.2+0.05);
+tl.to("#cap-020", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 46.984-0.14);
+tl.set("#cap-020", {opacity:0, visibility:"hidden"}, 46.984);
+tl.fromTo("#cap-021", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 46.984+0.05);
+tl.to("#cap-021", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 49.768-0.14);
+tl.set("#cap-021", {opacity:0, visibility:"hidden"}, 49.768);
+tl.fromTo("#cap-022", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 50.358+0.05);
+tl.to("#cap-022", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 52.768-0.14);
+tl.set("#cap-022", {opacity:0, visibility:"hidden"}, 52.768);
+tl.fromTo("#cap-023", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 52.768+0.05);
+tl.to("#cap-023", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 54.174-0.14);
+tl.set("#cap-023", {opacity:0, visibility:"hidden"}, 54.174);
+tl.fromTo("#cap-024", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 54.764+0.05);
+tl.to("#cap-024", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 57.356-0.14);
+tl.set("#cap-024", {opacity:0, visibility:"hidden"}, 57.356);
+tl.fromTo("#cap-025", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 57.356+0.05);
+tl.to("#cap-025", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 59.948-0.14);
+tl.set("#cap-025", {opacity:0, visibility:"hidden"}, 59.948);
+tl.fromTo("#cap-026", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 59.948+0.05);
+tl.to("#cap-026", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 60.812-0.14);
+tl.set("#cap-026", {opacity:0, visibility:"hidden"}, 60.812);
+tl.fromTo("#cap-027", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 61.402+0.05);
+tl.to("#cap-027", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 64.006-0.14);
+tl.set("#cap-027", {opacity:0, visibility:"hidden"}, 64.006);
+tl.fromTo("#cap-028", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 64.006+0.05);
+tl.to("#cap-028", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 66.609-0.14);
+tl.set("#cap-028", {opacity:0, visibility:"hidden"}, 66.609);
+tl.fromTo("#cap-029", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 66.609+0.05);
+tl.to("#cap-029", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 67.009-0.14);
+tl.set("#cap-029", {opacity:0, visibility:"hidden"}, 67.009);
+tl.fromTo("#cap-030", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 67.416+0.05);
+tl.to("#cap-030", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 69.908-0.14);
+tl.set("#cap-030", {opacity:0, visibility:"hidden"}, 69.908);
+tl.fromTo("#cap-031", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 69.908+0.05);
+tl.to("#cap-031", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 72.192-0.14);
+tl.set("#cap-031", {opacity:0, visibility:"hidden"}, 72.192);
+tl.fromTo("#cap-032", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 72.782+0.05);
+tl.to("#cap-032", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 75.437-0.14);
+tl.set("#cap-032", {opacity:0, visibility:"hidden"}, 75.437);
+tl.fromTo("#cap-033", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 75.437+0.05);
+tl.to("#cap-033", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 77.87-0.14);
+tl.set("#cap-033", {opacity:0, visibility:"hidden"}, 77.87);
+tl.fromTo("#cap-034", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 78.46+0.05);
+tl.to("#cap-034", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 81.095-0.14);
+tl.set("#cap-034", {opacity:0, visibility:"hidden"}, 81.095);
+tl.fromTo("#cap-035", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 81.095+0.05);
+tl.to("#cap-035", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 83.73-0.14);
+tl.set("#cap-035", {opacity:0, visibility:"hidden"}, 83.73);
+tl.fromTo("#cap-036", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 83.73+0.05);
+tl.to("#cap-036", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 86.366-0.14);
+tl.set("#cap-036", {opacity:0, visibility:"hidden"}, 86.366);
+tl.fromTo("#cap-037", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 86.366+0.05);
+tl.to("#cap-037", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 87.244-0.14);
+tl.set("#cap-037", {opacity:0, visibility:"hidden"}, 87.244);
+tl.fromTo("#cap-038", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 87.834+0.05);
+tl.to("#cap-038", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 90.306-0.14);
+tl.set("#cap-038", {opacity:0, visibility:"hidden"}, 90.306);
+tl.fromTo("#cap-039", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 90.306+0.05);
+tl.to("#cap-039", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 92.778-0.14);
+tl.set("#cap-039", {opacity:0, visibility:"hidden"}, 92.778);
+tl.to("#outro", {opacity:1, duration:0.7, ease:"power1.in"}, TOTAL-0.95);
+tl.fromTo("#outro-text", {opacity:0, y:24}, {opacity:1, y:0, duration:0.5, ease:"power2.out"}, TOTAL-0.7);
+tl.set("#scene-015", {opacity:0, visibility:"hidden"}, TOTAL-0.2);
+window.__timelines["lesson-009"] = tl;
+</script>
+</body>
+</html>

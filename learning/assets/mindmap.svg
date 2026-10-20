@@ -1,0 +1,427 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1690 2700">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap');
+    text { font-family: 'JetBrains Mono', 'Noto Sans SC', 'PingFang SC', sans-serif; }
+  </style>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- main branch connectors -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M 280 1300 C 310 1300, 310 152, 330 152" stroke="#22d3ee" stroke-width="2.5" opacity="0.9"/>
+    <path d="M 280 1312 C 310 1312, 310 431, 330 431" stroke="#34d399" stroke-width="2.5" opacity="0.9"/>
+    <path d="M 280 1324 C 310 1324, 310 749, 330 749" stroke="#a78bfa" stroke-width="2.5" opacity="0.9"/>
+    <path d="M 280 1336 C 310 1336, 310 1067, 330 1067" stroke="#fbbf24" stroke-width="2.5" opacity="0.9"/>
+    <path d="M 280 1348 C 310 1348, 310 1424, 330 1424" stroke="#60a5fa" stroke-width="2.5" opacity="0.9"/>
+    <path d="M 280 1360 C 310 1360, 310 1820, 330 1820" stroke="#fb923c" stroke-width="2.5" opacity="0.9"/>
+    <path d="M 280 1372 C 310 1372, 310 2216, 330 2216" stroke="#fb7185" stroke-width="2.5" opacity="0.9"/>
+    <path d="M 280 1384 C 310 1384, 310 2534, 330 2534" stroke="#94a3b8" stroke-width="2.5" opacity="0.9"/>
+  </g>
+
+  <!-- branch to child connectors -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M 540 152 C 570 152, 570 105, 600 105" stroke="#22d3ee" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 152 C 570 152, 570 105, 600 105" stroke="#22d3ee" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 152 C 570 152, 570 183, 600 183" stroke="#22d3ee" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 152 C 570 152, 570 183, 600 183" stroke="#22d3ee" stroke-width="1.5" opacity="0.7"/>
+
+    <path d="M 540 431 C 570 431, 570 345, 600 345" stroke="#34d399" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 431 C 570 431, 570 345, 600 345" stroke="#34d399" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 431 C 570 431, 570 423, 600 423" stroke="#34d399" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 431 C 570 431, 570 423, 600 423" stroke="#34d399" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 431 C 570 431, 570 501, 600 501" stroke="#34d399" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 431 C 570 431, 570 501, 600 501" stroke="#34d399" stroke-width="1.5" opacity="0.7"/>
+
+    <path d="M 540 749 C 570 749, 570 663, 600 663" stroke="#a78bfa" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 749 C 570 749, 570 663, 600 663" stroke="#a78bfa" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 749 C 570 749, 570 741, 600 741" stroke="#a78bfa" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 749 C 570 749, 570 741, 600 741" stroke="#a78bfa" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 749 C 570 749, 570 819, 600 819" stroke="#a78bfa" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 749 C 570 749, 570 819, 600 819" stroke="#a78bfa" stroke-width="1.5" opacity="0.7"/>
+
+    <path d="M 540 1067 C 570 1067, 570 981, 600 981" stroke="#fbbf24" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1067 C 570 1067, 570 981, 600 981" stroke="#fbbf24" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1067 C 570 1067, 570 1059, 600 1059" stroke="#fbbf24" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1067 C 570 1067, 570 1059, 600 1059" stroke="#fbbf24" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1067 C 570 1067, 570 1137, 600 1137" stroke="#fbbf24" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1067 C 570 1067, 570 1137, 600 1137" stroke="#fbbf24" stroke-width="1.5" opacity="0.7"/>
+
+    <path d="M 540 1424 C 570 1424, 570 1299, 600 1299" stroke="#60a5fa" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1424 C 570 1424, 570 1299, 600 1299" stroke="#60a5fa" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1424 C 570 1424, 570 1377, 600 1377" stroke="#60a5fa" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1424 C 570 1424, 570 1377, 600 1377" stroke="#60a5fa" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1424 C 570 1424, 570 1455, 600 1455" stroke="#60a5fa" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1424 C 570 1424, 570 1455, 600 1455" stroke="#60a5fa" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1424 C 570 1424, 570 1533, 600 1533" stroke="#60a5fa" stroke-width="1.5" opacity="0.7"/>
+
+    <path d="M 540 1820 C 570 1820, 570 1695, 600 1695" stroke="#fb923c" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1820 C 570 1820, 570 1695, 600 1695" stroke="#fb923c" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1820 C 570 1820, 570 1773, 600 1773" stroke="#fb923c" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1820 C 570 1820, 570 1773, 600 1773" stroke="#fb923c" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1820 C 570 1820, 570 1851, 600 1851" stroke="#fb923c" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1820 C 570 1820, 570 1851, 600 1851" stroke="#fb923c" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 1820 C 570 1820, 570 1929, 600 1929" stroke="#fb923c" stroke-width="1.5" opacity="0.7"/>
+
+    <path d="M 540 2216 C 570 2216, 570 2091, 600 2091" stroke="#fb7185" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 2216 C 570 2216, 570 2091, 600 2091" stroke="#fb7185" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 2216 C 570 2216, 570 2169, 600 2169" stroke="#fb7185" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 2216 C 570 2216, 570 2169, 600 2169" stroke="#fb7185" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 2216 C 570 2216, 570 2247, 600 2247" stroke="#fb7185" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 2216 C 570 2216, 570 2247, 600 2247" stroke="#fb7185" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 2216 C 570 2216, 570 2325, 600 2325" stroke="#fb7185" stroke-width="1.5" opacity="0.7"/>
+
+    <path d="M 540 2534 C 570 2534, 570 2487, 600 2487" stroke="#94a3b8" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 2534 C 570 2534, 570 2487, 600 2487" stroke="#94a3b8" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 2534 C 570 2534, 570 2565, 600 2565" stroke="#94a3b8" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 540 2534 C 570 2534, 570 2565, 600 2565" stroke="#94a3b8" stroke-width="1.5" opacity="0.7"/>
+  </g>
+
+  <!-- central node -->
+  <rect x="30" y="1295" width="250" height="96" rx="12" fill="#0f172a"/>
+  <rect x="30" y="1295" width="250" height="96" rx="12" fill="rgba(8,51,68,0.55)" stroke="#22d3ee" stroke-width="2"/>
+  <text x="155" y="1327" fill="white" font-size="17" font-weight="700" text-anchor="middle">B端硬件产品经理</text>
+  <text x="155" y="1351" fill="#22d3ee" font-size="12" font-weight="600" text-anchor="middle">学习思维导图</text>
+  <text x="155" y="1372" fill="#94a3b8" font-size="9" text-anchor="middle">从市场洞察到生命周期</text>
+
+  <!-- branch 1: 岗位与定位 -->
+  <rect x="330" y="124" width="210" height="56" rx="8" fill="#0f172a"/>
+  <rect x="330" y="124" width="210" height="56" rx="8" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="435" y="146" fill="white" font-size="12" font-weight="600" text-anchor="middle">岗位与定位</text>
+  <text x="435" y="164" fill="#94a3b8" font-size="9" text-anchor="middle">职责 · KPI · 边界</text>
+
+  <rect x="600" y="72" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="72" width="470" height="66" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="835" y="94" fill="white" font-size="11" font-weight="600" text-anchor="middle">职责三层模型</text>
+  <text x="835" y="110" fill="#94a3b8" font-size="9" text-anchor="middle">商业层 Why · 产品层 What · 交付层 How</text>
+  <text x="835" y="124" fill="#94a3b8" font-size="9" text-anchor="middle">对收入、毛利和最终结果负责</text>
+
+  <rect x="1120" y="72" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="72" width="470" height="66" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="1355" y="94" fill="white" font-size="11" font-weight="600" text-anchor="middle">职责边界</text>
+  <text x="1355" y="110" fill="#94a3b8" font-size="9" text-anchor="middle">负责定义、论证、评审、变更、上市输入</text>
+  <text x="1355" y="124" fill="#94a3b8" font-size="9" text-anchor="middle">设计/采购/认证/生产/销售靠协作</text>
+
+  <rect x="600" y="150" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="150" width="470" height="66" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="835" y="172" fill="white" font-size="11" font-weight="600" text-anchor="middle">KPI 双轨</text>
+  <text x="835" y="188" fill="#94a3b8" font-size="9" text-anchor="middle">北极星：健康毛利下的持续收入/客户数</text>
+  <text x="835" y="202" fill="#94a3b8" font-size="9" text-anchor="middle">阶段门 KPI：立项→开发→试产→上市→售后</text>
+
+  <rect x="1120" y="150" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="150" width="470" height="66" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="1355" y="172" fill="white" font-size="11" font-weight="600" text-anchor="middle">与 C 端/其他 PM 的区别</text>
+  <text x="1355" y="188" fill="#94a3b8" font-size="9" text-anchor="middle">B 端重商业闭环、决策链、硬件工程</text>
+  <text x="1355" y="202" fill="#94a3b8" font-size="9" text-anchor="middle">细分：硬件/NPI/嵌入式/项目 PM</text>
+
+  <!-- branch 2: 需求与市场 -->
+  <rect x="330" y="403" width="210" height="56" rx="8" fill="#0f172a"/>
+  <rect x="330" y="403" width="210" height="56" rx="8" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="435" y="425" fill="white" font-size="12" font-weight="600" text-anchor="middle">需求与市场</text>
+  <text x="435" y="443" fill="#94a3b8" font-size="9" text-anchor="middle">调研 · 机会 · 行业</text>
+
+  <rect x="600" y="312" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="312" width="470" height="66" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="835" y="334" fill="white" font-size="11" font-weight="600" text-anchor="middle">需求来源与优先级</text>
+  <text x="835" y="350" fill="#94a3b8" font-size="9" text-anchor="middle">客户、销售、售后、竞品、行业趋势</text>
+  <text x="835" y="364" fill="#94a3b8" font-size="9" text-anchor="middle">先定性访谈，再用机会评分排序</text>
+
+  <rect x="1120" y="312" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="312" width="470" height="66" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="1355" y="334" fill="white" font-size="11" font-weight="600" text-anchor="middle">客户调研与访谈</text>
+  <text x="1355" y="350" fill="#94a3b8" font-size="9" text-anchor="middle">JTBD 访谈：真实经历→触发点→时间线</text>
+  <text x="1355" y="364" fill="#94a3b8" font-size="9" text-anchor="middle">问替代方案、期望结果，最后验证支付意愿</text>
+
+  <rect x="600" y="390" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="390" width="470" height="66" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="835" y="412" fill="white" font-size="11" font-weight="600" text-anchor="middle">机会评分公式</text>
+  <text x="835" y="428" fill="#94a3b8" font-size="9" text-anchor="middle">机会分 = 痛点强度 × 发生频率 × 支付意愿 × 可触达性</text>
+  <text x="835" y="442" fill="#94a3b8" font-size="9" text-anchor="middle">每项 1-5 分、最高 625 分，只做排序</text>
+
+  <rect x="1120" y="390" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="390" width="470" height="66" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="1355" y="412" fill="white" font-size="11" font-weight="600" text-anchor="middle">行业选择矩阵</text>
+  <text x="1355" y="428" fill="#94a3b8" font-size="9" text-anchor="middle">吸引力：市场/增速/付费/监管/竞争</text>
+  <text x="1355" y="442" fill="#94a3b8" font-size="9" text-anchor="middle">可进入性：技术/Know-how/认证/渠道/服务/标杆</text>
+
+  <rect x="600" y="468" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="468" width="470" height="66" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="835" y="490" fill="white" font-size="11" font-weight="600" text-anchor="middle">打分机制</text>
+  <text x="835" y="506" fill="#94a3b8" font-size="9" text-anchor="middle">跨职能独立打分 + 证据，老板拍板</text>
+  <text x="835" y="520" fill="#94a3b8" font-size="9" text-anchor="middle">小公司：一张表、三个视角、3-5 个客户验证</text>
+
+  <rect x="1120" y="468" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="468" width="470" height="66" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="1355" y="490" fill="white" font-size="11" font-weight="600" text-anchor="middle">值不值得做</text>
+  <text x="1355" y="506" fill="#94a3b8" font-size="9" text-anchor="middle">商业论证五问：客户/行业/赚钱/定价/投入</text>
+  <text x="1355" y="520" fill="#94a3b8" font-size="9" text-anchor="middle">一页纸覆盖 TAM-SAM-SOM、财务、风险、Go-No-Go</text>
+
+  <!-- branch 3: 客户与决策链 -->
+  <rect x="330" y="721" width="210" height="56" rx="8" fill="#0f172a"/>
+  <rect x="330" y="721" width="210" height="56" rx="8" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="435" y="743" fill="white" font-size="12" font-weight="600" text-anchor="middle">客户与决策链</text>
+  <text x="435" y="761" fill="#94a3b8" font-size="9" text-anchor="middle">JTBD · 价值地图 · DMU</text>
+
+  <rect x="600" y="630" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="630" width="470" height="66" rx="6" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="835" y="652" fill="white" font-size="11" font-weight="600" text-anchor="middle">JTBD</text>
+  <text x="835" y="668" fill="#94a3b8" font-size="9" text-anchor="middle">客户雇佣产品完成任务，替代方案 = 竞争</text>
+  <text x="835" y="682" fill="#94a3b8" font-size="9" text-anchor="middle">Job 三层：功能/情感/社会；当…我要…以便…避免…</text>
+
+  <rect x="1120" y="630" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="630" width="470" height="66" rx="6" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="1355" y="652" fill="white" font-size="11" font-weight="600" text-anchor="middle">客户价值地图</text>
+  <text x="1355" y="668" fill="#94a3b8" font-size="9" text-anchor="middle">四层：当前行为/痛点/期望结果/价值机会</text>
+  <text x="1355" y="682" fill="#94a3b8" font-size="9" text-anchor="middle">先 JTBD 再价值地图，最后落规格与 PRD</text>
+
+  <rect x="600" y="708" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="708" width="470" height="66" rx="6" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="835" y="730" fill="white" font-size="11" font-weight="600" text-anchor="middle">决策链七角色</text>
+  <text x="835" y="746" fill="#94a3b8" font-size="9" text-anchor="middle">发起/使用/影响/决策/审批/采购/把关</text>
+  <text x="835" y="760" fill="#94a3b8" font-size="9" text-anchor="middle">IT、财务、法务常有一票否决权</text>
+
+  <rect x="1120" y="708" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="708" width="470" height="66" rx="6" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="1355" y="730" fill="white" font-size="11" font-weight="600" text-anchor="middle">决策链公式</text>
+  <text x="1355" y="746" fill="#94a3b8" font-size="9" text-anchor="middle">角色 × 诉求 × 否决权 × 证据 × 时机 × 策略</text>
+  <text x="1355" y="760" fill="#94a3b8" font-size="9" text-anchor="middle">四步：找触发者→画链→填表→设计证据包</text>
+
+  <rect x="600" y="786" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="786" width="470" height="66" rx="6" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="835" y="808" fill="white" font-size="11" font-weight="600" text-anchor="middle">价值量化</text>
+  <text x="835" y="824" fill="#94a3b8" font-size="9" text-anchor="middle">价值主张四账：省钱/赚钱/避险/省人</text>
+  <text x="835" y="838" fill="#94a3b8" font-size="9" text-anchor="middle">收益必须统一口径并换算成金额</text>
+
+  <rect x="1120" y="786" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="786" width="470" height="66" rx="6" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="1355" y="808" fill="white" font-size="11" font-weight="600" text-anchor="middle">训练计划</text>
+  <text x="1355" y="824" fill="#94a3b8" font-size="9" text-anchor="middle">10 个行业案例 × 10 分制过关 + 突发事件推演</text>
+  <text x="1355" y="838" fill="#94a3b8" font-size="9" text-anchor="middle">用真实产品做完整决策链档案并让销售验证</text>
+
+  <!-- branch 4: 商业模式与定价 -->
+  <rect x="330" y="1039" width="210" height="56" rx="8" fill="#0f172a"/>
+  <rect x="330" y="1039" width="210" height="56" rx="8" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="435" y="1061" fill="white" font-size="12" font-weight="600" text-anchor="middle">商业模式与定价</text>
+  <text x="435" y="1079" fill="#94a3b8" font-size="9" text-anchor="middle">收入 · 定价 · 论证</text>
+
+  <rect x="600" y="948" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="948" width="470" height="66" rx="6" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="835" y="970" fill="white" font-size="11" font-weight="600" text-anchor="middle">商业模式画布</text>
+  <text x="835" y="986" fill="#94a3b8" font-size="9" text-anchor="middle">客户细分/价值主张/渠道/关系/收入</text>
+  <text x="835" y="1000" fill="#94a3b8" font-size="9" text-anchor="middle">关键资源/活动/伙伴/成本结构</text>
+
+  <rect x="1120" y="948" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="948" width="470" height="66" rx="6" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="1355" y="970" fill="white" font-size="11" font-weight="600" text-anchor="middle">四种收入模式</text>
+  <text x="1355" y="986" fill="#94a3b8" font-size="9" text-anchor="middle">一次性 / 硬件+订阅 / 项目制 / HaaS</text>
+  <text x="1355" y="1000" fill="#94a3b8" font-size="9" text-anchor="middle">健康结构：硬件打基础，软件/服务做利润</text>
+
+  <rect x="600" y="1026" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="1026" width="470" height="66" rx="6" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="835" y="1048" fill="white" font-size="11" font-weight="600" text-anchor="middle">模式判断标准</text>
+  <text x="835" y="1064" fill="#94a3b8" font-size="9" text-anchor="middle">CAPEX vs OPEX、回款周期</text>
+  <text x="835" y="1078" fill="#94a3b8" font-size="9" text-anchor="middle">竞争壁垒与公司现金流决定收钱节奏</text>
+
+  <rect x="1120" y="1026" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="1026" width="470" height="66" rx="6" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="1355" y="1048" fill="white" font-size="11" font-weight="600" text-anchor="middle">定价 3C + EVC</text>
+  <text x="1355" y="1064" fill="#94a3b8" font-size="9" text-anchor="middle">成本定下限，客户价值定上限，竞争定位置</text>
+  <text x="1355" y="1078" fill="#94a3b8" font-size="9" text-anchor="middle">EVC = 旧方案 TCO - 新方案 TCO</text>
+
+  <rect x="600" y="1104" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="1104" width="470" height="66" rx="6" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="835" y="1126" fill="white" font-size="11" font-weight="600" text-anchor="middle">定价五步法</text>
+  <text x="835" y="1142" fill="#94a3b8" font-size="9" text-anchor="middle">成本底线→客户价值→竞争→价格阶梯→价格瀑布</text>
+  <text x="835" y="1156" fill="#94a3b8" font-size="9" text-anchor="middle">目录价→渠道折扣→项目折扣→返利→净收入</text>
+
+  <rect x="1120" y="1104" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="1104" width="470" height="66" rx="6" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="1355" y="1126" fill="white" font-size="11" font-weight="600" text-anchor="middle">商业论证</text>
+  <text x="1355" y="1142" fill="#94a3b8" font-size="9" text-anchor="middle">5 年 P&amp;L / 单位经济 / NPV-IRR-回收期</text>
+  <text x="1355" y="1156" fill="#94a3b8" font-size="9" text-anchor="middle">三情景预测 + Stage-Gate 逐门验证 Go/No-Go</text>
+
+  <!-- branch 5: 产品定义与优先级 -->
+  <rect x="330" y="1396" width="210" height="56" rx="8" fill="#0f172a"/>
+  <rect x="330" y="1396" width="210" height="56" rx="8" fill="rgba(59,130,246,0.3)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="435" y="1418" fill="white" font-size="12" font-weight="600" text-anchor="middle">产品定义与优先级</text>
+  <text x="435" y="1436" fill="#94a3b8" font-size="9" text-anchor="middle">What · 六框架 · 规格</text>
+
+  <rect x="600" y="1266" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="1266" width="470" height="66" rx="6" fill="rgba(59,130,246,0.3)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="835" y="1288" fill="white" font-size="11" font-weight="600" text-anchor="middle">产品层四步流水线</text>
+  <text x="835" y="1304" fill="#94a3b8" font-size="9" text-anchor="middle">需求优先级 → 产品定义 → 规格书 → 基线评审</text>
+  <text x="835" y="1318" fill="#94a3b8" font-size="9" text-anchor="middle">把 Why 翻译成可执行、可验收的 What</text>
+
+  <rect x="1120" y="1266" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="1266" width="470" height="66" rx="6" fill="rgba(59,130,246,0.3)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="1355" y="1288" fill="white" font-size="11" font-weight="600" text-anchor="middle">RICE</text>
+  <text x="1355" y="1304" fill="#94a3b8" font-size="9" text-anchor="middle">Reach × Impact × Confidence ÷ Effort</text>
+  <text x="1355" y="1318" fill="#94a3b8" font-size="9" text-anchor="middle">硬件 Effort 含研发/模具/认证/供应链/测试</text>
+
+  <rect x="600" y="1344" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="1344" width="470" height="66" rx="6" fill="rgba(59,130,246,0.3)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="835" y="1366" fill="white" font-size="11" font-weight="600" text-anchor="middle">MoSCoW / Kano</text>
+  <text x="835" y="1382" fill="#94a3b8" font-size="9" text-anchor="middle">Must/Should/Could/Won't 划版本边界</text>
+  <text x="835" y="1396" fill="#94a3b8" font-size="9" text-anchor="middle">基本型保底、期望型定竞争力、兴奋型延后</text>
+
+  <rect x="1120" y="1344" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="1344" width="470" height="66" rx="6" fill="rgba(59,130,246,0.3)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="1355" y="1366" fill="white" font-size="11" font-weight="600" text-anchor="middle">WSJF / 价值-成本矩阵</text>
+  <text x="1355" y="1382" fill="#94a3b8" font-size="9" text-anchor="middle">（业务价值+紧迫性+风险降低）÷ 工作量</text>
+  <text x="1355" y="1396" fill="#94a3b8" font-size="9" text-anchor="middle">高价值低成本快赢，低价值高成本淘汰</text>
+
+  <rect x="600" y="1422" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="1422" width="470" height="66" rx="6" fill="rgba(59,130,246,0.3)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="835" y="1444" fill="white" font-size="11" font-weight="600" text-anchor="middle">优先级实战结论</text>
+  <text x="835" y="1460" fill="#94a3b8" font-size="9" text-anchor="middle">D/C/A 绝对核心，G/E 次优，B 分阶段扩协议</text>
+  <text x="835" y="1474" fill="#94a3b8" font-size="9" text-anchor="middle">H 5G 与 J AI 第一版明确不做</text>
+
+  <rect x="1120" y="1422" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="1422" width="470" height="66" rx="6" fill="rgba(59,130,246,0.3)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="1355" y="1444" fill="white" font-size="11" font-weight="600" text-anchor="middle">产品定义输出</text>
+  <text x="1355" y="1460" fill="#94a3b8" font-size="9" text-anchor="middle">目标客户/主 Job/价值主张/版本边界/非目标</text>
+  <text x="1355" y="1474" fill="#94a3b8" font-size="9" text-anchor="middle">MVP 只做一个主 Job 和一个核心场景</text>
+
+  <rect x="600" y="1500" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="1500" width="470" height="66" rx="6" fill="rgba(59,130,246,0.3)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="835" y="1522" fill="white" font-size="11" font-weight="600" text-anchor="middle">规格书六维</text>
+  <text x="835" y="1538" fill="#94a3b8" font-size="9" text-anchor="middle">功能/性能/接口/环境/可靠性/成本</text>
+  <text x="835" y="1552" fill="#94a3b8" font-size="9" text-anchor="middle">工具：PRD/HRS/ICD/V-Model/QFD/验收标准</text>
+
+  <!-- branch 6: 交付管理 -->
+  <rect x="330" y="1792" width="210" height="56" rx="8" fill="#0f172a"/>
+  <rect x="330" y="1792" width="210" height="56" rx="8" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="435" y="1814" fill="white" font-size="12" font-weight="600" text-anchor="middle">交付管理</text>
+  <text x="435" y="1832" fill="#94a3b8" font-size="9" text-anchor="middle">阶段门 · 变更 · 风险</text>
+
+  <rect x="600" y="1662" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="1662" width="470" height="66" rx="6" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="835" y="1684" fill="white" font-size="11" font-weight="600" text-anchor="middle">跨职能八线 + RACI</text>
+  <text x="835" y="1700" fill="#94a3b8" font-size="9" text-anchor="middle">硬件/结构/固件/测试/认证/供应链/生产/售后</text>
+  <text x="835" y="1714" fill="#94a3b8" font-size="9" text-anchor="middle">R=执行 A=最终负责 C=咨询 I=告知，A 唯一</text>
+
+  <rect x="1120" y="1662" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="1662" width="470" height="66" rx="6" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="1355" y="1684" fill="white" font-size="11" font-weight="600" text-anchor="middle">阶段门 G0-G6</text>
+  <text x="1355" y="1700" fill="#94a3b8" font-size="9" text-anchor="middle">G0 值不值得→G1 做什么→G2 能不能跑通</text>
+  <text x="1355" y="1714" fill="#94a3b8" font-size="9" text-anchor="middle">G3 真实环境→G4 稳定生产→G5 卖好→G6 迭代/退市</text>
+
+  <rect x="600" y="1740" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="1740" width="470" height="66" rx="6" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="835" y="1762" fill="white" font-size="11" font-weight="600" text-anchor="middle">变更控制 CCB</text>
+  <text x="835" y="1778" fill="#94a3b8" font-size="9" text-anchor="middle">影响评估七问：技术/成本/进度/质量/库存/合同/认证</text>
+  <text x="835" y="1792" fill="#94a3b8" font-size="9" text-anchor="middle">变更分 A/B/C 级，量产后只允许安全类变更</text>
+
+  <rect x="1120" y="1740" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="1740" width="470" height="66" rx="6" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="1355" y="1762" fill="white" font-size="11" font-weight="600" text-anchor="middle">规格与 BOM 冻结点</text>
+  <text x="1355" y="1778" fill="#94a3b8" font-size="9" text-anchor="middle">G1 规格，EVT 原理图，DVT 结构/固件</text>
+  <text x="1355" y="1792" fill="#94a3b8" font-size="9" text-anchor="middle">PVT 冻结 BOM/供应商/工艺</text>
+
+  <rect x="600" y="1818" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="1818" width="470" height="66" rx="6" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="835" y="1840" fill="white" font-size="11" font-weight="600" text-anchor="middle">风险管理</text>
+  <text x="835" y="1856" fill="#94a3b8" font-size="9" text-anchor="middle">风险登记册：概率 × 影响，红黄绿分级</text>
+  <text x="835" y="1870" fill="#94a3b8" font-size="9" text-anchor="middle">FMEA：DFMEA 设计 / PFMEA 工艺 / SFMEA 固件</text>
+
+  <rect x="1120" y="1818" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="1818" width="470" height="66" rx="6" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="1355" y="1840" fill="white" font-size="11" font-weight="600" text-anchor="middle">项目节奏</text>
+  <text x="1355" y="1856" fill="#94a3b8" font-size="9" text-anchor="middle">WBS/里程碑/关键路径/资源负载/缓冲</text>
+  <text x="1355" y="1870" fill="#94a3b8" font-size="9" text-anchor="middle">站会+跨职能周会+阶段门+供应链例会+售后复盘</text>
+
+  <rect x="600" y="1896" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="1896" width="470" height="66" rx="6" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="835" y="1918" fill="white" font-size="11" font-weight="600" text-anchor="middle">常见失败</text>
+  <text x="835" y="1934" fill="#94a3b8" font-size="9" text-anchor="middle">传声筒、门流于形式、需求漂移</text>
+  <text x="835" y="1948" fill="#94a3b8" font-size="9" text-anchor="middle">只看成本、风险不全、缺料晚暴露、售后不回流</text>
+
+  <!-- branch 7: 硬件工程与上市 -->
+  <rect x="330" y="2188" width="210" height="56" rx="8" fill="#0f172a"/>
+  <rect x="330" y="2188" width="210" height="56" rx="8" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1.5"/>
+  <text x="435" y="2210" fill="white" font-size="12" font-weight="600" text-anchor="middle">硬件工程与上市</text>
+  <text x="435" y="2228" fill="#94a3b8" font-size="9" text-anchor="middle">规格 · 供应链 · 认证 · EOL</text>
+
+  <rect x="600" y="2058" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="2058" width="470" height="66" rx="6" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1.5"/>
+  <text x="835" y="2080" fill="white" font-size="11" font-weight="600" text-anchor="middle">需求 → 硬件规格</text>
+  <text x="835" y="2096" fill="#94a3b8" font-size="9" text-anchor="middle">功能/性能/接口/环境/寿命/成本目标</text>
+  <text x="835" y="2110" fill="#94a3b8" font-size="9" text-anchor="middle">全部写成可测量值，不做定性描述</text>
+
+  <rect x="1120" y="2058" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="2058" width="470" height="66" rx="6" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1.5"/>
+  <text x="1355" y="2080" fill="white" font-size="11" font-weight="600" text-anchor="middle">技术可行性</text>
+  <text x="1355" y="2096" fill="#94a3b8" font-size="9" text-anchor="middle">方案阶段回答可行性与风险</text>
+  <text x="1355" y="2110" fill="#94a3b8" font-size="9" text-anchor="middle">开发阶段解决细节实现与验证</text>
+
+  <rect x="600" y="2136" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="2136" width="470" height="66" rx="6" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1.5"/>
+  <text x="835" y="2158" fill="white" font-size="11" font-weight="600" text-anchor="middle">采购路线</text>
+  <text x="835" y="2174" fill="#94a3b8" font-size="9" text-anchor="middle">自研 / ODM / 贴牌 / 白牌</text>
+  <text x="835" y="2188" fill="#94a3b8" font-size="9" text-anchor="middle">按壁垒、成本、周期、质量、现金流选择</text>
+
+  <rect x="1120" y="2136" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="2136" width="470" height="66" rx="6" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1.5"/>
+  <text x="1355" y="2158" fill="white" font-size="11" font-weight="600" text-anchor="middle">成本与供应链</text>
+  <text x="1355" y="2174" fill="#94a3b8" font-size="9" text-anchor="middle">BOM/模具费/NRE/MOQ/交期/缺料风险</text>
+  <text x="1355" y="2188" fill="#94a3b8" font-size="9" text-anchor="middle">双供应商、安全库存、提前锁料</text>
+
+  <rect x="600" y="2214" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="2214" width="470" height="66" rx="6" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1.5"/>
+  <text x="835" y="2236" fill="white" font-size="11" font-weight="600" text-anchor="middle">认证合规</text>
+  <text x="835" y="2252" fill="#94a3b8" font-size="9" text-anchor="middle">CE/FCC/CCC/UL/RoHS/REACH + 行业认证</text>
+  <text x="835" y="2266" fill="#94a3b8" font-size="9" text-anchor="middle">预测试前置，预留认证周期和返工时间</text>
+
+  <rect x="1120" y="2214" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="2214" width="470" height="66" rx="6" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1.5"/>
+  <text x="1355" y="2236" fill="white" font-size="11" font-weight="600" text-anchor="middle">量产质量</text>
+  <text x="1355" y="2252" fill="#94a3b8" font-size="9" text-anchor="middle">良率/可靠性/现场故障率/RMA/备件</text>
+  <text x="1355" y="2266" fill="#94a3b8" font-size="9" text-anchor="middle">EVT-DVT-PVT-MP 逐门放行</text>
+
+  <rect x="600" y="2292" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="2292" width="470" height="66" rx="6" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1.5"/>
+  <text x="835" y="2314" fill="white" font-size="11" font-weight="600" text-anchor="middle">上市与生命周期</text>
+  <text x="835" y="2330" fill="#94a3b8" font-size="9" text-anchor="middle">种子客户/试用/经销商/集成商/渠道政策</text>
+  <text x="835" y="2344" fill="#94a3b8" font-size="9" text-anchor="middle">固件升级/停产/EOL/替代方案/老客户迁移</text>
+
+  <!-- branch 8: 能力与职业成长 -->
+  <rect x="330" y="2506" width="210" height="56" rx="8" fill="#0f172a"/>
+  <rect x="330" y="2506" width="210" height="56" rx="8" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="435" y="2528" fill="white" font-size="12" font-weight="600" text-anchor="middle">能力与职业成长</text>
+  <text x="435" y="2546" fill="#94a3b8" font-size="9" text-anchor="middle">转岗 · 进阶 · 避坑</text>
+
+  <rect x="600" y="2454" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="2454" width="470" height="66" rx="6" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="835" y="2476" fill="white" font-size="11" font-weight="600" text-anchor="middle">核心能力</text>
+  <text x="835" y="2492" fill="#94a3b8" font-size="9" text-anchor="middle">商业嗅觉/需求定义/工程常识/项目与沟通</text>
+  <text x="835" y="2506" fill="#94a3b8" font-size="9" text-anchor="middle">短板优先补商业判断与硬件全流程</text>
+
+  <rect x="1120" y="2454" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="2454" width="470" height="66" rx="6" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="1355" y="2476" fill="white" font-size="11" font-weight="600" text-anchor="middle">成长路径</text>
+  <text x="1355" y="2492" fill="#94a3b8" font-size="9" text-anchor="middle">入门 → 资深 → 专家 → 管理</text>
+  <text x="1355" y="2506" fill="#94a3b8" font-size="9" text-anchor="middle">从单产品到产品线再到商业经营</text>
+
+  <rect x="600" y="2532" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="600" y="2532" width="470" height="66" rx="6" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="835" y="2554" fill="white" font-size="11" font-weight="600" text-anchor="middle">转岗第一年</text>
+  <text x="835" y="2570" fill="#94a3b8" font-size="9" text-anchor="middle">补硬件全流程、认证、供应链、成本知识</text>
+  <text x="835" y="2584" fill="#94a3b8" font-size="9" text-anchor="middle">用阶段门和风险工具建立可信度</text>
+
+  <rect x="1120" y="2532" width="470" height="66" rx="6" fill="#0f172a"/>
+  <rect x="1120" y="2532" width="470" height="66" rx="6" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="1355" y="2554" fill="white" font-size="11" font-weight="600" text-anchor="middle">职业坑</text>
+  <text x="1355" y="2570" fill="#94a3b8" font-size="9" text-anchor="middle">变成传声筒、只有软件思维</text>
+  <text x="1355" y="2584" fill="#94a3b8" font-size="9" text-anchor="middle">低估成本周期、不推动决策、不问责任</text>
+
+  <!-- title / legend / footer -->
+  <text x="30" y="34" fill="white" font-size="16" font-weight="700">B端硬件产品经理学习地图</text>
+  <text x="30" y="54" fill="#94a3b8" font-size="10">B 端产品经理问题集 · 2026-08-10</text>
+  <text x="1180" y="30" fill="#94a3b8" font-size="9">学习主线：市场洞察 → 商业定义 → 产品定义 → 交付管理 → 生命周期</text>
+  <text x="1180" y="48" fill="#64748b" font-size="9">颜色 = 学习分支 · 建议从「岗位与定位」开始</text>
+  <text x="845" y="2672" fill="#64748b" font-size="9" text-anchor="middle">数据来源：B端产品经理问题集.md · 覆盖岗位、市场、决策链、商业、产品定义、交付、硬件工程与成长</text>
+</svg>

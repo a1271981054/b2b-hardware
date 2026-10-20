@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>第1课 这一行到底在卖什么</title>
+<style>
+@font-face { font-family: "Kaiti SC"; src: local("Kaiti SC"); }
+@font-face { font-family: "Songti SC"; src: local("Songti SC"); }
+@font-face { font-family: "STSong"; src: local("STSong"); }
+@font-face { font-family: "SimSun"; src: local("SimSun"); }
+@font-face { font-family: "Menlo"; src: local("Menlo"); }
+html, body { margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden; background: #F6F1E7; }
+* { box-sizing: border-box; }
+body { font-family: "Songti SC", "STSong", "SimSun", serif; color: #22242A; }
+.scene { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; overflow: hidden; background: #F6F1E7; z-index: 1; }
+#scene-000 { z-index: 2; }
+.scene:not(#scene-000) { opacity: 0; }
+.ghost { position: absolute; top: 70px; right: 70px; font-family: "Kaiti SC", "Songti SC", serif; font-size: 280px; font-weight: 900; color: #22242A; opacity: 0.05; line-height: 1; pointer-events: none; max-width: 720px; overflow: hidden; }
+.bar-a { position: absolute; top: 0; left: 0; width: 1920px; height: 10px; background: #0E6E66; }
+.bar-b { position: absolute; top: 178px; left: 96px; width: 84px; height: 8px; background: #E8871E; border-radius: 4px; }
+.tag { position: absolute; top: 52px; left: 96px; font-family: "Menlo", "Songti SC", monospace; font-size: 28px; font-weight: 700; color: #0E6E66; }
+.counter { position: absolute; top: 52px; right: 96px; font-family: "Menlo", monospace; font-size: 28px; font-weight: 700; color: #8A8272; }
+.keyword { position: absolute; top: 214px; left: 96px; width: 920px; font-family: "Kaiti SC", "Songti SC", serif; font-size: 92px; font-weight: 900; line-height: 1.14; color: #22242A; }
+.kw-accent { color: #0E6E66; }
+.kw-plus { color: #E8871E; }
+.note { position: absolute; top: 486px; left: 96px; width: 900px; font-size: 40px; line-height: 1.42; color: #3E4A52; }
+.vpanel { position: absolute; top: 220px; right: 120px; width: 700px; height: 560px; background: #F7E4C8; border: 4px solid #E8871E; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; }
+.vpanel.q { background: #F6DDD7; border-color: #C75B45; }
+.vpanel.final { background: #DDEAE4; border-color: #0E6E66; }
+.v-emoji { font-size: 150px; line-height: 1; }
+.v-label { font-family: "Kaiti SC", "Songti SC", serif; font-size: 40px; font-weight: 900; color: #22242A; }
+.v-note { font-size: 30px; color: #7A5B28; }
+.caption { position: absolute; left: 96px; right: 96px; bottom: 84px; min-height: 118px; padding: 22px 38px; background: #22242A; color: #F6F1E7; border-radius: 8px; display: flex; align-items: center; font-size: 34px; line-height: 1.5; z-index: 20; opacity: 0; }
+#progress { position: absolute; left: 96px; right: 96px; bottom: 42px; height: 6px; background: #D9CDB8; border-radius: 3px; z-index: 21; }
+#progress-fill { height: 6px; background: #0E6E66; border-radius: 3px; transform-origin: left center; transform: scaleX(0); }
+#outro { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; background: #22242A; opacity: 0; z-index: 50; }
+#outro-text { position: absolute; left: 96px; bottom: 160px; font-family: "Kaiti SC", "Songti SC", serif; font-size: 64px; color: #F6F1E7; opacity: 0; z-index: 51; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="lesson-001" data-width="1920" data-height="1080" data-start="0" data-duration="95.138">
+<audio id="narration" data-start="0" data-duration="93.888" data-track-index="0" src="narration.mp3" data-volume="1"></audio>
+<div class="scene" id="scene-000">
+  <div class="ghost">开讲</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 这一行到底在卖什么</div>
+  <div class="counter">01 / 13</div>
+  <div class="keyword"><span class="">开讲</span></div>
+  <div class="note">欢迎来到第一课</div>
+  <div class="vpanel">
+    <div class="v-emoji">👩‍🏫</div>
+    <div class="v-label">老师开讲</div>
+    <div class="v-note">欢迎来到第一课</div>
+  </div>
+</div>
+<div class="scene" id="scene-001">
+  <div class="ghost">智能卡</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 这一行到底在卖什么</div>
+  <div class="counter">02 / 13</div>
+  <div class="keyword"><span class="">智能卡</span></div>
+  <div class="note">饭卡公交卡银行卡</div>
+  <div class="vpanel">
+    <div class="v-emoji">💳</div>
+    <div class="v-label">智能卡</div>
+    <div class="v-note">饭卡公交卡银行卡</div>
+  </div>
+</div>
+<div class="scene" id="scene-002">
+  <div class="ghost">芯片</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 这一行到底在卖什么</div>
+  <div class="counter">03 / 13</div>
+  <div class="keyword"><span class="">芯片</span></div>
+  <div class="note">藏着一台小电脑</div>
+  <div class="vpanel">
+    <div class="v-emoji">💳</div>
+    <div class="v-label">智能卡</div>
+    <div class="v-note">藏着一台小电脑</div>
+  </div>
+</div>
+<div class="scene" id="scene-003">
+  <div class="ghost">磁条卡</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 这一行到底在卖什么</div>
+  <div class="counter">04 / 13</div>
+  <div class="keyword"><span class="">磁条卡</span></div>
+  <div class="note">新卡会算，老卡只会存</div>
+  <div class="vpanel">
+    <div class="v-emoji">💳</div>
+    <div class="v-label">智能卡</div>
+    <div class="v-note">新卡会算，老卡只会存</div>
+  </div>
+</div>
+<div class="scene" id="scene-004">
+  <div class="ghost">安全</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 这一行到底在卖什么</div>
+  <div class="counter">05 / 13</div>
+  <div class="keyword"><span class="">安全</span></div>
+  <div class="note">会核对身份</div>
+  <div class="vpanel">
+    <div class="v-emoji">💳</div>
+    <div class="v-label">智能卡</div>
+    <div class="v-note">会核对身份</div>
+  </div>
+</div>
+<div class="scene" id="scene-005">
+  <div class="ghost">读卡器</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 这一行到底在卖什么</div>
+  <div class="counter">06 / 13</div>
+  <div class="keyword"><span class="">读卡器</span></div>
+  <div class="note">专门跟卡片说话</div>
+  <div class="vpanel">
+    <div class="v-emoji">🚪</div>
+    <div class="v-label">读卡器</div>
+    <div class="v-note">专门跟卡片说话</div>
+  </div>
+</div>
+<div class="scene" id="scene-006">
+  <div class="ghost">门卫</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 这一行到底在卖什么</div>
+  <div class="counter">07 / 13</div>
+  <div class="keyword"><span class="">门卫</span></div>
+  <div class="note">卡片是钥匙，读卡器是门卫</div>
+  <div class="vpanel">
+    <div class="v-emoji">🚪</div>
+    <div class="v-label">读卡器</div>
+    <div class="v-note">卡片是钥匙，读卡器是门卫</div>
+  </div>
+</div>
+<div class="scene" id="scene-007">
+  <div class="ghost">接触式</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 这一行到底在卖什么</div>
+  <div class="counter">08 / 13</div>
+  <div class="keyword"><span class="">接触式</span></div>
+  <div class="note">插进去像U盘</div>
+  <div class="vpanel">
+    <div class="v-emoji">🚪</div>
+    <div class="v-label">读卡器</div>
+    <div class="v-note">插进去像U盘</div>
+  </div>
+</div>
+<div class="scene" id="scene-008">
+  <div class="ghost">非接触式</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 这一行到底在卖什么</div>
+  <div class="counter">09 / 13</div>
+  <div class="keyword"><span class="">非接触式</span></div>
+  <div class="note">靠近滴一下</div>
+  <div class="vpanel">
+    <div class="v-emoji">🚇</div>
+    <div class="v-label">闸机</div>
+    <div class="v-note">靠近滴一下</div>
+  </div>
+</div>
+<div class="scene" id="scene-009">
+  <div class="ghost">NFC</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 这一行到底在卖什么</div>
+  <div class="counter">10 / 13</div>
+  <div class="keyword"><span class="">NFC</span></div>
+  <div class="note">手机滴一下也是它</div>
+  <div class="vpanel">
+    <div class="v-emoji">📶</div>
+    <div class="v-label">近距离对话</div>
+    <div class="v-note">手机滴一下也是它</div>
+  </div>
+</div>
+<div class="scene" id="scene-010">
+  <div class="ghost">ACS</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 这一行到底在卖什么</div>
+  <div class="counter">11 / 13</div>
+  <div class="keyword"><span class="">ACS</span></div>
+  <div class="note">ACS就是做这个的</div>
+  <div class="vpanel">
+    <div class="v-emoji">⚙️</div>
+    <div class="v-label">读卡器模块</div>
+    <div class="v-note">ACS就是做这个的</div>
+  </div>
+</div>
+<div class="scene" id="scene-011">
+  <div class="ghost">刷卡基础件</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 这一行到底在卖什么</div>
+  <div class="counter">12 / 13</div>
+  <div class="keyword"><span class="">刷卡基础件</span></div>
+  <div class="note">卡片加读卡器加零件</div>
+  <div class="vpanel final">
+    <div class="v-emoji">⭐</div>
+    <div class="v-label">一句话记住</div>
+    <div class="v-note">卡片加读卡器加零件</div>
+  </div>
+</div>
+<div class="scene" id="scene-012">
+  <div class="ghost">课后想一想</div>
+  <div class="bar-a"></div>
+  <div class="bar-b"></div>
+  <div class="tag">第一段 · 这一行到底在卖什么</div>
+  <div class="counter">13 / 13</div>
+  <div class="keyword"><span class="">课后想一想</span></div>
+  <div class="note">考考你</div>
+  <div class="vpanel q">
+    <div class="v-emoji">❓</div>
+    <div class="v-label">课后想一想</div>
+    <div class="v-note">考考你</div>
+  </div>
+</div>
+<div class="caption" id="cap-000">你好呀，我是你的PM老师</div>
+<div class="caption" id="cap-001">。今天第一课，我们用最笨</div>
+<div class="caption" id="cap-002">的办法，搞懂这一行到底在</div>
+<div class="caption" id="cap-003">卖什么。</div>
+<div class="caption" id="cap-004">先看你兜里最熟悉的东西：</div>
+<div class="caption" id="cap-005">饭卡、公交卡、银行卡，它</div>
+<div class="caption" id="cap-006">们有个共同名字，叫智能卡</div>
+<div class="caption" id="cap-007">。</div>
+<div class="caption" id="cap-008">智能卡就是一张塑料卡片，</div>
+<div class="caption" id="cap-009">里面藏着一小块芯片，像一</div>
+<div class="caption" id="cap-010">台微型小电脑。</div>
+<div class="caption" id="cap-011">它能存信息，能算数，还能</div>
+<div class="caption" id="cap-012">核对身份。老式磁条卡像一</div>
+<div class="caption" id="cap-013">张写了字的纸，只会存东西</div>
+<div class="caption" id="cap-014">。</div>
+<div class="caption" id="cap-015">芯片卡更像一个小保安，你</div>
+<div class="caption" id="cap-016">说密码，它核对，对了才放</div>
+<div class="caption" id="cap-017">行。</div>
+<div class="caption" id="cap-018">那读卡器是干嘛的？就是专</div>
+<div class="caption" id="cap-019">门跟卡片对话的设备。</div>
+<div class="caption" id="cap-020">打个比方：卡片是钥匙，读</div>
+<div class="caption" id="cap-021">卡器是门卫，钥匙来了，门</div>
+<div class="caption" id="cap-022">卫要验证一下。</div>
+<div class="caption" id="cap-023">刷卡分两种。接触式，就是</div>
+<div class="caption" id="cap-024">卡片插进去，芯片碰到机器</div>
+<div class="caption" id="cap-025">，像插U盘。</div>
+<div class="caption" id="cap-026">非接触式，就是卡片靠近一</div>
+<div class="caption" id="cap-027">下就行，像地铁闸机滴一下</div>
+<div class="caption" id="cap-028">。</div>
+<div class="caption" id="cap-029">手机付钱滴一下，用的也是</div>
+<div class="caption" id="cap-030">一种叫NFC的技术，后面</div>
+<div class="caption" id="cap-031">会细讲。</div>
+<div class="caption" id="cap-032">龙杰智能卡，英文叫ACS</div>
+<div class="caption" id="cap-033">，就是造卡片和读卡器的公</div>
+<div class="caption" id="cap-034">司。</div>
+<div class="caption" id="cap-035">记住一句话：ACS卖的不</div>
+<div class="caption" id="cap-036">是手机，是刷卡基础件：卡</div>
+<div class="caption" id="cap-037">片、读卡器，还有装进别人</div>
+<div class="caption" id="cap-038">机器里的读卡器零件。</div>
+<div class="caption" id="cap-039">课后问题来了：用你自己的</div>
+<div class="caption" id="cap-040">话说，读卡器是干嘛的？说</div>
+<div class="caption" id="cap-041">一句就行。</div>
+<div id="progress"><div id="progress-fill"></div></div>
+<div id="outro"></div>
+<div id="outro-text">这节课讲完啦，下次见</div>
+</div>
+<script src="vendor/gsap.min.js"></script>
+<script>
+window.__timelines = window.__timelines || {};
+var tl = gsap.timeline({ paused: true });
+var TOTAL = 95.138;
+tl.fromTo("#progress-fill", {scaleX:0}, {scaleX:1, duration:TOTAL, ease:"none"}, 0);
+tl.fromTo("#scene-000 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 0.0+0.10);
+tl.fromTo("#scene-000 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 0.0+0.12);
+tl.fromTo("#scene-000 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 0.0+0.18);
+tl.fromTo("#scene-000 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 0.0+0.24);
+tl.fromTo("#scene-000 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 0.0+0.34);
+tl.fromTo("#scene-000 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(9.344000000000001/1.8)-1), ease:"sine.inOut"}, 0.0);
+tl.fromTo("#scene-001 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 8.894+0.10);
+tl.fromTo("#scene-001 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 8.894+0.12);
+tl.fromTo("#scene-001 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 8.894+0.18);
+tl.fromTo("#scene-001 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 8.894+0.24);
+tl.fromTo("#scene-001 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 8.894+0.34);
+tl.fromTo("#scene-001 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(8.528/1.8)-1), ease:"sine.inOut"}, 8.894);
+tl.fromTo("#scene-002 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 16.972+0.10);
+tl.fromTo("#scene-002 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 16.972+0.12);
+tl.fromTo("#scene-002 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 16.972+0.18);
+tl.fromTo("#scene-002 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 16.972+0.24);
+tl.fromTo("#scene-002 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 16.972+0.34);
+tl.fromTo("#scene-002 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.943999999999998/1.8)-1), ease:"sine.inOut"}, 16.972);
+tl.fromTo("#scene-003 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 23.466+0.10);
+tl.fromTo("#scene-003 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 23.466+0.12);
+tl.fromTo("#scene-003 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 23.466+0.18);
+tl.fromTo("#scene-003 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 23.466+0.24);
+tl.fromTo("#scene-003 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 23.466+0.34);
+tl.fromTo("#scene-003 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(8.216000000000001/1.8)-1), ease:"sine.inOut"}, 23.466);
+tl.fromTo("#scene-004 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 31.232+0.10);
+tl.fromTo("#scene-004 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 31.232+0.12);
+tl.fromTo("#scene-004 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 31.232+0.18);
+tl.fromTo("#scene-004 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 31.232+0.24);
+tl.fromTo("#scene-004 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 31.232+0.34);
+tl.fromTo("#scene-004 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(5.815999999999998/1.8)-1), ease:"sine.inOut"}, 31.232);
+tl.fromTo("#scene-005 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 36.598+0.10);
+tl.fromTo("#scene-005 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 36.598+0.12);
+tl.fromTo("#scene-005 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 36.598+0.18);
+tl.fromTo("#scene-005 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 36.598+0.24);
+tl.fromTo("#scene-005 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 36.598+0.34);
+tl.fromTo("#scene-005 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(5.983999999999997/1.8)-1), ease:"sine.inOut"}, 36.598);
+tl.fromTo("#scene-006 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 42.132+0.10);
+tl.fromTo("#scene-006 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 42.132+0.12);
+tl.fromTo("#scene-006 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 42.132+0.18);
+tl.fromTo("#scene-006 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 42.132+0.24);
+tl.fromTo("#scene-006 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 42.132+0.34);
+tl.fromTo("#scene-006 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(8.216000000000005/1.8)-1), ease:"sine.inOut"}, 42.132);
+tl.fromTo("#scene-007 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 49.898+0.10);
+tl.fromTo("#scene-007 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 49.898+0.12);
+tl.fromTo("#scene-007 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 49.898+0.18);
+tl.fromTo("#scene-007 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 49.898+0.24);
+tl.fromTo("#scene-007 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 49.898+0.34);
+tl.fromTo("#scene-007 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(7.567999999999993/1.8)-1), ease:"sine.inOut"}, 49.898);
+tl.fromTo("#scene-008 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 57.016+0.10);
+tl.fromTo("#scene-008 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 57.016+0.12);
+tl.fromTo("#scene-008 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 57.016+0.18);
+tl.fromTo("#scene-008 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 57.016+0.24);
+tl.fromTo("#scene-008 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 57.016+0.34);
+tl.fromTo("#scene-008 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.608/1.8)-1), ease:"sine.inOut"}, 57.016);
+tl.fromTo("#scene-009 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 63.174+0.10);
+tl.fromTo("#scene-009 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 63.174+0.12);
+tl.fromTo("#scene-009 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 63.174+0.18);
+tl.fromTo("#scene-009 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 63.174+0.24);
+tl.fromTo("#scene-009 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 63.174+0.34);
+tl.fromTo("#scene-009 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.776000000000006/1.8)-1), ease:"sine.inOut"}, 63.174);
+tl.fromTo("#scene-010 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 69.5+0.10);
+tl.fromTo("#scene-010 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 69.5+0.12);
+tl.fromTo("#scene-010 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 69.5+0.18);
+tl.fromTo("#scene-010 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 69.5+0.24);
+tl.fromTo("#scene-010 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 69.5+0.34);
+tl.fromTo("#scene-010 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(6.608000000000007/1.8)-1), ease:"sine.inOut"}, 69.5);
+tl.fromTo("#scene-011 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 75.658+0.10);
+tl.fromTo("#scene-011 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 75.658+0.12);
+tl.fromTo("#scene-011 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 75.658+0.18);
+tl.fromTo("#scene-011 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 75.658+0.24);
+tl.fromTo("#scene-011 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 75.658+0.34);
+tl.fromTo("#scene-011 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(12.703999999999997/1.8)-1), ease:"sine.inOut"}, 75.658);
+tl.fromTo("#scene-012 .tag", {opacity:0, x:-26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 87.912+0.10);
+tl.fromTo("#scene-012 .counter", {opacity:0, x:26}, {opacity:1, x:0, duration:0.4, ease:"power2.out"}, 87.912+0.12);
+tl.fromTo("#scene-012 .keyword", {opacity:0, y:64, rotate:-1.2}, {opacity:1, y:0, rotate:0, duration:0.5, ease:"power3.out"}, 87.912+0.18);
+tl.fromTo("#scene-012 .vpanel", {opacity:0, scale:0.9}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 87.912+0.24);
+tl.fromTo("#scene-012 .note", {opacity:0, y:30}, {opacity:1, y:0, duration:0.44, ease:"power2.out"}, 87.912+0.34);
+tl.fromTo("#scene-012 .ghost", {y:0}, {y:-16, duration:1.8, yoyo:true, repeat:Math.max(0, Math.ceil(7.0879999999999965/1.8)-1), ease:"sine.inOut"}, 87.912);
+tl.to("#scene-000", {opacity:0, duration:0.35, ease:"power2.inOut"}, 8.544);
+tl.fromTo("#scene-001", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 8.544+0.06);
+tl.to("#scene-001", {opacity:0, duration:0.35, ease:"power2.inOut"}, 16.622);
+tl.fromTo("#scene-002", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 16.622+0.06);
+tl.to("#scene-002", {opacity:0, duration:0.35, ease:"power2.inOut"}, 23.116);
+tl.fromTo("#scene-003", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 23.116+0.06);
+tl.to("#scene-003", {opacity:0, duration:0.35, ease:"power2.inOut"}, 30.881999999999998);
+tl.fromTo("#scene-004", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 30.881999999999998+0.06);
+tl.to("#scene-004", {opacity:0, duration:0.35, ease:"power2.inOut"}, 36.248);
+tl.fromTo("#scene-005", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 36.248+0.06);
+tl.to("#scene-005", {opacity:0, duration:0.35, ease:"power2.inOut"}, 41.782);
+tl.fromTo("#scene-006", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 41.782+0.06);
+tl.to("#scene-006", {opacity:0, duration:0.35, ease:"power2.inOut"}, 49.548);
+tl.fromTo("#scene-007", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 49.548+0.06);
+tl.to("#scene-007", {opacity:0, duration:0.35, ease:"power2.inOut"}, 56.666);
+tl.fromTo("#scene-008", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 56.666+0.06);
+tl.to("#scene-008", {opacity:0, duration:0.35, ease:"power2.inOut"}, 62.824);
+tl.fromTo("#scene-009", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 62.824+0.06);
+tl.to("#scene-009", {opacity:0, duration:0.35, ease:"power2.inOut"}, 69.15);
+tl.fromTo("#scene-010", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 69.15+0.06);
+tl.to("#scene-010", {opacity:0, duration:0.35, ease:"power2.inOut"}, 75.308);
+tl.fromTo("#scene-011", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 75.308+0.06);
+tl.to("#scene-011", {opacity:0, duration:0.35, ease:"power2.inOut"}, 87.56200000000001);
+tl.fromTo("#scene-012", {opacity:0}, {opacity:1, duration:0.35, ease:"power2.inOut"}, 87.56200000000001+0.06);
+tl.fromTo("#cap-000", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 0.12+0.05);
+tl.to("#cap-000", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 2.611-0.14);
+tl.set("#cap-000", {opacity:0, visibility:"hidden"}, 2.611);
+tl.fromTo("#cap-001", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 2.611+0.05);
+tl.to("#cap-001", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 5.102-0.14);
+tl.set("#cap-001", {opacity:0, visibility:"hidden"}, 5.102);
+tl.fromTo("#cap-002", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 5.102+0.05);
+tl.to("#cap-002", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 7.594-0.14);
+tl.set("#cap-002", {opacity:0, visibility:"hidden"}, 7.594);
+tl.fromTo("#cap-003", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 7.594+0.05);
+tl.to("#cap-003", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 8.424-0.14);
+tl.set("#cap-003", {opacity:0, visibility:"hidden"}, 8.424);
+tl.fromTo("#cap-004", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 9.014+0.05);
+tl.to("#cap-004", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 11.443-0.14);
+tl.set("#cap-004", {opacity:0, visibility:"hidden"}, 11.443);
+tl.fromTo("#cap-005", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 11.443+0.05);
+tl.to("#cap-005", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 13.871-0.14);
+tl.set("#cap-005", {opacity:0, visibility:"hidden"}, 13.871);
+tl.fromTo("#cap-006", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 13.871+0.05);
+tl.to("#cap-006", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 16.3-0.14);
+tl.set("#cap-006", {opacity:0, visibility:"hidden"}, 16.3);
+tl.fromTo("#cap-007", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 16.3+0.05);
+tl.to("#cap-007", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 16.7-0.14);
+tl.set("#cap-007", {opacity:0, visibility:"hidden"}, 16.7);
+tl.fromTo("#cap-008", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 17.092+0.05);
+tl.to("#cap-008", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 19.377-0.14);
+tl.set("#cap-008", {opacity:0, visibility:"hidden"}, 19.377);
+tl.fromTo("#cap-009", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 19.377+0.05);
+tl.to("#cap-009", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 21.663-0.14);
+tl.set("#cap-009", {opacity:0, visibility:"hidden"}, 21.663);
+tl.fromTo("#cap-010", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 21.663+0.05);
+tl.to("#cap-010", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 22.996-0.14);
+tl.set("#cap-010", {opacity:0, visibility:"hidden"}, 22.996);
+tl.fromTo("#cap-011", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 23.586+0.05);
+tl.to("#cap-011", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 25.913-0.14);
+tl.set("#cap-011", {opacity:0, visibility:"hidden"}, 25.913);
+tl.fromTo("#cap-012", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 25.913+0.05);
+tl.to("#cap-012", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 28.241-0.14);
+tl.set("#cap-012", {opacity:0, visibility:"hidden"}, 28.241);
+tl.fromTo("#cap-013", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 28.241+0.05);
+tl.to("#cap-013", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 30.568-0.14);
+tl.set("#cap-013", {opacity:0, visibility:"hidden"}, 30.568);
+tl.fromTo("#cap-014", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 30.568+0.05);
+tl.to("#cap-014", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 30.968-0.14);
+tl.set("#cap-014", {opacity:0, visibility:"hidden"}, 30.968);
+tl.fromTo("#cap-015", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 31.352+0.05);
+tl.to("#cap-015", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 33.556-0.14);
+tl.set("#cap-015", {opacity:0, visibility:"hidden"}, 33.556);
+tl.fromTo("#cap-016", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 33.556+0.05);
+tl.to("#cap-016", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 35.761-0.14);
+tl.set("#cap-016", {opacity:0, visibility:"hidden"}, 35.761);
+tl.fromTo("#cap-017", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 35.761+0.05);
+tl.to("#cap-017", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 36.161-0.14);
+tl.set("#cap-017", {opacity:0, visibility:"hidden"}, 36.161);
+tl.fromTo("#cap-018", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 36.718+0.05);
+tl.to("#cap-018", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 39.415-0.14);
+tl.set("#cap-018", {opacity:0, visibility:"hidden"}, 39.415);
+tl.fromTo("#cap-019", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 39.415+0.05);
+tl.to("#cap-019", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 41.662-0.14);
+tl.set("#cap-019", {opacity:0, visibility:"hidden"}, 41.662);
+tl.fromTo("#cap-020", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 42.252+0.05);
+tl.to("#cap-020", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 45.03-0.14);
+tl.set("#cap-020", {opacity:0, visibility:"hidden"}, 45.03);
+tl.fromTo("#cap-021", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 45.03+0.05);
+tl.to("#cap-021", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 47.808-0.14);
+tl.set("#cap-021", {opacity:0, visibility:"hidden"}, 47.808);
+tl.fromTo("#cap-022", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 47.808+0.05);
+tl.to("#cap-022", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 49.428-0.14);
+tl.set("#cap-022", {opacity:0, visibility:"hidden"}, 49.428);
+tl.fromTo("#cap-023", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 50.018+0.05);
+tl.to("#cap-023", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 52.629-0.14);
+tl.set("#cap-023", {opacity:0, visibility:"hidden"}, 52.629);
+tl.fromTo("#cap-024", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 52.629+0.05);
+tl.to("#cap-024", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 55.24-0.14);
+tl.set("#cap-024", {opacity:0, visibility:"hidden"}, 55.24);
+tl.fromTo("#cap-025", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 55.24+0.05);
+tl.to("#cap-025", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 56.546-0.14);
+tl.set("#cap-025", {opacity:0, visibility:"hidden"}, 56.546);
+tl.fromTo("#cap-026", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 57.136+0.05);
+tl.to("#cap-026", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 59.809-0.14);
+tl.set("#cap-026", {opacity:0, visibility:"hidden"}, 59.809);
+tl.fromTo("#cap-027", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 59.809+0.05);
+tl.to("#cap-027", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 62.481-0.14);
+tl.set("#cap-027", {opacity:0, visibility:"hidden"}, 62.481);
+tl.fromTo("#cap-028", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 62.481+0.05);
+tl.to("#cap-028", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 62.881-0.14);
+tl.set("#cap-028", {opacity:0, visibility:"hidden"}, 62.881);
+tl.fromTo("#cap-029", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 63.294+0.05);
+tl.to("#cap-029", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 65.752-0.14);
+tl.set("#cap-029", {opacity:0, visibility:"hidden"}, 65.752);
+tl.fromTo("#cap-030", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 65.752+0.05);
+tl.to("#cap-030", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 68.211-0.14);
+tl.set("#cap-030", {opacity:0, visibility:"hidden"}, 68.211);
+tl.fromTo("#cap-031", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 68.211+0.05);
+tl.to("#cap-031", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 69.03-0.14);
+tl.set("#cap-031", {opacity:0, visibility:"hidden"}, 69.03);
+tl.fromTo("#cap-032", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 69.62+0.05);
+tl.to("#cap-032", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 72.19-0.14);
+tl.set("#cap-032", {opacity:0, visibility:"hidden"}, 72.19);
+tl.fromTo("#cap-033", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 72.19+0.05);
+tl.to("#cap-033", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 74.76-0.14);
+tl.set("#cap-033", {opacity:0, visibility:"hidden"}, 74.76);
+tl.fromTo("#cap-034", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 74.76+0.05);
+tl.to("#cap-034", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 75.188-0.14);
+tl.set("#cap-034", {opacity:0, visibility:"hidden"}, 75.188);
+tl.fromTo("#cap-035", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 75.778+0.05);
+tl.to("#cap-035", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 78.821-0.14);
+tl.set("#cap-035", {opacity:0, visibility:"hidden"}, 78.821);
+tl.fromTo("#cap-036", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 78.821+0.05);
+tl.to("#cap-036", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 81.864-0.14);
+tl.set("#cap-036", {opacity:0, visibility:"hidden"}, 81.864);
+tl.fromTo("#cap-037", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 81.864+0.05);
+tl.to("#cap-037", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 84.906-0.14);
+tl.set("#cap-037", {opacity:0, visibility:"hidden"}, 84.906);
+tl.fromTo("#cap-038", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 84.906+0.05);
+tl.to("#cap-038", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 87.442-0.14);
+tl.set("#cap-038", {opacity:0, visibility:"hidden"}, 87.442);
+tl.fromTo("#cap-039", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 88.032+0.05);
+tl.to("#cap-039", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 90.535-0.14);
+tl.set("#cap-039", {opacity:0, visibility:"hidden"}, 90.535);
+tl.fromTo("#cap-040", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 90.535+0.05);
+tl.to("#cap-040", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 93.037-0.14);
+tl.set("#cap-040", {opacity:0, visibility:"hidden"}, 93.037);
+tl.fromTo("#cap-041", {opacity:0, y:16}, {opacity:1, y:0, duration:0.2, ease:"power2.out"}, 93.037+0.05);
+tl.to("#cap-041", {opacity:0, y:0, duration:0.14, ease:"power2.in"}, 94.08-0.14);
+tl.set("#cap-041", {opacity:0, visibility:"hidden"}, 94.08);
+tl.to("#outro", {opacity:1, duration:0.7, ease:"power1.in"}, TOTAL-0.95);
+tl.fromTo("#outro-text", {opacity:0, y:24}, {opacity:1, y:0, duration:0.5, ease:"power2.out"}, TOTAL-0.7);
+tl.set("#scene-012", {opacity:0, visibility:"hidden"}, TOTAL-0.2);
+window.__timelines["lesson-001"] = tl;
+</script>
+</body>
+</html>

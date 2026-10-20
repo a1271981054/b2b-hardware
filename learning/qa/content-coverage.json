@@ -1,0 +1,32 @@
+[
+  {
+    "document": "基础课 · 从零学 B 端硬件 PM",
+    "nonemptyLines": 372,
+    "coveredLines": 372,
+    "missingLines": []
+  },
+  {
+    "document": "问题集 · B 端产品经理高频问答",
+    "nonemptyLines": 1421,
+    "coveredLines": 1421,
+    "missingLines": []
+  },
+  {
+    "document": "案例 · 工业网关商业论证",
+    "nonemptyLines": 405,
+    "coveredLines": 405,
+    "missingLines": []
+  },
+  {
+    "document": "交付 · 量产质量与变更闭环",
+    "nonemptyLines": 542,
+    "coveredLines": 542,
+    "missingLines": []
+  },
+  {
+    "document": "案例 · 龙杰智能卡（ACS）面试素材",
+    "nonemptyLines": 91,
+    "coveredLines": 91,
+    "missingLines": []
+  }
+]

@@ -2,12 +2,35 @@
 
 把 `B端产品经理问题集.md` 中不断新增的知识点，自动扫描成独立剧集，再用小米 MiMo TTS 合成双人中文播客。
 
-## 已生成
+## 已生成 4 集完整音频
 
-- 001：Q1. B 端硬件产品经理的核心职责边界是什么？KPI 怎么定？（约 4 分 46 秒）
-- 003：Q1 追问 2. JTBD 框架详细讲解（约 5 分 34 秒）
+- 101：B端硬件产品经理：职责、KPI 与商业嗅觉（约 37.7 分钟）
+- 102：客户价值地图与采购决策链（约 37.0 分钟）
+- 103：机会、行业、商业模式与定价（约 36.1 分钟）
+- 104：需求优先级与交付阶段门（约 37.5 分钟）
 
-本地播放列表：打开 `podcast/index.html` 即可直接播放已生成的剧集。
+本地播放列表：[index.html](index.html) / [index.md](index.md)
+
+当前音色采用小米 `mimo-v2.5-tts-voicedesign` 定制：
+
+- 主持人：30 岁左右女性，知性温暖、积极、语速稍快
+- 嘉宾：30 多岁男性，成熟积极、极具分享欲、语速更快
+
+1 分钟音色示例：[sample-voice.mp3](sample-voice.mp3)
+
+## 重新渲染
+
+```bash
+cd "/Users/zlearn/Documents/B端硬件"
+
+# 依次渲染 4 集完整音频
+python3 ~/.codex/skills/b2b-podcast/scripts/podcast.py render --episode 101
+python3 ~/.codex/skills/b2b-podcast/scripts/podcast.py render --episode 102
+python3 ~/.codex/skills/b2b-podcast/scripts/podcast.py render --episode 103
+python3 ~/.codex/skills/b2b-podcast/scripts/podcast.py render --episode 104
+```
+
+已生成的音频分片会复用；更换音色后，脚本会检测到音色配置变化并自动重新合成。
 
 ## 常用命令
 
@@ -24,7 +47,7 @@ python3 ~/.codex/skills/b2b-podcast/scripts/podcast.py prepare
 # 格式：主持人: ... 或 嘉宾: ...
 
 # 渲染一个剧集
-python3 ~/.codex/skills/b2b-podcast/scripts/podcast.py render --episode 001
+python3 ~/.codex/skills/b2b-podcast/scripts/podcast.py render --episode 101
 
 # 只渲染还没有音频的剧集
 python3 ~/.codex/skills/b2b-podcast/scripts/podcast.py render --new

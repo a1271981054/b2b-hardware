@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="从 CTQ、EVT/DVT/PVT、良率到 ECN 和批次追溯，建立放行决策闭环。">
+  <title>交付 · 量产质量与变更闭环 · B 端硬件知识库</title>
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <div class="mobile-backdrop" data-sidebar-close></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand-block">
+      <a class="brand" href="index.html"><span class="brand-mark">B<span>×</span>H</span><span><strong>B 端硬件</strong><small>PRODUCT FIELD NOTES</small></span></a>
+      <button class="sidebar-close" type="button" data-sidebar-close aria-label="关闭导航">×</button>
+    </div>
+    <div class="sidebar-intro">把市场判断、硬件交付和面试表达，放进同一条可回看的路径。</div>
+    <nav class="sidebar-nav" aria-label="文档导航">
+      <a class="nav-home" href="index.html"><span class="home-dot">↗</span><span>知识库首页</span></a>
+      <div class="nav-group"><div class="nav-heading">学习路线</div><a class="nav-link" data-nav-link href="01-learning-path.html" title="基础课 · 从零学 B 端硬件 PM"><span class="nav-index">01</span><span>基础课 · 从零学 B 端硬件 PM</span></a></div><div class="nav-group"><div class="nav-heading">面试与框架</div><a class="nav-link" data-nav-link href="02-interview-question-bank.html" title="问题集 · B 端产品经理高频问答"><span class="nav-index">02</span><span>问题集 · B 端产品经理高频问答</span></a></div><div class="nav-group"><div class="nav-heading">商业论证</div><a class="nav-link" data-nav-link href="03-industrial-gateway-case.html" title="案例 · 工业网关商业论证"><span class="nav-index">03</span><span>案例 · 工业网关商业论证</span></a></div><div class="nav-group"><div class="nav-heading">硬件交付</div><a class="nav-link active" data-nav-link href="04-quality-and-change-gate.html" title="交付 · 量产质量与变更闭环"><span class="nav-index">04</span><span>交付 · 量产质量与变更闭环</span></a></div><div class="nav-group"><div class="nav-heading">案例与面试</div><a class="nav-link" data-nav-link href="05-acs-interview-case.html" title="案例 · 龙杰智能卡（ACS）面试素材"><span class="nav-index">05</span><span>案例 · 龙杰智能卡（ACS）面试素材</span></a></div><div class="nav-group"><div class="nav-heading">视频课程</div><a class="nav-link" data-nav-link href="06-video-index.html" title="视频课 · B 端硬件 PM 教学视频"><span class="nav-index">06</span><span>视频课 · B 端硬件 PM 教学视频</span></a><a class="nav-link" data-nav-link href="07-video-pipeline.html" title="视频课 · 生成与维护说明"><span class="nav-index">07</span><span>视频课 · 生成与维护说明</span></a><a class="nav-link" data-nav-link href="08-video-design.html" title="视频课 · 视觉与动效规范"><span class="nav-index">08</span><span>视频课 · 视觉与动效规范</span></a></div><div class="nav-group"><div class="nav-heading">播客文稿</div><a class="nav-link" data-nav-link href="09-podcast-index.html" title="播客 · 双人节目索引"><span class="nav-index">09</span><span>播客 · 双人节目索引</span></a><a class="nav-link" data-nav-link href="10-podcast-pipeline.html" title="播客 · 写稿、合成与更新说明"><span class="nav-index">10</span><span>播客 · 写稿、合成与更新说明</span></a><a class="nav-link" data-nav-link href="35-podcast-000-script.html" title="000-音色示例"><span class="nav-index">35</span><span>000-音色示例</span></a><a class="nav-link" data-nav-link href="36-podcast-101-script.html" title="101-B端硬件产品经理-职责KPI和商业嗅觉"><span class="nav-index">36</span><span>101-B端硬件产品经理-职责KPI和商业嗅觉</span></a><a class="nav-link" data-nav-link href="37-podcast-102-script.html" title="102-客户价值地图与采购决策链"><span class="nav-index">37</span><span>102-客户价值地图与采购决策链</span></a><a class="nav-link" data-nav-link href="38-podcast-103-script.html" title="103-机会行业商业模式与定价"><span class="nav-index">38</span><span>103-机会行业商业模式与定价</span></a><a class="nav-link" data-nav-link href="39-podcast-104-script.html" title="104-需求优先级与交付阶段门"><span class="nav-index">39</span><span>104-需求优先级与交付阶段门</span></a></div><div class="nav-group"><div class="nav-heading">视频讲稿</div><a class="nav-link" data-nav-link href="11-video-lesson-001-script.html" title="第一段 · 这一行到底在卖什么 老师讲稿"><span class="nav-index">11</span><span>第一段 · 这一行到底在卖什么 老师讲稿</span></a><a class="nav-link" data-nav-link href="12-video-lesson-002-script.html" title="第一段 · 什么是 NFC、什么是 EMV 老师讲稿"><span class="nav-index">12</span><span>第一段 · 什么是 NFC、什么是 EMV 老师讲稿</span></a><a class="nav-link" data-nav-link href="13-video-lesson-003-script.html" title="第一段 · 为什么硬件要做认证 老师讲稿"><span class="nav-index">13</span><span>第一段 · 为什么硬件要做认证 老师讲稿</span></a><a class="nav-link" data-nav-link href="14-video-lesson-004-script.html" title="第一段 · 读卡器用在哪些地方 老师讲稿"><span class="nav-index">14</span><span>第一段 · 读卡器用在哪些地方 老师讲稿</span></a><a class="nav-link" data-nav-link href="15-video-lesson-005-script.html" title="第一段 · 龙杰（ACS）怎么赚钱 老师讲稿"><span class="nav-index">15</span><span>第一段 · 龙杰（ACS）怎么赚钱 老师讲稿</span></a><a class="nav-link" data-nav-link href="16-video-lesson-006-script.html" title="第一段 · 串成面试答案 老师讲稿"><span class="nav-index">16</span><span>第一段 · 串成面试答案 老师讲稿</span></a><a class="nav-link" data-nav-link href="17-video-lesson-007-script.html" title="第二段 · BOM 是什么 老师讲稿"><span class="nav-index">17</span><span>第二段 · BOM 是什么 老师讲稿</span></a><a class="nav-link" data-nav-link href="18-video-lesson-008-script.html" title="第二段 · 开模、NRE、MOQ 老师讲稿"><span class="nav-index">18</span><span>第二段 · 开模、NRE、MOQ 老师讲稿</span></a><a class="nav-link" data-nav-link href="19-video-lesson-009-script.html" title="第二段 · EVT / DVT / PVT 老师讲稿"><span class="nav-index">19</span><span>第二段 · EVT / DVT / PVT 老师讲稿</span></a><a class="nav-link" data-nav-link href="20-video-lesson-010-script.html" title="第二段 · OEM 和 ODM 老师讲稿"><span class="nav-index">20</span><span>第二段 · OEM 和 ODM 老师讲稿</span></a><a class="nav-link" data-nav-link href="21-video-lesson-011-script.html" title="第二段 · BRD / MRD / PRD 老师讲稿"><span class="nav-index">21</span><span>第二段 · BRD / MRD / PRD 老师讲稿</span></a><a class="nav-link" data-nav-link href="22-video-lesson-012-script.html" title="第二段 · 综合模拟面试 老师讲稿"><span class="nav-index">22</span><span>第二段 · 综合模拟面试 老师讲稿</span></a></div><div class="nav-group"><div class="nav-heading">课程素材</div><a class="nav-link" data-nav-link href="23-video-lesson-001-source.html" title="001-这一行到底在卖什么 · 来源笔记"><span class="nav-index">23</span><span>001-这一行到底在卖什么 · 来源笔记</span></a><a class="nav-link" data-nav-link href="24-video-lesson-002-source.html" title="002-什么是-NFC-什么是-EMV · 来源笔记"><span class="nav-index">24</span><span>002-什么是-NFC-什么是-EMV · 来源笔记</span></a><a class="nav-link" data-nav-link href="25-video-lesson-003-source.html" title="003-为什么硬件要做认证 · 来源笔记"><span class="nav-index">25</span><span>003-为什么硬件要做认证 · 来源笔记</span></a><a class="nav-link" data-nav-link href="26-video-lesson-004-source.html" title="004-读卡器用在哪些地方 · 来源笔记"><span class="nav-index">26</span><span>004-读卡器用在哪些地方 · 来源笔记</span></a><a class="nav-link" data-nav-link href="27-video-lesson-005-source.html" title="005-龙杰-ACS-怎么赚钱 · 来源笔记"><span class="nav-index">27</span><span>005-龙杰-ACS-怎么赚钱 · 来源笔记</span></a><a class="nav-link" data-nav-link href="28-video-lesson-006-source.html" title="006-串成面试答案 · 来源笔记"><span class="nav-index">28</span><span>006-串成面试答案 · 来源笔记</span></a><a class="nav-link" data-nav-link href="29-video-lesson-007-source.html" title="007-BOM-是什么 · 来源笔记"><span class="nav-index">29</span><span>007-BOM-是什么 · 来源笔记</span></a><a class="nav-link" data-nav-link href="30-video-lesson-008-source.html" title="008-开模-NRE-MOQ · 来源笔记"><span class="nav-index">30</span><span>008-开模-NRE-MOQ · 来源笔记</span></a><a class="nav-link" data-nav-link href="31-video-lesson-009-source.html" title="009-EVT-DVT-PVT · 来源笔记"><span class="nav-index">31</span><span>009-EVT-DVT-PVT · 来源笔记</span></a><a class="nav-link" data-nav-link href="32-video-lesson-010-source.html" title="010-OEM-和-ODM · 来源笔记"><span class="nav-index">32</span><span>010-OEM-和-ODM · 来源笔记</span></a><a class="nav-link" data-nav-link href="33-video-lesson-011-source.html" title="011-BRD-MRD-PRD · 来源笔记"><span class="nav-index">33</span><span>011-BRD-MRD-PRD · 来源笔记</span></a><a class="nav-link" data-nav-link href="34-video-lesson-012-source.html" title="012-综合模拟面试 · 来源笔记"><span class="nav-index">34</span><span>012-综合模拟面试 · 来源笔记</span></a></div>
+    </nav>
+    <div class="sidebar-footer"><span class="status-dot"></span>本地离线文档站 <span class="footer-version">v1.0</span></div>
+  </aside>
+  <div class="page-frame">
+    <header class="topbar">
+      <button class="menu-trigger" type="button" data-sidebar-open aria-label="打开导航"><span></span><span></span><span></span></button>
+      <div class="breadcrumb"><a href="index.html">知识库</a><span>/</span><span>硬件交付</span></div>
+      <label class="search-box"><span class="search-icon">⌕</span><input type="search" data-doc-search placeholder="搜索文档标题…" aria-label="搜索文档标题"><kbd>⌘ K</kbd></label>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换主题"><span class="sun">☼</span><span class="moon">◐</span></button>
+    </header>
+    <main class="content-layout">
+      <article class="article-wrap"><div class="article-meta"><span class="eyebrow">硬件交付</span><span class="meta-separator">·</span><span>核心资料</span></div><h1>交付 · 量产质量与变更闭环</h1><p class="lede">从 CTQ、EVT/DVT/PVT、良率到 ECN 和批次追溯，建立放行决策闭环。</p><div class="article-rule"></div><div class="prose"><blockquote>更新日期：2026-08-15 定位：面向已有基础、正在求职的 B 端硬件产品经理。本文承接 <a href="../../课堂笔记-从零学B端硬件PM.md">《课堂笔记-从零学B端硬件PM.md》</a> 中已经学过的 EVT / DVT / PVT 基础定义，以及 <a href="../../B端产品经理问题集.md">《B端产品经理问题集.md》</a> 中的 G0-G6、变更控制和风险管理，不再从零重复。 本轮重点：把“知道名词”推进到“能根据证据做放行决策、能处理产线异常、能讲成可信的面试案例”。</blockquote>
+<h2 id="0-使用说明与口径">0. 使用说明与口径</h2>
+<h3 id="本文解决什么问题">本文解决什么问题</h3>
+<p>读完后，应当能回答下面七类面试问题：</p>
+<ol><li>EVT、DVT、PVT 每一道门到底凭什么放行？</li><li>为什么最终良率很高，PVT 仍然可能不能放行？</li><li>CTQ 怎样写成真正可测试、可验收的标准？</li><li>控制计划、治具防错和测试分别解决什么问题？</li><li>产线连续异常时，为什么要停线、隔离和追溯？</li><li>ECN 怎样界定生效批次和可能受影响批次？</li><li>怎样完整讲述“支付终端 NFC 天线偏移”质量案例，并明确区分怀疑与已验证根因？</li></ol>
+<h3 id="三个口径提醒">三个口径提醒</h3>
+<ul><li>不同公司可能把 EVT 写成 <em>Engineering Validation Test</em> 或 <em>Engineering Verification Test</em>。面试时不必纠缠译法，重点讲清该阶段要关闭什么风险、拿什么证据放行。</li><li>“良率、直通率、首次良率”在不同工厂可能有不同统计口径。拿到报表先确认分母、是否包含返修、按单工位还是整条线计算。</li><li>本文中的“连续 5 台失败”“连续 300 台通过”“100 次测试”“PVT 第 3 批生效”都是本轮支付终端训练案例的条件，不是所有公司的通用放行阈值。真实阈值必须来自产品规格、法规、客户合同、风险等级和产能目标。</li></ul>
+<h2 id="1-一页总览-从-ctq-到可追溯放行">1. 一页总览：从 CTQ 到可追溯放行</h2>
+<h3 id="一条质量闭环主线">一条质量闭环主线</h3>
+<div class="code-block"><div class="code-label"><span>TEXT</span><button class="copy-code" type="button" data-copy-code="客户核心要求
+→ 定义 CTQ
+→ 写成可验收标准
+→ 放进控制计划
+→ 用工艺/治具预防，用测试检测
+→ 监控过程数据
+→ 异常触发停工位、隔离、追溯
+→ 区分可能原因与已验证根因
+→ 纠正并验证效果
+→ 通过 ECN 固化变更和生效批次
+→ 带证据做 EVT / DVT / PVT 放行决策">复制</button></div><pre><code>客户核心要求
+→ 定义 CTQ
+→ 写成可验收标准
+→ 放进控制计划
+→ 用工艺/治具预防，用测试检测
+→ 监控过程数据
+→ 异常触发停工位、隔离、追溯
+→ 区分可能原因与已验证根因
+→ 纠正并验证效果
+→ 通过 ECN 固化变更和生效批次
+→ 带证据做 EVT / DVT / PVT 放行决策</code></pre></div>
+<h3 id="最容易混淆的五组概念">最容易混淆的五组概念</h3>
+<div class="table-wrap"><table><thead><tr><th>概念</th><th>它回答的问题</th><th>不能替代什么</th></tr></thead><tbody><tr><td>最终良率</td><td>最后有多少产品合格</td><td>不能证明产线能一次做对</td></tr><tr><td>首次良率 FPY</td><td>第一次测试就合格多少</td><td>不能单独证明每个 CTQ 都达标</td></tr><tr><td>测试</td><td>已经发生的问题能否被检出</td><td>不能代替源头预防</td></tr><tr><td>治具防错</td><td>装配时如何避免或限制出错</td><td>不能代替治具点检和效果验证</td></tr><tr><td>ECN</td><td>批准了什么变更、何时对哪些产品生效</td><td>不能单独证明旧批次的真实根因</td></tr></tbody></table></div>
+<h3 id="产品经理做放行决定前的七问">产品经理做放行决定前的七问</h3>
+<ol><li>是否影响核心业务、安全、资金正确性、合规或客户合同？</li><li>这是单台偶发，还是会在量产中被放大的系统性问题？</li><li>目前只是怀疑原因，还是已有记录和验证支持的根因？</li><li>已经采取的是临时返修，还是能稳定预防或检出的永久控制？</li><li>受影响范围能否按批次、序列号、物料、工位和时间圈定？</li><li>修复后的连续数据、回归测试和 CTQ 是否达到批准标准？</li><li>遗留项是否有责任人、截止时间、监控指标和升级条件？</li></ol>
+<p>这七问的核心是：<strong>放行不是“问题看起来不大”，而是“剩余风险已有证据证明可接受”。</strong></p>
+<h2 id="2-evt-dvt-pvt-阶段门与放行依据">2. EVT / DVT / PVT：阶段门与放行依据</h2>
+<h3 id="2-1-阶段门的本质">2.1 阶段门的本质</h3>
+<p>阶段门不是按日历到点开的汇报会，而是一次继续投资的风险决策：是否继续投入下一阶段的人、钱、物料、模具、认证和产能。</p>
+<div class="table-wrap"><table><thead><tr><th>阶段</th><th>核心问题</th><th>主要验证对象</th><th>典型放行证据</th><th>典型阻塞项</th></tr></thead><tbody><tr><td>EVT</td><td>方案和核心链路能不能工作？</td><td>工程原理、核心功能、关键接口和性能可行性</td><td>工程样机、核心功能/性能报告、关键接口跑通、问题清单与关闭计划</td><td>核心功能跑不通；关键技术路线不可行；安全类架构风险无方案</td></tr><tr><td>DVT</td><td>已定型设计在目标场景中是否可靠、合规？</td><td>完整设计、环境、可靠性、兼容性、EMC/认证风险</td><td>规格覆盖矩阵、环境/跌落/振动/寿命/兼容性报告、认证预测试、关键缺陷关闭与回归</td><td>高温死机；金额不可读；安全/合规失败；根因不明的批量风险</td></tr><tr><td>PVT</td><td>正式产线能否稳定、重复、按成本制造？</td><td>人、机、料、法、测、环及量产文件</td><td>量产等效物料与工艺、FPY/良率、不良 Pareto、CTQ 数据、产能/节拍/成本、SOP/控制计划/治具/追溯记录</td><td>靠大量返修维持最终良率；CTQ 集中失效；过程失控；无法圈定批次；工艺或测试文件不完整</td></tr></tbody></table></div>
+<h3 id="2-2-evt-放行-证明-可行-不是证明-成熟">2.2 EVT 放行：证明“可行”，不是证明“成熟”</h3>
+<p>EVT 可以允许存在外观、装配便利性和非关键功能问题，但至少要证明：</p>
+<ul><li>核心业务链路真实跑通，不是只看模拟或单模块演示；</li><li>关键接口和性能达到进入下一阶段的最低门槛；</li><li>高风险技术问题有明确验证计划；</li><li>已知问题有编号、严重度、责任人和关闭计划；</li><li>如果要改主板、关键器件或架构，影响已经纳入下一版样机计划。</li></ul>
+<p>支付终端例子：刷卡、NFC、打印、联网、交易上传能够形成最小闭环，才说明核心方案可行。样机外壳粗糙可以暂时接受，但交易金额错误不能作为普通遗留项带入下一阶段。</p>
+<h3 id="2-3-dvt-放行-关键可靠性问题不能靠计划表放过去">2.3 DVT 放行：关键可靠性问题不能靠计划表放过去</h3>
+<p>DVT 的重点不是再证明“能开机”，而是证明设计在真实使用边界里仍然可靠。</p>
+<p>支付终端在 45℃ 环境连续交易两小时后死机，即使 EVT 功能全部跑通，也不能直接进入后续量产验证。产品经理要看：</p>
+<ol><li><strong>严重度</strong>：是否影响支付、金额、数据、安全、合规或客户验收？</li><li><strong>根因状态</strong>：只是怀疑散热、电源或固件，还是已经通过数据定位并验证？</li><li><strong>变更影响</strong>：修复是否涉及主板、结构、器件、BOM、模具、认证或供应商？</li><li><strong>回归范围</strong>：改完后哪些 DVT 项目必须重测？</li></ol>
+<p>低温下偶发屏幕闪烁是否阻塞，要看它是否影响金额可读、误操作和客户验收，而不能只看发生次数少。如果不影响核心使用、根因明确、修复不改变关键设计且回归计划受控，可以申请条件通过；根因不明或可能量产放大的问题，不应带入下一阶段。</p>
+<h3 id="2-4-pvt-放行-看-一次做对-和过程可复制">2.4 PVT 放行：看“一次做对”和过程可复制</h3>
+<p>PVT 至少要证明下面六类证据：</p>
+<ol><li><strong>量产等效</strong>：正式或等效的物料、供应商、工装、治具、固件、测试站、操作员和环境已使用。</li><li><strong>质量稳定</strong>：FPY、最终良率、返修率、报废率和不良 Pareto 达标，CTQ 没有被总良率掩盖。</li><li><strong>过程受控</strong>：控制计划、作业指导书、反应计划、人员培训和治具点检已执行并有记录。</li><li><strong>检测可信</strong>：测试方法、限值和计时边界明确，测试站不会大量误判或漏检；必要时验证量测系统能力。</li><li><strong>可追溯</strong>：序列号能关联生产批次、关键物料批次、工位、治具、固件、测试与返修记录。</li><li><strong>商业可交付</strong>：单位成本、节拍、产能、包装、备件、RMA 和首批交付准备满足目标。</li></ol>
+<h3 id="2-5-四种阶段门结论">2.5 四种阶段门结论</h3>
+<div class="table-wrap"><table><thead><tr><th>结论</th><th>适用情况</th><th>必须记录什么</th></tr></thead><tbody><tr><td>Go / 放行</td><td>所有阻塞项关闭，剩余风险在标准内</td><td>证据版本、批准人、生效基线</td></tr><tr><td>Conditional Go / 条件放行</td><td>仅剩非关键、已受控且不会改变放行基础的遗留项</td><td>遗留项、责任人、截止时间、监控指标、触发停线/撤回条件</td></tr><tr><td>Hold / 暂缓</td><td>证据不足或需要补测，暂不进入下一阶段</td><td>缺口、补测计划、复审时间</td></tr><tr><td>No-Go / 打回</td><td>关键风险未关闭，方案或设计需要返工</td><td>阻塞原因、返工范围、重新评审条件</td></tr></tbody></table></div>
+<p>“暂时放行”如果没有责任人、期限、指标和撤回条件，就不是条件放行，只是把风险往后推。</p>
+<h3 id="2-6-产品经理的职责边界">2.6 产品经理的职责边界</h3>
+<p>产品经理不是独自签字替代质量、研发和制造，而是：</p>
+<ul><li>确认产品/客户/商业风险和 CTQ 优先级；</li><li>要求各职能拿出可复核证据；</li><li>组织对成本、交期、质量和客户影响的权衡；</li><li>给出 Go / Hold / No-Go 建议，并保证决策、风险接受人和遗留项可追溯。</li></ul>
+<h3 id="常见面试问法">常见面试问法</h3>
+<p><strong>问：EVT 功能已经跑通，为什么 DVT 高温死机还不能进 PVT？</strong></p>
+<p>回答框架：</p>
+<blockquote>EVT 只证明核心方案可行，DVT 要证明定型设计在目标环境中可靠。高温死机会影响支付可用性，属于关键风险；在根因、修复和受影响回归未验证前进入 PVT，只会把设计缺陷复制成批量问题。我会先定位根因，评估对主板、结构、BOM、认证和供应链的影响，完成修复及受影响 DVT 回归后，再提交阶段门评审。</blockquote>
+<h3 id="小练习">小练习</h3>
+<p>某支付终端低温下屏幕偶发闪烁，但交易、联网和打印正常。请只用三点判断：是否影响金额可读或合规、量产是否会放大、根因和修复是否已验证。</p>
+<h2 id="3-良率-首次良率与返修">3. 良率、首次良率与返修</h2>
+<h3 id="3-1-先把统计口径写清楚">3.1 先把统计口径写清楚</h3>
+<div class="table-wrap"><table><thead><tr><th>指标</th><th>常用计算方式</th><th>它主要说明什么</th></tr></thead><tbody><tr><td>最终良率</td><td>最终合格数量 ÷ 投入数量</td><td>最后有多少产品可以交付</td></tr><tr><td>首次良率 FPY</td><td>未经返修、第一次测试即合格数量 ÷ 首次投入测试数量</td><td>过程能否一次做对</td></tr><tr><td>返修率</td><td>进入返修的数量 ÷ 投入数量</td><td>返修占用了多少产能和成本</td></tr><tr><td>报废率</td><td>最终报废数量 ÷ 投入数量</td><td>不可恢复损失有多少</td></tr></tbody></table></div>
+<p>“直通率”在不少工厂被用来指 FPY，但也可能按单工位计算。面试里最专业的动作不是抢着报数字，而是先说：<strong>我会确认分母、统计站点以及返修是否被计入。</strong></p>
+<h3 id="3-2-训练案例-98-最终良率为什么仍不能放行">3.2 训练案例：98% 最终良率为什么仍不能放行</h3>
+<p>某 PVT 批次投入 1,000 台：</p>
+<ul><li>900 台第一次测试通过；</li><li>80 台因 NFC 天线偏移返修后通过；</li><li>20 台最终报废。</li></ul>
+<p>计算结果：</p>
+<div class="code-block"><div class="code-label"><span>TEXT</span><button class="copy-code" type="button" data-copy-code="最终良率 = (900 + 80) / 1000 = 98%
+首次良率 FPY = 900 / 1000 = 90%
+返修率 = 80 / 1000 = 8%
+报废率 = 20 / 1000 = 2%">复制</button></div><pre><code>最终良率 = (900 + 80) / 1000 = 98%
+首次良率 FPY = 900 / 1000 = 90%
+返修率 = 80 / 1000 = 8%
+报废率 = 20 / 1000 = 2%</code></pre></div>
+<p>如果只汇报“最终良率 98%”，就掩盖了三个事实：</p>
+<ol><li>产线有 10% 的产品第一次没有做对；</li><li>8% 返修会消耗拆机、定位、重装、复测和管理产能；</li><li>80 台集中在 NFC 这一 CTQ 驱动项上，量产放大后可能变成批量售后和客户逃逸。</li></ol>
+<p>因此放行判断应当是：<strong>最终交付率看似可接受，但 FPY 和 NFC 集中不良不健康；先修正天线定位、治具或装配过程，验证后再评估放行。</strong></p>
+<h3 id="3-3-3-台失败-也不能只看千分之三">3.3 “3 台失败”也不能只看千分之三</h3>
+<p>如果修正后 1,000 台只有 3 台 NFC 首次失败：</p>
+<ul><li>可以说该批 NFC 专项首次不良率为 0.3%；</li><li>如果没有其他首次失败，整批 FPY 才可能是 99.7%；</li><li>仍需确认这 3 台是否同一机制、是否被稳定预防或 100% 检出、是否有现场逃逸风险；</li><li>“知道怎么返修”不能替代控制计划和永久纠正措施。</li></ul>
+<p>换句话说：数字变小是好信号，但放行依据是<strong>严重度 × 过程稳定性 × 检出/预防能力 × 根因证据</strong>，不只是一个百分比。</p>
+<h3 id="3-4-产品经理看不良数据的顺序">3.4 产品经理看不良数据的顺序</h3>
+<ol><li>先看 CTQ 是否有失败、安全或合规类缺陷是否为零容忍项；</li><li>再看 FPY，判断产线是否靠返修维持结果；</li><li>看不良 Pareto，先处理数量最大或风险最高的类别；</li><li>按工位、时间、物料、供应商、治具、操作员和固件版本分层；</li><li>计算返修带来的节拍、人工、物料、成本和交期影响；</li><li>确认纠正后数据是否连续稳定，而不是只看几个好样本。</li></ol>
+<h3 id="常见面试问法-2">常见面试问法</h3>
+<p><strong>问：最终良率 98%，为什么你还不同意 PVT 放行？</strong></p>
+<p>回答框架：</p>
+<blockquote>我不会只看最终良率。我会先拆 FPY、返修率和 CTQ 不良。如果 1,000 台中 80 台因同一种 NFC 天线偏移返修，最终良率虽然是 98%，FPY 只有 90%，而且关键不良会在量产中放大。返修既吞产能和成本，也可能产生漏检。我会先做不良分层和根因验证，建立稳定的预防或检出措施，再用连续试产数据决定放行。</blockquote>
+<h3 id="小练习-2">小练习</h3>
+<p>1,000 台中 970 台一次通过、20 台返修后通过、10 台报废。分别计算最终良率、FPY、返修率和报废率，并说明哪个指标最能看出“一次做对”的能力。</p>
+<h2 id="4-ctq-可验收标准与计时边界">4. CTQ、可验收标准与计时边界</h2>
+<h3 id="4-1-ctq-是-不可错底线-不是-所有重要参数">4.1 CTQ 是“不可错底线”，不是“所有重要参数”</h3>
+<p>CTQ 全称 <strong>Critical to Quality</strong>，即对质量至关重要的特性。判断时可以问：</p>
+<blockquote>这个特性一旦失控，客户还能否正常、安全、合规地使用产品，并完成合同中的核心任务？</blockquote>
+<p>支付终端中常见的 CTQ 或 CTQ 候选包括：</p>
+<ul><li>金额和交易结果显示正确；</li><li>支付交易不重复、不丢失、可追溯；</li><li>NFC 识别成功率、距离或时延达到产品要求；</li><li>断网后的成功交易能够可靠保存并补传；</li><li>安全、EMV/支付合规和关键认证要求；</li><li>客户合同写明的关键性能与环境指标。</li></ul>
+<p>外壳轻微色差通常不是 CTQ，但如果客户合同、品牌验收或视觉识别规范明确规定，它也可能成为关键验收项。CTQ 来自客户任务、风险和合同，不是由技术团队凭感觉决定。</p>
+<h3 id="4-2-一条可验收标准的七个要素">4.2 一条可验收标准的七个要素</h3>
+<div class="code-block"><div class="code-label"><span>TEXT</span><button class="copy-code" type="button" data-copy-code="在【环境/前置条件】下，
+以【明确对象和样本】执行【测试方法】，
+从【计时/测量起点】到【终点】，
+要求【阈值/范围】，
+测试【次数/时长/样本量】，
+按【通过规则】判定，
+结果记录到【可追溯载体】。">复制</button></div><pre><code>在【环境/前置条件】下，
+以【明确对象和样本】执行【测试方法】，
+从【计时/测量起点】到【终点】，
+要求【阈值/范围】，
+测试【次数/时长/样本量】，
+按【通过规则】判定，
+结果记录到【可追溯载体】。</code></pre></div>
+<p>检查清单：</p>
+<ol><li>场景是否明确？</li><li>测什么对象？</li><li>用什么方法和设备？</li><li>起点和终点是什么？</li><li>数值阈值是多少？</li><li>样本量、持续时间和通过规则是什么？</li><li>结果如何关联设备和批次？</li></ol>
+<h3 id="4-3-例子一-断网交易不能丢">4.3 例子一：断网交易不能丢</h3>
+<p>模糊写法：</p>
+<blockquote>断网后交易不能丢。</blockquote>
+<p>训练案例中的可验收写法：</p>
+<blockquote>设备在断网状态下形成的成功交易必须持久化到本地；网络恢复后 5 分钟内自动补传；连续执行 100 次断网—恢复场景，100 次交易记录均完整、金额与交易标识一致，并保留终端和服务端日志。</blockquote>
+<p>这里写清了场景、对象、时限、样本量、通过条件和证据。实际项目的 5 分钟、100 次和 100% 要由渠道 SLA、风险等级和产品规格批准。</p>
+<h3 id="4-4-例子二-nfc-要快-必须先拆成两条指标">4.4 例子二：NFC“要快”必须先拆成两条指标</h3>
+<p>“贴卡到支付完成小于 1 秒”容易把不同责任混在一起：</p>
+<div class="table-wrap"><table><thead><tr><th>指标</th><th>建议计时边界</th><th>主要责任和影响因素</th></tr></thead><tbody><tr><td>NFC 识别时延</td><td>标准卡进入规定感应区并触发计时，至终端输出有效识别事件</td><td>天线、射频设计、装配位置、卡片、固件、测试姿态和环境</td></tr><tr><td>端到端支付时延</td><td>用户贴卡/终端发起交易，至屏幕显示明确支付结果</td><td>NFC、终端、网络、商户支付服务、收单/支付机构、发卡侧和高峰负载</td></tr></tbody></table></div>
+<p>训练版 NFC 识别标准可以写成：</p>
+<blockquote>使用规定测试卡、姿态、距离和环境，从测试治具确认卡片进入有效感应区开始，到终端输出有效识别事件为止，时延不超过批准阈值；连续测试 100 次，按规格规定的成功率和时延规则判定，并记录设备序列号、天线批次和测试站。</blockquote>
+<p>注意两点：</p>
+<ul><li>“Wi-Fi 四格”是界面显示，不是稳定的工程条件；端到端时延应写可测量的 RTT、丢包、服务负载等条件。</li><li>如果只测 NFC 硬件识别，就不该把支付服务和发卡行响应算进终端硬件的验收责任。</li></ul>
+<h3 id="4-5-ctq-如何落到产品经理决策">4.5 CTQ 如何落到产品经理决策</h3>
+<p>产品经理要做的不是亲自编写所有测试脚本，而是确保：</p>
+<ul><li>CTQ 与客户核心任务、风险、法规和合同一一对应；</li><li>每条 CTQ 都有可执行的测试方法和明确负责人；</li><li>研发、测试、质量和客户对同一阈值、边界、样本和判定规则没有歧义；</li><li>PVT 控制计划能把 CTQ 在来料、装配、测试和出货环节控制住；</li><li>CTQ 失败不能被“总体良率不错”或“可以返修”掩盖。</li></ul>
+<h3 id="常见面试问法-3">常见面试问法</h3>
+<p><strong>问：你怎样把“支付终端 NFC 要快”写成验收标准？</strong></p>
+<p>回答框架：</p>
+<blockquote>我会先拆开 NFC 识别时延和端到端支付时延，因为两者责任边界不同。然后明确测试卡、姿态、距离、环境、计时起点与终点、阈值、样本量和通过规则，并让结果关联设备、物料批次和测试站。这样出现超时时，才能判断是天线/装配问题，还是网络和支付服务问题，而不会在验收时互相扯皮。</blockquote>
+<h3 id="小练习-3">小练习</h3>
+<p>把“设备在弱网下也要稳定”改写成一条包含网络条件、业务动作、数据结果、恢复时限、样本量和通过条件的验收标准。</p>
+<h2 id="5-控制计划-治具防错与测试的区别">5. 控制计划、治具防错与测试的区别</h2>
+<h3 id="5-1-三者不是同一层的东西">5.1 三者不是同一层的东西</h3>
+<div class="table-wrap"><table><thead><tr><th>项目</th><th>本质</th><th>发生时点</th><th>主要价值</th><th>局限</th></tr></thead><tbody><tr><td>控制计划</td><td>管理和执行文件</td><td>覆盖来料、过程、出货和异常反应</td><td>规定控什么、谁控、怎么控、多久控一次、异常怎么办</td><td>文件本身不会自动阻止错误，必须执行并留记录</td></tr><tr><td>治具/防错</td><td>工艺中的物理或自动化控制</td><td>装配过程中</td><td>定位、限位、防呆，优先让错误不发生</td><td>治具也会磨损、松动或校准漂移，必须点检；普通夹具不一定真正防错</td></tr><tr><td>测试</td><td>测量和检测手段</td><td>来料、工位内、装配后或出货前</td><td>发现已经存在的缺陷，阻止不良流出</td><td>只靠末端测试会产生返修成本，也可能漏检，不能消除根因</td></tr></tbody></table></div>
+<p>最简记忆：</p>
+<blockquote>控制计划规定整个控制体系；治具防错在装配过程中预防；测试在过程中或装配后检测。</blockquote>
+<h3 id="5-2-有治具-不等于-已经防错">5.2 “有治具”不等于“已经防错”</h3>
+<p>一个治具只有在下面条件成立时，才真正形成稳定防错：</p>
+<ul><li>错误方向无法装入，或装错会被即时检测；</li><li>定位基准、公差和锁紧方式明确；</li><li>治具编号、维护周期、校准/点检方法和记录明确；</li><li>松动、磨损和偏移本身被纳入控制计划；</li><li>操作员培训完成，现场实际按方法使用。</li></ul>
+<p>本轮 NFC 案例恰好说明：治具原本用来保证天线位置一致，但限位螺丝松动后，治具反而成了共同变差来源。因此不能只问“有没有治具”，还要问“治具是否受控”。</p>
+<h3 id="5-3-支付终端-nfc-控制计划示例">5.3 支付终端 NFC 控制计划示例</h3>
+<div class="table-wrap"><table><thead><tr><th>环节</th><th>控制对象</th><th>方法与频率（示例）</th><th>记录</th><th>异常反应</th><th>负责人</th></tr></thead><tbody><tr><td>来料</td><td>NFC 天线关键尺寸/电性能/批次</td><td>按批准抽样方案检验</td><td>来料检验记录、物料批次</td><td>隔离来料，暂停上线，通知 SQE/供应商</td><td>IQC/SQE</td></tr><tr><td>装配前</td><td>定位治具、限位螺丝、扭矩/防松状态</td><td>每班开线点检，换线/维修后复检</td><td>治具编号、点检时间、结果</td><td>停用治具，圈定上次合格点后的产品</td><td>产线/工艺/质量</td></tr><tr><td>装配中</td><td>天线位置与走线</td><td>防呆限位或工位即时检测</td><td>工位记录、设备序列号</td><td>暂停工位、隔离在制品、检查治具</td><td>产线主管</td></tr><tr><td>产线测试</td><td>NFC 识别、距离、时延/成功率</td><td>每台测试，阈值以规格为准</td><td>SN、测试站、原始结果</td><td>不良隔离；达到反应阈值时停工位</td><td>测试/质量</td></tr><tr><td>包装前</td><td>测试记录完整性、版本一致性</td><td>系统校验</td><td>出货记录</td><td>缺记录不得包装/放行</td><td>OQC/仓库</td></tr></tbody></table></div>
+<p>示例频率和阈值必须由真实风险和工艺能力批准，不能把“每班一次”机械复制到所有治具。</p>
+<h3 id="5-4-如果工厂说-全检失败就返修-不用改治具">5.4 如果工厂说“全检失败就返修，不用改治具”</h3>
+<p>产品经理应坚持的是效果，不一定死守某一种治具方案：</p>
+<ul><li>末端全检属于事后发现，装错、拆机、返修和复测成本已经发生；</li><li>返修会拉低 FPY、吞掉产能，并增加新的装配损伤风险；</li><li>测试有误判和漏检可能，不能默认 100% 不逃逸；</li><li>优先顺序通常是源头预防，其次工位即时检测，最后才是末端筛选；</li><li>如果视觉定位、自动贴装、防呆结构或工位在线检测能证明同等或更好效果，也可以接受。</li></ul>
+<h3 id="常见面试问法-4">常见面试问法</h3>
+<p><strong>问：控制计划、治具防错和出厂测试有什么区别？</strong></p>
+<p>回答框架：</p>
+<blockquote>控制计划是总规则，定义 CTQ 在哪个工序由谁用什么方法和频率控制，以及异常时怎么反应；治具防错是过程预防，让零件在装配时不容易放错；测试是检测，发现已经发生的缺陷并阻止流出。我的原则是优先预防，再做过程检测和末端兜底，同时把治具自身的松动、磨损和点检也纳入控制计划。</blockquote>
+<h3 id="小练习-4">小练习</h3>
+<p>工厂每台都测 NFC，但天线装偏后需要拆机返修。请分别说出：测试解决了什么、没有解决什么，以及应优先补哪一种过程控制。</p>
+<h2 id="6-异常停线-隔离与批次追溯">6. 异常停线、隔离与批次追溯</h2>
+<h3 id="6-1-连续异常为什么不能只返修不良品">6.1 连续异常为什么不能只返修不良品</h3>
+<p>训练案例中，一个小时内连续 5 台 NFC 测试失败，说明过程可能已经失控。第一动作应是暂停受影响工位并执行反应计划，而不是继续生产、只返修这 5 台。</p>
+<p>原因：</p>
+<ul><li>连续同类失败更像共同原因，而不是互不相关的单台偶发；</li><li>继续生产会扩大可疑范围、返修量和交期损失；</li><li>只处理已失败的 5 台，会漏掉尚未测试、已经包装或测试误放的产品；</li><li>及时停住才能保存治具状态、失败样品和原始记录，避免证据被调整动作破坏。</li></ul>
+<p>真实项目的停线触发值要写在控制计划中。对资金、安全、合规等高严重度 CTQ，一台失败也可能触发立即停工位。</p>
+<h3 id="6-2-异常闭环八步法">6.2 异常闭环八步法</h3>
+<p>可以记成：<strong>停、圈、证、因、改、验、放、追。</strong></p>
+<ol><li><strong>停</strong>：暂停受影响工位/线体，冻结包装和出货，不让问题继续扩大。</li><li><strong>圈</strong>：从“最后一个已确认合格点”起圈定在制、待测、已测、包装、仓库、在途和必要的客户设备。</li><li><strong>证</strong>：保留失败样品、治具原状、测试日志、操作记录、物料和固件信息。</li><li><strong>因</strong>：提出并验证假设，区分设计、物料、治具、操作、测试系统和环境原因。</li><li><strong>改</strong>：先做临时围堵和纠正，再制定永久纠正/预防措施。</li><li><strong>验</strong>：重现问题、验证修复，执行受影响回归和连续试产。</li><li><strong>放</strong>：跨职能评审放行条件，处置可疑品，并记录谁接受剩余风险。</li><li><strong>追</strong>：更新控制计划、作业指导、培训和 ECN，持续监控现场与量产数据。</li></ol>
+<h3 id="6-3-隔离边界怎么定">6.3 隔离边界怎么定</h3>
+<p>不能只隔离已经测试失败的 5 台。常用边界是：</p>
+<div class="code-block"><div class="code-label"><span>TEXT</span><button class="copy-code" type="button" data-copy-code="起点：最后一次确认治具/过程正常的时间、点检或合格样本
+终点：停工位并恢复受控状态的时间
+范围：该时间段内相关工位、治具、物料、班次和所有产品状态">复制</button></div><pre><code>起点：最后一次确认治具/过程正常的时间、点检或合格样本
+终点：停工位并恢复受控状态的时间
+范围：该时间段内相关工位、治具、物料、班次和所有产品状态</code></pre></div>
+<p>如果最后合格点不可信，就必须扩大范围；宁可先保守隔离，再用追溯证据缩小，不能先假设范围很小。</p>
+<h3 id="6-4-一台支付终端至少应追到什么">6.4 一台支付终端至少应追到什么</h3>
+<div class="table-wrap"><table><thead><tr><th>追溯维度</th><th>最低信息</th></tr></thead><tbody><tr><td>产品身份</td><td>SN、SKU、硬件版本、固件版本</td></tr><tr><td>生产信息</td><td>生产批次、日期时间、线体、工位、班次、操作/设备标识</td></tr><tr><td>物料信息</td><td>NFC 天线及关键芯片的供应商和 lot/批次</td></tr><tr><td>工装信息</td><td>治具编号、点检/维护/校准状态</td></tr><tr><td>测试信息</td><td>测试站、程序版本、限值、原始结果、重测次数</td></tr><tr><td>返修信息</td><td>失败现象、拆换物料、返修动作、复测结果</td></tr><tr><td>变更信息</td><td>适用 ECN、变更前后版本、生效批次</td></tr><tr><td>流向信息</td><td>包装箱、仓库、出货单、客户和现场状态</td></tr></tbody></table></div>
+<p>追溯的价值不是“记录得多”，而是把召回或复测范围从“所有产品”缩小为“有证据关联的一组产品”。</p>
+<h3 id="6-5-怀疑原因与已验证根因">6.5 怀疑原因与已验证根因</h3>
+<div class="table-wrap"><table><thead><tr><th>状态</th><th>可以怎样说</th><th>还不能怎样说</th></tr></thead><tbody><tr><td>现象</td><td>连续 5 台 NFC 测试失败，天线位置测得偏移</td><td>不能直接说是某供应商或操作员造成</td></tr><tr><td>可能原因/假设</td><td>失败集中在同一工位，优先怀疑治具定位、操作或该批物料</td><td>不能把“集中出现”写成已证实根因</td></tr><tr><td>强关联证据</td><td>发现限位螺丝松动，偏移方向与失败一致；修复后结果显著改善</td><td>如果没有复现、失效品检查和记录闭环，仍不宜过度下结论</td></tr><tr><td>已验证根因</td><td>失效机制被复现/检查支持；纠正该因素后问题消失；回归与连续试产通过，其他主要假设被排除</td><td>不能因为一段时间没再失败，就自动证明永久措施有效</td></tr></tbody></table></div>
+<p>5 Why、鱼骨图和经验判断用于生成假设，不是根因证据本身。根因必须能解释现象，并经数据、复现、对照或修复验证支持。</p>
+<h3 id="6-6-产品经理的异常决策依据">6.6 产品经理的异常决策依据</h3>
+<ul><li>是否命中 CTQ，客户现场最坏后果是什么；</li><li>当前库存、在制、在途、已交付分别有多少；</li><li>能否按 SN、批次和记录缩小范围；</li><li>临时围堵能否防止继续流出；</li><li>根因是否验证，永久措施是否改变 BOM、认证、合同或交期；</li><li>复测/返修/报废/召回各自的成本和客户影响；</li><li>恢复生产的指标、观察窗口和再次停线条件是什么。</li></ul>
+<h3 id="常见面试问法-5">常见面试问法</h3>
+<p><strong>问：产线连续出现 5 台 NFC 失败，你第一步做什么？</strong></p>
+<p>回答框架：</p>
+<blockquote>我先按控制计划暂停受影响工位和出货，保留失败样品和现场状态；再从最后一个确认合格点起隔离相关在制、包装和库存产品，并按 SN 追到物料、治具、工位、测试和返修记录。确认影响范围后再验证根因、实施纠正和回归。连续数据达标、可疑品处置完成、控制计划更新后，才提交恢复生产或条件放行评审。</blockquote>
+<h3 id="小练习-5">小练习</h3>
+<p>如果最后一次治具点检是在上午 8 点，连续失败在 11 点被发现，中间已有产品进入包装，隔离范围至少应包含哪些产品和记录？</p>
+<h2 id="7-ecn-变更控制-影响批次与可追溯">7. ECN 变更控制、影响批次与可追溯</h2>
+<h3 id="7-1-ecn-是什么">7.1 ECN 是什么</h3>
+<p>ECN 通常指 <strong>Engineering Change Notice，工程变更通知</strong>。不同公司也会使用 ECR、ECO 或变更单等名称，具体流程以公司制度为准。</p>
+<p>它的核心作用不是“通知大家改了”，而是回答：</p>
+<ul><li>为什么改；</li><li>改了什么基线；</li><li>谁评估、批准和执行；</li><li>怎样验证变更有效；</li><li>从何时、哪条线、哪个批次或 SN 开始生效；</li><li>在制、库存、在途和客户现场的旧版本怎样处置；</li><li>变更是否影响成本、交期、认证、合同、售后和备件。</li></ul>
+<h3 id="7-2-一份可用-ecn-的最低字段">7.2 一份可用 ECN 的最低字段</h3>
+<ol><li>变更编号、标题、原因和风险等级；</li><li>变更前后内容及关联图纸/BOM/固件/测试程序/治具/作业指导版本；</li><li>技术、质量、供应链、生产、认证、成本和客户影响评估；</li><li>验证计划、结果和批准记录；</li><li>生效日期、时间、线体、批次、SN 范围或首件标识；</li><li>在制品、库存、在途、已出货品和旧物料的处置；</li><li>供应商、产线、售后和客户的通知/培训要求；</li><li>回退方案、遗留风险和后续监控指标。</li></ol>
+<h3 id="7-3-生效批次-不等于-影响批次">7.3 “生效批次”不等于“影响批次”</h3>
+<p>假设 ECN 规定：</p>
+<ul><li>治具限位螺丝增加防松胶；</li><li>每班开线点检一次；</li><li>从 PVT 第 3 批开始执行；</li><li>第 1、2 批已经生产完成。</li></ul>
+<p>可以确认的事实是：第 3 批起应执行新控制，第 1、2 批生产时没有这项新控制。</p>
+<p>但不能直接下结论：第 1、2 批一定有螺丝松动或一定不合格。更准确的状态是：</p>
+<blockquote>第 1、2 批属于可能受影响批次，需要结合治具点检、生产测试、返修、失效品检查和客户数据确认。</blockquote>
+<p>同样，第 3 批以后也不能只凭 ECN 文档就默认安全，还要核对现场是否真正切换、首件是否确认、人员是否培训、记录是否完整。</p>
+<h3 id="7-4-界定影响范围的步骤">7.4 界定影响范围的步骤</h3>
+<ol><li>查客户设备 SN 和生产批次；</li><li>查 ECN 的明确生效点和现场切换记录；</li><li>找到问题可能开始的最后已知正常点；</li><li>按线体、治具、时间、班次、物料 lot 和测试结果分层；</li><li>把产品分为已确认合格、可能受影响、已确认不合格三类；</li><li>对在制、库存、在途和客户设备分别制定检验、返修、报废、让步接收或召回方案；</li><li>所有处置关联到 SN、ECN 和验证记录。</li></ol>
+<h3 id="7-5-产品经理审-ecn-时要问什么">7.5 产品经理审 ECN 时要问什么</h3>
+<ul><li>变更解决的是症状、临时纠正，还是已验证根因？</li><li>会不会改变客户体验、规格、兼容性或承诺？</li><li>会不会触发认证重测、供应商切换、BOM/成本和交期变化？</li><li>旧库存和客户现场怎么处理，谁承担成本？</li><li>生效点能否通过 SN、批次和记录准确识别？</li><li>售后看到旧版本时，是否知道如何判断和维修？</li><li>永久措施的效果将用什么指标、观察多久？</li></ul>
+<h3 id="常见面试问法-6">常见面试问法</h3>
+<p><strong>问：ECN 写“从 PVT 第 3 批开始增加治具防松”，第 1 批客户反馈 NFC 失败，你会怎样处理？</strong></p>
+<p>回答框架：</p>
+<blockquote>我会先用客户设备 SN 确认其生产批次，再核对 ECN 生效记录。第 1、2 批没有新控制，因此先列为可能受影响范围，但不能直接断言根因相同。接着查该设备的天线 lot、工位、治具、原始 NFC 测试和返修记录，并检查失效机是否存在相同位移机制。证据确认后再决定是否扩大复测、返修或客户行动。ECN 用来圈定范围，失效分析和生产记录用来确认根因。</blockquote>
+<h3 id="小练习-6">小练习</h3>
+<p>如果 ECN 只更新了作业指导书，却没有日期、批次、SN 或现场切换记录，会给生产、客户处置和召回范围带来什么风险？</p>
+<h2 id="8-支付终端-nfc-天线偏移-端到端案例">8. 支付终端 NFC 天线偏移：端到端案例</h2>
+<h3 id="8-1-案例背景">8.1 案例背景</h3>
+<p>支付终端进入 PVT 小批量试产。NFC 识别成功率、识别时延和读卡范围属于核心支付体验的 CTQ；天线位置是影响这些 CTQ 的关键过程特性。</p>
+<p>训练案例条件：</p>
+<ul><li>某一小时内连续 5 台 NFC 产线测试失败；</li><li>工厂按反应计划暂停该工位；</li><li>检查发现定位治具的一颗限位螺丝松动，导致天线装配位置偏移；</li><li>拧紧后连续生产 300 台，NFC 测试全部通过；</li><li>后续 ECN 要求增加防松胶并每班点检，从 PVT 第 3 批开始执行；</li><li>PVT 第 1、2 批已完成。</li></ul>
+<h3 id="8-2-第一步-先止血-不急着争论责任">8.2 第一步：先止血，不急着争论责任</h3>
+<p>正确动作：</p>
+<ol><li>暂停受影响工位和下游包装/出货；</li><li>保留 5 台失败机、治具原状和测试日志；</li><li>从最后一次合格点检起，隔离相关在制、已测、包装和库存产品；</li><li>按 SN 导出天线 lot、工位、治具编号、班次、测试与返修记录；</li><li>用替代治具、天线位置测量和失效机检查验证不同假设。</li></ol>
+<p>此时可以说：</p>
+<blockquote>连续同类失败表明过程可能失控，优先怀疑共同因素，如治具、同批物料、作业方法或测试站。</blockquote>
+<p>此时不能说：</p>
+<blockquote>已经确定是治具螺丝松动。</blockquote>
+<p>除非现场检查和验证已经完成。</p>
+<h3 id="8-3-第二步-从-发现螺丝松-走到-根因已验证">8.3 第二步：从“发现螺丝松”走到“根因已验证”</h3>
+<p>训练案例把根因设定为已查明。真实项目至少应形成以下证据链：</p>
+<ol><li>失败机的天线位置偏移，且偏移方向/量与 NFC 失败机制一致；</li><li>失败集中在使用该治具或该时间窗的产品；</li><li>现场确认限位螺丝松动，治具定位基准发生变化；</li><li>修复治具后天线位置恢复，原失败现象不再出现；</li><li>受影响规格回归通过，连续 300 台或批准样本达到标准；</li><li>物料、固件、测试站等其他主要假设被数据排除或证明不是主因。</li></ol>
+<p>如果只有“拧紧后暂时没再失败”，可以说证据强烈支持，但仍应补齐失效品检查、记录和必要的对照/复现，避免把相关性写成因果。</p>
+<h3 id="8-4-第三步-区分纠正-围堵和永久措施">8.4 第三步：区分纠正、围堵和永久措施</h3>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>本案例动作</th><th>目的</th></tr></thead><tbody><tr><td>立即纠正</td><td>拧紧松动螺丝、恢复治具定位</td><td>让当前设备恢复正常</td></tr><tr><td>临时围堵</td><td>隔离并复测松动时间窗内产品；暂停相关治具</td><td>防止问题继续流出</td></tr><tr><td>永久纠正</td><td>明确扭矩/锁紧方式、增加防松胶、每班点检、治具编号和维护要求</td><td>消除或稳定控制根因</td></tr><tr><td>系统预防</td><td>检查所有同类治具；更新控制计划、作业指导、培训、审计和 ECN</td><td>防止同机制在别处重复发生</td></tr></tbody></table></div>
+<p>只拧紧这一颗螺丝属于纠正，不等于永久措施已经建立。</p>
+<h3 id="8-5-第四步-怎样决定-pvt-是否放行">8.5 第四步：怎样决定 PVT 是否放行</h3>
+<p>在训练案例下，可以倾向<strong>条件放行 PVT 批次/继续试产</strong>，但至少满足：</p>
+<ul><li>根因证据链闭环，不只是口头判断；</li><li>所有同类定位治具完成点检并确认受控；</li><li>螺丝松动时间窗内产品全部圈定、隔离和 NFC 复测；</li><li>修复后连续 300 台及批准的 CTQ 回归达到标准；</li><li>FPY、NFC 专项不良和其他关键 Pareto 达到本项目门槛；</li><li>控制计划、作业指导、治具维护、人员培训已经更新并执行；</li><li>ECN 明确生效批次/SN、旧批处置、责任人和持续监控指标；</li><li>再次出现同类失败时有明确停工位和撤回放行条件。</li></ul>
+<p>任何一项关键证据缺失时，应 Hold，而不是用“已经连续 300 台通过”替代全部放行依据。</p>
+<h3 id="8-6-第五步-两周后第-1-批客户反馈-nfc-失败">8.6 第五步：两周后第 1 批客户反馈 NFC 失败</h3>
+<p>此时专业说法分三层：</p>
+<p><strong>已知事实</strong></p>
+<ul><li>客户设备属于第 1 批；</li><li>防松和每班点检 ECN 从第 3 批开始；</li><li>第 1、2 批生产时没有这项新控制。</li></ul>
+<p><strong>合理怀疑</strong></p>
+<ul><li>第 1 批可能受到相同治具松动/天线偏移机制影响。</li></ul>
+<p><strong>尚需验证</strong></p>
+<ul><li>客户失效机是否真的存在天线偏移；</li><li>当时是否使用同一治具、相同时间窗或相同天线 lot；</li><li>原产线测试是否已有边缘数据、重测或返修；</li><li>失败是终端 NFC 识别问题，还是卡片、环境、支付服务或其他原因。</li></ul>
+<p>处理步骤：</p>
+<ol><li>获取客户设备 SN、失效现象、发生环境、频率和日志；</li><li>追到批次、物料、治具、工位、固件、原始测试和返修记录；</li><li>检查/复现失效机，确认天线位置和 NFC 指标；</li><li>对同范围设备做风险分层和抽检/全检决策；</li><li>根据严重度和逃逸范围决定现场升级、返修、换机、通知或召回；</li><li>把客户结果回写到 8D/异常单、ECN 效果验证和下一阶段门。</li></ol>
+<p>一句话：<strong>ECN 先圈可能受影响范围，失效机和生产记录再确认真正根因。</strong></p>
+<h3 id="8-7-如果同一批-nfc-天线跨不同生产日期都更容易失败">8.7 如果同一批 NFC 天线跨不同生产日期都更容易失败</h3>
+<p>可以优先怀疑该天线来料 lot，因为“跨日期仍跟随同一物料批次出现”削弱了单一班次、操作员或某个时间窗治具问题的解释力。</p>
+<p>但仍要说“优先怀疑”，不能直接说“来料就是根因”。验证动作包括：</p>
+<ul><li>隔离同 lot 的在库、在线和在途天线；</li><li>比较失败机与合格机的物料 lot、尺寸、电性能和供应商检验记录；</li><li>用合格 lot 替换做 A/B 对照，观察失败是否随物料迁移；</li><li>检查该 lot 是否也集中使用过同一治具或测试程序，排除混杂因素；</li><li>与供应商共同完成失效分析和纠正验证。</li></ul>
+<h3 id="8-8-面试可直接表达的-90-秒案例">8.8 面试可直接表达的 90 秒案例</h3>
+<blockquote>在一批支付终端 PVT 试产中，产线一小时内连续出现 5 台 NFC 测试失败。因为 NFC 属于核心支付 CTQ，我先推动暂停受影响工位，并从最后已确认合格点起隔离在制、包装和库存产品，同时保留失败机、治具状态和测试记录。 通过按工位、治具、物料和时间分层，团队发现失败集中在一套定位治具；失效机天线位置偏移，现场又确认限位螺丝松动。修复定位后，受影响规格回归及连续 300 台测试通过，证据支持“治具松动导致天线偏移”为根因。 我没有只同意拧紧后继续生产，而是要求复测可能受影响产品、点检所有同类治具，并通过 ECN 增加防松、每班点检、生效批次和旧批处置。最终在根因关闭、受影响范围处置、控制计划更新和持续监控条件明确后，建议条件放行。若旧批客户再报问题，我会先列为可能同因，再用 SN、物料、治具和失效机记录验证，不把可能原因直接说成已确认根因。</blockquote>
+<h3 id="面试官可能追问">面试官可能追问</h3>
+<p><strong>追问 1：为什么不是直接返修 5 台继续生产？</strong> 因为连续同类失败说明过程可能失控，只修已发现不良会扩大返修并产生逃逸，必须先止住共同原因。</p>
+<p><strong>追问 2：连续 300 台通过为什么还不够？</strong> 它证明修复后短期数据改善，但还要处置修复前产品、确认所有同类治具、更新控制计划和 ECN，并验证测试与追溯完整。</p>
+<p><strong>追问 3：产品经理在这里做了什么，不是质量工程师的工作吗？</strong> 质量和工程负责专业分析与验证；产品经理负责确认 CTQ 和客户风险、协调影响范围和成本交期、组织阶段门决策、确保变更与旧批处置形成可追溯闭环。</p>
+<h2 id="9-高频面试题与回答骨架">9. 高频面试题与回答骨架</h2>
+<h3 id="9-1-你怎么判断一个问题是否阻塞阶段门">9.1 你怎么判断一个问题是否阻塞阶段门？</h3>
+<p>用“四看一结论”：</p>
+<ol><li>看严重度：核心业务、安全、资金、合规、合同；</li><li>看规模：量产会不会放大，是否存在逃逸；</li><li>看根因：假设还是已验证；</li><li>看控制：能否稳定预防/检出，影响范围能否追溯；</li><li>给结论：Go、条件放行、Hold 或 No-Go，并附证据缺口和复审条件。</li></ol>
+<h3 id="9-2-pvt-最应该盯哪些指标">9.2 PVT 最应该盯哪些指标？</h3>
+<p>回答顺序：</p>
+<blockquote>先看 CTQ 和安全/合规缺陷，再看 FPY、最终良率、返修率、报废率和不良 Pareto；然后看过程稳定、产能节拍、单位成本、测试可信度、文件培训和批次追溯。不能用单一总良率代表量产成熟。</blockquote>
+<h3 id="9-3-返修后都合格-为什么还要改工艺">9.3 返修后都合格，为什么还要改工艺？</h3>
+<p>回答顺序：</p>
+<blockquote>返修只能恢复结果，不能证明过程成熟。它会降低 FPY、吞产能和毛利，还会引入拆装损伤和漏检风险。我会优先消除共同原因或增加过程防错，再以末端测试兜底。</blockquote>
+<h3 id="9-4-你如何保证-ctq-在量产中不失控">9.4 你如何保证 CTQ 在量产中不失控？</h3>
+<p>回答顺序：</p>
+<blockquote>先把 CTQ 写成有场景、方法、边界、阈值和样本规则的验收标准，再映射到来料、装配、过程测试和出货控制计划；明确负责人、频率、记录和异常反应；最后用 PVT 数据验证控制真的执行并有效。</blockquote>
+<h3 id="9-5-如何向客户解释-可能原因-和-确认根因">9.5 如何向客户解释“可能原因”和“确认根因”？</h3>
+<p>建议表达：</p>
+<blockquote>目前数据表明问题与某批次/治具高度相关，因此已先做隔离和临时围堵；但根因仍在验证。待失效机检查、生产记录和修复对照完成后，我们会给出确认结论和受影响范围。</blockquote>
+<p>不要表达：</p>
+<blockquote>肯定就是供应商/操作员/螺丝导致的。</blockquote>
+<p>除非证据链已完整。</p>
+<h3 id="9-6-ecn-为什么对客户问题处理重要">9.6 ECN 为什么对客户问题处理重要？</h3>
+<p>回答顺序：</p>
+<blockquote>ECN 把变更前后基线、生效点和旧品处置记录下来，使我能用客户 SN 快速判断其处于变更前还是变更后，再结合物料、工位和测试记录缩小范围。它解决“查哪一批”，但不代替失效分析解决“真正为什么坏”。</blockquote>
+<h3 id="9-7-条件放行怎么避免变成形式主义">9.7 条件放行怎么避免变成形式主义？</h3>
+<p>回答顺序：</p>
+<blockquote>条件放行必须明确非关键遗留项、责任人、关闭时间、监控指标、风险接受人，以及触发停线或撤回放行的条件；任何关键 CTQ、安全、合规或根因不明的量产风险都不应靠条件放行绕过去。</blockquote>
+<h2 id="10-面试前速记卡">10. 面试前速记卡</h2>
+<h3 id="十句话">十句话</h3>
+<ol><li>阶段门不是按日期过关，而是拿证据决定是否继续投入。</li><li>EVT 证方案可行，DVT 证设计可靠，PVT 证过程可复制。</li><li>最终良率看能交多少，FPY 看能否一次做对。</li><li>总良率不能掩盖 CTQ 集中不良。</li><li>CTQ 是客户核心任务、安全、合规和验收的不可错底线。</li><li>验收标准必须写清场景、对象、方法、边界、阈值、样本和证据。</li><li>控制计划定规则，治具在过程预防，测试负责检测和拦截。</li><li>连续异常先停、圈、保留证据，再谈根因和责任。</li><li>ECN 圈定变更和可能影响范围，失效分析确认根因。</li><li>“高度相关”不是“已经证实”；根因必须经记录、复现或修复对照验证。</li></ol>
+<h3 id="三个面试万能结构">三个面试万能结构</h3>
+<p><strong>阶段门题：目标 → 证据 → 阻塞项 → 放行结论。</strong></p>
+<p><strong>异常题：止血 → 圈范围 → 保证据 → 验根因 → 永久措施 → 验证 → 放行。</strong></p>
+<p><strong>ECN 题：改什么 → 为什么 → 影响谁 → 从哪批生效 → 旧品怎么处置 → 如何证明有效。</strong></p>
+<h2 id="11-小练习与参考答案">11. 小练习与参考答案</h2>
+<h3 id="练习-1-阶段门">练习 1：阶段门</h3>
+<p>DVT 中支付终端跌落后外壳有轻微划痕，但结构完整、支付正常、客户外观规范允许。它是否一定阻塞 PVT？</p>
+<p>参考答案：不一定。先确认合同外观标准、发生概率和根因；如果不影响安全、核心功能和客户验收，且设计/工艺可接受，可以作为非关键遗留项处理。若划痕暴露结构强度、密封或批量外观一致性问题，则可能阻塞。</p>
+<h3 id="练习-2-良率">练习 2：良率</h3>
+<p>1,000 台中 970 台一次通过、20 台返修后通过、10 台报废。</p>
+<p>参考答案：最终良率 99%，FPY 97%，返修率 2%，报废率 1%。FPY 最直接反映第一次做对的能力。</p>
+<h3 id="练习-3-ctq">练习 3：CTQ</h3>
+<p>“小票字体稍浅”和“交易金额偶发显示错误”哪个更可能是 CTQ？</p>
+<p>参考答案：金额错误一定是核心 CTQ 候选，因为会影响收银、对账和客户信任；字体稍浅通常不是，除非已经影响金额可读、凭证或合同验收。</p>
+<h3 id="练习-4-控制手段">练习 4：控制手段</h3>
+<p>测试是在什么时候发现问题，治具防错是在什么时候避免问题？</p>
+<p>参考答案：测试在来料、过程或装配后检测已存在问题；治具防错在装配过程中限制错误发生。测试可以拦截，防错优先预防。</p>
+<h3 id="练习-5-隔离范围">练习 5：隔离范围</h3>
+<p>8 点治具点检正常，11 点发现连续失败，中间已有产品包装。</p>
+<p>参考答案：至少隔离 8 点最后确认正常之后、直到工位停下并恢复受控之间，由相关治具生产的在制、待测、已测、包装、仓库产品；同时冻结对应测试、治具点检、物料、工位和人员记录。若 8 点记录不可信，应向前扩大范围。</p>
+<h3 id="练习-6-ecn">练习 6：ECN</h3>
+<p>ECN 从第 3 批生效，第 1 批客户报 NFC 失败。能否直接说第 1 批就是治具螺丝松动？</p>
+<p>参考答案：不能。只能先把第 1、2 批列为可能受影响范围，再查客户 SN、失效机、治具、物料、测试和返修记录确认是否同一机制。</p>
+<h3 id="练习-7-物料追溯">练习 7：物料追溯</h3>
+<p>同一批 NFC 天线装到不同日期生产的设备上都更容易失败，优先怀疑什么？</p>
+<p>参考答案：优先怀疑该天线来料 lot，并先隔离在库和在线物料；但仍属于优先假设，要通过跨批次对比、来料测量和替换 A/B 验证确认。</p>
+<h2 id="12-后续学习路线建议">12. 后续学习路线建议</h2>
+<h3 id="项目资料怎样使用">项目资料怎样使用</h3>
+<ol><li><a href="../../课堂笔记-从零学B端硬件PM.md">《课堂笔记-从零学B端硬件PM.md》</a>：用来快速回忆行业、认证、BOM/NRE/MOQ、EVT/DVT/PVT 和基础面试表达。</li><li><a href="../../B端产品经理问题集.md">《B端产品经理问题集.md》</a>：用来系统学习商业层、产品层和交付层方法，并按关键词检索框架。</li><li><a href="../../工业网关商业论证.md">《工业网关商业论证.md》</a>：用来练“市场—产品—成本—质量—上市”的完整商业论证。</li><li><a href="../../龙杰智能卡-面试PPT素材.md">《龙杰智能卡-面试PPT素材.md》</a>：用来准备公司研究、产品机会和面试展示。</li><li>本文：用来练 PVT 放行、量产异常、质量数据、ECN 和 NFC 案例的面试深挖。</li></ol>
+<h3 id="建议顺序">建议顺序</h3>
+<div class="code-block"><div class="code-label"><span>TEXT</span><button class="copy-code" type="button" data-copy-code="已有基础术语
+→ 客户与商业判断
+→ 可验收产品规格
+→ EVT / DVT / PVT 阶段门
+→ 良率、CTQ、控制计划和异常闭环（本文）
+→ 8D / CAPA 根因与永久纠正
+→ FMEA 与控制计划联动
+→ 供应商质量、来料与替代料
+→ 可靠性/认证计划
+→ RMA、现场故障和生命周期
+→ 综合面试案例复述">复制</button></div><pre><code>已有基础术语
+→ 客户与商业判断
+→ 可验收产品规格
+→ EVT / DVT / PVT 阶段门
+→ 良率、CTQ、控制计划和异常闭环（本文）
+→ 8D / CAPA 根因与永久纠正
+→ FMEA 与控制计划联动
+→ 供应商质量、来料与替代料
+→ 可靠性/认证计划
+→ RMA、现场故障和生命周期
+→ 综合面试案例复述</code></pre></div>
+<h3 id="本会话下一知识点建议">本会话下一知识点建议</h3>
+<p>下一课建议只讲一个点：<strong>8D / CAPA 中怎样证明“根因是真的”，并区分纠正、纠正措施和预防措施。</strong></p>
+<p>原因：本轮已经会停线、隔离、追溯和 ECN，当前最值得补强的是从“我怀疑这颗螺丝”走到“证据证明它是根因”的完整方法。下一课可以继续使用同一 NFC 案例，不换新场景。</p>
+<p>建议口头课保持：先给结论 → 一个 NFC 例子 → 一个小练习；一次只引入 8D 的一个步骤，不一次背完 D1-D8。</p></div><footer class="source-footer"><span>源文件</span><a href="../../B端硬件PM-量产质量与变更闭环面试复习.md">B端硬件PM-量产质量与变更闭环面试复习.md</a><span class="source-note">原始 Markdown 保留在项目根目录</span></footer><nav class="page-nav" aria-label="上一篇和下一篇"><a class="page-nav-item prev" href="03-industrial-gateway-case.html"><small>上一份</small><strong>← 案例 · 工业网关商业论证</strong></a><a class="page-nav-item next" href="05-acs-interview-case.html"><small>下一份</small><strong>案例 · 龙杰智能卡（ACS）面试素材 →</strong></a></nav></article>
+      <aside class="toc"><div class="toc-title">本页内容</div><a class="toc-link level-2" href="#0-使用说明与口径">0. 使用说明与口径</a><a class="toc-link level-3" href="#本文解决什么问题">本文解决什么问题</a><a class="toc-link level-3" href="#三个口径提醒">三个口径提醒</a><a class="toc-link level-2" href="#1-一页总览-从-ctq-到可追溯放行">1. 一页总览：从 CTQ 到可追溯放行</a><a class="toc-link level-3" href="#一条质量闭环主线">一条质量闭环主线</a><a class="toc-link level-3" href="#最容易混淆的五组概念">最容易混淆的五组概念</a><a class="toc-link level-3" href="#产品经理做放行决定前的七问">产品经理做放行决定前的七问</a><a class="toc-link level-2" href="#2-evt-dvt-pvt-阶段门与放行依据">2. EVT / DVT / PVT：阶段门与放行依据</a><a class="toc-link level-3" href="#2-1-阶段门的本质">2.1 阶段门的本质</a><a class="toc-link level-3" href="#2-2-evt-放行-证明-可行-不是证明-成熟">2.2 EVT 放行：证明“可行”，不是证明“成熟”</a><a class="toc-link level-3" href="#2-3-dvt-放行-关键可靠性问题不能靠计划表放过去">2.3 DVT 放行：关键可靠性问题不能靠计划表放过去</a><a class="toc-link level-3" href="#2-4-pvt-放行-看-一次做对-和过程可复制">2.4 PVT 放行：看“一次做对”和过程可复制</a><a class="toc-link level-3" href="#2-5-四种阶段门结论">2.5 四种阶段门结论</a><a class="toc-link level-3" href="#2-6-产品经理的职责边界">2.6 产品经理的职责边界</a><a class="toc-link level-3" href="#常见面试问法">常见面试问法</a><a class="toc-link level-3" href="#小练习">小练习</a><a class="toc-link level-2" href="#3-良率-首次良率与返修">3. 良率、首次良率与返修</a><a class="toc-link level-3" href="#3-1-先把统计口径写清楚">3.1 先把统计口径写清楚</a><a class="toc-link level-3" href="#3-2-训练案例-98-最终良率为什么仍不能放行">3.2 训练案例：98% 最终良率为什么仍不能放行</a><a class="toc-link level-3" href="#3-3-3-台失败-也不能只看千分之三">3.3 “3 台失败”也不能只看千分之三</a><a class="toc-link level-3" href="#3-4-产品经理看不良数据的顺序">3.4 产品经理看不良数据的顺序</a><a class="toc-link level-3" href="#常见面试问法-2">常见面试问法</a><a class="toc-link level-3" href="#小练习-2">小练习</a><a class="toc-link level-2" href="#4-ctq-可验收标准与计时边界">4. CTQ、可验收标准与计时边界</a><a class="toc-link level-3" href="#4-1-ctq-是-不可错底线-不是-所有重要参数">4.1 CTQ 是“不可错底线”，不是“所有重要参数”</a><a class="toc-link level-3" href="#4-2-一条可验收标准的七个要素">4.2 一条可验收标准的七个要素</a><a class="toc-link level-3" href="#4-3-例子一-断网交易不能丢">4.3 例子一：断网交易不能丢</a><a class="toc-link level-3" href="#4-4-例子二-nfc-要快-必须先拆成两条指标">4.4 例子二：NFC“要快”必须先拆成两条指标</a><a class="toc-link level-3" href="#4-5-ctq-如何落到产品经理决策">4.5 CTQ 如何落到产品经理决策</a><a class="toc-link level-3" href="#常见面试问法-3">常见面试问法</a><a class="toc-link level-3" href="#小练习-3">小练习</a><a class="toc-link level-2" href="#5-控制计划-治具防错与测试的区别">5. 控制计划、治具防错与测试的区别</a><a class="toc-link level-3" href="#5-1-三者不是同一层的东西">5.1 三者不是同一层的东西</a><a class="toc-link level-3" href="#5-2-有治具-不等于-已经防错">5.2 “有治具”不等于“已经防错”</a><a class="toc-link level-3" href="#5-3-支付终端-nfc-控制计划示例">5.3 支付终端 NFC 控制计划示例</a><a class="toc-link level-3" href="#5-4-如果工厂说-全检失败就返修-不用改治具">5.4 如果工厂说“全检失败就返修，不用改治具”</a><a class="toc-link level-3" href="#常见面试问法-4">常见面试问法</a><a class="toc-link level-3" href="#小练习-4">小练习</a><a class="toc-link level-2" href="#6-异常停线-隔离与批次追溯">6. 异常停线、隔离与批次追溯</a><a class="toc-link level-3" href="#6-1-连续异常为什么不能只返修不良品">6.1 连续异常为什么不能只返修不良品</a><a class="toc-link level-3" href="#6-2-异常闭环八步法">6.2 异常闭环八步法</a><a class="toc-link level-3" href="#6-3-隔离边界怎么定">6.3 隔离边界怎么定</a><a class="toc-link level-3" href="#6-4-一台支付终端至少应追到什么">6.4 一台支付终端至少应追到什么</a><a class="toc-link level-3" href="#6-5-怀疑原因与已验证根因">6.5 怀疑原因与已验证根因</a><a class="toc-link level-3" href="#6-6-产品经理的异常决策依据">6.6 产品经理的异常决策依据</a><a class="toc-link level-3" href="#常见面试问法-5">常见面试问法</a><a class="toc-link level-3" href="#小练习-5">小练习</a><a class="toc-link level-2" href="#7-ecn-变更控制-影响批次与可追溯">7. ECN 变更控制、影响批次与可追溯</a><a class="toc-link level-3" href="#7-1-ecn-是什么">7.1 ECN 是什么</a><a class="toc-link level-3" href="#7-2-一份可用-ecn-的最低字段">7.2 一份可用 ECN 的最低字段</a><a class="toc-link level-3" href="#7-3-生效批次-不等于-影响批次">7.3 “生效批次”不等于“影响批次”</a><a class="toc-link level-3" href="#7-4-界定影响范围的步骤">7.4 界定影响范围的步骤</a><a class="toc-link level-3" href="#7-5-产品经理审-ecn-时要问什么">7.5 产品经理审 ECN 时要问什么</a><a class="toc-link level-3" href="#常见面试问法-6">常见面试问法</a><a class="toc-link level-3" href="#小练习-6">小练习</a><a class="toc-link level-2" href="#8-支付终端-nfc-天线偏移-端到端案例">8. 支付终端 NFC 天线偏移：端到端案例</a><a class="toc-link level-3" href="#8-1-案例背景">8.1 案例背景</a><a class="toc-link level-3" href="#8-2-第一步-先止血-不急着争论责任">8.2 第一步：先止血，不急着争论责任</a><a class="toc-link level-3" href="#8-3-第二步-从-发现螺丝松-走到-根因已验证">8.3 第二步：从“发现螺丝松”走到“根因已验证”</a><a class="toc-link level-3" href="#8-4-第三步-区分纠正-围堵和永久措施">8.4 第三步：区分纠正、围堵和永久措施</a><a class="toc-link level-3" href="#8-5-第四步-怎样决定-pvt-是否放行">8.5 第四步：怎样决定 PVT 是否放行</a><a class="toc-link level-3" href="#8-6-第五步-两周后第-1-批客户反馈-nfc-失败">8.6 第五步：两周后第 1 批客户反馈 NFC 失败</a><a class="toc-link level-3" href="#8-7-如果同一批-nfc-天线跨不同生产日期都更容易失败">8.7 如果同一批 NFC 天线跨不同生产日期都更容易失败</a><a class="toc-link level-3" href="#8-8-面试可直接表达的-90-秒案例">8.8 面试可直接表达的 90 秒案例</a><a class="toc-link level-3" href="#面试官可能追问">面试官可能追问</a><a class="toc-link level-2" href="#9-高频面试题与回答骨架">9. 高频面试题与回答骨架</a><a class="toc-link level-3" href="#9-1-你怎么判断一个问题是否阻塞阶段门">9.1 你怎么判断一个问题是否阻塞阶段门？</a><a class="toc-link level-3" href="#9-2-pvt-最应该盯哪些指标">9.2 PVT 最应该盯哪些指标？</a><a class="toc-link level-3" href="#9-3-返修后都合格-为什么还要改工艺">9.3 返修后都合格，为什么还要改工艺？</a><a class="toc-link level-3" href="#9-4-你如何保证-ctq-在量产中不失控">9.4 你如何保证 CTQ 在量产中不失控？</a><a class="toc-link level-3" href="#9-5-如何向客户解释-可能原因-和-确认根因">9.5 如何向客户解释“可能原因”和“确认根因”？</a><a class="toc-link level-3" href="#9-6-ecn-为什么对客户问题处理重要">9.6 ECN 为什么对客户问题处理重要？</a><a class="toc-link level-3" href="#9-7-条件放行怎么避免变成形式主义">9.7 条件放行怎么避免变成形式主义？</a><a class="toc-link level-2" href="#10-面试前速记卡">10. 面试前速记卡</a><a class="toc-link level-3" href="#十句话">十句话</a><a class="toc-link level-3" href="#三个面试万能结构">三个面试万能结构</a><a class="toc-link level-2" href="#11-小练习与参考答案">11. 小练习与参考答案</a><a class="toc-link level-3" href="#练习-1-阶段门">练习 1：阶段门</a><a class="toc-link level-3" href="#练习-2-良率">练习 2：良率</a><a class="toc-link level-3" href="#练习-3-ctq">练习 3：CTQ</a><a class="toc-link level-3" href="#练习-4-控制手段">练习 4：控制手段</a><a class="toc-link level-3" href="#练习-5-隔离范围">练习 5：隔离范围</a><a class="toc-link level-3" href="#练习-6-ecn">练习 6：ECN</a><a class="toc-link level-3" href="#练习-7-物料追溯">练习 7：物料追溯</a><a class="toc-link level-2" href="#12-后续学习路线建议">12. 后续学习路线建议</a><a class="toc-link level-3" href="#项目资料怎样使用">项目资料怎样使用</a><a class="toc-link level-3" href="#建议顺序">建议顺序</a><a class="toc-link level-3" href="#本会话下一知识点建议">本会话下一知识点建议</a></aside>
+    </main>
+  </div>
+  <script src="app.js" defer></script>
+</body>
+</html>

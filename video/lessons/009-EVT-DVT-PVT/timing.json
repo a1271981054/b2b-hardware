@@ -1,0 +1,199 @@
+{
+  "total": 92.376,
+  "beats": [
+    {
+      "index": 0,
+      "text": "今天讲硬件从0到1要过的三关：EVT、DVT、PVT。",
+      "keywords": [
+        "EVT",
+        "DVT",
+        "PVT"
+      ],
+      "visual": "teacher",
+      "note": "三关",
+      "start": 0.0,
+      "end": 6.144,
+      "duration": 6.144
+    },
+    {
+      "index": 1,
+      "text": "硬件不是画完图就直接量产，中间要过三关，每一关都是一次验证。",
+      "keywords": [
+        "三关"
+      ],
+      "visual": "doc",
+      "note": "一关一关过",
+      "start": 6.494,
+      "end": 13.118,
+      "duration": 6.624
+    },
+    {
+      "index": 2,
+      "text": "EVT是工程验证，做第一版样机，验证能不能用。",
+      "keywords": [
+        "EVT"
+      ],
+      "visual": "evt",
+      "note": "第一版样机",
+      "start": 13.468,
+      "end": 18.172,
+      "duration": 4.704
+    },
+    {
+      "index": 3,
+      "text": "样子丑没关系，功能先跑通。",
+      "keywords": [
+        "能用就行"
+      ],
+      "visual": "evt",
+      "note": "先跑通",
+      "start": 18.522,
+      "end": 21.786,
+      "duration": 3.264
+    },
+    {
+      "index": 4,
+      "text": "DVT是设计验证，用改进后的样机，验证设计靠不靠谱。",
+      "keywords": [
+        "DVT"
+      ],
+      "visual": "dvt",
+      "note": "验证设计",
+      "start": 22.136,
+      "end": 27.632,
+      "duration": 5.496
+    },
+    {
+      "index": 5,
+      "text": "要摔、要淋、要测温度、电池、兼容性。",
+      "keywords": [
+        "测试"
+      ],
+      "visual": "dvt",
+      "note": "摔淋测",
+      "start": 27.982,
+      "end": 32.35,
+      "duration": 4.368
+    },
+    {
+      "index": 6,
+      "text": "PVT是量产验证，用正式产线做一小批，验证工厂能不能稳定造出来。",
+      "keywords": [
+        "PVT"
+      ],
+      "visual": "pvt",
+      "note": "正式产线小批量",
+      "start": 32.7,
+      "end": 39.636,
+      "duration": 6.936
+    },
+    {
+      "index": 7,
+      "text": "看重良率：一百台里多少台合格。",
+      "keywords": [
+        "良率"
+      ],
+      "visual": "pvt",
+      "note": "良率是关键",
+      "start": 39.986,
+      "end": 43.73,
+      "duration": 3.744
+    },
+    {
+      "index": 8,
+      "text": "用做饭打比方。EVT是先试做一锅，看味道对不对。",
+      "keywords": [
+        "试做"
+      ],
+      "visual": "evt",
+      "note": "第一锅",
+      "start": 44.08,
+      "end": 49.888,
+      "duration": 5.808
+    },
+    {
+      "index": 9,
+      "text": "DVT是反复试做、请人试吃、调整配方。",
+      "keywords": [
+        "试吃"
+      ],
+      "visual": "dvt",
+      "note": "调配方",
+      "start": 50.238,
+      "end": 54.294,
+      "duration": 4.056
+    },
+    {
+      "index": 10,
+      "text": "PVT是按最终菜谱，让后厨一次做一百份，确认每份都一样。",
+      "keywords": [
+        "一百份"
+      ],
+      "visual": "pvt",
+      "note": "每份一样",
+      "start": 54.644,
+      "end": 60.932,
+      "duration": 6.288
+    },
+    {
+      "index": 11,
+      "text": "每个阶段都有里程碑和评审门，不通过，不能进下一关。",
+      "keywords": [
+        "评审门"
+      ],
+      "visual": "doc",
+      "note": "过门才能走",
+      "start": 61.282,
+      "end": 66.946,
+      "duration": 5.664
+    },
+    {
+      "index": 12,
+      "text": "风险都在这些节点暴露：延期、成本超、质量问题。",
+      "keywords": [
+        "风险"
+      ],
+      "visual": "q",
+      "note": "节点看风险",
+      "start": 67.296,
+      "end": 72.312,
+      "duration": 5.016
+    },
+    {
+      "index": 13,
+      "text": "面试被问硬件从0到1怎么走，答这三个词就赢了。",
+      "keywords": [
+        "面试"
+      ],
+      "visual": "interview",
+      "note": "三个词",
+      "start": 72.662,
+      "end": 77.99,
+      "duration": 5.328
+    },
+    {
+      "index": 14,
+      "text": "记住一句话：EVT验证能不能用，DVT验证靠不靠谱，PVT验证能不能稳定造出来。",
+      "keywords": [
+        "一句话记住"
+      ],
+      "visual": "star",
+      "note": "能用靠谱稳定",
+      "start": 78.34,
+      "end": 87.364,
+      "duration": 9.024
+    },
+    {
+      "index": 15,
+      "text": "课后想一想：为什么不能画完图纸就直接生产一万台？",
+      "keywords": [
+        "课后想一想"
+      ],
+      "visual": "q",
+      "note": "想想三关",
+      "start": 87.714,
+      "end": 92.898,
+      "duration": 5.184
+    }
+  ]
+}

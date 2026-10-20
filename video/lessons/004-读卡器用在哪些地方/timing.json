@@ -1,0 +1,173 @@
+{
+  "total": 82.728,
+  "beats": [
+    {
+      "index": 0,
+      "text": "今天像逛街一样，看看读卡器都用在哪里。",
+      "keywords": [
+        "应用场景"
+      ],
+      "visual": "teacher",
+      "note": "像逛街看场景",
+      "start": 0.0,
+      "end": 4.224,
+      "duration": 4.224
+    },
+    {
+      "index": 1,
+      "text": "第一个场景，POS机，就是超市餐厅收银台，刷卡或贴卡付钱。",
+      "keywords": [
+        "POS机"
+      ],
+      "visual": "pos",
+      "note": "收银台付钱",
+      "start": 4.574,
+      "end": 11.03,
+      "duration": 6.456
+    },
+    {
+      "index": 2,
+      "text": "这里的要求：安全、稳定，不能付到一半死机。",
+      "keywords": [
+        "要求"
+      ],
+      "visual": "pos",
+      "note": "安全稳定快",
+      "start": 11.38,
+      "end": 16.228,
+      "duration": 4.848
+    },
+    {
+      "index": 3,
+      "text": "第二个场景，公交、地铁、停车，叫AFC自动售检票。",
+      "keywords": [
+        "AFC"
+      ],
+      "visual": "gate",
+      "note": "闸机滴一下",
+      "start": 16.578,
+      "end": 21.906,
+      "duration": 5.328
+    },
+    {
+      "index": 4,
+      "text": "这里的要求：读卡要快，高峰期不能让人排队。",
+      "keywords": [
+        "要求"
+      ],
+      "visual": "gate",
+      "note": "快，不能排队",
+      "start": 22.256,
+      "end": 26.624,
+      "duration": 4.368
+    },
+    {
+      "index": 5,
+      "text": "第三个场景，门禁和考勤，刷卡进门，打卡上班。",
+      "keywords": [
+        "门禁考勤"
+      ],
+      "visual": "access",
+      "note": "进门打卡",
+      "start": 26.974,
+      "end": 31.99,
+      "duration": 5.016
+    },
+    {
+      "index": 6,
+      "text": "这里的要求：耐用、好管理。",
+      "keywords": [
+        "要求"
+      ],
+      "visual": "access",
+      "note": "结实好用",
+      "start": 32.34,
+      "end": 36.084,
+      "duration": 3.744
+    },
+    {
+      "index": 7,
+      "text": "第四个场景，身份证件读取，银行柜面、酒店、政府窗口。",
+      "keywords": [
+        "身份证件"
+      ],
+      "visual": "id",
+      "note": "读身份证护照",
+      "start": 36.434,
+      "end": 43.058,
+      "duration": 6.624
+    },
+    {
+      "index": 8,
+      "text": "这里的要求：准、稳、安全。",
+      "keywords": [
+        "要求"
+      ],
+      "visual": "id",
+      "note": "不能读错",
+      "start": 43.408,
+      "end": 46.984,
+      "duration": 3.576
+    },
+    {
+      "index": 9,
+      "text": "第五个场景最特别：ACS把读卡器零件卖给别的公司，人家装进自己的机器。",
+      "keywords": [
+        "模块"
+      ],
+      "visual": "module",
+      "note": "卖发动机给汽车厂",
+      "start": 47.334,
+      "end": 55.062,
+      "duration": 7.728
+    },
+    {
+      "index": 10,
+      "text": "为什么产品经理要懂场景？因为同一个读卡器，场景不同，要求完全不同。",
+      "keywords": [
+        "场景思维"
+      ],
+      "visual": "light",
+      "note": "先问在哪用谁用",
+      "start": 55.412,
+      "end": 62.996,
+      "duration": 7.584
+    },
+    {
+      "index": 11,
+      "text": "公交要快，POS要安全，户外要防水。先问在哪用、谁用、怎么用，再定规格。",
+      "keywords": [
+        "先问再用"
+      ],
+      "visual": "doc",
+      "note": "场景决定规格",
+      "start": 63.346,
+      "end": 72.034,
+      "duration": 8.688
+    },
+    {
+      "index": 12,
+      "text": "记住一句话：先问在哪用，再定规格。",
+      "keywords": [
+        "一句话记住"
+      ],
+      "visual": "star",
+      "note": "场景决定一切",
+      "start": 72.384,
+      "end": 76.92,
+      "duration": 4.536
+    },
+    {
+      "index": 13,
+      "text": "课后想一想：你生活里见过哪些滴一下或插一下卡的地方？",
+      "keywords": [
+        "课后想一想"
+      ],
+      "visual": "q",
+      "note": "举一个例子",
+      "start": 77.27,
+      "end": 83.078,
+      "duration": 5.808
+    }
+  ]
+}

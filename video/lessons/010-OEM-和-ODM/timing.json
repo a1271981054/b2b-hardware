@@ -1,0 +1,174 @@
+{
+  "total": 87.048,
+  "beats": [
+    {
+      "index": 0,
+      "text": "今天讲两个字母组合，OEM和ODM，回答一个问题：自己造，还是找人造。",
+      "keywords": [
+        "OEM",
+        "ODM"
+      ],
+      "visual": "teacher",
+      "note": "自己造还是找人",
+      "start": 0.0,
+      "end": 8.064,
+      "duration": 8.064
+    },
+    {
+      "index": 1,
+      "text": "这是产品经理立项时就要回答的问题。",
+      "keywords": [
+        "立项"
+      ],
+      "visual": "doc",
+      "note": "立项先回答",
+      "start": 8.414,
+      "end": 11.51,
+      "duration": 3.096
+    },
+    {
+      "index": 2,
+      "text": "OEM叫贴牌代工：客户出设计，工厂按图纸生产。",
+      "keywords": [
+        "OEM"
+      ],
+      "visual": "oem",
+      "note": "你设计工厂做",
+      "start": 11.86,
+      "end": 17.668,
+      "duration": 5.808
+    },
+    {
+      "index": 3,
+      "text": "产品是你的设计，牌子也是你的。你管做什么，工厂管怎么造出来。",
+      "keywords": [
+        "贴牌"
+      ],
+      "visual": "oem",
+      "note": "你管做什么",
+      "start": 18.018,
+      "end": 24.306,
+      "duration": 6.288
+    },
+    {
+      "index": 4,
+      "text": "就像你写好菜谱，交给后厨做。",
+      "keywords": [
+        "菜谱"
+      ],
+      "visual": "oem",
+      "note": "后厨照做",
+      "start": 24.656,
+      "end": 28.4,
+      "duration": 3.744
+    },
+    {
+      "index": 5,
+      "text": "ODM叫设计代工：工厂自己有现成设计，你选一款，改改外观和软件。",
+      "keywords": [
+        "ODM"
+      ],
+      "visual": "odm",
+      "note": "选现成的改改",
+      "start": 28.75,
+      "end": 36.478,
+      "duration": 7.728
+    },
+    {
+      "index": 6,
+      "text": "工厂管设计加生产，你主要管卖。",
+      "keywords": [
+        "省事"
+      ],
+      "visual": "odm",
+      "note": "你管卖",
+      "start": 36.828,
+      "end": 40.092,
+      "duration": 3.264
+    },
+    {
+      "index": 7,
+      "text": "像后厨已有招牌菜，你改个摆盘，端出去卖。",
+      "keywords": [
+        "招牌菜"
+      ],
+      "visual": "odm",
+      "note": "改摆盘就卖",
+      "start": 40.442,
+      "end": 44.33,
+      "duration": 3.888
+    },
+    {
+      "index": 8,
+      "text": "怎么选？自研投入大、周期长，但控制力强，别人难抄。",
+      "keywords": [
+        "自研"
+      ],
+      "visual": "doc",
+      "note": "贵但可控",
+      "start": 44.68,
+      "end": 50.176,
+      "duration": 5.496
+    },
+    {
+      "index": 9,
+      "text": "OEM是有设计但不想建厂，省生产投入。",
+      "keywords": [
+        "OEM选择"
+      ],
+      "visual": "oem",
+      "note": "省建厂",
+      "start": 50.526,
+      "end": 54.582,
+      "duration": 4.056
+    },
+    {
+      "index": 10,
+      "text": "ODM最快最省钱，但产品容易跟别人一样。",
+      "keywords": [
+        "ODM选择"
+      ],
+      "visual": "odm",
+      "note": "快但容易一样",
+      "start": 54.932,
+      "end": 60.116,
+      "duration": 5.184
+    },
+    {
+      "index": 11,
+      "text": "和ACS的关系：ACS的定制产品生意，就是OEM和ODM，客户印自己的牌子，ACS帮他做。",
+      "keywords": [
+        "ACS"
+      ],
+      "visual": "module",
+      "note": "ACS也做这个",
+      "start": 60.466,
+      "end": 69.634,
+      "duration": 9.168
+    },
+    {
+      "index": 12,
+      "text": "记住一句话：OEM是你设计、工厂做；ODM是工厂设计好，你挑一款改改就卖。",
+      "keywords": [
+        "一句话记住"
+      ],
+      "visual": "star",
+      "note": "谁设计谁说了算",
+      "start": 69.984,
+      "end": 78.528,
+      "duration": 8.544
+    },
+    {
+      "index": 13,
+      "text": "课后想一想：想最快、最省钱推出一款读卡器，选OEM还是ODM？为什么？",
+      "keywords": [
+        "课后想一想"
+      ],
+      "visual": "q",
+      "note": "选哪个",
+      "start": 78.878,
+      "end": 87.422,
+      "duration": 8.544
+    }
+  ]
+}
